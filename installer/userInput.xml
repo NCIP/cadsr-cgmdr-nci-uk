@@ -1,0 +1,16 @@
+<userInput>
+    <panel order="0">
+        <field type="title" align="left" txt="Setup Admin Password" bold="false" size="2" id="title"/>
+
+        <field type="staticText" align="left" 
+            txt="Please enter a password for user 'admin', the database administrator (default: cancergrid):"/>
+        <field type="password" variable="adminPasswd">
+            <validator class="org.exist.izpack.PasswordValidator" txt="Passwords did not match!"/>
+            <validator class="com.izforge.izpack.util.NotEmptyValidator" txt="Passwords must not be empty!"/>
+            <spec>
+                <pwd txt="Enter password: " size="20" set="cancergrid"/>
+                <pwd txt="Retype password: " size="20" set="cancergrid"/>
+            </spec>
+        </field>
+    </panel>
+</userInput>

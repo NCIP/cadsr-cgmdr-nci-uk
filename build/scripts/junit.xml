@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ======================================================================= -->
+<!-- eXist build file : Run jUnit tests                                      -->
+<!-- ======================================================================= -->
+<!-- $Id: junit.xml 7472 2008-03-02 21:28:13Z wolfgang_m $ -->
+
+<project basedir="../.." default="test" name="jUnit tests">
+	
+    <description>jUnit tests for eXist</description>
+    
+	<!-- import common targets -->
+	<import file="../../build.xml"/>
+
+	<path id="classpath.junit">
+        <pathelement path="${junit.reports}/classes"/>
+    </path>
+
+    <condition property="java14-only">
+        <equals arg1="${ant.java.version}" arg2="1.4"/>
+    </condition>
+
+    <target name="test"
+            depends="check-java-version, test-prepare, test-local,  test-fluent, test-indexing, test-jetty, test-concurrent, test-remote, test-recovery, test-wrapup"
+            description="Run jUnit tests"/>
+
+    <!-- Extra jUnit properties -->
+    <property name="junit.reports.dat" value="${junit.reports}/junit/data"/>
+    <property name="junit.reports.html" value="${junit.reports}/junit/html"/>
+
+    <target name="test-compile" unless="java14-only" >
+        <mkdir dir="${junit.reports}/classes"/>
+       <javac debug="${build.debug}" deprecation="${build.deprecation}"
+            destdir="${junit.reports}/classes" encoding="UTF-8"
+            optimize="${build.optimize}" srcdir="${junit.reports}/src"
+            source="1.5" target="1.5">
+            <classpath>
+                <path refid="classpath.core"/>
+                <path refid="classpath.jetty"/>
+            </classpath>
+        </javac>
+        <copy todir="${junit.reports}/classes/org/exist/performance/ant"
+              file="${junit.reports}/src/org/exist/performance/ant/antlib.xml"/>
+        <copy todir="${junit.reports}/classes/org/exist/performance"
+            file="${junit.reports}/src/org/exist/performance/log2html.xql"/>
+        <ant antfile="build.xml" dir="extensions/indexes" target="compile-tests"/> 
+    </target>
+
+    <target name="check-java-version" if="java14-only">
+        <echo message="Java version warning"/>
+        <echo message="--------------------"/>
+        <echo message="Java 5 is required to compile and run the test suite. Your version is ${ant.java.version}."/>
+        <echo message="You can still run and compile eXist itself, but not the test cases."/>
+        <fail message="Cannot run test suite."/>
+    </target>
+
+    <!-- Seperate target for creating folders -->
+    <target name="test-prepare" depends="jar,test-compile">
+        <delete failonerror="false">
+            <fileset dir="webapp/WEB-INF/data" includes="*.dbx,*.log"/>
+        </delete>
+
+        <delete dir="${junit.reports.dat}"/>
+        <delete dir="${junit.reports.html}"/>
+
+        <!--mkdir dir="${junit.reports}"/-->
+        <mkdir dir="${junit.reports}/classes"/>
+        <mkdir dir="${junit.reports.dat}"/>
+        <mkdir dir="${junit.reports.html}"/>
+    </target>
+
+    <!-- Generate HTML reports -->
+    <target name="test-wrapup">
+        <echo message="-----------------------------"/>
+        <echo message="Creating reports, please wait"/>
+        <echo message="-----------------------------"/>
+        <junitreport todir="${junit.reports.dat}">
+            <fileset dir="${junit.reports.dat}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.reports.html}"/>
+        </junitreport>
+    </target>
+
+    <!-- Test set 1 : local database instance -->
+    <target name="test-local">
+        <echo message="------------------------------------------"/>
+        <echo message="Running tests on a local database instance"/>
+        <echo message="------------------------------------------"/>
+
+        <junit haltonfailure="false" printsummary="yes" showoutput="${junit.output}" maxmemory="${junit.forked.VM.maxmemory}">
+            <sysproperty key="exist.home" value="${basedir}" />
+            <classpath refid="classpath.core"/>
+            <classpath refid="classpath.jetty"/>
+            <classpath refid="classpath.junit"/>
+            
+            <formatter type="plain"/>
+            <formatter type="xml"/>
+            <test fork="yes" name="org.exist.xmldb.XmldbLocalTests" todir="${junit.reports.dat}"/>
+            <test fork="yes" name="org.exist.xupdate.AllXupdateTests" todir="${junit.reports.dat}"/>
+            <test fork="yes" name="org.exist.xquery.AllXqueryTests" todir="${junit.reports.dat}"/>
+            <test fork="yes" name="org.exist.xquery.OptimizerTest" todir="${junit.reports.dat}"/>
+			<test fork="yes" name="org.exist.collections.triggers.AllTriggerTests" todir="${junit.reports.dat}"/>
+			<test fork="yes" name="org.exist.collections.AllCollectionTests" todir="${junit.reports.dat}"/>
+            <test fork="yes" name="org.exist.fulltext.AllFulltextTests" todir="${junit.reports.dat}"/>
+            <test fork="yes" name="org.exist.security.XMLDBSecurityTest" todir="${junit.reports.dat}"/>
+
+            <!-- Execute all other tests except those that have to be called manually.   -->
+            <batchtest fork="yes" todir="${junit.reports.dat}">
+                <fileset dir="${junit.reports}/src">
+                    <include name="**/*Test.java"/>
+                    <include name="org/exist/*/*Test.java"/>
+                    <exclude name="**/concurrent/**/*.java"/>
+                    <exclude name="**/xmldb/*.java"/>
+                    <exclude name="**/xupdate/*.java"/>
+                    <exclude name="**/xquery/*.java"/>
+                    <exclude name="**/xmlrpc/*.java"/>
+                    <exclude name="**/http/*.java"/>
+                    <exclude name="**/storage/*.java"/>
+                    <exclude name="**/storage/serializers/*.java"/>
+                    <exclude name="**/storage/lock/*.java"/>
+                    <exclude name="**/soap/*.java"/>
+                    <exclude name="**/numbering/*.java"/>
+					<exclude name="**/collections/*.java"/>
+                    <exclude name="**/security/*.java"/>
+                    <exclude name="org/exist/*.java"/>
+                    <exclude name="**/fulltext/**/*.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+    </target>
+	
+    <!-- Test set 2 : jetty server -->
+    <target name="test-jetty">
+        <echo message="------------------------------------------"/>
+        <echo message="Running tests on a jetty server"/>
+        <echo message="------------------------------------------"/>
+
+        <junit haltonfailure="false" printsummary="yes" showoutput="${junit.output}" maxmemory="${junit.forked.VM.maxmemory}">
+            <sysproperty key="exist.home" value="${basedir}" />
+            <classpath refid="classpath.core"/>
+            <classpath refid="classpath.jetty"/>
+            <classpath refid="classpath.junit"/>
+            
+            <formatter type="plain"/>
+            <formatter type="xml"/>
+
+            <batchtest fork="yes" todir="${junit.reports.dat}">
+                <fileset dir="${junit.reports}/src">
+                    <include name="org/exist/soap/*Test.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+    </target>
+
+
+    <!-- Test set 3 : concurrent tests -->
+    <target name="test-concurrent">
+        <delete failonerror="false">
+            <fileset dir="webapp/WEB-INF/data" includes="*.dbx"/>
+        </delete>
+        <echo message="-----------------"/>
+        <echo message="Concurrency tests"/>
+        <echo message="-----------------"/>
+        <junit haltonfailure="false" printsummary="on" showoutput="${junit.output}" fork="no">
+            <sysproperty key="exist.home" value="${basedir}" />
+            <classpath refid="classpath.core"/>
+            <classpath refid="classpath.jetty"/>
+            <classpath refid="classpath.junit"/>
+            
+            <formatter type="plain"/>
+            <formatter type="xml"/>
+            <test name="org.exist.xmldb.concurrent.AllConcurrentTests" todir="${junit.reports.dat}"/>
+        </junit>
+    </target>
+
+    <!-- Test set 4 : recovery tests -->
+    <target name="test-recovery">
+        <echo message="--------------"/>
+        <echo message="Recovery tests"/>
+        <echo message="--------------"/>
+        <junit haltonfailure="false" printsummary="on" showoutput="${junit.output}" fork="yes" maxmemory="${junit.forked.VM.maxmemory}">
+            <sysproperty key="exist.home" value="${basedir}" />
+            <classpath refid="classpath.core"/>
+            <classpath refid="classpath.junit"/>
+            <formatter type="plain"/>
+            <formatter type="xml"/>
+            <test name="org.exist.storage.AllStorageTests" todir="${junit.reports.dat}"/>
+        </junit>
+    </target>
+
+    <!-- Test set 5: tests on custom index modules -->
+    <target name="test-indexing" depends="prepare-extensions">
+        <ant antfile="build.xml" dir="extensions/indexes" target="test"/>
+    </target>
+
+    <target name="test-fluent" depends="prepare-extensions">
+        <ant antfile="build.xml" dir="extensions/fluent" target="test"/>
+    </target>
+    
+    <!-- Helper target for starting server -->
+    <target name="start-server">
+        <echo message="---------------------------------------"/>
+        <echo message="Starting stand-alone database server..."/>
+        <echo message="---------------------------------------"/>
+        <delete failonerror="false">
+            <fileset dir="webapp/WEB-INF/data" includes="*.dbx"/>
+        </delete>
+        <java classname="org.exist.StandaloneServer">
+            <sysproperty key="exist.home" value="${basedir}" />
+            <classpath refid="classpath.core"/>
+            <classpath refid="classpath.jetty"/>
+            <classpath refid="classpath.junit"/>
+            <!--arg value="-d"/-->
+        </java>
+        <echo>Server started.</echo>
+    </target>
+
+    <!-- Test set 5 : tests on remote server -->
+    <target name="test-remote" depends="jar">
+        <mkdir dir="${junit.reports}"/>
+        <echo message="--------------------------------"/>
+        <echo message="Running tests on remote database"/>
+        <echo message="--------------------------------"/>
+        <junit haltonfailure="false" printsummary="yes" showoutput="${junit.output}" maxmemory="${junit.forked.VM.maxmemory}">
+            <sysproperty key="exist.home" value="${basedir}" />
+            <classpath refid="classpath.core"/>
+            <classpath refid="classpath.jetty"/>
+            <classpath refid="classpath.junit"/>
+            <formatter type="plain"/>
+            <formatter type="xml"/>
+
+            <test fork="yes" name="org.exist.xmlrpc.AllXmlRpcTests" todir="${junit.reports.dat}"/>
+
+            <test fork="yes" name="org.exist.xmldb.XmldbRemoteTests" todir="${junit.reports.dat}"/>
+            <test fork="yes" name="org.exist.xquery.XqueryRemoteTests" todir="${junit.reports.dat}"/>
+            <test fork="yes" name="org.exist.http.RESTServiceTest" todir="${junit.reports.dat}"/>
+            <test fork="yes" name="org.exist.storage.XIncludeSerializerTest" todir="${junit.reports.dat}"/>
+        </junit>
+    </target>
+
+    <target name="extra-tests">
+        <echo message="------------------------------------------"/>
+        <echo message="Running additional tests, which may take some time"/>
+        <echo message="------------------------------------------"/>
+
+        <junit haltonfailure="false" printsummary="yes" showoutput="${junit.output}" maxmemory="${junit.forked.VM.maxmemory}">
+            <sysproperty key="exist.home" value="${basedir}" />
+            <classpath refid="classpath.core"/>
+            <classpath refid="classpath.jetty"/>
+            <classpath refid="classpath.junit"/>
+
+            <formatter type="plain"/>
+            <formatter type="xml"/>
+            <test fork="yes" name="org.exist.xquery.XQueryUpdateTest" todir="${junit.reports.dat}"/>
+        </junit>
+    </target>
+
+    <!-- Helper target for stopping server -->
+    <!-- This target must be called after all tests because it shutsdown -->
+    <!-- the current Jvm -->
+    <target name="test-shutdown-server">
+        <!-- Register Ant tasks for eXist -->
+        <typedef resource="org/exist/ant/antlib.xml" uri="http://exist-db.org/ant">
+            <classpath refid="classpath.core"/>
+            <classpath refid="classpath.junit"/>
+        </typedef>
+
+        <echo message="Shutting down the server ..."/>
+        <xmldb:shutdown xmlns:xmldb="http://exist-db.org/ant"
+                uri="xmldb:exist://localhost:8088/xmlrpc/db"
+                user="admin" password=""/>
+        <sleep seconds="10"/>
+    </target>
+
+</project>

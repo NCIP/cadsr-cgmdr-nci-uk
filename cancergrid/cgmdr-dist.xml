@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<project name="cgMDR-dist" default="dist" basedir="..">
+    <description>Create cgMDR distribution</description>
+
+    <!-- import common targets -->
+    <import file="../build.xml"/>
+    <!-- setup class path -->
+    <path id="classpath.core">
+        <fileset dir="${lib.core}">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${lib.optional}">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${lib.endorsed}">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${lib.cocoon}">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${lib.user}">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${lib.extensions}">
+            <include name="*.jar"/>
+        </fileset>
+
+        <fileset dir="extensions">
+            <include name="**/lib/*.jar"/>
+        </fileset>
+        <fileset dir="${tools.ant}/lib">
+            <include name="*.jar"/>
+        </fileset>
+
+        <pathelement path="exist.jar"/>
+        <pathelement path="exist-optional.jar"/>
+
+        <pathelement path="start.jar"/>
+        <pathelement path="${java.class.path}"/>
+    </path>
+
+    <typedef resource="org/exist/ant/antlib.xml" uri="http://exist-db.org/ant">
+        <classpath refid="classpath.core"/>
+    </typedef>
+
+    <!-- ================================================================== -->
+    <!-- Prepare webapp                                                     -->
+    <!-- ================================================================== -->
+    <target depends="prepare, init-dist" name="webapps">
+
+        <!-- When there are no java docs, create empty file -->
+        <mkdir dir="webapp/api"/>
+        <touch file="webapp/api/index.html"/>
+
+        <mkdir dir="webapp/WEB-INF/data"/>
+        <mkdir dir="webapp/WEB-INF/logs"/>
+
+        <!-- create war specific configuration files -->
+        <xslt in="conf.xml" out="webapp/WEB-INF/conf.xml" style="${build.scripts}/dist-war-conf.xsl"/>
+        <xslt in="log4j.xml" out="webapp/WEB-INF/log4j.xml"
+            style="${build.scripts}/dist-war-log4j.xsl"/>
+
+    </target>
+
+    <!-- cgMDR WAR dist -->
+    <!--target name="dist-cgmdr-war" depends="webapps, prepare-cgmdr-content, prepare-cgmdr-content-with-dataset" description="Create cgMDR war file"-->
+    <target name="dist-cgmdr-war" depends="webapps" description="Create cgMDR war file">
+        <war destfile="${dist}/exist-${dist.type}.war" webxml="webapp/WEB-INF/web.xml">
+
+            <!-- Add files to WEB-INF/lib -->
+            <lib dir=".">
+                <include name="start.jar"/>
+                <include name="exist.jar"/>
+                <include name="exist-optional.jar"/>
+                <include name="exist-modules.jar"/>
+            </lib>
+            <lib dir="${lib.core}">
+                <include name="*.jar"/>
+                <exclude name="javax.servlet-1.4.jar"/>
+            </lib>
+            <lib dir="${lib.extensions}">
+                <include name="*.jar"/>
+            </lib>
+            <lib dir="${lib.optional}">
+                <include name="axis.jar"/>
+                <include name="jaxrpc.jar"/>
+            </lib>
+
+            <lib dir="${lib.user}">
+                <include name="*.jar"/>
+            </lib>
+            <!-- The following jars should not be here, but in 'endorsed' -->
+            <lib dir="${lib.endorsed}">
+                <include name="*.jar"/>
+            </lib>
+
+            <!-- Add configuration files to WEB-INF -->
+            <webinf dir=".">
+                <include name="client.properties"/>
+                <include name="backup.properties"/>
+                <include name="server.xml"/>
+                <include name="mime-types.xml"/>
+                <include name="descriptor.xml"/>
+                <include name="log4j.dtd"/>
+                <include name="tools/XFormsFilter/chiba.default.xml"/>
+                <include name="tools/XFormsFilter/resources/xslt/*.xsl"/>
+            </webinf>
+
+            <!-- Add files context root ('/') -->
+            <fileset dir="webapp">
+                <exclude name="**/*~"/>
+                <exclude name="api/**"/>
+                <exclude name="WEB-INF/web.xml"/>
+                <include name="WEB-INF/data/*.dbx"/>
+                <exclude name="WEB-INF/data/*.lck"/>
+                <exclude name="**/*.log*"/>
+                <include name="WEB-INF/conf/*"/>
+                <include name="WEB-INF/services/*"/>
+                <include name="WEB-INF/entities/*"/>
+                <include name="WEB-INF/modules/*"/>
+                <include name="resources/*"/>
+                <include name="resources/styles/*"/>
+                <include name="*.html"/>
+                <include name="*.js"/>
+                <include name="*.css"/>
+                <include name="WEB-INF/log4j.xml"/>
+                <include name="WEB-INF/conf.xml"/>
+            </fileset>
+
+            <zipfileset dir="schema" prefix="WEB-INF/schema">
+                <include name="*.xsd"/>
+            </zipfileset>
+
+            <zipfileset dir="cancergrid/metadata-connector" prefix="WEB-INF/services">
+                <include name="*.aar"/>
+            </zipfileset>
+
+            <classes dir="cancergrid/metadata-connector">
+                <include name="config.xml"/>
+            </classes>
+
+            <classes dir="webapp/WEB-INF/classes">
+                <include name="*.properties"/>
+            </classes>
+
+            <zipfileset dir="cancergrid/der" prefix="WEB-INF/services">
+                <include name="*.aar"/>
+            </zipfileset>
+
+            <!-- Add additional information -->
+            <manifest>
+                <attribute name="Built-By" value="cancergrid"/>
+                <attribute name="Project-Name" value="cgMDR"/>
+                <attribute name="Project-Version" value="1.0.0"/>
+                <attribute name="Project-Build" value="${env.BUILD_TAG}"/>
+                <attribute name="SVN-Revision" value="${env.SVN_REVISION}"/>
+            </manifest>
+        </war>
+    </target>
+
+    <target name="prepare-cgmdr-content-with-dataset">
+        <!-- if="include.dataset"> -->
+
+        <!-- Clear existing content -->
+        <delete dir="webapp/WEB-INF/data">
+            <include name="*.dbx"/>
+            <include name="*.log"/>
+        </delete>
+
+        <!-- Restore cgMDR content -->
+        <xdb:restore xmlns:xdb="http://exist-db.org/ant" uri="xmldb:exist:///" initdb="true"
+            user="admin" password="cancergrid" dir="cancergrid/mdr-core/db/system"/>
+        <xdb:restore xmlns:xdb="http://exist-db.org/ant" uri="xmldb:exist:///" initdb="true"
+            user="admin" password="cancergrid" dir="cancergrid/mdr-core/db/mdr"/>
+        <xdb:restore xmlns:xdb="http://exist-db.org/ant" uri="xmldb:exist:///" initdb="true"
+            user="admin" password="cancergrid" dir="cancergrid/datasets/cancergrid-dataset/data"/>
+        <xdb:restore xmlns:xdb="http://exist-db.org/ant" uri="xmldb:exist:///" initdb="true"
+            user="admin" password="cancergrid" dir="selenium"/>
+        <xdb:restore xmlns:xdb="http://exist-db.org/ant" uri="xmldb:exist:///" initdb="true"
+            user="admin" password="cancergrid" dir="tools/XFormsFilter/resources/styles"/>
+        
+    </target>
+
+    <target name="prepare-cgmdr-content">
+        <!-- unless="include.dataset"> -->
+
+        <!-- Clear existing content -->
+        <delete dir="webapp/WEB-INF/data">
+            <include name="*.dbx"/>
+            <include name="*.log"/>
+        </delete>
+
+        <!-- Restore cgMDR content -->
+        <xdb:restore xmlns:xdb="http://exist-db.org/ant" uri="xmldb:exist:///" initdb="true"
+            user="admin" password="cancergrid" dir="cancergrid/mdr-core/db/system"/>
+        <xdb:restore xmlns:xdb="http://exist-db.org/ant" uri="xmldb:exist:///" initdb="true"
+            user="admin" password="cancergrid" dir="cancergrid/mdr-core/db/mdr"/>
+        <xdb:restore xmlns:xdb="http://exist-db.org/ant" uri="xmldb:exist:///" initdb="true"
+            user="admin" password="cancergrid" dir="cancergrid/datasets/default/data"/>
+        <xdb:restore xmlns:xdb="http://exist-db.org/ant" uri="xmldb:exist:///" initdb="true"
+            user="admin" password="cancergrid" dir="selenium"/>
+        <xdb:restore xmlns:xdb="http://exist-db.org/ant" uri="xmldb:exist:///" initdb="true"
+            user="admin" password="cancergrid" dir="tools/XFormsFilter/resources/styles"/>
+        
+    </target>
+    
+    <target name="copy-cgmdr-content">
+        <copy todir="cancergrid/dbx/default">
+            <fileset dir="webapp/WEB-INF/data">
+                <include name="*.dbx"/>
+            </fileset>
+        </copy>
+    </target>
+    
+    <target name="copy-cgmdr-content-with-dataset">
+        <copy todir="cancergrid/dbx/with-dataset">
+            <fileset dir="webapp/WEB-INF/data">
+                <include name="*.dbx"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="pack-excel-installer" depends="init-dist">
+        <tstamp/>
+        <property name="inst-zip" value="${dist}/QSM-Excel2007Addin-1.0.0-rev${env.SVN_REVISION}-build${env.BUILD_NUMBER}.zip"/>
+        <zip destfile="${inst-zip}" basedir="cancergrid/addins/Excel2007AddIn"/>
+        <xslt in="cancergrid/packages.xml" out="cancergrid/packages-copy.xml" style="cancergrid/update-packages.xsl"  extension="xml" force="yes">
+            <classpath>
+                <fileset dir="lib/user">
+                    <include name="saxon*.jar"/>
+                </fileset>
+            </classpath>
+            <param name="id" expression="excel-addin"/>
+            <param name="file" expression="${inst-zip}"/>
+        </xslt>
+        <move file="cancergrid/packages-copy.xml" tofile="cancergrid/packages.xml" overwrite="true"/>
+    </target>
+
+    <target name="pack-ea-installer" depends="init-dist">
+        <tstamp/>
+        <property name="inst-zip" value="${dist}/QSM-EAAddin-1.0.0-rev${env.SVN_REVISION}-build${env.BUILD_NUMBER}.zip"/>
+        <zip destfile="${inst-zip}" basedir="cancergrid/addins/EnterpriseArchitect7AddIn"/>
+        <xslt in="cancergrid/packages.xml" out="cancergrid/packages-copy.xml" style="cancergrid/update-packages.xsl"  extension="xml" force="yes">
+            <classpath>
+                <fileset dir="lib/user">
+                    <include name="saxon*.jar"/>
+                </fileset>
+            </classpath>
+            <param name="id" expression="ea-addin"/>
+            <param name="file" expression="${inst-zip}"/>
+        </xslt>
+        <move file="cancergrid/packages-copy.xml" tofile="cancergrid/packages.xml" overwrite="true"/>
+    </target>
+    
+    <target name="pack-metadata-connector" depends="init-dist">
+        <tstamp/>
+        <property name="inst-zip" value="${dist}/QueryServiceManager-1.0.2-rev${env.SVN_REVISION}-build${env.BUILD_NUMBER}.zip"/>
+        <zip destfile="${inst-zip}" basedir="cancergrid/metadata-connector">
+            <include name="*.aar"/>
+            <include name="readme.txt"/>
+            <include name="config.xml"/>
+        </zip>
+        <xslt in="cancergrid/packages.xml" out="cancergrid/packages-copy.xml" style="cancergrid/update-packages.xsl"  extension="xml" force="yes">
+            <classpath>
+                <fileset dir="lib/user">
+                    <include name="saxon*.jar"/>
+                </fileset>
+            </classpath>
+            <param name="id" expression="qsm"/>
+            <param name="file" expression="${inst-zip}"/>
+        </xslt>
+        <move file="cancergrid/packages-copy.xml" tofile="cancergrid/packages.xml" overwrite="true"/>
+    </target>
+
+    <target name="init-dist">
+       <mkdir dir="dist"/>
+    </target>
+</project>

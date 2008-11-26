@@ -1,0 +1,176 @@
+<project basedir="." default="jar" name="modules">
+
+    <property name="src" value="./src"/>
+    <property name="classes" value="./classes"/>
+	<property name="top.dir" value="../.."/>
+	
+    <property name="build.compiler" value="modern"/>
+
+	<property file="${top.dir}/build.properties"/>
+	
+    <property file="local.build.properties"/>
+    <property file="build.properties"/>
+
+    <condition property="include.module.simpleql.config">
+        <istrue value="${include.module.simpleql}"/>
+    </condition>
+
+    <condition property="include.module.xmldiff.config">
+        <istrue value="${include.module.xmldiff}"/>
+    </condition>
+
+    <condition property="include.module.image.config">
+        <istrue value="${include.module.image}"/>
+    </condition>
+
+    <condition property="include.module.mail.config">
+        <istrue value="${include.module.mail}"/>
+    </condition>
+
+    <condition property="include.module.httpclient.config">
+        <istrue value="${include.module.httpclient}"/>
+    </condition>
+
+    <condition property="include.module.xslfo.config">
+        <istrue value="${include.module.xslfo}"/>
+    </condition>
+
+    <condition property="include.module.svn.config">
+        <istrue value="${include.module.svn}"/>
+    </condition>
+
+    <!-- Special targets for XSLFO module -->
+    <condition property="libs.available.xslfo">
+		<and>
+			<available file="${top.dir}/${lib.user}/fop.jar"/>
+			<available file="${top.dir}/${lib.user}/batik-all-1.6.jar"/>
+			<available file="${top.dir}/${lib.user}/xmlgraphics-commons-1.2.jar"/>
+			<available file="${top.dir}/${lib.user}/avalon-framework-api-4.2.0.jar"/>
+			<available file="${top.dir}/${lib.user}/avalon-framework-impl-4.2.0.jar"/>
+	    </and>
+	</condition>
+	
+	<target name="prepare-libs-xslfo" unless="libs.available.xslfo" if="include.module.xslfo.config">
+        <echo message="Load: ${include.module.xslfo}"/>
+        <echo message="------------------------------------------------------"/>
+	    <echo message="Downloading libraries required by the xsl-fo module"/>
+	    <echo message="------------------------------------------------------"/>
+
+		<!-- Apache FOP -->
+		<get src="${include.module.xslfo.url}" dest="fop-0.94-bin-jdk1.4.zip" verbose="true" usetimestamp="true" />
+		<unzip src="fop-0.94-bin-jdk1.4.zip" dest="${top.dir}/${lib.user}">
+			<patternset>
+				<include name="fop-0.94/build/fop.jar"/>
+				<include name="fop-0.94/lib/batik-all-1.6.jar"/>
+				<include name="fop-0.94/lib/xmlgraphics-commons-1.2.jar"/>
+			</patternset>
+			<mapper type="flatten"/>
+		</unzip>
+		<delete file="fop-0.94-bin-jdk1.4.zip"/>
+		
+		<!-- Avalon -->
+		<get src="${include.module.xslfo.avalon.url}" dest="avalon-framework-4.2.0.zip" verbose="true" usetimestamp="true" />
+		<unzip src="avalon-framework-4.2.0.zip" dest="${top.dir}/${lib.user}">
+			<patternset>
+				<include name="avalon-framework/jars/avalon-framework-api-4.2.0.jar"/>
+				<include name="avalon-framework/jars/avalon-framework-impl-4.2.0.jar"/>
+			</patternset>
+			<mapper type="flatten"/>
+		</unzip>
+		<delete file="avalon-framework-4.2.0.zip"/>
+	</target>
+    
+    <!-- Special targets for simpleql module -->
+    <uptodate property="parser.uptodate"
+		srcfile="${src}/org/exist/xquery/modules/simpleql/SimpleQLParser.g"
+		targetfile="${src}/org/exist/xquery/modules/simpleql/SimpleQLParser.java"/>
+
+	<target name="prepare-simpleql" unless="parser.uptodate" if="include.module.simpleql.config">
+        <echo message="Running ANTLR to generate XQuery parser"/>
+		<antlr target="${src}/org/exist/xquery/modules/simpleql/SimpleQLParser.g"
+                outputdirectory="${src}/org/exist/xquery/modules/simpleql"
+                traceparser="${antlr.traceParser}"
+                tracelexer="${antlr.traceLexer}">
+            <classpath>
+                <path refid="classpath.core"/>
+            </classpath>
+        </antlr>
+	</target>
+    
+    <!-- Special targets for svn module -->
+    <property name="svn.svnkit.jar" value="${top.dir}/${lib.user}/svnkit.jar"/>
+    <available file="${svn.svnkit.jar}" property="svn-present"/>
+    
+    <target name="prepare-svn" if="include.module.svn.config" unless="svn-present">
+        <get src="http://repo1.maven.org/maven2/com/svnkit/svnkit/1.1.0/svnkit-1.1.0.jar"
+      		dest="${svn.svnkit.jar}" verbose="true"/>
+    </target>
+    
+    <!-- Special targets end -->
+    
+    <path id="classpath.core">
+        <fileset dir="${top.dir}/${lib.core}">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${top.dir}/${lib.optional}">
+            <include name="*.jar"/>
+        </fileset>
+		<fileset dir="${top.dir}/${lib.endorsed}">
+			<include name="*.jar"/>
+		</fileset>
+		<fileset dir="${top.dir}/${lib.user}">
+			<include name="*.jar"/>
+		</fileset>
+        <fileset dir="${top.dir}/tools/ant/lib">
+            <include name="*.jar"/>
+        </fileset>
+        <pathelement path="${top.dir}/exist.jar"/>
+		<pathelement path="${top.dir}/exist-optional.jar"/>
+    	<pathelement path="${top.dir}/start.jar"/>
+		<pathelement path="${java.class.path}"/>
+    </path>
+		
+    <target name="prepare" depends="prepare-svn,prepare-libs-xslfo,prepare-simpleql">
+		<mkdir dir="${classes}"/>
+    </target>
+	
+	<target name="compile" depends="prepare">
+		<echo message="---------------------------"/>
+        <echo message="Compiling extension modules"/>
+        <echo message="---------------------------"/>
+		<javac debug="${build.debug}" deprecation="${build.deprecation}" 
+			destdir="${classes}" encoding="UTF-8"
+			optimize="${build.optimize}" srcdir="${src}" 
+        	source="1.5">
+			<!-- jmv target="1.4" -->
+            <classpath>
+            	<path refid="classpath.core"/>
+            </classpath>
+
+            <exclude name="org/exist/xquery/modules/xslfo/**" unless="include.module.xslfo.config"/>
+            <exclude name="org/exist/xquery/modules/simpleql/**" unless="include.module.simpleql.config"/>
+            <exclude name="org/exist/xquery/modules/httpclient/**" unless="include.module.httpclient.config"/>
+            <exclude name="org/exist/xquery/modules/xmldiff/**" unless="include.module.xmldiff.config"/>
+            <exclude name="org/exist/xquery/modules/image/**" unless="include.module.image.config"/>
+            <exclude name="org/exist/xquery/modules/mail/**" unless="include.module.mail.config"/>
+            <exclude name="org/exist/xquery/modules/svn/**" unless="include.module.svn.config"/>
+        </javac>
+	</target>
+	
+	<target name="jar" depends="compile">
+		<echo message="Creating exist-modules.jar ..."/>
+        <jar basedir="${classes}" jarfile="${top.dir}/${lib.extensions}/exist-modules.jar">  
+	        <manifest>
+                <attribute name="Project-Name" value="${project.name}"/>
+                <attribute name="Project-Version" value="${project.version}"/>
+                <attribute name="Project-Build" value="${DSTAMP}"/>
+                <attribute name="SVN-Revision" value="${svn.revision}"/>
+            </manifest>
+		</jar>
+	</target>
+
+	<target name="clean">
+		<delete dir="${classes}"/>
+		<delete file="${top.dir}/${lib.extensions}/exist-modules.jar" failonerror="false"/>
+	</target>
+</project>

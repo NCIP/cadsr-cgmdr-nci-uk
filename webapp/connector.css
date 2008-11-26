@@ -1,0 +1,96 @@
+body{
+    border: 1px solid #000099;
+    padding: 5px;
+    font-family: Helvetica;
+    width: 310px;
+    margin: 10px auto;
+    -webkit-text-size-adjust: 80%;
+}
+
+#searchTerm{
+    font-size: 15px;
+    width: 65%;
+}
+
+#btnSearch{
+    font-size: 15px;
+    width: 33%;
+}
+
+#resource{
+    font-size: 15px;
+    width: 100%;
+}
+
+#status{
+    font-size: small;
+    font-weight: bold;
+}
+
+#searchResult{
+    -webkit-transition-property: display;
+    -webkit-transition-duration: 1s;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.resultItem{
+    margin: 0;
+    border-top: 1px solid #000099;
+    
+}
+
+.resultItem{
+    padding: 10px;
+}
+
+.preferred{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.id{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.definition{
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+
+th{
+    text-align: left;
+}
+
+table, tr{
+    width: 100%;
+}
+
+table.values{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+td{
+    font-size: inherit;
+}
+
+.code, .dataType{
+    vertical-align: top;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    padding: 5px;
+    width: 100px;
+    
+}
+
+.meaning, .units{
+    vertical-align: top;
+    
+    border-top: 1px solid #cccccc;
+    padding: 5px;
+    
+}

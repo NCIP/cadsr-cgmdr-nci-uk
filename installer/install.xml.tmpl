@@ -1,0 +1,442 @@
+<installation version="1.0">
+    <info>
+        <appname>cancergrid metadata registry (cgMDR)</appname>
+        <appversion>1.0.0</appversion>
+        <appsubpath>cancergrid/mdr</appsubpath>
+        <url>http://cancergrid.org</url>
+    </info>
+    <guiprefs height="450" resizable="yes" width="640">
+        <laf name="looks">
+            <os family="unix"/>
+        </laf>
+        <!--modifier key="useButtonIcons" value="no"/>
+        <modifier key="useLabelIcons" value="no"/>
+        <modifier key="labelGap" value="2"/-->
+        <!--modifier key="layoutAnchor" value="NORTHWEST"/-->
+        <!--modifier key="useHeadingPanel" value="yes"/>
+        <modifier key="headingImageOnLeft" value="yes"/>
+        <modifier key="headingLineCount" value="1"/>
+        <modifier key="headingFontSize" value="1.5"/>
+        <modifier key="headingBackgroundColor" value="0x00ffffff"/-->
+        <modifier key="headingPanelCounter" value="progressbar"/>
+        <modifier key="headingPanelCounterPos" value="inNavigationPanel"/>
+    </guiprefs>
+    <locale>
+        <langpack iso3="eng"/>
+    </locale>
+    <resources>
+        <!--res id="Installer.image" src="installer/ilogo.jpg"/-->
+        <res id="Installer.image" src="installer/cancergrid_logo.png"/>
+        <res id="shortcutSpec.xml" src="installer/shortcutSpec.xml"/>
+        <res id="Unix_shortcutSpec.xml" src="installer/UnixShortcutSpec.xml"/>
+        <res id="HTMLInfoPanel.info" src="installer/readme.html"/>
+        <!--res id="userInputSpec.xml" src="installer/userInput.xml"/-->
+        <res id="ProcessPanel.Spec.xml" src="installer/jobs.xml"/>
+        <res id="LicencePanel.licence" src="installer/cancergrid-license.txt"/>
+    </resources>
+
+    <jar src="tools/izpack/clinstaller.jar" stage="install"/>
+    <!--jar src="lib/core/excalibur-cli-1.0.jar" stage="install"/-->
+
+    <native type="izpack" name="ShellLink.dll"/>
+    <variables>
+        <variable name="JETTY_HOME" value="$EXIST_HOME/tools/jetty"/>
+        <variable name="JDKPathPanel.skipIfValid" value="yes"/>
+        <variable name="JDKPathPanel.minVersion" value="1.5"/>
+        <variable name="adminPasswd" value="cancergrid"/>
+        <variable name="InstallationGroupPanel.description.Core" value="Core installation"/>
+        <variable name="InstallationGroupPanel.description.Core-with-Dataset" value="Core installation with cancergrid dataset"/>
+        <variable name="InstallationGroupPanel.description.Everything" value="Core installation, cancergrid dataset, and source code"/>
+    </variables>
+    
+    <panels>
+        <panel classname="HelloPanel"/>
+        <panel classname="LicencePanel"/>
+        <panel classname="JDKPathPanel"/>
+        <panel classname="TargetPanel"/>
+        <panel classname="InstallationGroupPanel"/>
+        <panel classname="TreePacksPanel"/>
+        <panel classname="SummaryPanel"/>
+        <panel classname="InstallPanel"/>
+        <panel classname="ShortcutPanel"/>
+        <!--panel classname="UserInputPanel"/-->
+        <panel classname="ProcessPanel"/>
+        <panel classname="HTMLInfoPanel"/>
+        <panel classname="FinishPanel"/>
+    </panels>
+    
+    <packs>
+        <pack name="eXist" required="no">
+            <description>eXist packages</description>
+        </pack>
+        <pack name="eXist Core" required="yes" parent="eXist" installGroups="Core,Core-with-Dataset,Everything">
+            <description>Everything needed for the database core, including Jetty</description>
+            <fileset targetdir="$INSTALL_PATH" dir=".">
+                <include name="client.properties.tmpl"/>
+                <include name="client.properties"/>
+                <include name="backup.properties"/>
+                <include name="build.properties"/>
+                <include name="server.xml.tmpl"/>
+                <include name="server.xml"/>
+                <include name="conf.xml"/>
+                <include name="conf.xml.tmpl"/>
+                <include name="descriptor.xml.tmpl"/>
+                <include name="descriptor.xml"/>
+                <include name="build.xml"/>
+                <include name="log4j.xml"/>
+                <include name="log4j.dtd"/>
+                <include name="LICENSE"/>
+                <include name="README"/>
+                <include name="VERSION.txt"/>
+                <include name="exist.jar"/>
+                <include name="exist-optional.jar"/>
+                <include name="exist-modules.jar"/>
+                <include name="start.jar"/>
+                <include name="examples.jar"/>
+                <include name="mime-types.xml.tmpl"/>
+                <include name="mime-types.xml"/>
+                <include name="atom-example.xq"/>
+                <include name="atom-services.xml"/>
+                <include name="lib/"/>
+                <include name="samples/**"/>
+                <include name="schema/"/>
+                <include name="thirdparty/"/>
+                <!--include name="backup/"/-->
+                <exclude name="**/CVS/"/>
+                <exclude name="**/*~"/>
+                <exclude name="**/*.log*"/>
+                <exclude name="**/.*"/>
+                <exclude name="lib/endorsed/xalan-*.jar"/>
+                <exclude name="lib/cocoon/"/>
+                <exclude name="lib/optional/axis-ant.jar"/>
+                <exclude name="lib/optional/axis-schema.jar"/>
+                <exclude name="lib/optional/commons-codec-1.3.jar"/>
+                <exclude name="lib/optional/commons-discovery-0.4.jar"/>
+                <exclude name="lib/optional/commons-fileupload-1.1.1.jar"/>
+                <exclude name="lib/optional/commons-httpclient-3.0.1.jar"/>
+                <exclude name="lib/optional/commons-io-1.3.jar"/>
+                <exclude name="lib/optional/saaj.jar"/>
+                <exclude name="lib/optional/wsdl4j-1.5.1.jar"/>
+            </fileset>
+            <fileset targetdir="$INSTALL_PATH/build/scripts" dir="build/scripts">
+                <exclude name="**/.*"/>
+                <exclude name="**/*~"/>
+            </fileset>
+            <fileset targetdir="$INSTALL_PATH/tools" dir="tools">
+                <include name="**/*.jar"/>
+                <include name="wrapper/**"/>
+                <include name="requestlog/**"/>
+                <include name="rulesets/**"/>
+                <include name="ant/**"/>
+                <include name="XFormsFilter/**"/>
+                <exclude name="XFormsFilter/*.tar.gz"/>
+                <exclude name="ant/lib/javasvn*.jar"/>
+                <include name="jetty/**"/>
+                <exclude name="jetty/logs/*"/>
+                <exclude name="ircbot/**"/>
+                <exclude name="ant/lib/svnkit*.jar"/>
+                <include name="jmx/**"/>
+                <exclude name="jmx/classes/**"/>
+            </fileset>
+            <fileset targetdir="$INSTALL_PATH/webapp" dir="webapp">
+                <exclude name="**/*.dbx"/>
+                <exclude name="**/*.log*"/>
+                <exclude name="api/**"/>
+                <!--exclude name="xqts/**"/-->
+                <exclude name="**/CVS/"/>
+                <exclude name="**/*~"/>
+            </fileset>
+            <fileset targetdir="$INSTALL_PATH/webapp/WEB-INF" dir="webapp/WEB-INF">
+                <include name="data/"/>
+                <include name="logs/"/>
+                <exclude name="**/*.dbx"/>
+                <exclude name="**/CVS/"/>
+                <exclude name="**/*.log"/>
+            </fileset>
+            <file src="installer/index.html" targetdir="$INSTALL_PATH"/>
+            <file src="installer/icon.bmp" targetdir="$INSTALL_PATH"/>
+            <file src="installer/install.xml.tmpl" targetdir="$INSTALL_PATH/installer"/>
+            <file src="tools/izpack/build.xml" targetdir="$INSTALL_PATH/tools/izpack"/>
+
+            <fileset dir="installer/scripts" targetdir="$INSTALL_PATH/bin">
+                <include name="setup.sh"/>
+                <include name="setup.bat"/>
+            </fileset>
+            <fileset dir="installer/scripts" targetdir="$INSTALL_PATH/bin">
+                <include name="client.sh"/>
+                <include name="startup.sh"/>
+                <include name="server.sh"/>
+                <include name="shutdown.sh"/>
+                <include name="backup.sh"/>
+                <include name="check.sh"/>
+                
+                <include name="restore.sh"/>
+                
+                <include name="client.bat"/>
+                <include name="startup.bat"/>
+                <include name="server.bat"/>
+                <include name="shutdown.bat"/>
+                <include name="backup.bat"/>
+                <include name="check.bat"/>
+                
+                <include name="restore.bat"/>
+            </fileset>
+            <fileset dir="bin/functions.d" targetdir="$INSTALL_PATH/bin/functions.d">
+                <include name="*.sh"/>
+            </fileset>
+            <fileset dir="bin/batch.d" targetdir="$INSTALL_PATH/bin/batch.d">
+                <include name="*.bat"/>
+            </fileset>
+            <file src="installer/scripts/build.sh" targetdir="$INSTALL_PATH"/>
+            <file src="installer/scripts/build.bat" targetdir="$INSTALL_PATH"/>
+            <parsable type="shell" targetfile="$INSTALL_PATH/bin/client.sh"/>
+            <parsable type="shell" targetfile="$INSTALL_PATH/bin/startup.sh"/>
+            <parsable type="shell" targetfile="$INSTALL_PATH/bin/server.sh"/>
+            <parsable type="shell" targetfile="$INSTALL_PATH/bin/shutdown.sh"/>
+            <parsable type="shell" targetfile="$INSTALL_PATH/bin/backup.sh"/>
+            <parsable type="shell" targetfile="$INSTALL_PATH/build.sh"/>
+            <parsable type="shell" targetfile="$INSTALL_PATH/bin/setup.sh"/>
+            <parsable type="shell" targetfile="$INSTALL_PATH/bin/check.sh"/>
+            
+            <parsable type="shell" targetfile="$INSTALL_PATH/bin/restore.sh"/>
+            
+            <parsable targetfile="$INSTALL_PATH/bin/client.bat"/>
+            <parsable targetfile="$INSTALL_PATH/bin/startup.bat"/>
+            <parsable targetfile="$INSTALL_PATH/bin/server.bat"/>
+            <parsable targetfile="$INSTALL_PATH/bin/shutdown.bat"/>
+            <parsable targetfile="$INSTALL_PATH/bin/backup.bat"/>
+            <parsable targetfile="$INSTALL_PATH/bin/setup.bat"/>
+            <parsable targetfile="$INSTALL_PATH/build.bat"/>
+            <parsable targetfile="$INSTALL_PATH/bin/check.bat"/>
+            
+            <parsable targetfile="$INSTALL_PATH/bin/restore.bat"/>
+            
+            <parsable targetfile="$INSTALL_PATH/webapp/WEB-INF/web.xml" type="xml"/>
+            <parsable targetfile="$INSTALL_PATH/build/scripts/jarsigner.xml" type="xml"/>
+            
+            <singlefile src="tools/wrapper/conf/wrapper.conf.install"
+                target="$INSTALL_PATH/tools/wrapper/conf/wrapper.conf" override="true"/>
+            <parsable targetfile="$INSTALL_PATH/tools/wrapper/conf/wrapper.conf"/>
+            <executable targetfile="$INSTALL_PATH/bin/client.sh" stage="never" os="unix"/>
+            <executable targetfile="$INSTALL_PATH/bin/setup.sh" stage="never" os="unix"/>
+            <executable targetfile="$INSTALL_PATH/bin/startup.sh" stage="never" os="unix"/>
+            <executable targetfile="$INSTALL_PATH/bin/server.sh" stage="never" os="unix"/>
+            <executable targetfile="$INSTALL_PATH/bin/shutdown.sh" stage="never" os="unix"/>
+            <executable targetfile="$INSTALL_PATH/bin/backup.sh" stage="never" os="unix"/>
+            <executable targetfile="$INSTALL_PATH/bin/check.sh" stage="never" os="unix"/>
+            <executable targetfile="$INSTALL_PATH/bin/functions.d/eXist-settings.sh" stage="never"
+                os="unix"/>
+            <executable targetfile="$INSTALL_PATH/bin/functions.d/getopt-settings.sh" stage="never"
+                os="unix"/>
+            <executable targetfile="$INSTALL_PATH/bin/functions.d/jmx-settings.sh" stage="never"
+                os="unix"/>
+            <executable targetfile="$INSTALL_PATH/build.sh" stage="never" os="unix"/>
+            <executable targetfile="$INSTALL_PATH/tools/wrapper/bin/wrapper" stage="never" os="unix"/>
+            <executable targetfile="$INSTALL_PATH/tools/wrapper/bin/exist.sh" stage="never"
+            os="unix"/>
+            
+            <executable targetfile="$INSTALL_PATH/bin/restore.sh" stage="never" os="unix"/>
+        </pack>
+        <pack name="eXist sources" required="no" parent="eXist" preselected="no" installGroups="Everything">
+            <description>Java source files</description>
+            <fileset targetdir="$INSTALL_PATH/src" dir="src">
+                <exclude name="**/*~"/>
+                <exclude name="**/.*"/>
+                <exclude name="**/CVS/"/>
+                <exclude name=".*"/>
+            </fileset>
+            <fileset targetdir="$INSTALL_PATH/extensions" dir="extensions">
+                <exclude name="**/*~"/>
+                <exclude name="**/.*"/>
+                <exclude name="**/CVS/"/>
+                <exclude name=".*"/>
+                <exclude name="**/classes/"/>
+                <exclude name="**/javadoc/"/>
+                <!-- preferred to have explicit one explicit include but .... -->
+                <exclude name="indexes/**/lib/g*.jar"/>
+                <exclude name="indexes/**/lib/j*.jar"/>
+                <exclude name="indexes/**/lib/v*.jar"/>
+            </fileset>
+            <fileset targetdir="$INSTALL_PATH/test/src" dir="test/src">
+                <exclude name="**/*~"/>
+                <exclude name="**/.*"/>
+                <exclude name="**/CVS/"/>
+                <exclude name=".*"/>
+            </fileset>
+            <fileset targetdir="$INSTALL_PATH/tools/izpack/src" dir="tools/izpack/src">
+                <exclude name="**/*~"/>
+                <exclude name="**/.*"/>
+                <exclude name="**/CVS/"/>
+                <exclude name=".*"/>
+            </fileset>
+            <fileset targetdir="$INSTALL_PATH/installer" dir="installer">
+                <exclude name="**/hs_err_pid*.log"/>
+                <exclude name="**/*.jar"/>
+                <exclude name="**/*.exe"/>
+                <exclude name="**/*~"/>
+                <exclude name="**/.*"/>
+                <exclude name="**/CVS/"/>
+                <exclude name=".*"/>
+            </fileset>
+            <file src="extensions/modules/build.xml" targetdir="$INSTALL_PATH/extensions/modules"/>
+        </pack>
+        <pack name="eXist javadoc" required="no" parent="eXist" preselected="no"  installGroups="Everything">
+            <description>Generated Javadocs</description>
+            <fileset targetdir="$INSTALL_PATH/webapp/api" dir="webapp/api">
+                <exclude name="**/CVS/"/>
+            </fileset>
+        </pack>
+        <pack name="cancergrid packages" required="no">
+        	<description>cancergrid packages</description>
+	  </pack>
+        <pack name="mdr-core" required="no" parent="cancergrid packages" installGroups="Core,Core-with-Dataset,Everything">
+            <description>cgMDR Core</description>
+            <fileset targetdir="$INSTALL_PATH/cancergrid/mdr-core" dir="cancergrid/mdr-core">
+                <exclude name=".*"/>
+                <exclude name="**/.*"/>
+                <exclude name="**/*~"/>
+            </fileset>
+            <fileset targetdir="$INSTALL_PATH/cancergrid/mdr-core/db/mdr/data" dir="cancergrid/datasets/template">
+                <exclude name=".*"/>
+                <exclude name="**/.*"/>
+                <exclude name="**/*~"/>
+            </fileset>
+            <parsable targetfile="$INSTALL_PATH/cancergrid/mdr-core/db/mdr/connector/config.xml" type="xml"/>
+        </pack>
+        <!--pack name="selenium-test-framework" required="no" preselected="no" installGroups="Core,Core-with-Dataset,Everything">
+            <depends packname="mdr-core"/>
+            <description>Selenium Core Test Framework</description>
+            <fileset dir="selenium" targetdir="$INSTALL_PATH/selenium">
+                <exclude name=".*"/>
+                <exclude name="**/.*"/>
+                <exclude name="**/*~"/>
+            </fileset>
+        </pack-->
+        
+        <!--pack name="mdr-datasets" required="no" parent="cancergrid">
+            <description>Datasets for cgMDR</description>
+        </pack-->
+        <pack name="default-dataset" required="yes" parent="cancergrid packages" preselected="yes" installGroups="Core">
+            <depends packname="mdr-core"/>
+            <description>Default dataset</description>
+            <!--fileset targetdir="$INSTALL_PATH/cancergrid/datasets/default" dir="cancergrid/datasets/default">
+                <exclude name=".*"/>
+                <exclude name="**/.*"/>
+                <exclude name="**/*~"/>
+            </fileset-->
+            <fileset targetdir="$INSTALL_PATH/webapp/WEB-INF/data" dir="cancergrid/dbx/default">
+                <exclude name=".*"/>
+                <exclude name="**/.*"/>
+                <exclude name="**/*~"/>
+            </fileset>
+        </pack>
+        <!--pack name="nhs-minimum-cancer-dataset" required="no" parent="mdr-datasets" preselected="no" installGroups="core-with-dataset,everything">
+            <depends packname="mdr-core"/>
+            <description>NHS minimum cancer dataset</description>
+            <fileset targetdir="$INSTALL_PATH/cancergrid/datasets/minimum-cancer-dataset" dir="cancergrid/datasets/minimum-cancer-dataset">
+                <exclude name=".*"/>
+                <exclude name="**/.*"/>
+                <exclude name="**/*~"/>
+            </fileset>
+        </pack>
+        <pack name="metabric-dataset" required="no" parent="mdr-datasets" preselected="no" installGroups="core-with-dataset, everything">
+            <depends packname="mdr-core"/>
+            <description>Metabric dataset</description>
+            <fileset targetdir="$INSTALL_PATH/cancergrid/datasets/metabric-dataset" dir="cancergrid/datasets/metabric-dataset">
+                <exclude name=".*"/>
+                <exclude name="**/.*"/>
+                <exclude name="**/*~"/>
+            </fileset>
+        </pack-->
+        <pack name="cancergrid-dataset" required="yes" parent="cancergrid packages" preselected="yes" installGroups="Core-with-Dataset,Everything">
+            <depends packname="mdr-core"/>
+            <description>cancergrid dataset</description>
+            <!--fileset targetdir="$INSTALL_PATH/cancergrid/datasets/cancergrid-dataset" dir="cancergrid/datasets/cancergrid-dataset">
+                <exclude name=".*"/>
+                <exclude name="**/.*"/>
+                <exclude name="**/*~"/>
+            </fileset-->
+            <fileset targetdir="$INSTALL_PATH/webapp/WEB-INF/data" dir="cancergrid/dbx/with-dataset">
+                <exclude name=".*"/>
+                <exclude name="**/.*"/>
+                <exclude name="**/*~"/>
+            </fileset>
+        </pack>        
+        
+        <pack name="SOAP Services for cgMDR" required="no" parent="cancergrid packages" preselected="no">
+            <description>SOAP interface for cgMDR</description>
+        </pack>
+        
+        <pack name="metadata-connector" required="no" parent="SOAP Services for cgMDR" installGroups="Core,Core-with-Dataset,Everything">
+            <description>Metadata Connector 1.0.2</description>
+            <file src="cancergrid/metadata-connector/metadata-connector-1.0.2.aar" targetdir="$INSTALL_PATH/webapp/WEB-INF/services"/>
+            <file src="cancergrid/metadata-connector/config.xml" targetdir="$INSTALL_PATH/webapp/WEB-INF/classes"/>
+            <parsable targetfile="$INSTALL_PATH/webapp/WEB-INF/classes/config.xml" type="xml"/>
+        </pack>
+        <pack name="Metadata Connector Source" required="no" parent="SOAP Services for cgMDR" preselected="no" installGroups="Everything">
+            <description>Metadata Connector 1.0.2 Source</description>
+            <fileset targetdir="$INSTALL_PATH/cancergrid/metadata-connector" dir="cancergrid/metadata-connector">
+                <exclude name=".*"/>
+                <exclude name="**/.*"/>
+                <exclude name="**/*~"/>
+                <exclude name="*.aar"/>
+            </fileset>
+            <parsable targetfile="$INSTALL_PATH/cancergrid/metadata-connector/config.xml" type="xml"/>
+        </pack>
+        
+        <pack name="cgMDR DER Service" required="no" parent="SOAP Services for cgMDR" installGroups="Core,Core-with-Dataset,Everything">
+            <description>SOAP interface for submitting new data element to cgMDR</description>
+            <file src="cancergrid/der/cgmdr-der-1.0.0.aar" targetdir="$INSTALL_PATH/webapp/WEB-INF/services"/>
+        </pack>
+        <pack name="cgMDR DER Service Source" required="no" parent="SOAP Services for cgMDR" preselected="no" installGroups="Everything">
+            <description>cgMDR DER Service Source</description>
+            <fileset targetdir="$INSTALL_PATH/cancergrid/der" dir="cancergrid/der">
+                <exclude name=".*"/>
+                <exclude name="**/.*"/>
+                <exclude name="**/*~"/>
+                <exclude name="*.aar"/>
+            </fileset>
+        </pack>
+        
+        <pack name="Query Service Addins" required="no" parent="cancergrid packages" preselected="no" os="windows">
+            <description>Query Service Addins</description>
+        </pack>
+        
+        <pack name="Enterprise Architect Query Service Addin" required="no" parent="Query Service Addins" preselected="no" installGroups="Core,Core-with-Dataset,Everything">
+            <depends packname="mdr-core"/>
+            <depends packname="metadata-connector"/>
+            <depends packname="cgMDR DER Service"/>
+            <description>Enterprise Architect Query Service Addin. This will copy the windows installer into "INSTALL_PATH\cancergrid\addins\EnterpriseArchitect7AddIn". Please execute the setup.exe file to install the add-in.</description>
+            <fileset targetdir="$INSTALL_PATH/cancergrid/addins/EnterpriseArchitect7AddIn" dir="cancergrid/addins/EnterpriseArchitect7AddIn">
+                <exclude name=".*"/>
+                <exclude name="**/.*"/>
+                <exclude name="**/*~"/>
+                <exclude name="**/*.zip"/>
+            </fileset>
+        </pack>
+        <pack name="Microsoft Excel 2007 Query Service Addin" required="no" parent="Query Service Addins" preselected="no" installGroups="Core,Core-with-Dataset,Everything">
+            <depends packname="mdr-core"/>
+            <depends packname="metadata-connector"/>
+            <depends packname="cgMDR DER Service"/>
+            <description>Microsoft Excel 2007 Query Service Addin. This will copy the windows installer into "INSTALL_PATH\cancergrid\addins\Excel2007AddIn". Please execute the setup.exe file to install the add-in.</description>
+            <fileset targetdir="$INSTALL_PATH/cancergrid/addins/Excel2007AddIn" dir="cancergrid/addins/Excel2007AddIn">
+                <exclude name=".*"/>
+                <exclude name="**/.*"/>
+                <exclude name="**/*~"/>
+                <exclude name="**/*.zip"/>
+            </fileset>
+        </pack>
+        <pack name="Query Service Addins Source" required="no" parent="Query Service Addins" preselected="no" installGroups="Everything">
+            <description>Query Service Addin Source (includes source project for Enterprise Architect and Excel addins)</description>
+            <fileset targetdir="$INSTALL_PATH/cancergrid/addins/QueryServiceAddIn" dir="cancergrid/addins/QueryServiceAddIn">
+                <exclude name=".*"/>
+                <exclude name="**/.*"/>
+                <exclude name="**/*~"/>
+            </fileset>
+        </pack>
+    </packs>
+    
+    <native type="3rdparty" name="COIOSHelper.dll" stage="both">
+        <os family="windows"/>
+    </native>
+</installation>

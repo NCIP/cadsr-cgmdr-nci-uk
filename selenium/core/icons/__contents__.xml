@@ -1,0 +1,10 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/mdr/selenium/core/icons" owner="admin" group="dba" mode="755" created="2008-06-25T14:57:36+01:00" version="1">
+    <resource type="BinaryResource" name="all.png" owner="admin" group="dba" mode="755" created="2008-06-25T14:57:37+01:00" modified="2008-06-25T14:57:37+01:00" filename="all.png" mimetype="image/png"/>
+    <resource type="BinaryResource" name="continue.png" owner="admin" group="dba" mode="755" created="2008-06-25T14:57:37+01:00" modified="2008-06-25T14:57:37+01:00" filename="continue.png" mimetype="image/png"/>
+    <resource type="BinaryResource" name="continue_disabled.png" owner="admin" group="dba" mode="755" created="2008-06-25T14:57:37+01:00" modified="2008-06-25T14:57:37+01:00" filename="continue_disabled.png" mimetype="image/png"/>
+    <resource type="BinaryResource" name="pause.png" owner="admin" group="dba" mode="755" created="2008-06-25T14:57:37+01:00" modified="2008-06-25T14:57:37+01:00" filename="pause.png" mimetype="image/png"/>
+    <resource type="BinaryResource" name="pause_disabled.png" owner="admin" group="dba" mode="755" created="2008-06-25T14:57:37+01:00" modified="2008-06-25T14:57:37+01:00" filename="pause_disabled.png" mimetype="image/png"/>
+    <resource type="BinaryResource" name="selected.png" owner="admin" group="dba" mode="755" created="2008-06-25T14:57:37+01:00" modified="2008-06-25T14:57:37+01:00" filename="selected.png" mimetype="image/png"/>
+    <resource type="BinaryResource" name="step.png" owner="admin" group="dba" mode="755" created="2008-06-25T14:57:37+01:00" modified="2008-06-25T14:57:37+01:00" filename="step.png" mimetype="image/png"/>
+    <resource type="BinaryResource" name="step_disabled.png" owner="admin" group="dba" mode="755" created="2008-06-25T14:57:37+01:00" modified="2008-06-25T14:57:37+01:00" filename="step_disabled.png" mimetype="image/png"/>
+</collection>

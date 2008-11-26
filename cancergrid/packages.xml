@@ -1,0 +1,32 @@
+<packages>
+    <item id="cgmdr-installer">
+        <name>cgMDR Installer</name>
+        <description>cgMDR installer built with IzPack (includes everything)</description>
+        <file>cgMDR-setup-1.0.0.jar</file>
+    </item>
+    <item id="ea-addin">
+        <name>EA Addin</name>
+        <description>Enterprise Architect 6.5/7.0 add-in</description>
+        <file>QSM-EAAddin-Installer.zip</file>
+    </item>
+    <item id="excel-addin">
+        <name>Excel Addin</name>
+        <description>Microsoft Excel 2007 add-in</description>
+        <file>QSM-Excel2007Addin-Installer.zip</file>
+    </item>
+    <item id="qsm">
+        <name>Query Service Manager</name>
+        <description>The Query Service Manager web service (Apache Axis2 AAR package)</description>
+        <file>QueryServiceManager.zip</file>
+    </item>
+    <item id="cgmdr-war">
+        <name>cgMDR WAR</name>
+        <description>cgMDR WAR distribution with default content (Please rename to exist.war before deployment)</description>
+        <file>/dist/exist-default.war</file>
+    </item>
+    <item id="cgmdr-war-with-dataset">
+        <name>cgMDR WAR distribution with cancergrid dataset</name>
+        <description>cgMDR WAR distribution with cancergrid dataset (Please rename to exist.war before deployment)</description>
+        <file>/dist/exist-with-dataset.war</file>
+    </item>
+</packages>

@@ -1,0 +1,106 @@
+<?xml version="1.0" ?>
+<project name="Query Service Manager 1.0.2" default="dist-aar" basedir=".">
+	<description> Ant build file for CancerGrid metadata connector </description>
+
+	<property file="dist.properties"/>
+	<property name="build" value="build"/>
+	<property name="resources" value="resources"/>
+	<property name="src" value="src"/>
+	<property name="dist" value="dist"/>
+	<property name="lib" value="../../lib"/>
+	
+	<import file="wsdl2java.xml"/>
+	
+	<!-- Classpaths -->
+	<path id="lib.classpath">
+		<fileset dir="${lib}">
+			<include name="**/*.jar"/>
+		</fileset>
+		<fileset dir="${wsdl2java.home}/dist">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+	
+	<path id="test.classpath">
+		<pathelement path="."/>
+		<pathelement path="settings"/>
+		<pathelement path="${build}/classes"/>
+		<pathelement path="."/>
+	</path>
+	
+	<!-- Generate API document -->
+	<target name="javadoc" depends="compile" description="Generate Javadoc">
+		<delete dir="javadoc"/>
+		<javadoc access="private" author="true" classpathref="lib.classpath" destdir="javadoc"
+			doctitle="${javadoc.title}" nodeprecated="false" nodeprecatedlist="false"
+			noindex="false" nonavbar="false" notree="false" packagenames="${javadoc.packages}"
+			source="1.5" sourcepath="${src}" splitindex="true" use="true" version="true"/>
+	</target>
+
+	<target name="dist-aar" depends="compile" description="Create an Axis2 Archive (aar) build">
+		<mkdir dir="${build}/aar"/>
+		<mkdir dir="${build}/aar/lib"/>
+		<mkdir dir="${build}/aar/stylesheets"/>
+		<mkdir dir="${build}/aar/META-INF"/>
+
+		<jar destfile="${dist}/${jar.name}" basedir="${build}/classes"/>
+		
+		<copy todir="${build}/aar/lib" overwrite="true" flatten="true" includeemptydirs="no">
+			<fileset dir="${dist}"/>
+			<fileset dir="${wsdl2java.home}/dist"/>
+		</copy>
+
+		<copy todir="${build}/aar/META-INF" overwrite="true" flatten="true" includeemptydirs="no">
+			<fileset dir="${resources}">
+				<include name="services.xml"/>
+				<include name="${wsdl.name}"/>
+				<include name="*.xsd"/>
+			</fileset>
+		</copy>
+		
+		<xslt in="${build}/aar/META-INF/${wsdl.name}" out="${build}/aar/META-INF/flat_${wsdl.name}"
+			style="${resources}/flatten_xsd_imports.xsl"  extension="wsdl" force="yes">
+			<classpath>
+				<fileset dir="${lib}/user">
+					<include name="saxon*.jar"/>
+				</fileset>
+			</classpath>
+		</xslt>
+		
+		<move file="${build}/aar/META-INF/flat_${wsdl.name}" overwrite="yes" tofile="${build}/aar/META-INF/${wsdl.name}"/>
+		
+		<copy todir="${build}/aar/stylesheets" overwrite="true" flatten="true" includeemptydirs="no">
+			<fileset dir="stylesheets"/>
+		</copy>
+		
+		<jar destfile="${aar.name}" basedir="${build}/aar"/>
+	</target>
+	
+	<!-- Compile the web service using packages from lib -->
+	<target name="compile" depends="init, wsdl2java">
+		<javac srcdir="${src}" destdir="${build}/classes" source="1.5" target="1.5">
+			<classpath refid="lib.classpath"/>
+		</javac>
+	</target>
+
+	<!-- Clean up build and dist directory for new build -->
+	<target name="clean">
+		<delete dir="${build}"/>
+		<delete dir="${dist}"/>
+	</target>
+	
+	<target name="clean-dist">
+		<delete file="${aar.name}"/>
+		<delete file="${war.name}"/>
+	</target>
+	
+	<target name="clean-all" depends="clean, clean-dist, clean-wsdl2java-artifacts"/>
+
+	<!-- initialise build -->
+	<target name="init">
+		<tstamp/>
+		<mkdir dir="${build}"/>
+		<mkdir dir="${build}/classes"/>
+		<mkdir dir="${dist}"/>
+	</target>
+</project>

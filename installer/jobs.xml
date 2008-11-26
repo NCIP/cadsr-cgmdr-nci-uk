@@ -1,0 +1,178 @@
+<processing>
+    <logfiledir>$INSTALL_PATH</logfiledir>
+    <!--job name="Set password for admin user ...">
+        <os family="windows"/>
+        <executefile name="$INSTALL_PATH/bin/setup.bat">
+            <arg>$adminPasswd</arg>
+        </executefile>
+    </job>
+    <job name="Set password for admin user ...">
+        <os family="unix"/>
+        <executefile name="$INSTALL_PATH/bin/setup.sh">
+            <arg>$adminPasswd</arg>
+        </executefile>
+    </job>
+    <job name="Configuring XForms filter ...">
+        <os family="windows"/>
+        <executefile name="$INSTALL_PATH/bin/restore.bat">
+            <arg>admin</arg>
+            <arg>$adminPasswd</arg>
+            <arg>$INSTALL_PATH/tools/XFormsFilter/resources/styles/__contents__.xml</arg>
+        </executefile>
+    </job>
+    <job name="Configuring XForms filter ...">
+        <os family="unix"/>
+        <executefile name="$INSTALL_PATH/bin/restore.sh">
+            <arg>admin</arg>
+            <arg>$adminPasswd</arg>
+            <arg>$INSTALL_PATH/tools/XFormsFilter/resources/styles/__contents__.xml</arg>
+        </executefile>
+    </job>
+    <job name="Adding cgMDR Core ...">
+        <executeForPack name="mdr-core"/>
+        <os family="windows"/>
+        <executefile name="$INSTALL_PATH/bin/restore.bat">
+            <arg>admin</arg>
+            <arg>$adminPasswd</arg>
+            <arg>"$INSTALL_PATH/cancergrid/mdr-core/db/system/config/db/mdr/data/__contents__.xml"</arg>
+        </executefile>
+        <executefile name="$INSTALL_PATH/bin/restore.bat">
+            <arg>admin</arg>
+            <arg>$adminPasswd</arg>
+            <arg>"$INSTALL_PATH/cancergrid/mdr-core/db/mdr/__contents__.xml"</arg>
+        </executefile>
+    </job>
+    <job name="Adding cgMDR Core ...">
+        <executeForPack name="mdr-core"/>
+        <os family="unix"/>
+        <executefile name="$INSTALL_PATH/bin/restore.sh">
+            <arg>admin</arg>
+            <arg>$adminPasswd</arg>
+            <arg>$INSTALL_PATH/cancergrid/mdr-core/db/system/config/db/mdr/data/__contents__.xml</arg>
+        </executefile>
+        <executefile name="$INSTALL_PATH/bin/restore.sh">
+            <arg>admin</arg>
+            <arg>$adminPasswd</arg>
+            <arg>$INSTALL_PATH/cancergrid/mdr-core/db/mdr/__contents__.xml</arg>
+        </executefile>
+    </job>
+    
+    <job name="Adding Selenium Core Test Framework">
+        <executeForPack name="selenium-test-framework"/>
+        <os family="windows"/>
+        <executefile name="$INSTALL_PATH/bin/restore.bat">
+            <arg>admin</arg>
+            <arg>$adminPasswd</arg>
+            <arg>"$INSTALL_PATH/selenium/__contents__.xml"</arg>
+        </executefile>
+    </job>
+    <job name="Adding Selenium Core Test Framework">
+        <executeForPack name="selenium-test-framework"/>
+        <os family="unix"/>
+        <executefile name="$INSTALL_PATH/bin/restore.sh">
+            <arg>admin</arg>
+            <arg>$adminPasswd</arg>
+            <arg>$INSTALL_PATH/selenium/__contents__.xml</arg>
+        </executefile>
+    </job>
+    
+    <job name="Adding default dataset">
+        <executeForPack name="default-dataset"/>
+        <os family="windows"/>
+        <executefile name="$INSTALL_PATH/bin/restore.bat">
+            <arg>admin</arg>
+            <arg>$adminPasswd</arg>
+            <arg>"$INSTALL_PATH/cancergrid/datasets/default/data/__contents__.xml"</arg>
+        </executefile>
+        <executefile name="$INSTALL_PATH/bin/restore.bat">
+            <arg>admin</arg>
+            <arg>$adminPasswd</arg>
+            <arg>"$INSTALL_PATH/cancergrid/datasets/default/edit/documents/__contents__.xml"</arg>
+        </executefile>
+    </job>
+    <job name="Adding default dataset">
+        <executeForPack name="default-dataset"/>
+        <os family="unix"/>
+        <executefile name="$INSTALL_PATH/bin/restore.sh">
+            <arg>admin</arg>
+            <arg>$adminPasswd</arg>
+            <arg>$INSTALL_PATH/cancergrid/datasets/default/data/__contents__.xml</arg>
+        </executefile>
+        <executefile name="$INSTALL_PATH/bin/restore.sh">
+            <arg>admin</arg>
+            <arg>$adminPasswd</arg>
+            <arg>$INSTALL_PATH/cancergrid/datasets/default/edit/documents/__contents__.xml</arg>
+        </executefile>
+    </job>
+    <job name="Adding NHS minimum cancer dataset">
+        <executeForPack name="nhs-minimum-cancer-dataset"/>
+        <os family="windows"/>
+        <executefile name="$INSTALL_PATH/bin/restore.bat">
+            <arg>admin</arg>
+            <arg>$adminPasswd</arg>
+            <arg>"$INSTALL_PATH/cancergrid/datasets/minimum-cancer-dataset/data/__contents__.xml"</arg>
+        </executefile>
+    </job>
+    <job name="Adding NHS minimum cancer dataset">
+        <executeForPack name="nhs-minimum-cancer-dataset"/>
+        <os family="unix"/>
+        <executefile name="$INSTALL_PATH/bin/restore.sh">
+            <arg>admin</arg>
+            <arg>$adminPasswd</arg>
+            <arg>$INSTALL_PATH/cancergrid/datasets/minimum-cancer-dataset/data/__contents__.xml</arg>
+        </executefile>
+    </job>
+    <job name="Adding Metabric dataset">
+        <executeForPack name="metabric-dataset"/>
+        <os family="windows"/>
+        <executefile name="$INSTALL_PATH/bin/restore.bat">
+            <arg>admin</arg>
+            <arg>$adminPasswd</arg>
+            <arg>"$INSTALL_PATH/cancergrid/datasets/metabric-dataset/data/__contents__.xml"</arg>
+        </executefile>
+    </job>
+    <job name="Adding Metabric dataset">
+        <executeForPack name="metabric-dataset"/>
+        <os family="unix"/>
+        <executefile name="$INSTALL_PATH/bin/restore.sh">
+            <arg>admin</arg>
+            <arg>$adminPasswd</arg>
+            <arg>$INSTALL_PATH/cancergrid/datasets/metabric-dataset/data/__contents__.xml</arg>
+        </executefile>
+    </job>
+    <job name="Adding cancergrid dataset">
+        <executeForPack name="cancergrid-dataset"/>
+        <os family="windows"/>
+        <executefile name="$INSTALL_PATH/bin/restore.bat">
+            <arg>admin</arg>
+            <arg>$adminPasswd</arg>
+            <arg>"$INSTALL_PATH/cancergrid/datasets/cancergrid-dataset/data/__contents__.xml"</arg>
+        </executefile>
+    </job>
+    <job name="Adding cancergrid dataset">
+        <executeForPack name="cancergrid-dataset"/>
+        <os family="unix"/>
+        <executefile name="$INSTALL_PATH/bin/restore.sh">
+            <arg>admin</arg>
+            <arg>$adminPasswd</arg>
+            <arg>$INSTALL_PATH/cancergrid/datasets/cancergrid-dataset/data/__contents__.xml</arg>
+        </executefile>
+    </job-->
+    <job name="Generate keystore for SSL"> 
+        <os family="windows"/>
+        <executefile name="$INSTALL_PATH/build.bat">
+            <arg>-f</arg>
+            <arg>"$INSTALL_PATH/build/scripts/jarsigner.xml"</arg>
+            <arg>jetty-keygen</arg>
+        </executefile>
+    </job>
+    <job name="Generate keystore for SSL"> 
+        <os family="unix"/>
+        <executefile name="$INSTALL_PATH/build.sh">
+            <arg>-f</arg>
+            <arg>$INSTALL_PATH/build/scripts/jarsigner.xml</arg>
+            <arg>jetty-keygen</arg>
+        </executefile>
+    </job>
+</processing>
+

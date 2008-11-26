@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:axis2xsd="http://org.apache.axis2/xsd" xmlns:query="http://cancergrid.org/services/query" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://cancergrid.org/services/query" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>QueryServiceManager</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema xmlns="http://cancergrid.org/schema/config" elementFormDefault="qualified" targetNamespace="http://cancergrid.org/schema/config">
+      <xs:element name="config" type="config" />
+      <xs:complexType name="config">
+        <xs:sequence>
+          <xs:element ref="resources" />
+          <xs:element ref="cache_config" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="resources" type="resources" />
+      <xs:complexType name="resources">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" ref="query_service" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="query_service" type="query_service" />
+      <xs:complexType name="query_service">
+        <xs:sequence>
+          <xs:element name="title" type="xs:string" />
+          <xs:element name="description" type="xs:string" />
+          <xs:element name="webUrl" type="xs:anyURI" />
+        </xs:sequence>
+        <xs:attribute name="name" type="xs:string" />
+        <xs:attribute name="category" type="category" />
+        <xs:attribute name="class" type="xs:string" />
+        <xs:attribute name="serviceUrl" type="xs:string" />
+        <xs:attribute name="connection_type" type="xs:string" />
+        <xs:attribute name="requestSequence" type="xs:string" />
+        <xs:attribute name="digestSequence" type="xs:string" />
+        <xs:attribute name="cache_collection_id" type="xs:string" />
+        <xs:attribute name="cache_provider" type="xs:string" />
+        <xs:attribute name="cache" type="xs:boolean" />
+      </xs:complexType>
+      <xs:element name="cache_config" type="cache_config" />
+      <xs:complexType name="cache_config">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" ref="cache_provider" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="cache_provider" type="cache_provider" />
+      <xs:complexType name="cache_provider">
+        <xs:attribute name="name" type="xs:string" />
+        <xs:attribute name="class" type="xs:string" />
+        <xs:attribute name="username" type="xs:string" />
+        <xs:attribute name="userpassword" type="xs:string" />
+        <xs:attribute name="resource" type="xs:string" />
+        <xs:attribute name="cache_period" type="xs:long" />
+      </xs:complexType>
+      <xs:simpleType name="category">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="CONCEPT" />
+          <xs:enumeration value="CDE" />
+          <xs:enumeration value="CLASSIFICATION_SCHEME" />
+          <xs:enumeration value="UNKNOWN" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:schema>
+    <xs:schema xmlns:cfg="http://cancergrid.org/schema/config" xmlns="http://cancergrid.org/schema/query" elementFormDefault="qualified" targetNamespace="http://cancergrid.org/schema/query">
+      <xs:import namespace="http://cancergrid.org/schema/config" />
+      <xs:element name="query" type="query" />
+      <xs:complexType name="query">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="serviceUrl" nillable="true" type="xs:anyURI" />
+          <xs:element name="resource" type="xs:string" />
+          <xs:element minOccurs="0" name="src" nillable="true" type="xs:string" />
+          <xs:element name="term" type="xs:string" />
+          <xs:element minOccurs="0" default="0" name="startIndex" type="xs:int" />
+          <xs:element minOccurs="0" default="10" name="numResults" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="resources" type="resources" />
+      <xs:complexType name="resources">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="query_service" type="query_service" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="query_service" type="query_service" />
+      <xs:complexType name="query_service">
+        <xs:sequence>
+          <xs:element name="title" type="xs:string" />
+          <xs:element name="description" type="xs:string" />
+          <xs:element name="webUrl" type="xs:anyURI" />
+        </xs:sequence>
+        <xs:attribute name="category" type="cfg:category" />
+        <xs:attribute name="name" type="xs:string" />
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns="http://cancergrid.org/schema/result-set" elementFormDefault="qualified" targetNamespace="http://cancergrid.org/schema/result-set">
+      <xs:element name="result-set" type="result-set" />
+      <xs:complexType name="result-set">
+        <xs:sequence>
+          <xs:element minOccurs="1" name="status" type="xs:string" />
+          <xs:choice minOccurs="0">
+            <xs:element maxOccurs="unbounded" ref="concept" />
+            <xs:element maxOccurs="unbounded" ref="data-element" />
+            <xs:element maxOccurs="1" ref="node" />
+            <xs:element maxOccurs="unbounded" ref="classification_scheme" />
+          </xs:choice>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element abstract="true" name="common-info" type="common-info" />
+      <xs:complexType name="common-info">
+        <xs:sequence>
+          <xs:element minOccurs="1" ref="names" />
+          <xs:element name="definition" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="names" type="names" />
+      <xs:complexType name="names">
+        <xs:sequence>
+          <xs:element minOccurs="1" name="id" type="xs:string" />
+          <xs:element minOccurs="1" name="preferred" type="xs:string" />
+          <xs:element minOccurs="1" ref="all-names" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="all-names" type="all-names" />
+      <xs:complexType name="all-names">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="name" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="data-element" type="data-element" />
+      <xs:complexType name="data-element">
+        <xs:complexContent mixed="false">
+          <xs:extension base="common-info">
+            <xs:sequence>
+              <xs:element ref="values" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="values" type="values" />
+      <xs:complexType name="values">
+        <xs:choice minOccurs="1" maxOccurs="1">
+          <xs:element maxOccurs="1" ref="enumerated" />
+          <xs:element maxOccurs="1" ref="non-enumerated" />
+        </xs:choice>
+      </xs:complexType>
+      <xs:element name="non-enumerated" type="non-enumerated" />
+      <xs:complexType name="non-enumerated">
+        <xs:sequence>
+          <xs:element name="data-type" type="xs:string" />
+          <xs:element name="units" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="enumerated" type="enumerated" />
+      <xs:complexType name="enumerated">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" ref="valid-value" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="valid-value" type="valid-value" />
+      <xs:complexType name="valid-value">
+        <xs:sequence>
+          <xs:element name="code" type="xs:string" />
+          <xs:element name="meaning" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="concept" type="concept" />
+      <xs:complexType name="concept">
+        <xs:complexContent mixed="false">
+          <xs:extension base="common-info">
+            <xs:sequence>
+              <xs:element ref="properties" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="properties" type="properties" />
+      <xs:complexType name="properties">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" ref="property" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="property" type="property" />
+      <xs:complexType name="property">
+        <xs:sequence>
+          <xs:element name="name" type="xs:string" />
+          <xs:element name="value" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="classification_scheme" type="xs:anyURI" />
+      <xs:element name="node" type="node" />
+      <xs:complexType name="node">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" ref="node" />
+        </xs:sequence>
+        <xs:attribute name="prefix" type="xs:anyURI" />
+        <xs:attribute name="id" type="xs:string" />
+        <xs:attribute name="label" type="xs:string" />
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:rs="http://cancergrid.org/schema/result-set" xmlns:qr="http://cancergrid.org/schema/query" xmlns="http://cancergrid.org/services/query" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://cancergrid.org/services/query">
+      <xs:import namespace="http://cancergrid.org/schema/query" />
+      <xs:import namespace="http://cancergrid.org/schema/result-set" />
+      <xs:element name="listResourcesAsXmlResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="query:returnResources" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="returnResources">
+        <xs:sequence>
+          <xs:element ref="qr:resources" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="query">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="qr:query" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="queryResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="query:return" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="return">
+        <xs:sequence>
+          <xs:element ref="rs:result-set" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="queryString">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="qr:query" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="queryStringResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="listResourcesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="listResourcesResponse">
+    <wsdl:part name="parameters" element="query:listResourcesResponse" />
+  </wsdl:message>
+  <wsdl:message name="queryStringResponse">
+    <wsdl:part name="parameters" element="query:queryStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="listResourcesAsXmlResponse">
+    <wsdl:part name="parameters" element="query:listResourcesAsXmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="queryResponse">
+    <wsdl:part name="parameters" element="query:queryResponse" />
+  </wsdl:message>
+  <wsdl:message name="queryStringRequest">
+    <wsdl:part name="parameters" element="query:queryString" />
+  </wsdl:message>
+  <wsdl:message name="queryRequest">
+    <wsdl:part name="parameters" element="query:query" />
+  </wsdl:message>
+  <wsdl:message name="listResourcesRequest" />
+  <wsdl:message name="listResourcesAsXmlRequest" />
+  <wsdl:portType name="QueryServiceManagerPortType">
+    <wsdl:operation name="listResourcesAsXml">
+      <wsdl:input wsaw:Action="urn:listResourcesAsXml" message="query:listResourcesAsXmlRequest" />
+      <wsdl:output wsaw:Action="urn:listResourcesAsXmlResponse" message="query:listResourcesAsXmlResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="query">
+      <wsdl:input wsaw:Action="urn:query" message="query:queryRequest" />
+      <wsdl:output wsaw:Action="urn:queryResponse" message="query:queryResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="queryString">
+      <wsdl:input wsaw:Action="urn:queryString" message="query:queryStringRequest" />
+      <wsdl:output wsaw:Action="urn:queryStringResponse" message="query:queryStringResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="listResources">
+      <wsdl:input wsaw:Action="urn:listResources" message="query:listResourcesRequest" />
+      <wsdl:output wsaw:Action="urn:listResourcesResponse" message="query:listResourcesResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="QueryServiceManagerSOAP11Binding" type="query:QueryServiceManagerPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="listResourcesAsXml">
+      <soap:operation soapAction="urn:listResourcesAsXml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="query">
+      <soap:operation soapAction="urn:query" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="queryString">
+      <soap:operation soapAction="urn:queryString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listResources">
+      <soap:operation soapAction="urn:listResources" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="QueryServiceManagerSOAP12Binding" type="query:QueryServiceManagerPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="listResourcesAsXml">
+      <soap12:operation soapAction="urn:listResourcesAsXml" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="query">
+      <soap12:operation soapAction="urn:query" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="queryString">
+      <soap12:operation soapAction="urn:queryString" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listResources">
+      <soap12:operation soapAction="urn:listResources" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="QueryServiceManagerHttpBinding" type="query:QueryServiceManagerPortType">
+    <http:binding verb="POST" />
+    <wsdl:operation name="listResourcesAsXml">
+      <http:operation location="QueryServiceManager/listResourcesAsXml" />
+      <wsdl:input>
+        <mime:content part="listResourcesAsXml" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="listResourcesAsXml" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="query">
+      <http:operation location="QueryServiceManager/query" />
+      <wsdl:input>
+        <mime:content part="query" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="query" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="queryString">
+      <http:operation location="QueryServiceManager/queryString" />
+      <wsdl:input>
+        <mime:content part="queryString" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="queryString" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listResources">
+      <http:operation location="QueryServiceManager/listResources" />
+      <wsdl:input>
+        <mime:content part="listResources" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="listResources" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="QueryServiceManager">
+    <wsdl:port name="QueryServiceManagerHttpport" binding="query:QueryServiceManagerHttpBinding">
+      <http:address location="http://129.67.151.25:8080/metadata-connector-1.0.2/services/QueryServiceManager" />
+    </wsdl:port>
+    <wsdl:port name="QueryServiceManagerSOAP12port_http" binding="query:QueryServiceManagerSOAP12Binding">
+      <soap12:address location="http://129.67.151.25:8080/metadata-connector-1.0.2/services/QueryServiceManager" />
+    </wsdl:port>
+    <wsdl:port name="QueryServiceManagerSOAP11port_http" binding="query:QueryServiceManagerSOAP11Binding">
+      <soap:address location="http://129.67.151.25:8080/metadata-connector-1.0.2/services/QueryServiceManager" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

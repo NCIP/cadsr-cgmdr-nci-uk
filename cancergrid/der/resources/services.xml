@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup>
+    <service name="DataElementReduced">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out"
+                class="org.cancergrid.services.dataelementreduced.DataElementReducedMessageReceiverInOut"
+            />
+        </messageReceivers>
+        <parameter name="ServiceClass">org.cancergrid.ws.der.DataElementReducedService</parameter>
+        <parameter name="useOriginalwsdl">false</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getUOM" mep="http://www.w3.org/ns/wsdl/in-out">
+            <actionMapping>urn:getUOM</actionMapping>
+            <outputActionMapping>urn:getUOMResponse</outputActionMapping>
+        </operation>
+        <operation name="getOrganizationContacts" mep="http://www.w3.org/ns/wsdl/in-out">
+            <actionMapping>urn:getOrganizationContacts</actionMapping>
+            <outputActionMapping>urn:getOrganizationContactsResponse</outputActionMapping>
+        </operation>
+        <operation name="createDataElementReduced" mep="http://www.w3.org/ns/wsdl/in-out">
+            <actionMapping>urn:createDataElementReduced</actionMapping>
+            <outputActionMapping>urn:createDataElementReducedResponse</outputActionMapping>
+        </operation>
+        <operation name="dataElementListSearch" mep="http://www.w3.org/ns/wsdl/in-out">
+            <actionMapping>urn:dataElementListSearch</actionMapping>
+            <outputActionMapping>urn:dataElementListSearchResponse</outputActionMapping>
+        </operation>
+        <operation name="getRegAuth" mep="http://www.w3.org/ns/wsdl/in-out">
+            <actionMapping>urn:getRegAuth</actionMapping>
+            <outputActionMapping>urn:getRegAuthResponse</outputActionMapping>
+        </operation>
+        <operation name="getDataTypes" mep="http://www.w3.org/ns/wsdl/in-out">
+            <actionMapping>urn:getDataTypes</actionMapping>
+            <outputActionMapping>urn:getDataTypesResponse</outputActionMapping>
+        </operation>
+
+        <module ref="rampart"/>
+        <module ref="addressing"/>
+
+        <wsp:Policy wsu:Id="UTOverTransport"
+            xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+            xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+            <wsp:ExactlyOne>
+                <wsp:All>
+                    <sp:TransportBinding
+                        xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+                        <wsp:Policy>
+                            <sp:TransportToken>
+                                <wsp:Policy>
+                                    <sp:HttpsToken RequireClientCertificate="false"/>
+                                </wsp:Policy>
+                            </sp:TransportToken>
+                            <sp:AlgorithmSuite>
+                                <wsp:Policy>
+                                    <sp:Basic256/>
+                                </wsp:Policy>
+                            </sp:AlgorithmSuite>
+                            <sp:Layout>
+                                <wsp:Policy>
+                                    <sp:Lax/>
+                                </wsp:Policy>
+                            </sp:Layout>
+                            <sp:IncludeTimestamp/>
+                        </wsp:Policy>
+                    </sp:TransportBinding>
+                    <sp:SignedSupportingTokens
+                        xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+                        <wsp:Policy>
+                            <sp:UsernameToken
+                                sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient"
+                            />
+                        </wsp:Policy>
+                    </sp:SignedSupportingTokens>
+
+                    <ramp:RampartConfig xmlns:ramp="http://ws.apache.org/rampart/policy">
+                        <ramp:passwordCallbackClass>org.cancergrid.ws.existdb.util.UserPasswordCallbackHandler</ramp:passwordCallbackClass>
+                    </ramp:RampartConfig>
+
+                </wsp:All>
+            </wsp:ExactlyOne>
+        </wsp:Policy>
+    </service>
+</serviceGroup>
