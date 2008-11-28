@@ -16,4 +16,5 @@
     <subcollection name="schemas" filename="schemas"/>
     <subcollection name="tests" filename="tests"/>
     <subcollection name="review" filename="review"/>
+    <subcollection name="MDG" filename="MDG"/>
 </collection>
