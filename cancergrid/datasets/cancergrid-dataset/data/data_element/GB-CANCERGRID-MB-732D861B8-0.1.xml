@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Data_Element xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-CANCERGRID-MB" data_identifier="732D861B8" version="0.1">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>please complete administrative-note...</cgMDR:administrative_note>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-08-29</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-08-29</cgMDR:effective_date>
+        <cgMDR:last_change_date>2007-08-29</cgMDR:last_change_date>
+        <cgMDR:registration_status>recorded</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-300003-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-300004-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-300003-1</cgMDR:submitted_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-900001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>Pathological T Stage</cgMDR:name>
+            <cgMDR:definition_text>Pathological T stage of tumour at diagnosis (anatomical extent of the primary tumour), as per TNM Classification of Malignant Tumours, International Union Against Cancer, 6th Edition, 2002. The pathological classification requires the examination of the primary carcinoma with no gross tumour at the margins of resection. A case can be classified pT if there is only microscopic tumour in a margin. When classifying pT, the tumour size is a measurement of the invasive
+component. For example, if there is a large in situ component (e.g. 4cm) and a small invasive component (e.g. 0.5cm), the tumour is coded pT1a.</cgMDR:definition_text>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:data_element_precision/>
+    <cgMDR:representing>GB-CANCERGRID-MB-9DD6CD7BA-0.1</cgMDR:representing>
+    <cgMDR:typed_by>GB-CANCERGRID-000010-1</cgMDR:typed_by>
+    <cgMDR:expressing>GB-CANCERGRID-MB-137775E46-0.1</cgMDR:expressing>
+    <cgMDR:exemplified_by>
+        <cgMDR:data_element_example_item >please complete example...</cgMDR:data_element_example_item>
+    </cgMDR:exemplified_by>
+    <cgMDR:field_name preferred=""/>
+    <cgMDR:question_text preferred=""/>
+</cgMDR:Data_Element>

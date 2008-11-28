@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Enumerated_Conceptual_Domain xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-CANCERGRID-MB" data_identifier="4EC805904" version="0.1">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>please complete administrative-note...</cgMDR:administrative_note>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-08-28+01:00</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-08-28+01:00</cgMDR:effective_date>
+        <cgMDR:last_change_date>2007-08-28+01:00</cgMDR:last_change_date>
+        <cgMDR:registration_status>recorded</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-300003-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-300004-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-300003-1</cgMDR:submitted_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-900001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>Breast Cancer Guy's Local Relapse Site</cgMDR:name>
+            <cgMDR:definition_text>The anatomical site of local metastases, as recorded in the Guy's Clinical Database.</cgMDR:definition_text>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Single skin metastasis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >939553ECC</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Multiple skin metastases</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >5B7BC5C24</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Breast metastases</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >BED5A5813</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Axillary lymph node metastases (ipsilateral)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >26C8D7EDA</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SCF lymph node metastases</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >C41BEAACC</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >internal mammary lymph node metastases (ipsilateral)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >5C6B6A9D4</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Lymphoedema</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >833B73757</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >other metastases</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >63982812C</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+</cgMDR:Enumerated_Conceptual_Domain>

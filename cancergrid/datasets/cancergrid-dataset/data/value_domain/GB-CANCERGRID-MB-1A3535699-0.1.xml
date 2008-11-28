@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Enumerated_Value_Domain xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-CANCERGRID-MB" data_identifier="1A3535699" version="0.1">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>please complete administrative-note...</cgMDR:administrative_note>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-08-29</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-08-29</cgMDR:effective_date>
+        <cgMDR:last_change_date>2007-08-29</cgMDR:last_change_date>
+        <cgMDR:registration_status>recorded</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-300003-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-300004-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-300003-1</cgMDR:submitted_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-900001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>Breast Cancer Vancouver Histological type</cgMDR:name>
+            <cgMDR:definition_text>The histological tumour type classification scheme used by the Vancouver GPEC/BCOU TAG Data Linkage</cgMDR:definition_text>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:typed_by>GB-CANCERGRID-000010-1</cgMDR:typed_by>
+    <cgMDR:value_domain_datatype>KRMZ1P97F</cgMDR:value_domain_datatype>
+    <cgMDR:value_domain_unit_of_measure>MV3QWZ2YG</cgMDR:value_domain_unit_of_measure>
+    <cgMDR:containing permissible_value_identifier="D861D7D5C">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>1</cgMDR:value_item>
+        <cgMDR:contained_in>116E19133</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="D8594C15D">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>2</cgMDR:value_item>
+        <cgMDR:contained_in>09865377B</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="1E702245D">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>3</cgMDR:value_item>
+        <cgMDR:contained_in>5BAED5A29</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="1C639C2A7">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>4</cgMDR:value_item>
+        <cgMDR:contained_in>289D3AEC1</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="B4C5694A6">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>5</cgMDR:value_item>
+        <cgMDR:contained_in>D4BC8C8A5</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="BDCC1BB0A">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>6</cgMDR:value_item>
+        <cgMDR:contained_in>43DBC41E1</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="512C14244">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>7</cgMDR:value_item>
+        <cgMDR:contained_in>85A7D7B73</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="DB4C7E487">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>8</cgMDR:value_item>
+        <cgMDR:contained_in>164CDE2C5</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="8E8A425DC">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>9</cgMDR:value_item>
+        <cgMDR:contained_in>250A2930B</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="26AB31397">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>10</cgMDR:value_item>
+        <cgMDR:contained_in>95D4E5BCE</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="EB217CD30">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>11</cgMDR:value_item>
+        <cgMDR:contained_in>E64E3B6E2</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="C7144A787">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>12</cgMDR:value_item>
+        <cgMDR:contained_in>AE180A711</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="652AE95A2">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>13</cgMDR:value_item>
+        <cgMDR:contained_in>2120B1005</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="119DBE7CC">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>14</cgMDR:value_item>
+        <cgMDR:contained_in>248BC135C</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="687CB68AE">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>15</cgMDR:value_item>
+        <cgMDR:contained_in>3A1A21A94</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="6EA460129">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>16</cgMDR:value_item>
+        <cgMDR:contained_in>18992D511</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="91EDCB0B3">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>17</cgMDR:value_item>
+        <cgMDR:contained_in>12B8818E2</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="44D6AE386">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>18</cgMDR:value_item>
+        <cgMDR:contained_in>84A47B812</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="ACA618B8A">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>19</cgMDR:value_item>
+        <cgMDR:contained_in>AE98082C5</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="7E375C214">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>20</cgMDR:value_item>
+        <cgMDR:contained_in>351BE4BD4</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="1472B2367">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>21</cgMDR:value_item>
+        <cgMDR:contained_in>016854329</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="45892DE6E">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>22</cgMDR:value_item>
+        <cgMDR:contained_in>2A8ED817B</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="9CC11C7E8">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>23</cgMDR:value_item>
+        <cgMDR:contained_in>B48521B9C</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="2078B1A81">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>24</cgMDR:value_item>
+        <cgMDR:contained_in>872D53AE7</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="7C22EC107">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>25</cgMDR:value_item>
+        <cgMDR:contained_in>2DC03DBE4</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="DED60941D">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>26</cgMDR:value_item>
+        <cgMDR:contained_in>8736DB22C</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="2445EC3C4">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>27</cgMDR:value_item>
+        <cgMDR:contained_in>14CD996C3</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="C56CB92AB">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>28</cgMDR:value_item>
+        <cgMDR:contained_in>5A77EB899</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="81C807756">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>29</cgMDR:value_item>
+        <cgMDR:contained_in>5AC987424</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="2D61EEA9A">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>30</cgMDR:value_item>
+        <cgMDR:contained_in>B03AC6475</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="C9A9D5C21">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>31</cgMDR:value_item>
+        <cgMDR:contained_in>A8242A73E</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="1797E85A2">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>32</cgMDR:value_item>
+        <cgMDR:contained_in>7AAB9AD35</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="EB9B268BD">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>33</cgMDR:value_item>
+        <cgMDR:contained_in>E6C9E7CB0</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:representing>GB-CANCERGRID-MB-9337A2E4A-0.1</cgMDR:representing>
+</cgMDR:Enumerated_Value_Domain>

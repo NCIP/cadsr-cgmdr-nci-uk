@@ -1,0 +1,1906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Enumerated_Conceptual_Domain xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="US-NCICB-CACORE" data_identifier="D1E37334" version="1">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-07-17</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-07-17</cgMDR:effective_date>
+        <cgMDR:explanatory_comment>Transformed from NCICB caDSR</cgMDR:explanatory_comment>
+        <cgMDR:last_change_date>2007-07-17</cgMDR:last_change_date>
+        <cgMDR:registration_status>Standard</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>US-NCICB-CTEP-STEWARD</cgMDR:administered_by>
+    <cgMDR:registered_by>US-NCICB-CACORE-REGISTRAR</cgMDR:registered_by>
+    <cgMDR:submitted_by>US-NCICB-CTEP-SUMBMITTER</cgMDR:submitted_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>US-NCICB-CTEP-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>US</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>Adverse Events</cgMDR:name>
+            <cgMDR:definition_text/>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>US</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>AE</cgMDR:name>
+            <cgMDR:definition_text/>
+            <cgMDR:preferred_designation>false</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:dimensionality/>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Bone marrow depression NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37336</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Capillary leak syndrome</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37345</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Blood alkaline phosphatase NOS increased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37354</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Bladder disorder NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37363</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Cataract NEC</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37372</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Alopecia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37382</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >CD4 lymphocytes decreased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37391</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Blood creatinine increased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37400</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Arthritis NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37409</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Blood bilirubin increased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37418</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Anorexia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37427</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Apnoea</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37437</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Feminization</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37446</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Blood fibrinogen decreased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37455</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Autoimmune disorder NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37464</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Gynaecomastia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37473</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Dry eye NEC</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37482</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Blood amylase increased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37492</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Palpitations</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37501</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Haptoglobin decreased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37510</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Serum sickness</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37519</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Glaucoma NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37528</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Colitis NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37537</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Cough</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37547</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Dry skin</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37556</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Haemoglobin decreased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37565</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Haemoglobinuria present</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37574</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Constipation</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37583</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hypothyroidism</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37592</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Vasculitis NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37602</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Virilism</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37611</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Flushing</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37620</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Weight increased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37629</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hypercalcaemia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37638</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Blood albumin decreased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37647</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Dehydration</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37657</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Libido decreased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37666</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Urinary incontinence</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37675</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Confusion</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37684</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hypoxia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37693</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hyperglycaemia NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37702</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Injection site reaction NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37712</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Weight decreased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37721</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hypertension NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37730</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hypotension NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37739</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Proteinuria present</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37748</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hyperkalaemia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37757</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Nail abnormality NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37767</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Vasovagal attack</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37776</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Tumour flare</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37785</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Vulvovaginal dryness</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37794</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Renal failure NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37803</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hypermagnesaemia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37812</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Lymphopenia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37822</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Myocarditis NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37831</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Tumour lysis syndrome</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37840</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hypernatraemia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37849</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Photosensitivity reaction NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37858</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Pneumothorax NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37867</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hypertriglyceridaemia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37877</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hyperuricaemia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37886</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Pruritus NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37895</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Peripheral ischaemia NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37904</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Urinary retention</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37913</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Pulmonary fibrosis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37922</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hypocalcaemia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37932</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hypoglycaemia NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37941</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Platelet count decreased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37950</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Insomnia NEC</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37959</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hypokalaemia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37968</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Blood magnesium decreased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37977</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hyponatraemia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37987</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hypophosphataemia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E37996</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Flatulence</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38005</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Lipase increased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38014</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Gastritis NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38023</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Peripheral sensory neuropathy</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38032</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Nystagmus NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38042</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Nausea</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38051</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Pancreatitis NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38060</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Proctitis NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38069</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Syncope</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38078</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Salivary gland disorder NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38087</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Tremor NEC</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38097</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Vomiting NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38106</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >AUDITORY/EAR OTHER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38115</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Arrhythmia NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38124</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >CARDIAC GENERAL OTHER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38133</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Coagulation disorder NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38142</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >CONSTITUTIONAL SYMPTOMS OTHER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38152</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >ENDOCRINE OTHER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38161</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Infection NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38170</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >LYMPHATICS OTHER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38179</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >NEUROLOGY OTHER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38188</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >PAIN OTHER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38197</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SYNDROMES OTHER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38207</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >GROWTH AND DEVELOPMENT OTHER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38216</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >VASCULAR OTHER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38225</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Blood bicarbonate decreased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38234</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Left ventricular failure</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38243</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Learning disorder NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38252</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Conjunctivitis NEC</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38262</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Diarrhoea NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38271</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Dizziness (exc vertigo)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38280</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Oesophagitis NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38289</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Oedema NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38298</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Impotence</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38307</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Forced expiratory volume decreased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38317</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Adrenal insufficiency</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38326</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >INFERTILITY/STERILITY</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38335</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Amnesia NEC</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38344</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Skin discolouration</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38353</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Thrombosis NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38362</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Culture wound negative</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38372</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Brachial plexopathy</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38381</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Burn</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38390</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Chylothorax</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38399</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Cystitis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38408</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Fibrosis-deep connective tissue</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38417</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Cholecystitis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38427</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Chyle or lymph leakage</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38436</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Exostosis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38445</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Extremity-upper (function)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38454</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Eyelid dysfunction</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38463</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Fibrosis-cosmesis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38472</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Aspiration</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38482</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Atelectasis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38491</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Atrophy, skin</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38500</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Atrophy, subcutaneous fat</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38509</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Edema, larynx</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38518</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Edema: head and neck</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38527</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hemorrhoids</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38537</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hydrocephalus</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38546</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hypopigmentation</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38555</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hypothermia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38564</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Incontinence, anal</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38573</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Edema: trunk/genital</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38582</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Edema: viscera</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38592</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Ejaculatory dysfunction</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38601</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Encephalopathy</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38610</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hematoma</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38619</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Flu-like syndrome</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38628</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Fracture</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38637</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Optic disc edema</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38647</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Orgasmic dysfunction</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38656</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Osteoporosis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38665</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Iron overload</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38674</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Lymphedema-related fibrosis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38683</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Lymphocele</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38692</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Malabsorption</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38702</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Mental status</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38711</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Myelitis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38720</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Myelodysplasia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38729</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Joint-effusion</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38738</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Muscular/skeletal hypoplasia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38747</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Obesity</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38757</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Left ventricular diastolic dysfunction</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38766</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Valvular heart disease</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38775</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Viral hepatitis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38784</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Vital capacity</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38793</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Vitreous hemorrhage</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38802</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Pancreas, exocrine enzyme deficiency</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38812</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Splenic function</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38821</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Striae</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38830</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Telangiectasia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38839</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Tinnitus</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38848</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Pericarditis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38857</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Phlebolymphatic cording</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38867</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Prolapse of stoma, GI</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38876</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Prolapse of stoma, GU</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38885</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Proptosis/enophthalmos</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38894</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Pulmonary hypertension</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38903</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Restrictive cardiomyopathy</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38912</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Retinal detachment</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38922</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Retinopathy</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38931</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Seroma</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38940</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Short stature</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38949</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Ulceration</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38958</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Uveitis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38967</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Vaginal mucositis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38977</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Rigors</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38986</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Convulsions NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E38995</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Urine discolouration</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39004</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Acidosis NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39013</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Adult respiratory distress syndrome</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39022</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Alcohol intolerance syndrome (antabuse-like syndrome)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39032</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Alkalosis NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39041</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hypersensitivity NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39050</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Rhinitis allergic NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39059</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >ALLERGY/IMMUNOLOGY OTHER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39068</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Arachnoiditis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39077</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Ascites</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39087</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Ataxia NEC</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39096</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >BLOOD/BONE MARROW OTHER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39105</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Bone age (alteration in bone age)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39114</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Bone growth: femoral head; slipped capital femoral
+               epiphysis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39123</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Bone growth: limb length discrepancy</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39132</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Bone growth: spine kyphosis/lordosis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39142</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Bone: spine-scoliosis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39151</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Bronchospasm, wheezing</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39160</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Ecchymosis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39169</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >CNS necrosis/cystic progression</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39178</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Blood creatine phosphokinase increased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39187</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Cardiac troponin I increased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39197</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Cardiac troponin T increased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39206</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Cardiopulmonary arrest, cause unknown (non-fatal)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39215</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Cervical spine-range of motion</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39224</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hypercholesterolaemia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39233</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Colitis, infectious (e.g., Clostridium difficile)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39242</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Cushingoid</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39252</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Cytokine release syndrome/acute infusion reaction</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39261</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Disseminated intravascular coagulation</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39270</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Dental: dentures or prosthesis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39279</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Dental: periodontal disease</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39288</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Dental: teeth</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39297</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Dental: teeth development</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39307</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Dermal change lymphedema, phlebolymphedema</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39316</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Distention/bloating, abdominal</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39325</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Post-operative haemorrhage</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39334</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Menopausal symptoms</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39343</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Prothrombin time prolonged</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39352</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Ileus</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39362</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Induration/fibrosis (skin and subcutaneous tissue)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39371</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Aspartate aminotransferase increased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39380</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Dry mouth</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39389</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Dysphagia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39398</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Enteritis (inflammation of the small bowel)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39407</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Extrapyramidal disorder NEC</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39417</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Extremity-lower (gait/walking)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39426</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Fatigue</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39435</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Pyrexia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39444</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Gamma-glutamyltransferase increased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39453</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Glomerular filtration rate</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39462</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Growth velocity (reduction in growth velocity)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39472</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hearing: patients with/without baseline audiogram and enrolled in a
+                  monitoring program</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39481</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hearing: patients without baseline audiogram and not enrolled in a
+                  monitoring program</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39490</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Dyspepsia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39499</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hemolysis NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39508</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Haemorrhagic stroke</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39517</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Irritability</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39527</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Keratitis NEC</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39536</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Laryngeal nerve dysfunction</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39545</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Leak, cerebrospinal fluid (CSF)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39554</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Leucopenia NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39563</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Encephalopathy NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39572</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hepatic failure</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39582</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Local complication - device/prosthesis-related</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39591</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Lumbar spine-range of motion</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39600</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >MUSCULOSKELETAL/SOFT TISSUE OTHER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39609</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Myositis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39618</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Nasal cavity/paranasal sinus reactions</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39627</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Neuroendocrine: ACTH deficiency</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39637</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Inappropriate ADH secretion</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39646</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Neuroendocrine: gonadotropin secretion abnormality</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39655</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Neuroendocrine: growth hormone secretion abnormality</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39664</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Neuroendocrine: prolactin hormone secretion abnormality</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39673</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Peripheral motor neuropathy</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39682</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Neutropenia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39692</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Blindness night</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39701</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Odor (patient odor)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39710</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Diplopia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39719</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Opportunistic infection associated with &gt;=Grade 2
+               lymphopenia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39728</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Osteonecrosis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39737</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Otitis externa (exc boil of meatus) NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39747</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Otitis media serous NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39756</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Activated partial thromboplastin time prolonged</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39765</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Pancreatic endocrine: glucose intolerance</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39774</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Parathyroid function, low (hypoparathyroidism)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39783</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Pericardial effusion</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39792</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Personality change</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39802</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Petechiae</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39811</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Phlebitis superficial</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39820</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Phrenic nerve dysfunction</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39829</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Pleural effusion</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39838</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Pneumonitis NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39847</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Portal hypertension</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39857</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Electrocardiogram QT prolonged</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39866</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Prolonged chest tube drainage or air leak after pulmonary
+               resection</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39875</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Prolonged intubation after pulmonary resection (&gt;24 hrs after
+                  surgery)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39884</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Delusion NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39893</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Puberty (delayed)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39902</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Puberty (precocious)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39912</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >PULMONARY/UPPER RESPIRATORY OTHER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39921</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Upper motor neurone lesion</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39930</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Dermatitis exfoliative NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39939</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Rash: acne/acneiform</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39948</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Erythema multiforme</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39957</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Localised exfoliation</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39967</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >RENAL/GENITOURINARY OTHER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39976</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Right ventricular dysfunction (cor pulmonale)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39985</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Scleral necrosis/melt</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E39994</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SECONDARY MALIGNANCY POSSIBLY RELATED TO CANCER
+               TREATMENT</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40003</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SEXUAL/REPRODUCTIVE FUNCTION OTHER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40012</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Skin breakdown/decubitus ulcer</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40022</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Depressed level of consciousness</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40031</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Speech disorder NEC</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40040</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Sweating increased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40049</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Taste disturbance</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40058</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Thrombotic microangiopathy (e.g., thrombotic thrombocytopenic
+                  purpura[TTP] or hemolytic uremic syndrome[HUS])</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40067</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Thyroid function, high (hyperthyroidism, thyrotoxicosis)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40077</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Trismus (difficulty, restriction or pain when opening
+               mouth)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40086</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Caecitis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40095</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Fanconi syndrome</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40104</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Urinary frequency</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40113</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Urticaria NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40122</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Vaginal discharge (non-infectious)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40132</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Vaginal stenosis/length</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40141</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Vaginitis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40150</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Vision blurred</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40159</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Photopsia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40168</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Photophobia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40177</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Dysphonia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40187</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Lacrimation increased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40196</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Febrile neutropenia (fever of unknown origin without clinically or
+                  microbiologically documented infection) (ANC &lt;1.0 x 10^9/L, fever
+                  &gt;=38.5 degrees C)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40205</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Retinoic acid syndrome</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40214</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Pulmonary function test NOS decreased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40223</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Fistula, pulmonary/upper respiratory</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40232</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Pain</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40242</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Infection (documented clinically or microbiologically) with Grade 3 or
+                  4 neutrophils (ANC &lt;1.0 x 10^9/L)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40251</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Mucositis/stomatitis (clinical exam)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40260</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Mucositis/stomatitis (functional/symptomatic)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40269</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Dyspnoea NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40278</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Fistula, GU</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40287</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >GASTROINTESTINAL OTHER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40297</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hemorrhage, pulmonary/upper respiratory</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40306</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >OCULAR/VISUAL OTHER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40315</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Thrombosis/embolism (vascular access-related)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40324</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Visceral arterial ischaemia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40333</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Stricture/stenosis (including anastomotic), GI</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40342</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Neuropathy: cranial</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40352</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >HEPATOBILIARY/PANCREAS OTHER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40361</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Vessel injury-vein</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40370</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Alanine aminotransferase increased</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40379</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Vessel injury-artery</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40388</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Death not associated with CTCAE term</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40397</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >DERMATOLOGY/SKIN OTHER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40407</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hemorrhage, GI</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40416</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >INTRA-OPERATIVE INJURY OTHER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40425</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Leak (including anastomotic), GU</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40434</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Intra-operative injury</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40443</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Mood alteration</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40452</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Obstruction/stenosis of airway</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40462</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Breast function/lactation</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40471</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Breast nipple/areolar deformity</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40480</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Breast volume/hypoplasia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40489</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >HEMORRHAGE/BLEEDING OTHER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40498</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Cerebral ischaemia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40507</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Conduction abnormality/Atrioventricular heart block</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40517</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hemorrhage, GU</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40526</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Hiccups</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40535</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Menstruation irregular</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40544</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Stricture/stenosis (including anastomotic), GU</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40553</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Obstruction, GU</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40562</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Cheilitis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40572</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Fistula, GI</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40581</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Ulcer, GI</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40590</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Dermatitis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40599</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >METABOLIC/LABORATORY OTHER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40608</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Leak (including anastomotic), GI</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40617</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Perforation, GU</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40627</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Infection with unknown ANC</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40636</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Ventricular arrhythmia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40645</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Perforation, GI</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40654</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Obstruction, GI</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40663</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Necrosis, GI</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40672</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Infection with normal ANC or Grade 1 or 2 neutrophils</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40682</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Muscle weakness, generalized or specific area (not due to
+               neuropathy)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40691</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Joint-function</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40700</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Myocardial ischaemia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40709</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Soft tissue necrosis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40718</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Supraventricular and nodal arrhythmia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E40727</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+</cgMDR:Enumerated_Conceptual_Domain>

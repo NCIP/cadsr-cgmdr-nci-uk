@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Enumerated_Value_Domain xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-NHS" data_identifier="4E8198093" version="3.0.0">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>Import of Minimum Cancer Data Set</cgMDR:administrative_note>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-05-04</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-05-04</cgMDR:effective_date>
+        <cgMDR:last_change_date>2007-05-04</cgMDR:last_change_date>
+        <cgMDR:registration_status>PreferredStandard</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-000005-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-000009-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-200002-1</cgMDR:submitted_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>value domain for EXCISION MARGIN</cgMDR:name>
+            <cgMDR:definition_text/>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:typed_by>GB-CANCERGRID-000010-1</cgMDR:typed_by>
+    <cgMDR:value_domain_datatype>UNGZUJZS1</cgMDR:value_domain_datatype>
+    <cgMDR:value_domain_format/>
+    <cgMDR:value_domain_maximum_character_quantity>2</cgMDR:value_domain_maximum_character_quantity>
+    <cgMDR:value_domain_unit_of_measure>MV3QWZ2YG</cgMDR:value_domain_unit_of_measure>
+    <cgMDR:containing permissible_value_identifier="1C5A655D1">
+        <cgMDR:permissible_value_begin_date>2007-05-04+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>01</cgMDR:value_item>
+        <cgMDR:contained_in>9412974B5</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="1B66393AD">
+        <cgMDR:permissible_value_begin_date>2007-05-04+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>02</cgMDR:value_item>
+        <cgMDR:contained_in>229743EE6</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="D070EB71B">
+        <cgMDR:permissible_value_begin_date>2007-05-04+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>03</cgMDR:value_item>
+        <cgMDR:contained_in>8C9A764DB</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="C61DA7E77">
+        <cgMDR:permissible_value_begin_date>2007-05-04+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>04</cgMDR:value_item>
+        <cgMDR:contained_in>E5A81B721</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="3C7CE071A">
+        <cgMDR:permissible_value_begin_date>2007-05-04+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>05</cgMDR:value_item>
+        <cgMDR:contained_in>EB1A3A76E</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="E6430C819">
+        <cgMDR:permissible_value_begin_date>2007-05-04+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>06</cgMDR:value_item>
+        <cgMDR:contained_in>CD4E96EE9</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:representing>GB-NHS-CDA3CA3EC-3.0.0</cgMDR:representing>
+</cgMDR:Enumerated_Value_Domain>

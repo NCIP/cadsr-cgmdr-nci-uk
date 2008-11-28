@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Enumerated_Conceptual_Domain xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-CANCERGRID" data_identifier="D1E854353" version="0.1">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>Auto generated during protege import</cgMDR:administrative_note>
+        <cgMDR:administrative_status>scheduledForReview</cgMDR:administrative_status>
+        <cgMDR:change_description/>
+        <cgMDR:creation_date>2006-08-08</cgMDR:creation_date>
+        <cgMDR:effective_date>2006-08-08</cgMDR:effective_date>
+        <cgMDR:explanatory_comment/>
+        <cgMDR:last_change_date>2006-08-08</cgMDR:last_change_date>
+        <cgMDR:origin/>
+        <cgMDR:registration_status>Incomplete</cgMDR:registration_status>
+        <cgMDR:unresolved_issue/>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-000005-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-000009-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-000006-1</cgMDR:submitted_by>
+    <cgMDR:described_by>KNCSJG1HE</cgMDR:described_by>
+    <cgMDR:classified_by>http://www.cancergrid.org/ontologies/data-element-classification#D1E13772</cgMDR:classified_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>TNM Staging System  enumerated conceptual domain</cgMDR:name>
+            <cgMDR:definition_text>assess with due regard to reasons for hospitalisation</cgMDR:definition_text>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2006-08-08</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Tumour =&lt; 2cm in greatest dimension T1m1c Micro-invasion =&lt;
+                     0.1cm in greatest dimension T1a Tumour &gt; 0.1 but =&lt; 0.5cm or less
+                     in greatest dimension T1b Tumour &gt; 0.5 cm but =&lt; 1 cm in greatest
+                     dimension T1c Tumour &gt; 1cm but =&lt; 2cm in greatest
+                  dimension</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E85520</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2006-08-08</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Tumour &gt; 5cm in greatest dimension</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E85526</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2006-08-08</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Tumour of any size with direct extension to (a) chest wall or (b) skin,
+                     only as described below. T4a Extension to chest wall, not including pectoralis
+                     muscle T4b Edema (including peau d'orange) or ulceration of the skin
+                     of the breat or satellite skin nodules confined to the same breast T4c Both
+                     (T4a and T4b) T4d Inflammatory carcinoma</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E85532</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2006-08-08</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >No evidence of primary tumour</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E85538</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2006-08-08</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Carcinoma in situ: intraductal carcinoma, lobular carcinoma in situ, or
+                     Paget's disease of the nipple with no tumour</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E85544</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2006-08-08</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Primary tumour cannot be assessed</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E85551</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2006-08-08</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Tumour &gt; 2cm but =&lt; 5cm in greatest dimension</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E85557</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+</cgMDR:Enumerated_Conceptual_Domain>

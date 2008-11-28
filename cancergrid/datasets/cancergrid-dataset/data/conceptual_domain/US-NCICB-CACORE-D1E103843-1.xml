@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Enumerated_Conceptual_Domain xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="US-NCICB-CACORE" data_identifier="D1E103843" version="1">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-07-17</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-07-17</cgMDR:effective_date>
+        <cgMDR:explanatory_comment>Transformed from NCICB caDSR</cgMDR:explanatory_comment>
+        <cgMDR:last_change_date>2007-07-17</cgMDR:last_change_date>
+        <cgMDR:registration_status>Standard</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>US-NCICB-CTEP-STEWARD</cgMDR:administered_by>
+    <cgMDR:registered_by>US-NCICB-CACORE-REGISTRAR</cgMDR:registered_by>
+    <cgMDR:submitted_by>US-NCICB-CTEP-SUMBMITTER</cgMDR:submitted_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>US-NCICB-CTEP-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>US</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>Adverse Events</cgMDR:name>
+            <cgMDR:definition_text/>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>US</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>AE</cgMDR:name>
+            <cgMDR:definition_text/>
+            <cgMDR:preferred_designation>false</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:dimensionality/>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >None</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E103845</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Limp evident only to trained observer and able to walk &gt;=1
+                  kilometer; cane indicated for walking</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E103854</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Noticeable limp, or limitation of limb function, but able to walk
+                  &gt;=0.1 kilometer (1 city block); quad cane indicated for
+               walking</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E103863</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Severe limp with stride modified to maintain balance (widened base of
+                  support, marked reduction in step length); ambulation limited to walker; crutches
+                  indicated</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E103872</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Unable to walk</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E103881</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+</cgMDR:Enumerated_Conceptual_Domain>

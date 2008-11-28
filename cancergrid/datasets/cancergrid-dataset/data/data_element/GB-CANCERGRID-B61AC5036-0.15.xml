@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Data_Element xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-CANCERGRID" data_identifier="B61AC5036" version="0.15">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>(none)</cgMDR:administrative_note>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:change_description>curation to recorded status</cgMDR:change_description>
+        <cgMDR:creation_date>2007-01-05</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-01-05</cgMDR:effective_date>
+        <cgMDR:explanatory_comment>(none)</cgMDR:explanatory_comment>
+        <cgMDR:last_change_date>2007-01-05</cgMDR:last_change_date>
+        <cgMDR:origin>CRUK Cancer Clinical Trials Unit, University of Birmingham</cgMDR:origin>
+        <cgMDR:registration_status>Superseded</cgMDR:registration_status>
+        <cgMDR:unresolved_issue>(none)</cgMDR:unresolved_issue>
+        <cgMDR:until_date>2007-01-05</cgMDR:until_date>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-000007-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-000009-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-200002-1</cgMDR:submitted_by>
+    <cgMDR:described_by>KNCSJG1HE</cgMDR:described_by>
+    <cgMDR:described_by>E82C12DAC</cgMDR:described_by>
+    <cgMDR:classified_by>http://www.cancergrid.org/ontologies/data-element-classification#D1E13683</cgMDR:classified_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>Study Subject Free-text Cause of Death</cgMDR:name>
+            <cgMDR:definition_text>The cause of death as entered by the clinician completing the case report form describing the cause of death without coding or restriction</cgMDR:definition_text>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>Patient Cause of Death</cgMDR:name>
+            <cgMDR:definition_text>as preferred</cgMDR:definition_text>
+            <cgMDR:preferred_designation>false</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>Diagnosed cause of death</cgMDR:name>
+            <cgMDR:definition_text>Case report form question on the Neat Death form</cgMDR:definition_text>
+            <cgMDR:preferred_designation>false</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:data_element_precision>not applicable</cgMDR:data_element_precision>
+    <cgMDR:representation_class_qualifier/>
+    <cgMDR:representing>GB-CANCERGRID-A2E2EE26D-0.11</cgMDR:representing>
+    <cgMDR:typed_by>GB-CANCERGRID-000019-1</cgMDR:typed_by>
+    <cgMDR:expressing>GB-CANCERGRID-9348CCC3B-0.11</cgMDR:expressing>
+    <cgMDR:exemplified_by>
+        <cgMDR:data_element_example_item >please complete example...</cgMDR:data_element_example_item>
+    </cgMDR:exemplified_by>
+    <cgMDR:field_name preferred=""/>
+    <cgMDR:question_text preferred=""/>
+    <cgMDR:input_to deriving="GB-CANCERGRID-B61AC5036-0.16">
+        <cgMDR:derivation_rule_specification>superseded by</cgMDR:derivation_rule_specification>
+    </cgMDR:input_to>
+    <cgMDR:field_name preferred=""/>
+    <cgMDR:question_text preferred=""/>
+</cgMDR:Data_Element>

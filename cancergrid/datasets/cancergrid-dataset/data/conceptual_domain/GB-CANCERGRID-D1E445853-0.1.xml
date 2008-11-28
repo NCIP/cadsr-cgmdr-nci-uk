@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Enumerated_Conceptual_Domain xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-CANCERGRID" data_identifier="D1E445853" version="0.1">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>Auto generated during protege import</cgMDR:administrative_note>
+        <cgMDR:administrative_status>scheduledForReview</cgMDR:administrative_status>
+        <cgMDR:change_description/>
+        <cgMDR:creation_date>2006-08-08</cgMDR:creation_date>
+        <cgMDR:effective_date>2006-08-08</cgMDR:effective_date>
+        <cgMDR:explanatory_comment/>
+        <cgMDR:last_change_date>2006-08-08</cgMDR:last_change_date>
+        <cgMDR:origin/>
+        <cgMDR:registration_status>Incomplete</cgMDR:registration_status>
+        <cgMDR:unresolved_issue/>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-000005-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-000009-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-000006-1</cgMDR:submitted_by>
+    <cgMDR:described_by>KNCSJG1HE</cgMDR:described_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>Reason codes  enumerated conceptual domain</cgMDR:name>
+            <cgMDR:definition_text>no definition suppied</cgMDR:definition_text>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2006-08-08</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Myekisuppression/ neutropenia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E44643</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2006-08-08</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Oral/Gl tract toxicity</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E44649</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2006-08-08</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Other (specify reason in box provided)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E44655</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2006-08-08</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Fatigue</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E44661</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2006-08-08</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Dyspnoea/ cough</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E44667</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2006-08-08</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Sepsis/ infection/ fever</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E44674</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2006-08-08</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >not known</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E44680</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2006-08-08</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Holiday</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E44686</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2006-08-08</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Cardiovascular toxicity</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E44692</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+</cgMDR:Enumerated_Conceptual_Domain>

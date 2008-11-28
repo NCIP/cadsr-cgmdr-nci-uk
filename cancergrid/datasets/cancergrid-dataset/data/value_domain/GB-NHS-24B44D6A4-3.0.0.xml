@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Enumerated_Value_Domain xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-NHS" data_identifier="24B44D6A4" version="3.0.0">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>Import of Minimum Cancer Data Set</cgMDR:administrative_note>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-05-04</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-05-04</cgMDR:effective_date>
+        <cgMDR:last_change_date>2007-05-04</cgMDR:last_change_date>
+        <cgMDR:registration_status>PreferredStandard</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-000005-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-000009-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-200002-1</cgMDR:submitted_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>value domain for MORBIDITY CODE (CHEMOTHERAPY)</cgMDR:name>
+            <cgMDR:definition_text/>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:typed_by>GB-CANCERGRID-000010-1</cgMDR:typed_by>
+    <cgMDR:value_domain_datatype>UNGZUJZS1</cgMDR:value_domain_datatype>
+    <cgMDR:value_domain_format/>
+    <cgMDR:value_domain_maximum_character_quantity>1</cgMDR:value_domain_maximum_character_quantity>
+    <cgMDR:value_domain_unit_of_measure>MV3QWZ2YG</cgMDR:value_domain_unit_of_measure>
+    <cgMDR:containing permissible_value_identifier="48BD53E58">
+        <cgMDR:permissible_value_begin_date>2007-05-04+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>For Chemotherapy and Combination treatment (only long-term adverse effects need to be recorded)</cgMDR:value_item>
+        <cgMDR:contained_in>129B23D5B</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="12AD943E7">
+        <cgMDR:permissible_value_begin_date>2007-05-04+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>2</cgMDR:value_item>
+        <cgMDR:contained_in>CC49A954C</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="C08C9D23E">
+        <cgMDR:permissible_value_begin_date>2007-05-04+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>3</cgMDR:value_item>
+        <cgMDR:contained_in>D7BA4CA0A</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="DD7E28C36">
+        <cgMDR:permissible_value_begin_date>2007-05-04+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>4</cgMDR:value_item>
+        <cgMDR:contained_in>B16AC25D2</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="8148B09A3">
+        <cgMDR:permissible_value_begin_date>2007-05-04+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>5</cgMDR:value_item>
+        <cgMDR:contained_in>A949E4B90</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="AD139B1D2">
+        <cgMDR:permissible_value_begin_date>2007-05-04+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>For Radiotherapy (only significant morbidity needs to be recorded):</cgMDR:value_item>
+        <cgMDR:contained_in>5D39E4AAB</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="2387EA4AB">
+        <cgMDR:permissible_value_begin_date>2007-05-04+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>3</cgMDR:value_item>
+        <cgMDR:contained_in>A36934583</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="79959B378">
+        <cgMDR:permissible_value_begin_date>2007-05-04+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>4</cgMDR:value_item>
+        <cgMDR:contained_in>776B6DC75</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="5829187C1">
+        <cgMDR:permissible_value_begin_date>2007-05-04+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>5</cgMDR:value_item>
+        <cgMDR:contained_in>8C7CD58B0</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:representing>GB-NHS-C08A3B35E-3.0.0</cgMDR:representing>
+</cgMDR:Enumerated_Value_Domain>

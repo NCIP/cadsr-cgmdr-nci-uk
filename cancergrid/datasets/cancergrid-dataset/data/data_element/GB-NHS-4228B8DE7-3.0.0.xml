@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Data_Element xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-NHS" data_identifier="4228B8DE7" version="3.0.0">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>Import of Minimum Cancer Data Set</cgMDR:administrative_note>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-05-04</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-05-04</cgMDR:effective_date>
+        <cgMDR:last_change_date>2007-05-04</cgMDR:last_change_date>
+        <cgMDR:registration_status>PreferredStandard</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-000005-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-000009-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-200002-1</cgMDR:submitted_by>
+    <cgMDR:described_by/>
+    <cgMDR:classified_by>http://www.cancergrid.org/ontologies/data-element-classification#6A9354126</cgMDR:classified_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>BRACHYTHERAPY TYPE</cgMDR:name>
+            <cgMDR:definition_text/>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>BRACHYTHERAPY TYPES</cgMDR:name>
+            <cgMDR:preferred_designation>false</cgMDR:preferred_designation>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:representing>GB-NHS-092E782B7-3.0.0</cgMDR:representing>
+    <cgMDR:typed_by>GB-CANCERGRID-000019-1</cgMDR:typed_by>
+    <cgMDR:expressing>GB-NHS-72084EEDD-3.0.0</cgMDR:expressing>
+    <cgMDR:field_name preferred=""/>
+    <cgMDR:question_text preferred=""/>
+</cgMDR:Data_Element>

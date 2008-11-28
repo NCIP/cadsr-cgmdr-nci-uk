@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Enumerated_Conceptual_Domain xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-NHS" data_identifier="7E766E1A2" version="3.0.0">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>Import of Minimum Cancer Data Set</cgMDR:administrative_note>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-05-04</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-05-04</cgMDR:effective_date>
+        <cgMDR:last_change_date>2007-05-04</cgMDR:last_change_date>
+        <cgMDR:registration_status>PreferredStandard</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-000005-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-000009-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-200002-1</cgMDR:submitted_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>conceptual domain for SOURCE OF REFERRAL FOR OUT-PATIENTS</cgMDR:name>
+            <cgMDR:definition_text/>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >following an emergency admission</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >0C822E71E</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >following a domiciliary visit</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >2E9D874B5</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >following an Accident And Emergency Attendance</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >0D78685D7</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >other</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >49292A951</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >referral from a General Medical Practitioner</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >B41A4CC48</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >referral from an Accident And Emergency Department</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >A2E731D63</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >referral from a consultant, other than in an Accident And Emergency Department</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >5BB5121A7</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >self-referral</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >0A1101C5D</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >referral from Prosthetist</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >DB4ECC9A7</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >General Dental Practitioner</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >96E8EE640</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Community Dental Service</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >893B64D83</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >other source of referral</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >986362C52</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+</cgMDR:Enumerated_Conceptual_Domain>

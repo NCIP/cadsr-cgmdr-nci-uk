@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:cgDatatype xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" datatype_identifier="DOENTJ350">
+    <cgMDR:datatype_annotation/>
+    <cgMDR:datatype_description>The ·value space· of date consists of top-open intervals of exactly
+    one day in length on the timelines of dateTime, beginning on the beginning moment of each day
+    (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with
+    '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover
+    the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every
+    minute and therefore overlap. A "date object" is an object with year, month, and day properties
+    just like those of dateTime objects, plus an optional timezone-valued timezone property. (As
+    with values of dateTime timezones are a special case of durations.) Just as a dateTime object
+    corresponds to a point on one of the timelines, a date object corresponds to an interval on one
+    of the two timelines as just described. Timezoned date values track the starting moment of their
+    day, as determined by their timezone; said timezone is generally recoverable for canonical
+    representations. [Definition:] The recoverable timezone is that duration which is the result of
+    subtracting the first moment (or any moment) of the timezoned date from the first moment (or the
+    corresponding moment) UTC on the same date. ·recoverable timezone·s are always durations between
+    '+12:00' and '-11:59'. This "timezone normalization" (which follows automatically from the
+    definition of the date ·value space·) is explained more in Lexical representation (§3.2.9.1).
+    For example: the first moment of 2002-10-10+13:00 is 2002-10-10T00:00:00+13, which is
+    2002-10-09T11:00:00Z, which is also the first moment of 2002-10-09-11:00. Therefore
+    2002-10-10+13:00 is 2002-10-09-11:00; they are the same interval.</cgMDR:datatype_description>
+    <cgMDR:datatype_name>xs:date</cgMDR:datatype_name>
+    <cgMDR:datatype_scheme_reference>XMLSchema</cgMDR:datatype_scheme_reference>
+</cgMDR:cgDatatype>

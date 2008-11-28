@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Enumerated_Value_Domain xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-CANCERGRID-MB" data_identifier="A1BBD341C" version="0.1">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>please complete administrative-note...</cgMDR:administrative_note>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-08-28</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-08-28</cgMDR:effective_date>
+        <cgMDR:last_change_date>2007-08-28</cgMDR:last_change_date>
+        <cgMDR:registration_status>recorded</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-300003-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-300004-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-300003-1</cgMDR:submitted_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-900001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>Breast Cancer Guy's Distant Relapse Site</cgMDR:name>
+            <cgMDR:definition_text>The anatomical site of distant metastases, as recorded in the Guy's Clinical Database.</cgMDR:definition_text>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:typed_by>GB-CANCERGRID-000010-1</cgMDR:typed_by>
+    <cgMDR:value_domain_datatype>KRMZ1P97F</cgMDR:value_domain_datatype>
+    <cgMDR:value_domain_unit_of_measure>MV3QWZ2YG</cgMDR:value_domain_unit_of_measure>
+    <cgMDR:containing permissible_value_identifier="2C1546C78">
+        <cgMDR:permissible_value_begin_date>2007-08-28+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>cutaneous</cgMDR:value_item>
+        <cgMDR:contained_in>7B4AA7D54</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="C5BDCA25D">
+        <cgMDR:permissible_value_begin_date>2007-08-28+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>lymphatic contra axillary</cgMDR:value_item>
+        <cgMDR:contained_in>CC81C9BB7</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="8443324D3">
+        <cgMDR:permissible_value_begin_date>2007-08-28+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>lymphatic contra SCF</cgMDR:value_item>
+        <cgMDR:contained_in>4966A978A</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="4A42A329A">
+        <cgMDR:permissible_value_begin_date>2007-08-28+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>lymphatic other</cgMDR:value_item>
+        <cgMDR:contained_in>8E325919A</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="DA732AE13">
+        <cgMDR:permissible_value_begin_date>2007-08-28+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>bone</cgMDR:value_item>
+        <cgMDR:contained_in>C8AB2E1CA</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="86462BE3B">
+        <cgMDR:permissible_value_begin_date>2007-08-28+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>mediastinal</cgMDR:value_item>
+        <cgMDR:contained_in>CBDAB931A</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="88EABAD6A">
+        <cgMDR:permissible_value_begin_date>2007-08-28+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>pleura +/- effusion</cgMDR:value_item>
+        <cgMDR:contained_in>EA196B793</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="3968B5E94">
+        <cgMDR:permissible_value_begin_date>2007-08-28+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>lung</cgMDR:value_item>
+        <cgMDR:contained_in>34EB02874</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="56DE1A46C">
+        <cgMDR:permissible_value_begin_date>2007-08-28+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>liver</cgMDR:value_item>
+        <cgMDR:contained_in>A971B84B6</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="32DA41A42">
+        <cgMDR:permissible_value_begin_date>2007-08-28+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>bone marrow</cgMDR:value_item>
+        <cgMDR:contained_in>C8EA6C607</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="13BA53278">
+        <cgMDR:permissible_value_begin_date>2007-08-28+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>brain</cgMDR:value_item>
+        <cgMDR:contained_in>1B24469B8</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="745B79E12">
+        <cgMDR:permissible_value_begin_date>2007-08-28+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>meningeal</cgMDR:value_item>
+        <cgMDR:contained_in>E4EE59A98</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="435243918">
+        <cgMDR:permissible_value_begin_date>2007-08-28+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>pericardial</cgMDR:value_item>
+        <cgMDR:contained_in>9C10E295A</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="82E44CD5C">
+        <cgMDR:permissible_value_begin_date>2007-08-28+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>abdominal</cgMDR:value_item>
+        <cgMDR:contained_in>6847589E3</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="17915C415">
+        <cgMDR:permissible_value_begin_date>2007-08-28+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>ascites</cgMDR:value_item>
+        <cgMDR:contained_in>96D7811C5</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="BE4B6B81E">
+        <cgMDR:permissible_value_begin_date>2007-08-28+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>hypercalcaemia</cgMDR:value_item>
+        <cgMDR:contained_in>1DBC1E50C</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="7B9BCE794">
+        <cgMDR:permissible_value_begin_date>2007-08-28+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>pathological fracture</cgMDR:value_item>
+        <cgMDR:contained_in>7885292D7</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="A1C969D27">
+        <cgMDR:permissible_value_begin_date>2007-08-28+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>spinal cord compression</cgMDR:value_item>
+        <cgMDR:contained_in>A239CA99E</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="1A61C3371">
+        <cgMDR:permissible_value_begin_date>2007-08-28+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>brachial plexopathy</cgMDR:value_item>
+        <cgMDR:contained_in>01EE40923</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="A909B51CA">
+        <cgMDR:permissible_value_begin_date>2007-08-28+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>other</cgMDR:value_item>
+        <cgMDR:contained_in>53DED5771</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:representing>GB-CANCERGRID-MB-A8A24997D-0.1</cgMDR:representing>
+</cgMDR:Enumerated_Value_Domain>

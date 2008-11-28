@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Enumerated_Conceptual_Domain xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-CANCERGRID-MB" data_identifier="C85A6DBA6" version="0.1">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>please complete administrative-note...</cgMDR:administrative_note>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-08-29+01:00</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-08-29+01:00</cgMDR:effective_date>
+        <cgMDR:last_change_date>2007-08-29+01:00</cgMDR:last_change_date>
+        <cgMDR:registration_status>recorded</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-300003-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-300004-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-300003-1</cgMDR:submitted_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-900001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>Pathological T Stage</cgMDR:name>
+            <cgMDR:definition_text>Pathological T stage of tumour at diagnosis (anatomical extent of the primary tumour), as per TNM Classification of Malignant Tumours, International Union Against Cancer, 6th Edition, 2002. The pathological classification requires the examination of the primary carcinoma with no gross tumour at the margins of resection. A case can be classified pT if there is only microscopic tumour in a margin. When classifying pT, the tumour size is a measurement of the invasive
+component. For example, if there is a large in situ component (e.g. 4cm) and a small invasive component (e.g. 0.5cm), the tumour is coded pT1a.</cgMDR:definition_text>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >No evidence of primary tumour</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >EC655DC9B</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Tumour =&lt; 2cm in greatest dimension. T1mic: Microinvasion =&lt; 0.1cm in greatest dimension. T1a: 0.1cm &lt; Tumour =&lt; 0.5cm in greatest dimension. T1b: 0.5cm &lt; Tumour =&lt; 1cm in greatest dimension. T1c: 1cm &lt; Tumour =&lt; 2cm in greatest dimension.</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >C4DB72353</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >2cm &lt; Tumour =&lt; 5cm in greatest dimension</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >59D699089</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Tumour &gt; 5cm in greatest dimension</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >86E29C0A4</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Tumour of any size with direct extension to chest wall or skin, only as described below. T4a: Extension to chest wall, not including pectoralis muscle. T4b: Oedema (including peau d'orange) or ulceration of the skin of the breast or satellite skin nodules confined to the same breast. T4c: Both (T4a and T4b). T4d: Inflammatory carcinoma</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >97E1326AD</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Carcinoma in situ: ductal carcinoma, lobular carcinoma in situ, or Paget's disease of the nipple with no tumour</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >80166E846</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Primary tumour cannot be assessed</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D3D7E11CD</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+</cgMDR:Enumerated_Conceptual_Domain>

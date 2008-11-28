@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Data_Element xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-NHS" data_identifier="0EA554633" version="3.0.0">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>Import of Minimum Cancer Data Set</cgMDR:administrative_note>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-05-04</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-05-04</cgMDR:effective_date>
+        <cgMDR:last_change_date>2007-05-04</cgMDR:last_change_date>
+        <cgMDR:registration_status>PreferredStandard</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-000005-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-000009-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-200002-1</cgMDR:submitted_by>
+    <cgMDR:described_by/>
+    <cgMDR:classified_by>http://www.cancergrid.org/ontologies/data-element-classification#79B19EBBD</cgMDR:classified_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>GMP (CODE OF REGISTERED OR REFERRING GMP)</cgMDR:name>
+            <cgMDR:definition_text>This is the code of the GENERAL MEDICAL PRACTITIONER (GMP) with whom the PATIENT is registered. A doctor receives a GENERAL MEDICAL COUNCIL (GMC) CODE on qualification. If he/she
+                        then chooses to enter general practice, a further number is allocated (the
+                            DOCTOR INDEX NUMBER (DIN)) by the Information Centre for
+                        health and social care (IC). This number is passed to the Primary Care Trust (PCT) requesting the number who then liaise
+                        with the NHS Business Services Authority (BSA) Prescription Pricing Division
+                        (PPD) on the issue of prescription pads etc. The NHS BSA PPD use the number
+                        to derive the GENERAL MEDICAL PRACTITIONER GMP (PPD) CODE by prefixing it
+                        with the character 'G' and adding a check digit at the end. The GMP code
+                        linked to his/her main practice is included on the National Administrative
+                        Codes Service (NACS) CD-ROM and the NACS NHSnet website.The GMP code is an eight character alphanumeric code, see PERSON IDENTIFIER and GENERAL MEDICAL PRACTITIONER GMP (PPD)
+                        CODE.When a locum refers, use the code of the GP for whom the locum is acting. See
+                        GENERAL MEDICAL PRACTITIONER GMP (PPD) CODE.For GPs working in hospitals, the following codes should be used:-if the GP is working as an assistant, use
+                                the code of the responsible consultant;-if the GP is working as a consultant, use
+                                the GP's GENERAL MEDICAL COUNCIL (GMC) CODE.Whilst both Ministry of Defence (MoD) and prison doctors provide general
+                        medical services to their communities, they are not GMPs and should not be
+                        recorded as Registered GMPs. They can refer (REFERRER CODE).For the NACS contact details, see Contact Details.</cgMDR:definition_text>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>GMP (CODE OF REGISTERED OR REFERRING GMPS)</cgMDR:name>
+            <cgMDR:preferred_designation>false</cgMDR:preferred_designation>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:representing>GB-NHS-C45E8DAB6-3.0.0</cgMDR:representing>
+    <cgMDR:typed_by>GB-CANCERGRID-000019-1</cgMDR:typed_by>
+    <cgMDR:expressing>GB-NHS-D85B51A72-3.0.0</cgMDR:expressing>
+    <cgMDR:field_name preferred=""/>
+    <cgMDR:question_text preferred=""/>
+</cgMDR:Data_Element>

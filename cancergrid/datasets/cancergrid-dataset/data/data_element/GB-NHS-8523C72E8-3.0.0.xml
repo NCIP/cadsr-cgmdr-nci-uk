@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Data_Element xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-NHS" data_identifier="8523C72E8" version="3.0.0">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>Import of Minimum Cancer Data Set</cgMDR:administrative_note>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-05-04</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-05-04</cgMDR:effective_date>
+        <cgMDR:last_change_date>2007-05-04</cgMDR:last_change_date>
+        <cgMDR:registration_status>PreferredStandard</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-000005-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-000009-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-200002-1</cgMDR:submitted_by>
+    <cgMDR:described_by/>
+    <cgMDR:classified_by>http://www.cancergrid.org/ontologies/data-element-classification#52B4E4B29</cgMDR:classified_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>REFERRER CODE</cgMDR:name>
+            <cgMDR:definition_text>This requires the code of the PERSON making the referral. This will normally be a CARE PROFESSIONAL - a GENERAL MEDICAL PRACTITIONER or a CONSULTANT. The intention is for this item to reflect the actual
+                        (true) referrer. For example, following a GENERAL MEDICAL PRACTITIONER
+                        referral, a CONSULTANT may subsequently refer the PATIENT to another CONSULTANT within the Hospital Provider Spell. The code of the CONSULTANT making the
+                        referral and the CONSULTANTS organisation should be recorded in the
+                        Commissioning Data Set (CDS) rather than the code of the GMP referrer. This
+                        also applies where a CONSULTANT refers an NHS PATIENT to another doctor for
+                        NHS-commissioned treatment at another NHS Trust, a non-NHS provider, or an
+                        overseas provider. Where the CONSULTANT CODE is not known, the default value C9999998
+                        should be used.In all other cases, the code of the referring GMP should be recorded, if
+                        applicable.See CONSULTANT CODE and GMP (CODE OF REGISTERED OR REFERRING GMP) for the
+                        codes available for CONSULTANTS and GENERAL MEDICAL PRACTITIONERS and
+                        GENERAL DENTAL PRACTITIONERS, Ministry of Defence (MoD) and Prison Doctors.If the REFERRER CODE is not known or not applicable e.g., the PATIENT has
+                        self-presented, the default code (X9999998) should be used.Hospital Provider Spell is an ACTIVITY GROUP where ACTIVITY GROUP TYPE is National Code 21 'Hospital Provider
+                            Spell'.</cgMDR:definition_text>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>REFERRER CODES</cgMDR:name>
+            <cgMDR:preferred_designation>false</cgMDR:preferred_designation>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:representing>GB-NHS-24CAC119B-3.0.0</cgMDR:representing>
+    <cgMDR:typed_by>GB-CANCERGRID-000019-1</cgMDR:typed_by>
+    <cgMDR:expressing>GB-NHS-C5D64844C-3.0.0</cgMDR:expressing>
+    <cgMDR:field_name preferred=""/>
+    <cgMDR:question_text preferred=""/>
+</cgMDR:Data_Element>

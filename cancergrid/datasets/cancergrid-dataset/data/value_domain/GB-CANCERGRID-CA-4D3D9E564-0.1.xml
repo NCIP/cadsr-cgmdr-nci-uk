@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Enumerated_Value_Domain xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-CANCERGRID-CA" data_identifier="4D3D9E564" version="0.1">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note/>
+        <cgMDR:administrative_status>scheduledForReview</cgMDR:administrative_status>
+        <cgMDR:creation_date>2008-02-05</cgMDR:creation_date>
+        <cgMDR:effective_date>2008-02-05</cgMDR:effective_date>
+        <cgMDR:last_change_date>2008-02-05</cgMDR:last_change_date>
+        <cgMDR:registration_status>Recorded</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-000007-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-000009-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-000007-1</cgMDR:submitted_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>Tumour Response Mid Treatment Lesion 1</cgMDR:name>
+            <cgMDR:definition_text>Classification of response to treatment in the middle of the treatment cycles</cgMDR:definition_text>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:typed_by>GB-CANCERGRID-000010-1</cgMDR:typed_by>
+    <cgMDR:value_domain_datatype>KRMZ1P97F</cgMDR:value_domain_datatype>
+    <cgMDR:value_domain_unit_of_measure>MV3QWZ2YG</cgMDR:value_domain_unit_of_measure>
+    <cgMDR:containing permissible_value_identifier="95DB65151">
+        <cgMDR:permissible_value_begin_date>2008-02-05Z</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>1</cgMDR:value_item>
+        <cgMDR:contained_in>ACED15AB5</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="CDA794A70">
+        <cgMDR:permissible_value_begin_date>2008-02-05Z</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>2</cgMDR:value_item>
+        <cgMDR:contained_in>527378B85</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="04915E263">
+        <cgMDR:permissible_value_begin_date>2008-02-05Z</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>3</cgMDR:value_item>
+        <cgMDR:contained_in>48ED9BC43</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="2776416C9">
+        <cgMDR:permissible_value_begin_date>2008-02-05Z</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>4</cgMDR:value_item>
+        <cgMDR:contained_in>8782E8242</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="0ED52267C">
+        <cgMDR:permissible_value_begin_date>2008-02-05Z</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>5</cgMDR:value_item>
+        <cgMDR:contained_in>7A43A3A1E</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:representing>GB-CANCERGRID-CA-13DD0DAD5-0.1</cgMDR:representing>
+</cgMDR:Enumerated_Value_Domain>

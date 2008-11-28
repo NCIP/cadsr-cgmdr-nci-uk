@@ -1,0 +1,6 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/mdr/data/registration_authority" owner="admin" group="dba" mode="755" created="2008-06-24T23:07:26+01:00" version="1">
+    <resource type="XMLResource" name="GB-CANCERGRID-CA.xml" owner="admin" group="dba" mode="755" created="2008-06-24T23:07:26+01:00" modified="2008-06-24T23:07:26+01:00" filename="GB-CANCERGRID-CA.xml" mimetype="text/xml"/>
+    <resource type="XMLResource" name="GB-CANCERGRID-MB.xml" owner="admin" group="dba" mode="755" created="2008-06-24T23:07:26+01:00" modified="2008-06-24T23:07:26+01:00" filename="GB-CANCERGRID-MB.xml" mimetype="text/xml"/>
+    <resource type="XMLResource" name="GB-CANCERGRID-OX.xml" owner="admin" group="dba" mode="755" created="2008-06-24T23:07:26+01:00" modified="2008-06-24T23:07:26+01:00" filename="GB-CANCERGRID-OX.xml" mimetype="text/xml"/>
+    <resource type="XMLResource" name="US-NCICB-CACORE.xml" owner="admin" group="dba" mode="755" created="2008-06-24T23:07:26+01:00" modified="2008-06-24T23:07:26+01:00" filename="US-NCICB-CACORE.xml" mimetype="text/xml"/>
+</collection>

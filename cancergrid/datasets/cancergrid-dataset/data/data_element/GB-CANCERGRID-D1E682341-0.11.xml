@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Data_Element xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-CANCERGRID" data_identifier="D1E682341" version="0.11">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:change_description/>
+        <cgMDR:creation_date>2005-03-15</cgMDR:creation_date>
+        <cgMDR:effective_date>2006-06-15</cgMDR:effective_date>
+        <cgMDR:explanatory_comment>Auto generated from Protege</cgMDR:explanatory_comment>
+        <cgMDR:last_change_date>2006-09-14</cgMDR:last_change_date>
+        <cgMDR:origin/>
+        <cgMDR:until_date>2006-10-04</cgMDR:until_date>
+        <cgMDR:registration_status>Superseded</cgMDR:registration_status>
+        <cgMDR:unresolved_issue/>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-000005-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-000009-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-000006-1</cgMDR:submitted_by>
+    <cgMDR:described_by>KNCSJG1HE</cgMDR:described_by>
+    <cgMDR:described_by>ecog_perf_status</cgMDR:described_by>
+    <cgMDR:described_by>ecog_amjclinoncol</cgMDR:described_by>
+    <cgMDR:described_by>tango_rand_form</cgMDR:described_by>
+    <cgMDR:classified_by>http://www.cancergrid.org/ontologies/data-element-classification#D1E13772</cgMDR:classified_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>Zubrod Score</cgMDR:name>
+            <cgMDR:definition_text>assess with due regard to reasons for hospitalisation</cgMDR:definition_text>
+            <cgMDR:preferred_designation>false</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>ECOG Performance Status</cgMDR:name>
+            <cgMDR:definition_text>Used to assess how a disease is progressing, how the disease
+               affects the daily living abilities of the patient, and determine appropriate
+               treatment and prognosis.</cgMDR:definition_text>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>WHO Performance Status</cgMDR:name>
+            <cgMDR:definition_text>assess with due regard to reasons for hospitalisation</cgMDR:definition_text>
+            <cgMDR:preferred_designation>false</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:data_element_precision>0</cgMDR:data_element_precision>
+    <cgMDR:representation_class_qualifier/>
+    <cgMDR:representing>GB-CANCERGRID-D1E682344-0.17</cgMDR:representing>
+    <cgMDR:typed_by>GB-CANCERGRID-000010-1</cgMDR:typed_by>
+    <cgMDR:expressing>GB-CANCERGRID-D1E682342-0.1</cgMDR:expressing>
+    <cgMDR:exemplified_by>
+        <cgMDR:data_element_example_item >The use of
+            this data element as both an eligibility criterion and as a stratification variable is
+            illustrated in the reference document 'tango rand form'. By specifying patients must be
+            of ECOG &gt;3, poorly patients are excluded from the treatment regimen, and the
+            differences in response according to the health at recruitment can be de-convoluted in
+            analysis.</cgMDR:data_element_example_item>
+    </cgMDR:exemplified_by>
+    <cgMDR:field_name preferred=""/>
+    <cgMDR:question_text preferred=""/>
+    <cgMDR:input_to deriving="GB-CANCERGRID-D1E573861-0.19">
+        <cgMDR:derivation_rule_specification>boolean value
+         partition</cgMDR:derivation_rule_specification>
+    </cgMDR:input_to>
+    <cgMDR:field_name preferred=""/>
+    <cgMDR:question_text preferred=""/>
+    <cgMDR:input_to deriving="US-NCICB-88-5.1">
+        <cgMDR:derivation_rule_specification>exact equivalent</cgMDR:derivation_rule_specification>
+    </cgMDR:input_to>
+    <cgMDR:field_name preferred=""/>
+    <cgMDR:question_text preferred=""/>
+    <cgMDR:input_to deriving="GB-CANCERGRID-D1E682341-0.21">
+        <cgMDR:derivation_rule_specification>superceded by</cgMDR:derivation_rule_specification>
+    </cgMDR:input_to>
+    <cgMDR:field_name preferred=""/>
+    <cgMDR:question_text preferred=""/>
+    <cgMDR:input_to deriving="GB-CANCERGRID-D1E682341-0.21">
+        <cgMDR:derivation_rule_specification>superceded by</cgMDR:derivation_rule_specification>
+    </cgMDR:input_to>
+    <cgMDR:field_name preferred=""/>
+    <cgMDR:question_text preferred=""/>
+</cgMDR:Data_Element>

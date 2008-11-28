@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:cgDatatype xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" datatype_identifier="BIWQ1KEVL">
+    <cgMDR:datatype_annotation/>
+    <cgMDR:datatype_description>positiveInteger is ·derived· from nonNegativeInteger by setting the value of ·minInclusive· to be 1. This results in the standard mathematical concept of the positive integer numbers. The ·value space· of positiveInteger is the infinite set {1,2,...}. The ·base type· of positiveInteger is nonNegativeInteger.</cgMDR:datatype_description>
+    <cgMDR:datatype_name>xs:positiveInteger</cgMDR:datatype_name>
+    <cgMDR:datatype_scheme_reference>XMLSchema</cgMDR:datatype_scheme_reference>
+</cgMDR:cgDatatype>

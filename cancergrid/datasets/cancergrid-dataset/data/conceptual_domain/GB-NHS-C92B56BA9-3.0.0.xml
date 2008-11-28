@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Enumerated_Conceptual_Domain xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-NHS" data_identifier="C92B56BA9" version="3.0.0">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>Import of Minimum Cancer Data Set</cgMDR:administrative_note>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-05-04</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-05-04</cgMDR:effective_date>
+        <cgMDR:last_change_date>2007-05-04</cgMDR:last_change_date>
+        <cgMDR:registration_status>PreferredStandard</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-000005-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-000009-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-200002-1</cgMDR:submitted_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>conceptual domain for BASIS OF DIAGNOSIS (CANCER)</cgMDR:name>
+            <cgMDR:definition_text/>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Death Certificate: The only information available is from a death certificate</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >A4B89E758</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Clinical: Diagnosis made before death but without the benefit of any of the following (2-7)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >73C739328</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Clinical Investigation: Includes all diagnostic techniques (e.g. X-rays, endoscopy, imaging, ultrasound, exploratory surgery and autopsy) without a tissue diagnosis</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >A78D7820E</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Specific tumour markers: Includes biochemical and/or immunological markers which are specific for a tumour site</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >89B615347</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Cytology: Examination of cells whether from a primary or secondary site, including fluids aspirated using endoscopes or needles. Also including microscopic examination of peripheral blood films and trephine bone marrow aspirates</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >7014D3329</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Histology of a mestastases: Histological examination of tissues from a metastasis, including autopsy specimens</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >E8E03D964</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Histology of a primary tumour: Histological examination of tissue from the primary tumour, however obtained, including all cutting and bone marrow biopsies. Also includes autopsy specimens of a primary tumour</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >9547B4264</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Unknown: No information on how the diagnosis has been made (e.g. PAS or HISS record only)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >6EC11E80C</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+</cgMDR:Enumerated_Conceptual_Domain>

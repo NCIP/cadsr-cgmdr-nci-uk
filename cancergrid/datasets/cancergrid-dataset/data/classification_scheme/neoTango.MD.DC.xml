@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thesaurusdc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:iso="http://www.isotc211.org/19115/" xmlns:iaaaterm="http://iaaa.cps.unizar.es/iaaaterms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcterms="http://purl.org/dc/terms/" fileID="neoTango" xml:lang="en">
+    <dc:title>neoTango</dc:title>
+    <dcterms:alternative>neoTango</dcterms:alternative>
+    <dc:creator>Steve Harris</dc:creator>
+    <dc:subject>Neo Tango data collection events</dc:subject>
+    <iaaaterm:AppliedIn>neoTango trial</iaaaterm:AppliedIn>
+    <dc:publisher>cancergrid</dc:publisher>
+    <dc:contributor>steve harris</dc:contributor>
+    <dcterms:created>2008-03-18</dcterms:created>
+    <dcterms:issued>2008-03-18</dcterms:issued>
+    <dc:format>SKOS</dc:format>
+    <dc:identifier>http://iaaa.unizar.es/thesaurus/neoTango</dc:identifier>
+    <dc:language>en</dc:language>
+</thesaurusdc>

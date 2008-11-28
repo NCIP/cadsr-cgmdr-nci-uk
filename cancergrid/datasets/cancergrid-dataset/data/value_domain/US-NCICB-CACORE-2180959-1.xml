@@ -1,0 +1,1896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Enumerated_Value_Domain xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="US-NCICB-CACORE" data_identifier="2180959" version="1">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-04-17</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-04-17</cgMDR:effective_date>
+        <cgMDR:explanatory_comment>Transformed from NCICB caDSR</cgMDR:explanatory_comment>
+        <cgMDR:last_change_date>2007-04-17</cgMDR:last_change_date>
+        <cgMDR:registration_status>Standard</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>US-NCICB-CTEP-STEWARD</cgMDR:administered_by>
+    <cgMDR:registered_by>US-NCICB-CACORE-REGISTRAR</cgMDR:registered_by>
+    <cgMDR:submitted_by>US-NCICB-CTEP-SUMBMITTER</cgMDR:submitted_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>US-NCICB-CTEP-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>US</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>CTC Adverse Event Short Name Type</cgMDR:name>
+            <cgMDR:definition_text/>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>US</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>CTC_AE_SHORT_NAME_TP</cgMDR:name>
+            <cgMDR:definition_text/>
+            <cgMDR:preferred_designation>false</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:typed_by>GB-CANCERGRID-000019-1</cgMDR:typed_by>
+    <cgMDR:value_domain_datatype>KRMZ1P97F</cgMDR:value_domain_datatype>
+    <cgMDR:value_domain_unit_of_measure>MV3QWZ2YG</cgMDR:value_domain_unit_of_measure>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Bone marrow cellularity</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37336</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Acute vascular leak syndrome</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37345</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Alkaline phosphatase</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37354</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Bladder spasms</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37363</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Cataract</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37372</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Alopecia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37382</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>CD4 count</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37391</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Creatinine</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37400</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Arthritis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37409</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Bilirubin</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37418</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Anorexia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37427</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Apnea</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37437</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Feminization of male</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37446</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Fibrinogen</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37455</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Autoimmune reaction</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37464</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Gynecomastia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37473</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Dry eye</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37482</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Amylase</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37492</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Palpitations</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37501</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Haptoglobin</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37510</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Serum sickness</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37519</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Glaucoma</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37528</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Colitis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37537</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Cough</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37547</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Dry skin</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37556</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hemoglobin</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37565</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hemoglobinuria</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37574</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Constipation</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37583</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hypothyroidism</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37592</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Vasculitis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37602</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Masculinization of female</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37611</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Flushing</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37620</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Weight gain</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37629</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hypercalcemia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37638</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hypoalbuminemia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37647</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Dehydration</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37657</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Libido</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37666</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Incontinence</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37675</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Confusion</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37684</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hypoxia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37693</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hyperglycemia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37702</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Injection site reaction</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37712</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Weight loss</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37721</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hypertension</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37730</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hypotension</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37739</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Proteinuria</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37748</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hyperkalemia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37757</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Nail changes</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37767</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Vasovagal episode</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37776</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Tumor flare</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37785</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Vaginal dryness</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37794</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Renal failure</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37803</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hypermagnesemia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37812</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Lymphopenia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37822</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Myocarditis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37831</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Tumor lysis syndrome</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37840</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hypernatremia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37849</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Photosensitivity</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37858</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Pneumothorax</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37867</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hypertriglyceridemia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37877</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hyperuricemia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37886</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Pruritus</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37895</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Peripheral arterial ischemia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37904</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Urinary retention</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37913</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Pulmonary fibrosis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37922</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hypocalcemia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37932</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hypoglycemia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37941</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Platelets</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37950</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Insomnia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37959</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hypokalemia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37968</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hypomagnesemia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37977</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hyponatremia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37987</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hypophosphatemia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E37996</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Flatulence</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38005</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Lipase</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38014</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Gastritis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38023</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Neuropathy-sensory</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38032</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Nystagmus</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38042</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Nausea</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38051</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Pancreatitis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38060</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Proctitis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38069</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Syncope (fainting)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38078</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Salivary gland changes</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38087</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Tremor</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38097</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Vomiting</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38106</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Auditory/Ear-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38115</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Cardiac Arrhythmia-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38124</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Cardiac General-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38133</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Coagulation-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38142</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Constitutional Symptoms-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38152</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Endocrine-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38161</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Infection-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38170</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Lymphatics-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38179</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Neurology-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38188</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Pain-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38197</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Syndromes-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38207</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Growth and Development-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38216</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Vascular-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38225</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Bicarbonate, serum-low</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38234</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Left ventricular systolic dysfunction</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38243</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Cognitive disturbance</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38252</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Ocular surface disease</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38262</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Diarrhea</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38271</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Dizziness</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38280</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Esophagitis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38289</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Edema: limb</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38298</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Erectile dysfunction</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38307</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>FEV(1)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38317</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Adrenal insufficiency</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38326</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Infertility/sterility</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38335</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Memory impairment</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38344</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hyperpigmentation</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38353</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Thrombosis/thrombus/embolism</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38362</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Wound complication, non-infectious</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38372</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Brachial plexopathy</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38381</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Burn</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38390</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Chylothorax</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38399</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Cystitis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38408</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Fibrosis-deep connective tissue</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38417</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Cholecystitis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38427</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Chyle or lymph leakage</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38436</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Exostosis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38445</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Extremity-upper (function)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38454</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Eyelid dysfunction</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38463</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Fibrosis-cosmesis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38472</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Aspiration</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38482</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Atelectasis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38491</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Atrophy, skin</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38500</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Atrophy, subcutaneous fat</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38509</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Edema, larynx</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38518</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Edema: head and neck</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38527</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hemorrhoids</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38537</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hydrocephalus</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38546</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hypopigmentation</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38555</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hypothermia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38564</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Incontinence, anal</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38573</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Edema: trunk/genital</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38582</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Edema: viscera</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38592</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Ejaculatory dysfunction</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38601</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Encephalopathy</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38610</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hematoma</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38619</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Flu-like syndrome</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38628</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Fracture</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38637</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Optic disc edema</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38647</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Orgasmic dysfunction</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38656</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Osteoporosis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38665</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Iron overload</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38674</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Lymphedema-related fibrosis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38683</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Lymphocele</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38692</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Malabsorption</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38702</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Mental status</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38711</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Myelitis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38720</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Myelodysplasia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38729</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Joint-effusion</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38738</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Muscular/skeletal hypoplasia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38747</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Obesity</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38757</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Left ventricular diastolic dysfunction</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38766</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Valvular heart disease</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38775</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Viral hepatitis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38784</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Vital capacity</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38793</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Vitreous hemorrhage</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38802</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Pancreas, exocrine enzyme deficiency</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38812</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Splenic function</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38821</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Striae</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38830</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Telangiectasia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38839</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Tinnitus</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38848</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Pericarditis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38857</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Phlebolymphatic cording</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38867</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Prolapse of stoma, GI</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38876</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Prolapse of stoma, GU</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38885</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Proptosis/enophthalmos</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38894</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Pulmonary hypertension</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38903</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Restrictive cardiomyopathy</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38912</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Retinal detachment</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38922</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Retinopathy</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38931</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Seroma</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38940</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Short stature</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38949</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Ulceration</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38958</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Uveitis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38967</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Vaginal mucositis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38977</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Rigors/chills</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38986</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Seizure</cgMDR:value_item>
+        <cgMDR:contained_in>D1E38995</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Urine color change</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39004</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Acidosis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39013</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>ARDS</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39022</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Alcohol intolerance syndrome</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39032</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Alkalosis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39041</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Allergic reaction</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39050</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Rhinitis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39059</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Allergy-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39068</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Arachnoiditis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39077</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Ascites</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39087</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Ataxia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39096</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Blood-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39105</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Bone age</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39114</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Femoral head growth</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39123</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Limb length</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39132</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Kyphosis/lordosis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39142</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Scoliosis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39151</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Bronchospasm</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39160</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Bruising</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39169</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>CNS necrosis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39178</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>CPK</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39187</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>cTnI</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39197</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>cTnT</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39206</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Cardiopulmonary arrest</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39215</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Cervical spine ROM</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39224</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Cholesterol</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39233</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Colitis, infectious</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39242</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Cushingoid</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39252</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Cytokine release syndrome</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39261</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>DIC</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39270</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Dentures</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39279</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Periodontal</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39288</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Teeth</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39297</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Teeth development</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39307</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Dermal change</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39316</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Distention</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39325</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hemorrhage with surgery</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39334</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hot flashes</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39343</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>INR</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39352</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Ileus</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39362</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Induration</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39371</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>AST</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39380</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Dry mouth</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39389</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Dysphagia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39398</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Enteritis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39407</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Involuntary movement</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39417</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Gait/walking</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39426</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Fatigue</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39435</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Fever</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39444</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>GGT</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39453</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>GFR</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39462</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Reduction in growth velocity</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39472</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hearing (monitoring program)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39481</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hearing (without monitoring program)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39490</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Heartburn</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39499</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hemolysis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39508</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>CNS Hemorrhage</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39517</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Irritability</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39527</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Keratitis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39536</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Laryngeal nerve</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39545</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>CSF leak</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39554</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Leukocytes</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39563</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Leukoencephalopathy</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39572</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Liver dysfunction</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39582</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Device/prosthesis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39591</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Lumbar spine ROM</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39600</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Musculoskeletal-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39609</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Myositis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39618</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Nasal/paranasal reactions</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39627</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>ACTH</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39637</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>ADH</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39646</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Gonadotropin</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39655</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Growth hormone</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39664</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Prolactin</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39673</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Neuropathy-motor</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39682</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Neutrophils</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39692</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Nyctalopia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39701</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Patient odor</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39710</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Diplopia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39719</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Opportunistic infection</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39728</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Osteonecrosis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39737</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Otitis, external</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39747</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Otitis, middle</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39756</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>PTT</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39765</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Diabetes</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39774</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hypoparathyroidism</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39783</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Pericardial effusion</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39792</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Personality</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39802</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Petechiae</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39811</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Phlebitis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39820</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Phrenic nerve</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39829</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Pleural effusion</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39838</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Pneumonitis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39847</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Portal flow</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39857</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Prolonged QTc</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39866</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Chest tube drainage or leak</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39875</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Prolonged intubation</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39884</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Psychosis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39893</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Delayed puberty</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39902</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Precocious puberty</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39912</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Pulmonary-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39921</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Pyramidal tract dysfunction</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39930</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Rash</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39939</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Acne</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39948</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Erythema multiforme</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39957</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hand-foot</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39967</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Renal-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39976</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Right ventricular dysfunction</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39985</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Scleral necrosis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E39994</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Secondary Malignancy (possibly related to cancer treatment)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40003</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Sexual-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40012</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Decubitus</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40022</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Somnolence</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40031</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Speech impairment</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40040</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Sweating</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40049</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Taste alteration</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40058</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Thrombotic microangiopathy</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40067</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hyperthyroidism</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40077</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Trismus</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40086</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Typhlitis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40095</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Urinary electrolyte wasting</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40104</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Urinary frequency</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40113</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Urticaria</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40122</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Vaginal discharge</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40132</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Vaginal stenosis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40141</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Vaginitis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40150</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Blurred vision</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40159</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Flashing lights</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40168</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Photophobia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40177</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Voice changes</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40187</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Watery eye</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40196</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Febrile neutropenia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40205</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>"Retinoic acid syndrome"</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40214</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>DL(co)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40223</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Fistula, pulmonary - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40232</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Pain - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40242</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Infection (documented clinically) - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40251</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Mucositis (clinical exam) - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40260</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Mucositis (functional/symptomatic) - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40269</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Dyspnea</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40278</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Fistula, GU - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40287</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>GI-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40297</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hemorrhage pulmonary - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40306</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Ocular-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40315</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Thrombosis/embolism (vascular access)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40324</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Visceral arterial ischemia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40333</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Stricture, GI - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40342</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Neuropathy: cranial - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40352</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hepatobiliary-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40361</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Vessel injury - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40370</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>ALT</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40379</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Artery injury - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40388</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Death not associated with CTCAE term - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40397</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Dermatology-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40407</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hemorrhage, GI - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40416</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Intraop Injury-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40425</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Leak, GU - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40434</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Intraop injury - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40443</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Mood alteration - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40452</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Airway obstruction - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40462</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Breast function</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40471</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Nipple/areolar</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40480</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Breast</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40489</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hemorrhage-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40498</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>CNS ischemia</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40507</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Conduction abnormality - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40517</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hemorrhage, GU - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40526</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Hiccoughs</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40535</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Irregular menses</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40544</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Stricture, anastomotic, GU - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40553</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Obstruction, GU - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40562</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Cheilitis</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40572</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Fistula, GI - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40581</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Ulcer, GI - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40590</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Dermatitis - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40599</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Metabolic-Other (Specify)</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40608</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Leak, GI - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40617</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Perforation, GU - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40627</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Infection with unknown ANC - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40636</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Ventricular arrhythmia - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40645</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Perforation, GI - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40654</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Obstruction, GI - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40663</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Necrosis, GI - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40672</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Infection with normal ANC - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40682</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Muscle weakness - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40691</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Joint-function</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40700</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Cardiac ischemia/infarction</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40709</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Soft tissue necrosis - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40718</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing>
+        <cgMDR:permissible_value_begin_date>2007-04-17+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>Supraventricular arrhythmia - Select</cgMDR:value_item>
+        <cgMDR:contained_in>D1E40727</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:representing>US-NCICB-CACORE-D1E37334-1</cgMDR:representing>
+</cgMDR:Enumerated_Value_Domain>

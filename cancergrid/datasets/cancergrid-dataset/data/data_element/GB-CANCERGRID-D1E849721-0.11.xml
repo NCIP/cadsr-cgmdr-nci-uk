@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Data_Element xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-CANCERGRID" data_identifier="D1E849721" version="0.11">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>Auto generated during protege import</cgMDR:administrative_note>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:change_description/>
+        <cgMDR:creation_date>2006-08-08</cgMDR:creation_date>
+        <cgMDR:effective_date>2006-08-08</cgMDR:effective_date>
+        <cgMDR:explanatory_comment/>
+        <cgMDR:last_change_date>2006-10-03</cgMDR:last_change_date>
+        <cgMDR:until_date>2006-10-04</cgMDR:until_date>
+        <cgMDR:origin/>
+        <cgMDR:registration_status>Superseded</cgMDR:registration_status>
+        <cgMDR:unresolved_issue/>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-000005-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-000009-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-000006-1</cgMDR:submitted_by>
+    <cgMDR:described_by>KNCSJG1HE</cgMDR:described_by>
+    <cgMDR:classified_by/>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>ALT</cgMDR:name>
+            <cgMDR:definition_text>The level of the enzyme ALT (alanine amino transferase) in blood serum.
+
+ALT is an enzyme normally confined to the liver: presence of ALT in the blood is thus indicative of liver damage, including hepatitis, cirrhosis, hepatic tumour, hepatic ischemia and the use of hepatotoxic drugs</cgMDR:definition_text>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference>medline</cgMDR:definition_source_reference>
+        </cgMDR:containing>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>alanine amino transferase level</cgMDR:name>
+            <cgMDR:definition_text>The level of the enzyme alanine amino transferase in blood serum.</cgMDR:definition_text>
+            <cgMDR:preferred_designation>false</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>Serum glutamate pyruvate transaminase</cgMDR:name>
+            <cgMDR:definition_text>The level of the enzyme glutamate pyruvate transaminase in blood serum.</cgMDR:definition_text>
+            <cgMDR:preferred_designation>false</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:data_element_precision>64</cgMDR:data_element_precision>
+    <cgMDR:representation_class_qualifier/>
+    <cgMDR:representing>GB-CANCERGRID-D1E849724-0.14</cgMDR:representing>
+    <cgMDR:typed_by>GB-CANCERGRID-000018-1</cgMDR:typed_by>
+    <cgMDR:expressing>GB-CANCERGRID-D1E849722-0.12</cgMDR:expressing>
+    <cgMDR:input_to deriving="GB-CANCERGRID-D1E849721-0.14">
+        <cgMDR:derivation_rule_specification>superceded by</cgMDR:derivation_rule_specification>
+    </cgMDR:input_to>
+    <cgMDR:field_name preferred=""/>
+    <cgMDR:question_text preferred=""/>
+    <cgMDR:input_to deriving="GB-CANCERGRID-D1E849721-0.14">
+        <cgMDR:derivation_rule_specification>superceded by</cgMDR:derivation_rule_specification>
+    </cgMDR:input_to>
+    <cgMDR:field_name preferred=""/>
+    <cgMDR:question_text preferred=""/>
+</cgMDR:Data_Element>

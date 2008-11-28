@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:cgDatatype xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" datatype_identifier="GWS5ROG5Y">
+    <cgMDR:datatype_annotation/>
+    <cgMDR:datatype_description>
+        <p>dateTime values may be viewed as objects with integer-valued year, month, day, hour and
+         minute properties, a decimal-valued second property, and a boolean timezoned property. Each
+         such object also has one decimal-valued method or computed property, timeOnTimeline, whose
+         value is always a decimal number; the values are dimensioned in seconds, the integer 0 is
+         0001-01-01T00:00:00 and the value of timeOnTimeline for other dateTime values is computed
+         using the Gregorian algorithm as modified for leap-seconds. The timeOnTimeline values form
+         two related "timelines", one for timezoned values and one for non-timezoned values. Each
+         timeline is a copy of the ·value space· of decimal, with integers given units of seconds.</p>
+        <p>The ·value space· of dateTime is closely related to the dates and times described in ISO
+         8601. For clarity, the text above specifies a particular origin point for the timeline. It
+         should be noted, however, that schema processors need not expose the timeOnTimeline value
+         to schema users, and there is no requirement that a timeline-based implementation use the
+         particular origin described here in its internal representation. Other interpretations of
+         the ·value space· which lead to the same results (i.e., are isomorphic) are of course
+         acceptable.</p>
+        <p>All timezoned times are Coordinated Universal Time (UTC, sometimes called "Greenwich Mean
+         Time"). Other timezones indicated in lexical representations are converted to UTC during
+         conversion of literals to values. "Local" or untimezoned times are presumed to be the time
+         in the timezone of some unspecified locality as prescribed by the appropriate legal
+         authority; currently there are no legally prescribed timezones which are durations whose
+         magnitude is greater than 14 hours. The value of each numeric-valued property (other than
+         timeOnTimeline) is limited to the maximum value within the interval determined by the
+         next-higher property. For example, the day value can never be 32, and cannot even be 29 for
+         month 02 and year 2002 (February 2002).</p>
+    </cgMDR:datatype_description>
+    <cgMDR:datatype_name>xs:dateTime</cgMDR:datatype_name>
+    <cgMDR:datatype_scheme_reference>XMLSchema</cgMDR:datatype_scheme_reference>
+</cgMDR:cgDatatype>

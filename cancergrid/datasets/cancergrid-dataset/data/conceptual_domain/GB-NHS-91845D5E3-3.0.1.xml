@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Enumerated_Conceptual_Domain xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-NHS" data_identifier="91845D5E3" version="3.0.1">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>Import of Minimum Cancer Data Set</cgMDR:administrative_note>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-05-04</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-05-04</cgMDR:effective_date>
+        <cgMDR:last_change_date>2007-05-04</cgMDR:last_change_date>
+        <cgMDR:registration_status>PreferredStandard</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-000005-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-000009-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-200002-1</cgMDR:submitted_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>conceptual domain for ETHNIC CATEGORY</cgMDR:name>
+            <cgMDR:definition_text/>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >White British</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D8A55932E</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >White Irish</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >91C372381</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Any other White background</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >14C70A740</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Mixed White and Black Caribbean</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >953745321</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Mixed White and Black African</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D423E82DD</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Mixed White and Asian</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D7AA4896B</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Any other mixed background</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >74005EB84</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Asian Indian</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >E7A93B532</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Asian Pakistani</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >85D91AEB8</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Asian Bangladeshi</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >A1A670911</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Any other Asian background</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >81D631951</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Black Caribbean</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >2E82298ED</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Black African</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >09713C528</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Any other Black background</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >E413B5BA3</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Chinese</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >638E62DD6</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Any other ethnic group</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >A73BDBB21</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Not stated</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >CCE6C35E2</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+</cgMDR:Enumerated_Conceptual_Domain>

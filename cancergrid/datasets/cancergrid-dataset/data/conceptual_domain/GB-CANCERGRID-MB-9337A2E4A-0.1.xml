@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Enumerated_Conceptual_Domain xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-CANCERGRID-MB" data_identifier="9337A2E4A" version="0.1">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>please complete administrative-note...</cgMDR:administrative_note>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-08-29+01:00</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-08-29+01:00</cgMDR:effective_date>
+        <cgMDR:last_change_date>2007-08-29+01:00</cgMDR:last_change_date>
+        <cgMDR:registration_status>recorded</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-300003-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-300004-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-300003-1</cgMDR:submitted_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-900001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>Breast Cancer Vancouver Histological type</cgMDR:name>
+            <cgMDR:definition_text>The histological tumour type classification scheme used by the Vancouver GPEC/BCOU TAG Data Linkage</cgMDR:definition_text>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Carcinoma, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >116E19133</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Carcinoma, Anaplastic, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >09865377B</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Spindle Cell Carcinoma</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >5BAED5A29</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Oat cell carcinoma</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >289D3AEC1</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Papillary carcinoma</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D4BC8C8A5</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Adenocarcinoma, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >43DBC41E1</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Scirrhous adenocarcinoma</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >85A7D7B73</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Adenoid cystic carcinoma</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >164CDE2C5</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Cribriform carcinoma, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >250A2930B</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Tubular adenocarcinoma</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >95D4E5BCE</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Merkel Cell Carcinoma</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >E64E3B6E2</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Papillary adenocarcinoma, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >AE180A711</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Clear cell adenocarcinoma, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >2120B1005</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Apocrine adenocarcinoma</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >248BC135C</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Mucinous adenocarcinoma</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >3A1A21A94</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Mucin-producing adenocarcinoma</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >18992D511</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Infiltrating duct carcinoma</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >12B8818E2</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Comedocarcinoma, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >84A47B812</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Intraduct papillary adenocarcinoma with invasion</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >AE98082C5</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Intracystic carcinoma, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >351BE4BD4</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Medullary carcinoma, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >016854329</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Medullary carcinoma with lymphoid str</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >2A8ED817B</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Lobular carcinoma, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >B48521B9C</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Infiltrating ductular carcinoma</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >872D53AE7</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Infiltrating duct and lobular carcinoma</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >2DC03DBE4</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Inflammatory carcinoma</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >8736DB22C</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Paget's disease and infiltrating duct carcinoma</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >14CD996C3</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Acinar cell carcinoma</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >5A77EB899</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Adenosquamous carcinoma</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >5AC987424</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Adenocarcinoma with squamous metaplasia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >B03AC6475</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Adenoca., cartlag. &amp; oss. metaplasia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >A8242A73E</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Adenocarcinoma with splindle cell metaplasia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >7AAB9AD35</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Adenocarcinoma with apocrine metaplasia</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >E6C9E7CB0</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+</cgMDR:Enumerated_Conceptual_Domain>

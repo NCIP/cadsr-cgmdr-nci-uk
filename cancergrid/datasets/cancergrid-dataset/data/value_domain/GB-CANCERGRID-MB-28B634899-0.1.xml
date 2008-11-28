@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Enumerated_Value_Domain xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-CANCERGRID-MB" data_identifier="28B634899" version="0.1">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>please complete administrative-note...</cgMDR:administrative_note>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-08-29</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-08-29</cgMDR:effective_date>
+        <cgMDR:last_change_date>2007-08-29</cgMDR:last_change_date>
+        <cgMDR:registration_status>recorded</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-300003-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-300004-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-300003-1</cgMDR:submitted_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-900001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>Breast Cancer Manitoba Histological type</cgMDR:name>
+            <cgMDR:definition_text>The histological tumour type classification scheme used by the Manitoba Breast Cancer Database. The histological type of breast cancer as defined by Ellis and Elston, Histopathology 20, 479-489, 1992</cgMDR:definition_text>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:typed_by>GB-CANCERGRID-000010-1</cgMDR:typed_by>
+    <cgMDR:value_domain_datatype>KRMZ1P97F</cgMDR:value_domain_datatype>
+    <cgMDR:value_domain_unit_of_measure>MV3QWZ2YG</cgMDR:value_domain_unit_of_measure>
+    <cgMDR:containing permissible_value_identifier="718C422C7">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>1</cgMDR:value_item>
+        <cgMDR:contained_in>D568AAE7D</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="73799C138">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>2</cgMDR:value_item>
+        <cgMDR:contained_in>316A424E8</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="9137BD5DD">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>3</cgMDR:value_item>
+        <cgMDR:contained_in>16D2EC2DB</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="66C29A571">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>4</cgMDR:value_item>
+        <cgMDR:contained_in>1C4B7B2B2</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="B543E60B2">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>5</cgMDR:value_item>
+        <cgMDR:contained_in>C3B2509D8</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="E3E7EC3A8">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>6</cgMDR:value_item>
+        <cgMDR:contained_in>DD18167A2</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="295EB29E4">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>7</cgMDR:value_item>
+        <cgMDR:contained_in>6E8CDB72B</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="4734E54C5">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>8</cgMDR:value_item>
+        <cgMDR:contained_in>616555167</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="23BE5CAAA">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>9</cgMDR:value_item>
+        <cgMDR:contained_in>0A5A2C61C</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="45247C5C8">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>10</cgMDR:value_item>
+        <cgMDR:contained_in>DDE876D0E</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="B15706D8E">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>11</cgMDR:value_item>
+        <cgMDR:contained_in>3302E7B94</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="8D32C4ED4">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>12</cgMDR:value_item>
+        <cgMDR:contained_in>3D33D2A67</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="189E64ECA">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>13</cgMDR:value_item>
+        <cgMDR:contained_in>526D7B762</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="23296AA9D">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>14</cgMDR:value_item>
+        <cgMDR:contained_in>8C59E8A37</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:containing permissible_value_identifier="712653C19">
+        <cgMDR:permissible_value_begin_date>2007-08-29+01:00</cgMDR:permissible_value_begin_date>
+        <cgMDR:value_item>15</cgMDR:value_item>
+        <cgMDR:contained_in>19A3661BC</cgMDR:contained_in>
+    </cgMDR:containing>
+    <cgMDR:representing>GB-CANCERGRID-MB-07BABC142-0.1</cgMDR:representing>
+</cgMDR:Enumerated_Value_Domain>

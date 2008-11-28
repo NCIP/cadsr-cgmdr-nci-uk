@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Data_Element xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-CANCERGRID" data_identifier="D1E592581" version="0.16">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>(no note)</cgMDR:administrative_note>
+        <cgMDR:administrative_status>scheduledForReview</cgMDR:administrative_status>
+        <cgMDR:change_description>curation to recorded status</cgMDR:change_description>
+        <cgMDR:creation_date>2006-08-08</cgMDR:creation_date>
+        <cgMDR:effective_date>2006-08-08</cgMDR:effective_date>
+        <cgMDR:explanatory_comment>(no comment)</cgMDR:explanatory_comment>
+        <cgMDR:last_change_date>2007-01-05</cgMDR:last_change_date>
+        <cgMDR:origin>CRUK Cancer Clinical Trials Unit, University of Birmingham</cgMDR:origin>
+        <cgMDR:registration_status>Recorded</cgMDR:registration_status>
+        <cgMDR:unresolved_issue>(no unresolved issue)</cgMDR:unresolved_issue>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-000007-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-000009-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-200002-1</cgMDR:submitted_by>
+    <cgMDR:described_by>KNCSJG1HE</cgMDR:described_by>
+    <cgMDR:classified_by>http://www.cancergrid.org/ontologies/data-element-classification#D1E10774</cgMDR:classified_by>
+    <cgMDR:classified_by>http://www.cancergrid.org/ontologies/data-element-classification#D1E10421</cgMDR:classified_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>Patient Trial Number (CRUK Trials Unit, Birmingham)</cgMDR:name>
+            <cgMDR:definition_text>A sequential, integer trial identifier is assigned to each eligible, recruited patient at registration.  Occasionally, numeric ranges within the domain of allowed trial numbers are assigned to offer additional semantics: for example, in several trials, trials numbers of 10,000 or greater were issued when automatic treatment allocation was unavailable and the treatment was allocated manually by randomisation room staff</cgMDR:definition_text>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>Trial Number (CRUK Trials Unit, Birmingham)</cgMDR:name>
+            <cgMDR:definition_text>(as preferred)</cgMDR:definition_text>
+            <cgMDR:preferred_designation>false</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>TrialNo</cgMDR:name>
+            <cgMDR:definition_text>(as preferred)</cgMDR:definition_text>
+            <cgMDR:preferred_designation>false</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:data_element_precision>0</cgMDR:data_element_precision>
+    <cgMDR:representation_class_qualifier/>
+    <cgMDR:representing>GB-CANCERGRID-D1E592584-0.14</cgMDR:representing>
+    <cgMDR:typed_by>GB-CANCERGRID-000100-1</cgMDR:typed_by>
+    <cgMDR:expressing>GB-CANCERGRID-D1E592582-0.12</cgMDR:expressing>
+    <cgMDR:exemplified_by>
+        <cgMDR:data_element_example_item >see associated example usage documents</cgMDR:data_element_example_item>
+    </cgMDR:exemplified_by>
+    <cgMDR:field_name preferred=""/>
+    <cgMDR:question_text preferred=""/>
+</cgMDR:Data_Element>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Context xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="US-NCICB-CACORE" data_identifier="caBIG" version="1">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-04-17</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-04-17</cgMDR:effective_date>
+        <cgMDR:explanatory_comment>Transformed from NCICB caDSR</cgMDR:explanatory_comment>
+        <cgMDR:last_change_date>2007-04-17</cgMDR:last_change_date>
+        <cgMDR:registration_status>Standard</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>US-NCICB-caBIG-STEWARD</cgMDR:administered_by>
+    <cgMDR:registered_by>US-NCICB-CACORE-REGISTRAR</cgMDR:registered_by>
+    <cgMDR:submitted_by>US-NCICB-caBIG-SUMBMITTER</cgMDR:submitted_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier/>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>US</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>caBIG</cgMDR:name>
+            <cgMDR:definition_text>auto generated context entry</cgMDR:definition_text>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:context_description>Context for caBIG</cgMDR:context_description>
+</cgMDR:Context>

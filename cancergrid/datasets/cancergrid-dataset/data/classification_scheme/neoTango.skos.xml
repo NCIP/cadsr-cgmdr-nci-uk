@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <skos:Concept rdf:about="http://www.cancergrid.org/skos/neoTango#randomisation">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/neoTango"/>
+        <skos:prefLabel xml:lang="en">randomisation</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://www.cancergrid.org/skos/neoTango#root"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/skos/neoTango#sae">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">serious adverse event</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/neoTango"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/skos/neoTango#eligibility">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">eligibility</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/neoTango"/>
+    </skos:Concept>
+    <skos:ConceptScheme rdf:about="http://iaaa.unizar.es/thesaurus/neoTango">
+        <skos:hasTopConcept rdf:resource="http://www.cancergrid.org/skos/neoTango#root"/>
+        <cgMDR:administrationRecord rdf:resource="GB-CANCERGRID-010026-1.0"/>
+    </skos:ConceptScheme>
+    <skos:Concept rdf:about="http://www.cancergrid.org/skos/neoTango#onStudy">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">on study</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/neoTango"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/skos/neoTango#treatmentEC">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/neoTango"/>
+        <skos:prefLabel xml:lang="en">treatment with cycolphosphamide and epirubicin</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/skos/neoTango#root">
+        <skos:narrower rdf:resource="http://www.cancergrid.org/skos/neoTango#randomisation"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/skos/neoTango#treatment"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/skos/neoTango#offStudy"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/neoTango"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/skos/neoTango#sae"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/skos/neoTango#followup"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/skos/neoTango#onStudy"/>
+        <skos:prefLabel xml:lang="en">neoTango Classification Scheme</skos:prefLabel>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/skos/neoTango#response"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/skos/neoTango#eligibility"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/skos/neoTango#responseEnd">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">end treatment response</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/neoTango"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/skos/neoTango#treatmentSummary">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/neoTango"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">treatment summary</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/skos/neoTango#response">
+        <skos:narrower rdf:resource="http://www.cancergrid.org/skos/neoTango#responseEnd"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/skos/neoTango#responseMid"/>
+        <skos:prefLabel xml:lang="en">response</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/neoTango"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/skos/neoTango#treatment">
+        <skos:narrower rdf:resource="http://www.cancergrid.org/skos/neoTango#treatmentSummary"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/skos/neoTango#treatmentTG"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/skos/neoTango#treatmentEC"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/skos/neoTango#RT"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/skos/neoTango#surgery"/>
+        <skos:prefLabel xml:lang="en">treatment</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/neoTango"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/skos/neoTango#offStudy">
+        <skos:prefLabel xml:lang="en">off study</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/neoTango"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/skos/neoTango#surgery">
+        <skos:prefLabel xml:lang="en">surgery</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/neoTango"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/skos/neoTango#followup">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/neoTango"/>
+        <skos:prefLabel xml:lang="en">followup</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/skos/neoTango#RT">
+        <skos:prefLabel xml:lang="en">radiotherapy treatment</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/neoTango"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/skos/neoTango#responseMid">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/neoTango"/>
+        <skos:prefLabel xml:lang="en">mid-treatment response</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/skos/neoTango#treatmentTG">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/neoTango"/>
+        <skos:prefLabel xml:lang="en">treatment with paclitaxel and gemcitabine</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+</rdf:RDF>

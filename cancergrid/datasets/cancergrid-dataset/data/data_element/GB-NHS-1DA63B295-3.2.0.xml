@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Data_Element xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-NHS" data_identifier="1DA63B295" version="3.2.0">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>Import of Minimum Cancer Data Set</cgMDR:administrative_note>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-05-04</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-05-04</cgMDR:effective_date>
+        <cgMDR:last_change_date>2007-05-04</cgMDR:last_change_date>
+        <cgMDR:registration_status>PreferredStandard</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-000005-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-000009-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-200002-1</cgMDR:submitted_by>
+    <cgMDR:described_by/>
+    <cgMDR:classified_by>http://www.cancergrid.org/ontologies/data-element-classification#52B4E4B29</cgMDR:classified_by>
+    <cgMDR:classified_by>http://www.cancergrid.org/ontologies/data-element-classification#EE65AC736</cgMDR:classified_by>
+    <cgMDR:classified_by>http://www.cancergrid.org/ontologies/data-element-classification#88ACB970E</cgMDR:classified_by>
+    <cgMDR:classified_by>http://www.cancergrid.org/ontologies/data-element-classification#36C86D51B</cgMDR:classified_by>
+    <cgMDR:classified_by>http://www.cancergrid.org/ontologies/data-element-classification#6A9354126</cgMDR:classified_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>CONSULTANT CODE</cgMDR:name>
+            <cgMDR:definition_text>This is the GENERAL MEDICAL COUNCIL (GMC) CODE for the CONSULTANT. For GENERAL MEDICAL PRACTITIONERS (GPs) working as CONSULTANTS,
+                    the GP's GENERAL MEDICAL COUNCIL (GMC) CODE should be used, see data item note
+                    for GMP (CODE OF REGISTERED OR REFERRING GMP). For NHS patients
+                    treated overseas, the commissioner of the overseas treatment is responsible for
+                    ensuring that the overseas doctor is provided with a GENERAL MEDICAL COUNCIL
+                    (GMC) CODE. In the case of overseas doctors the default code C9999998 should
+                    only be used where no GENERAL MEDICAL COUNCIL (GMC) CODE has been assigned.All Midwife Episodes and attendances are identified in the
+                        Commissioning Data Sets (CDS) and Hospital Episode Statistics (HES) by a
+                        pseudo MAIN SPECIALTY CODE, 560, see Main Specialty And Treatment Function Codes. A default code is
+                        used in the CONSULTANT CODE field to show that a MIDWIFE is the responsible professional. Note that the
+                        midwife's own code is not used.All Nursing Episodes and attendances are identified in the
+                        CDSs and HES by a pseudo MAIN SPECIALTY CODE, 950, see Main Specialty And
+                        Treatment Function Codes. A default code is used in the CONSULTANT CODE
+                        field to show that a NURSE is the responsible professional. Note that the nurse's
+                        own Nursing and Midwifery Council code is not used.Midwife Episode is an ACTIVITY GROUP where the ACTIVITY GROUP TYPE is National Code 24 'Midwife
+                        Episode'.Nursing Episode is an ACTIVITY GROUP where the ACTIVITY GROUP TYPE is
+                        National Code 26 'Nursing Episode'.</cgMDR:definition_text>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>CONSULTANT CODES</cgMDR:name>
+            <cgMDR:preferred_designation>false</cgMDR:preferred_designation>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:representing>GB-NHS-3AB5EA417-3.2.0</cgMDR:representing>
+    <cgMDR:typed_by>GB-CANCERGRID-000019-1</cgMDR:typed_by>
+    <cgMDR:expressing>GB-NHS-AE6E89115-3.2.0</cgMDR:expressing>
+    <cgMDR:field_name preferred=""/>
+    <cgMDR:question_text preferred=""/>
+</cgMDR:Data_Element>

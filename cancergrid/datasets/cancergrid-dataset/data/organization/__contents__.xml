@@ -1,0 +1,13 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/mdr/data/organization" owner="admin" group="dba" mode="755" created="2008-06-24T23:07:09+01:00" version="1">
+    <resource type="XMLResource" name="CCR.xml" owner="admin" group="dba" mode="755" created="2008-06-24T23:07:09+01:00" modified="2008-06-24T23:07:09+01:00" filename="CCR.xml" mimetype="text/xml"/>
+    <resource type="XMLResource" name="CIP.xml" owner="admin" group="dba" mode="755" created="2008-06-24T23:07:09+01:00" modified="2008-06-24T23:07:09+01:00" filename="CIP.xml" mimetype="text/xml"/>
+    <resource type="XMLResource" name="CTEP.xml" owner="admin" group="dba" mode="755" created="2008-06-24T23:07:09+01:00" modified="2008-06-24T23:07:09+01:00" filename="CTEP.xml" mimetype="text/xml"/>
+    <resource type="XMLResource" name="DCP.xml" owner="admin" group="dba" mode="755" created="2008-06-24T23:07:09+01:00" modified="2008-06-24T23:07:09+01:00" filename="DCP.xml" mimetype="text/xml"/>
+    <resource type="XMLResource" name="GB-CANCERGRID-000002-1.xml" owner="admin" group="dba" mode="755" created="2008-06-24T23:07:09+01:00" modified="2008-06-24T23:07:09+01:00" filename="GB-CANCERGRID-000002-1.xml" mimetype="text/xml"/>
+    <resource type="XMLResource" name="GB-CANCERGRID-000003-1.xml" owner="admin" group="dba" mode="755" created="2008-06-24T23:07:09+01:00" modified="2008-06-24T23:07:09+01:00" filename="GB-CANCERGRID-000003-1.xml" mimetype="text/xml"/>
+    <resource type="XMLResource" name="GB-CANCERGRID-200001-1.xml" owner="admin" group="dba" mode="755" created="2008-06-24T23:07:09+01:00" modified="2008-06-24T23:07:09+01:00" filename="GB-CANCERGRID-200001-1.xml" mimetype="text/xml"/>
+    <resource type="XMLResource" name="GB-CANCERGRID-300002-1.xml" owner="admin" group="dba" mode="755" created="2008-06-24T23:07:09+01:00" modified="2008-06-24T23:07:09+01:00" filename="GB-CANCERGRID-300002-1.xml" mimetype="text/xml"/>
+    <resource type="XMLResource" name="NIDCR.xml" owner="admin" group="dba" mode="755" created="2008-06-24T23:07:09+01:00" modified="2008-06-24T23:07:09+01:00" filename="NIDCR.xml" mimetype="text/xml"/>
+    <resource type="XMLResource" name="SPOREs.xml" owner="admin" group="dba" mode="755" created="2008-06-24T23:07:09+01:00" modified="2008-06-24T23:07:09+01:00" filename="SPOREs.xml" mimetype="text/xml"/>
+    <resource type="XMLResource" name="caBIG.xml" owner="admin" group="dba" mode="755" created="2008-06-24T23:07:09+01:00" modified="2008-06-24T23:07:09+01:00" filename="caBIG.xml" mimetype="text/xml"/>
+</collection>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:cgDatatype xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" datatype_identifier="XGE3TODWR">
+    <cgMDR:datatype_annotation/>
+    <cgMDR:datatype_description>gYearMonth represents a specific gregorian month in a specific
+      gregorian year. The ·value space· of gYearMonth is the set of Gregorian calendar months as
+      defined in § 5.2.1 of [ISO 8601]. Specifically, it is a set of one-month long, non-periodic
+      instances e.g. 1999-10 to represent the whole month of 1999-10, independent of how many days
+      this month has. Since the lexical representation allows an optional time zone indicator,
+      gYearMonth values are partially ordered because it may not be possible to unequivocally
+      determine the order of two values one of which has a time zone and the other does not. If
+      gYearMonth values are considered as periods of time, the order relation on gYearMonth values
+      is the order relation on their starting instants. This is discussed in Order relation on
+      dateTime (§3.2.7.4). See also Adding durations to dateTimes (§E). Pairs of gYearMonth values
+      with or without time zone indicators are totally ordered.</cgMDR:datatype_description>
+    <cgMDR:datatype_name>xs:gYearMonth</cgMDR:datatype_name>
+    <cgMDR:datatype_scheme_reference>XMLSchema</cgMDR:datatype_scheme_reference>
+</cgMDR:cgDatatype>

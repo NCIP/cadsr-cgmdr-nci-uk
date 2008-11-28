@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Enumerated_Conceptual_Domain xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-CANCERGRID-MB" data_identifier="9A43599E8" version="0.1">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>please complete administrative-note...</cgMDR:administrative_note>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-08-28+01:00</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-08-28+01:00</cgMDR:effective_date>
+        <cgMDR:last_change_date>2007-08-28+01:00</cgMDR:last_change_date>
+        <cgMDR:registration_status>recorded</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-300003-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-300004-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-300003-1</cgMDR:submitted_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-900001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>Breast Cancer Vancouver/Manitoba/Addenbrookes Distant Relapse Site</cgMDR:name>
+            <cgMDR:definition_text>The anatomical site of distant metastases, as recorded in the Vancouver GPEC/BCOU TAG Data Linkage, the Manitoba tumour bank and JCIS in Addenbrookes (ICD10 codes).</cgMDR:definition_text>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >STOMACH, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >B45E97BDB</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >LUNG, MULTIPLE METASTATIC LESIONS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >969195B28</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >PARIETAL LOBE</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >3D6221AC9</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SUPRACLAVICULAR LYMPH NODE</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >AEE7861C4</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >GASTRIC ANTRUM</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >ABA655884</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >STOMACH, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >317B7BD75</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SMALL INTESTINE, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >15EA68097</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >LIVER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >45E3BD219</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >PANCREAS, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >4227BD866</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >ACCESSORY SINUS, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >47A7A5ADA</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >MAIN BRONCHUS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >CABEB19CE</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >UPPER LOBE, LUNG</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >CDC374C53</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >MIDDLE LOBE, LUNG</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >C25E1A4E2</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >LOWER LOBE, LUNG</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >651B237E5</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >LUNG, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >8B63235A6</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >LUNG, MULTIPLE METASTATIC LESIONS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >72AE2BDDA</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >MEDIASTINUM, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >AAD75BDE1</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >PLEURA, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >BD01854C7</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >LONG BONES OF UPPER LIMB, SCAPULA</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >534A56128</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >HUMERUS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >48C0655BC</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >LONG BONES OF LOWER LEG &amp; ASSOC JOINTS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >3A499A938</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >FEMUR</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >E68BD223C</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SHORT BONES OF LOWER LIMB &amp; ASSOC JOINTS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >402930691</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >BONES OF SKULL, FACE AND JOINTS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >6987191E3</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >VERTEBRAL COLUMN</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >4BA01A47A</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >CERVICAL SPINE</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >961CAAC8D</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >THORACIC SPINE</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >51E72BB77</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >LUMBAR SPINE</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >C9CCAD087</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >RIBS, STERNUM, CLAVICLE &amp; ASSOC JOINTS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >98BE60978</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >STERNUM</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >438E9B7EE</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >RIBS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >C733B21DA</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >PELVIC BONES, SACRUM, COCCYX</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >C31C7838E</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >BONE, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >8142DEDEE</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >BONE, MULTIPLE METASTATIC SITES</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >9935E225B</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >BONE MARROW</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >2BA3E4476</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SPLEEN</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >A1CCC3857</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >EYELID</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >A189D3AE2</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SKIN OF FOREHEAD</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >E0C076786</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SKIN OF SCALP AND NECK</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >5EE5A66B2</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SKIN OF SCALP</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >BB21722B2</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SKIN OF SUPRACLAVICULAR REGION</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >8AA654D66</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SKIN OF TRUNK</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >1D653DEEE</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SKIN OF CHEST</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >BA13429E2</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SKIN OF BACK</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >A29AC7112</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SKIN OF UPPER ARM AND SHOULDER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >EAA762A53</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SKIN OF SHOULDER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >7D691A377</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >AUTO NERVE SYS OF UP LIMB/SHOULDER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >B3758B580</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >RETROPERITONEUM</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D2E579256</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SPECIFIED PARTS OF PERITONEUM</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >694EE8288</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >OMENTUM</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >9CBA03114</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >PERITONEUM, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >7B89CC679</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SOFT TISSUES OF HEAD, FACE &amp; NECK</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >5E0E2D8EB</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SOFT TISSUES OF UPP LIMB, SHOULDER</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >29218BB92</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SOFT TISSUES OF THORAX</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >AB90BD431</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SOFT TISSUE OF AXILLA</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >CE507CB6D</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SOFT TISSUES OF ABDOMEN</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >192521A26</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SOFT TISSUES OF PELVIS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >20B338282</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SOFT TISSUES OF TRUNK</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >2AB93B869</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >BREAST, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >8BA4257D7</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >UTERUS, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >433D29096</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >OVARY</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >8D5469B3E</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >KIDNEY, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >EC33454E1</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >RENAL PELVIS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D27BE0459</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >BLADDER, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >CDE0591B4</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >RETINA</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >E27C3D11D</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >CHOROID</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >297E73B5B</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >ORBIT, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >2E6543792</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >CEREBRAL MENINGES</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >0BE14DCED</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >MENINGES, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >AD5C47B95</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >FRONTAL LOBE</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >DDB31AEC4</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >PARIETAL LOBE</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >80C3E287A</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >CEREBELLUM, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >B15670D76</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >BRAIN - FRONTOPARIETAL LOBE</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >1349072DA</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >BRAIN - OCCIPITOPARIETAL LOB</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >5B298CE01</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >BRAIN, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >4684E6A83</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >MULTIPLE METASTATIC BRAIN LESIONS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >EDEDBDA89</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SPINAL CORD</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >3591CC230</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >OPTIC NERVE</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >AADA7C7BD</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >CENTRAL NERVOUS SYSTEM, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D865D0ECA</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >THYROID GLAND</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >E235420BB</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >ADRENAL GLAND, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >9455D2A39</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >HEAD, FACE OR NECK, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >EDC267EC3</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >THORAX, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >E5C221C98</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Axilla, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >6BC1DAA3C</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >ABDOMEN, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >933B089AE</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >PELVIS, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >E95177988</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >LOWER LIMB, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >99AE13B96</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >ILL-DEFINED SITES, NOS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >CA563E6B8</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >LYMPH NODES OF HEAD, FACE AND NECK</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >CD7CDA9CD</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SUPRACLAVICULAR LYMPH NODE</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >654C8833A</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >INTRATHORACIC LYMPH NODES</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >B5255147C</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >INTERNAL MAMMARY LYMPH NODE</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >6695E993D</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >LYMPH NODES OF AXILLA OR ARM</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D2B994E84</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >AXILLARY LYMPH NODE</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >BC879B831</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >INFRACLAVICULAR LYMPH NODE</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >EC48B37BB</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >LYMPH NODES INGUINAL REGION OR LEG</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >39B75E56A</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+</cgMDR:Enumerated_Conceptual_Domain>

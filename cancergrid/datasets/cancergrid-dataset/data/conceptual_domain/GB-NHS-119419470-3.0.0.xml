@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Enumerated_Conceptual_Domain xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-NHS" data_identifier="119419470" version="3.0.0">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>Import of Minimum Cancer Data Set</cgMDR:administrative_note>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-05-04</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-05-04</cgMDR:effective_date>
+        <cgMDR:last_change_date>2007-05-04</cgMDR:last_change_date>
+        <cgMDR:registration_status>PreferredStandard</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-000005-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-000009-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-200002-1</cgMDR:submitted_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>conceptual domain for DISCHARGE DESTINATION (HOSPITAL PROVIDER
+                            SPELL)</cgMDR:name>
+            <cgMDR:definition_text/>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Usual place of residence unless listed below, for example, a private dwelling whether owner occupied or owned by local authority, housing association or other landlord. This includes wardened accommodation but not residential accommodation where health care is provided. It also includes PATIENTS with no fixed abode.</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >A0DA4E821</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Temporary place of residence when usually resident elsewhere (includes hotel, residential educational establishment)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >1C692E094</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Repatriation from high security psychiatric accommodation in an NHS hospital provider (NHS trust)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D433C5E1A</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Court</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >650A4D741</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Penal establishment or police station</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >AC33C6D19</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >High Security Psychiatric Hospital, Scotland</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >107181E65</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >NHS other hospital provider - high security psychiatric accommodation</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >9E9AB41D3</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >NHS other hospital provider - medium secure unit</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >9861C64CE</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >NHS other hospital provider - ward for general patients or the younger physically disabled</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >53A11B4B9</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >NHS other hospital provider - ward for maternity patients or neonates</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >B80DD92B6</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >NHS other hospital provider - ward for patients who are mentally ill or have learning disabilities</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >E93BA9C41</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >NHS run care home</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D4CC6209A</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Local Authority residential accommodation ie where care is provided</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >A29A32A8D</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Local Authority foster care</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >6DE8C1822</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Not applicable - patient died or still birth</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >8931CC44D</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Non-NHS run hospital - medium secure unit</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >7C1C68ED6</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Non-NHS (other than Local Authority) run care home</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >397E59993</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Non-NHS run hospital</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >713C5E926</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Non-NHS (other than Local Authority) run Hospice</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >C81782BB5</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+</cgMDR:Enumerated_Conceptual_Domain>

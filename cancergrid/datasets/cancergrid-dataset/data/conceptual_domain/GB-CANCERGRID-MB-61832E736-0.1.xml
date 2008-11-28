@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Enumerated_Conceptual_Domain xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-CANCERGRID-MB" data_identifier="61832E736" version="0.1">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>please complete administrative-note...</cgMDR:administrative_note>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-08-29+01:00</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-08-29+01:00</cgMDR:effective_date>
+        <cgMDR:last_change_date>2007-08-29+01:00</cgMDR:last_change_date>
+        <cgMDR:registration_status>recorded</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-300003-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-300004-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-300003-1</cgMDR:submitted_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-900001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>Breast Cancer Nottingham Histological type</cgMDR:name>
+            <cgMDR:definition_text>The histological tumour type classification scheme used by the Nottingham Clinical Database</cgMDR:definition_text>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Invasive ductal/No special type</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >5E07254AC</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Tubular mixed</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >4BAA71C76</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Typical medullary</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D906971CC</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Atypical medullary</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >44E62AD7D</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Clasical lobular</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >E282B12E3</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Alveolar lobular</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >BE29B813E</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Solid lobular</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >157CB75A8</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Tubulolobular</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >156BA6B68</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Lobular mixed</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >1356AC947</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Tubular</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >49BCB7D1A</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Mucinous</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >98A02E595</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Invasive cribriform</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >729994E2D</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Invasive papillary</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >244D2A0A7</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Mixed nst and lobular</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >51595AB77</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-29+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Mixed nst and a special type</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >B0A16BDB2</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+</cgMDR:Enumerated_Conceptual_Domain>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Data_Element xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-CANCERGRID" data_identifier="D1E654311" version="0.11">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>Auto generated during protege import</cgMDR:administrative_note>
+        <cgMDR:administrative_status>scheduledForReview</cgMDR:administrative_status>
+        <cgMDR:change_description>please complete change-description...</cgMDR:change_description>
+        <cgMDR:creation_date>2006-08-08</cgMDR:creation_date>
+        <cgMDR:effective_date>2006-08-08</cgMDR:effective_date>
+        <cgMDR:explanatory_comment>please complete explanatory-comment...</cgMDR:explanatory_comment>
+        <cgMDR:last_change_date>2007-01-11</cgMDR:last_change_date>
+        <cgMDR:origin/>
+        <cgMDR:registration_status>Incomplete</cgMDR:registration_status>
+        <cgMDR:unresolved_issue>please complete unresolved-issue...</cgMDR:unresolved_issue>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-000005-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-000009-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-000006-1</cgMDR:submitted_by>
+    <cgMDR:described_by>KNCSJG1HE</cgMDR:described_by>
+    <cgMDR:described_by>3A6BB6173</cgMDR:described_by>
+    <cgMDR:classified_by>http://www.cancergrid.org/ontologies/data-element-classification#D1E15359</cgMDR:classified_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>Patient Date of Diagnostic biopsy  data element</cgMDR:name>
+            <cgMDR:definition_text>The diagnostic biopsy date</cgMDR:definition_text>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:data_element_precision>0</cgMDR:data_element_precision>
+    <cgMDR:representation_class_qualifier/>
+    <cgMDR:representing>GB-CANCERGRID-D1E654314-0.1</cgMDR:representing>
+    <cgMDR:typed_by>GB-CANCERGRID-000013-1</cgMDR:typed_by>
+    <cgMDR:expressing>GB-CANCERGRID-D1E654312-0.1</cgMDR:expressing>
+    <cgMDR:exemplified_by>
+        <cgMDR:data_element_example_item >please complete example...</cgMDR:data_element_example_item>
+    </cgMDR:exemplified_by>
+    <cgMDR:field_name preferred=""/>
+    <cgMDR:question_text preferred=""/>
+</cgMDR:Data_Element>

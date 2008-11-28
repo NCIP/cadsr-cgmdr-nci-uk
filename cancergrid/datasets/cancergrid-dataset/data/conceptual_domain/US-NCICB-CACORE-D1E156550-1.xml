@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Enumerated_Conceptual_Domain xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="US-NCICB-CACORE" data_identifier="D1E156550" version="1">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-07-17</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-07-17</cgMDR:effective_date>
+        <cgMDR:explanatory_comment>Transformed from NCICB caDSR</cgMDR:explanatory_comment>
+        <cgMDR:last_change_date>2007-07-17</cgMDR:last_change_date>
+        <cgMDR:registration_status>Standard</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>US-NCICB-CTEP-STEWARD</cgMDR:administered_by>
+    <cgMDR:registered_by>US-NCICB-CACORE-REGISTRAR</cgMDR:registered_by>
+    <cgMDR:submitted_by>US-NCICB-CTEP-SUMBMITTER</cgMDR:submitted_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>US-NCICB-CTEP-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>US</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>Adverse Events</cgMDR:name>
+            <cgMDR:definition_text/>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>US</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>AE</cgMDR:name>
+            <cgMDR:definition_text/>
+            <cgMDR:preferred_designation>false</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:dimensionality/>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >DEATH</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156552</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >COAGULATION</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156561</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >CONSTITUTIONAL SYMPTOMS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156570</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >DERMATOLOGY/SKIN</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156579</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >ENDOCRINE</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156588</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >GASTROINTESTINAL</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156598</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >LYMPHATICS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156607</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >METABOLIC/LABORATORY</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156616</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >NEUROLOGY</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156625</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >OCULAR/VISUAL</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156634</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >PAIN</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156643</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >RENAL/GENITOURINARY</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156653</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SYNDROMES</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156662</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >INFECTION</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156671</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SECOND MALIGNANCY</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156680</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >ALLERGY / IMMUNOLOGY</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156689</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >BLOOD/BONE MARROW</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156698</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SEXUAL/REPRODUCTIVE FUNCTIONS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156708</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >GROWTH AND DEVELOPMENT</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156717</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >SURGERY/INTRA-OPERATIVE INJURY</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156726</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >VASCULAR</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156735</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >AUDITORY/EAR</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156744</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >CARDIAC ARRHYTHMIA</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156753</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >CARDIAC GENERAL</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156763</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >HEMORRHAGE/BLEEDING</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156772</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >HEPATOBILIARY/PANCREAS</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156781</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >MUSCULOSKELETAL/SOFT TISSUE</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156790</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-07-17</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >PULMONARY/UPPER RESPIRATORY</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >D1E156799</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+</cgMDR:Enumerated_Conceptual_Domain>

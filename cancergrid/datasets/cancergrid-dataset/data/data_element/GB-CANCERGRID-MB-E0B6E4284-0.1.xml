@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Data_Element xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-CANCERGRID-MB" data_identifier="E0B6E4284" version="0.1">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>please complete administrative-note...</cgMDR:administrative_note>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2008-01-23</cgMDR:creation_date>
+        <cgMDR:effective_date>2008-01-23</cgMDR:effective_date>
+        <cgMDR:last_change_date>2008-04-07</cgMDR:last_change_date>
+        <cgMDR:registration_status>recorded</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-300003-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-300004-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-300003-1</cgMDR:submitted_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-900001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>Nottingham Prognostic Index</cgMDR:name>
+            <cgMDR:definition_text>An index based on a combination of three prognostic factors: tumour size (cm x 0.2); lymph node stage (1 = node negative, 2 = 13 metastatic nodes 3 = ³ 4 metastatic nodes;) and histological grade (13, good, moderate, poor). Alternatively, lymph nodes can be classified according to level of involvement. A prognostic index &lt; 3.4 implies a good prognosis, 3.45.4 a moderately good prognosis and over 5.4 a poor prognosis. (http://www.medcyclopaedia.com)</cgMDR:definition_text>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:data_element_precision/>
+    <cgMDR:representing>GB-CANCERGRID-MB-DA4975A78-0.1</cgMDR:representing>
+    <cgMDR:typed_by>GB-CANCERGRID-000010-1</cgMDR:typed_by>
+    <cgMDR:expressing>GB-CANCERGRID-MB-3C884D629-0.1</cgMDR:expressing>
+    <cgMDR:exemplified_by>
+        <cgMDR:data_element_example_item >please complete example...</cgMDR:data_element_example_item>
+    </cgMDR:exemplified_by>
+    <cgMDR:field_name preferred=""/>
+    <cgMDR:question_text preferred=""/>
+</cgMDR:Data_Element>

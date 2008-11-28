@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Unit_of_Measure xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" unit_of_measure_identifier="OQ46O2AJU">
+    <cgMDR:unit_of_measure_name >°F</cgMDR:unit_of_measure_name>
+    <cgMDR:unit_of_measure_precision >2</cgMDR:unit_of_measure_precision>
+</cgMDR:Unit_of_Measure>

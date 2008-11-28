@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Enumerated_Conceptual_Domain xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-NHS" data_identifier="24C62B06C" version="3.0.0">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>Import of Minimum Cancer Data Set</cgMDR:administrative_note>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-05-04</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-05-04</cgMDR:effective_date>
+        <cgMDR:last_change_date>2007-05-04</cgMDR:last_change_date>
+        <cgMDR:registration_status>PreferredStandard</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-000005-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-000009-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-200002-1</cgMDR:submitted_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-000001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>conceptual domain for CANCER IMAGING MODALITY</cgMDR:name>
+            <cgMDR:definition_text/>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Standard radiography</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >AB5D763B9</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Chest X-ray</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >1D72D6842</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Sinus X-rays</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >13B3C70A7</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Mastoid views</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >ACB4D2411</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Orthopantomogram (OPG)</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >B8674EDB5</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Skull base X-rays</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >51776E860</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Angiography</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >8D95D99E9</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Intravenous urography</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >8C5A42A5C</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Retrograde urography</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >94B1A74E3</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Inferior vena cavography</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >64B62EDA3</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Bone angiography</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >44A42D893</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Soft tissue angiography</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >6BB643EC5</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >CT scan with contrast</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >852B460EC</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >CT scan without contrast</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >0537194AC</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >MRI scan with contrast</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >5EBB733C5</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >MRI scan without contrast</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >C55E636EB</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >MRI cholangiography</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >55E6503E7</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >PET scan</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >02E562E93</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Ultrasound</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >77E82EE85</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Transabdominal ultrasound</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >1EA70C3DA</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Transvaginal ultrasound</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >56D71A66E</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Doppler ultrasound</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >0C62C971C</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Transrectal ultrasound</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >908A65CA3</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Endoscopic ultrasound</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >EA8146178</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Laparascopic ultrasound</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >B93375DB9</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Nuclear Medicine imaging</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >A1760B82C</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Radio-isotope bone scan</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >27413EB5C</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Other radio-isotope scan</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >0DD6453BB</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Ventilation/Perfusion scan</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >42AE642D7</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Mammography</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >75C6D433C</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Barium</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >B91DA76C8</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Barium enema</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >4ED65C42D</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Barium swallow</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >E783C4A61</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Lymphoscintigraphy</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >AC5DC5C18</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-05-04</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >Other</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >27E193171</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+</cgMDR:Enumerated_Conceptual_Domain>

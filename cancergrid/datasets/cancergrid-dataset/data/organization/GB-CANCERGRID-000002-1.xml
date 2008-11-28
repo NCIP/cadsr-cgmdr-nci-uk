@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Organization xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR"  organization_identifier="GB-CANCERGRID-000002-1">
+    <cgMDR:organization_name>University of Birmingham Cancer Trials Unit</cgMDR:organization_name>
+    <cgMDR:organization_mail_address>Vincent Drive, Edgbaston, Birmingham B15 2TT</cgMDR:organization_mail_address>
+    <cgMDR:Contact contact_identifier="GB-CANCERGRID-000006-1">
+        <cgMDR:contact_information/>
+        <cgMDR:contact_name>Sui L lin</cgMDR:contact_name>
+        <cgMDR:contact_title>Researcher, CancerGrid</cgMDR:contact_title>
+    </cgMDR:Contact>
+    <cgMDR:Contact contact_identifier="GB-CANCERGRID-000007-1">
+        <cgMDR:contact_information/>
+        <cgMDR:contact_name>Paul Mason</cgMDR:contact_name>
+        <cgMDR:contact_title>IT Manager, Institute for Cancer Studies</cgMDR:contact_title>
+    </cgMDR:Contact>
+</cgMDR:Organization>

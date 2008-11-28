@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Enumerated_Conceptual_Domain xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" item_registration_authority_identifier="GB-CANCERGRID-MB" data_identifier="ABCC98384" version="0.1">
+    <cgMDR:administered_item_administration_record>
+        <cgMDR:administrative_note>please complete administrative-note...</cgMDR:administrative_note>
+        <cgMDR:administrative_status>noPendingChanges</cgMDR:administrative_status>
+        <cgMDR:creation_date>2007-08-28+01:00</cgMDR:creation_date>
+        <cgMDR:effective_date>2007-08-28+01:00</cgMDR:effective_date>
+        <cgMDR:last_change_date>2007-08-28+01:00</cgMDR:last_change_date>
+        <cgMDR:registration_status>recorded</cgMDR:registration_status>
+    </cgMDR:administered_item_administration_record>
+    <cgMDR:administered_by>GB-CANCERGRID-300003-1</cgMDR:administered_by>
+    <cgMDR:registered_by>GB-CANCERGRID-300004-1</cgMDR:registered_by>
+    <cgMDR:submitted_by>GB-CANCERGRID-300003-1</cgMDR:submitted_by>
+    <cgMDR:having>
+        <cgMDR:context_identifier>GB-CANCERGRID-900001-1</cgMDR:context_identifier>
+        <cgMDR:containing>
+            <cgMDR:language_section_language_identifier>
+                <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+                <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+            </cgMDR:language_section_language_identifier>
+            <cgMDR:name>Relapse Type</cgMDR:name>
+            <cgMDR:definition_text>The patient's relapse type.</cgMDR:definition_text>
+            <cgMDR:preferred_designation>true</cgMDR:preferred_designation>
+            <cgMDR:definition_source_reference/>
+        </cgMDR:containing>
+    </cgMDR:having>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >no relapse</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >03D29DA91</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >local</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >6731E3181</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >regional</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >9CBD34BC8</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+    <cgMDR:Value_Meaning>
+        <cgMDR:value_meaning_begin_date >2007-08-28+01:00</cgMDR:value_meaning_begin_date>
+        <cgMDR:value_meaning_description >distant</cgMDR:value_meaning_description>
+        <cgMDR:value_meaning_identifier >57B968E72</cgMDR:value_meaning_identifier>
+    </cgMDR:Value_Meaning>
+</cgMDR:Enumerated_Conceptual_Domain>
