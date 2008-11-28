@@ -1,0 +1,42 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/mdr/model/EARoot/EA5/EA2" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:58+01:00" version="1">
+    <resource type="BinaryResource" name="EA307.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:16+01:00" modified="2008-07-02T11:33:16+01:00" filename="EA307.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA308.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:16+01:00" modified="2008-07-02T11:33:16+01:00" filename="EA308.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA309.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:16+01:00" modified="2008-07-02T11:33:16+01:00" filename="EA309.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA310.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:16+01:00" modified="2008-07-02T11:33:16+01:00" filename="EA310.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA311.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:16+01:00" modified="2008-07-02T11:33:16+01:00" filename="EA311.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA312.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:16+01:00" modified="2008-07-02T11:33:16+01:00" filename="EA312.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA313.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:16+01:00" modified="2008-07-02T11:33:16+01:00" filename="EA313.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA314.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:16+01:00" modified="2008-07-02T11:33:16+01:00" filename="EA314.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA315.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:17+01:00" modified="2008-07-02T11:33:17+01:00" filename="EA315.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA316.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:17+01:00" modified="2008-07-02T11:33:17+01:00" filename="EA316.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA317.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:17+01:00" modified="2008-07-02T11:33:17+01:00" filename="EA317.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA318.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:17+01:00" modified="2008-07-02T11:33:17+01:00" filename="EA318.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA319.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:17+01:00" modified="2008-07-02T11:33:17+01:00" filename="EA319.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA320.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:17+01:00" modified="2008-07-02T11:33:17+01:00" filename="EA320.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA321.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:17+01:00" modified="2008-07-02T11:33:17+01:00" filename="EA321.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA322.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:17+01:00" modified="2008-07-02T11:33:17+01:00" filename="EA322.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA323.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:17+01:00" modified="2008-07-02T11:33:17+01:00" filename="EA323.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA324.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:17+01:00" modified="2008-07-02T11:33:17+01:00" filename="EA324.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA325.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:17+01:00" modified="2008-07-02T11:33:17+01:00" filename="EA325.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA326.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:17+01:00" modified="2008-07-02T11:33:17+01:00" filename="EA326.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="contents.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:58+01:00" modified="2008-07-02T11:32:58+01:00" filename="contents.htm" mimetype="text/html"/>
+    <subcollection name="EA7" filename="EA7"/>
+    <subcollection name="EA6" filename="EA6"/>
+    <subcollection name="EA5" filename="EA5"/>
+    <subcollection name="EA19" filename="EA19"/>
+    <subcollection name="EA4" filename="EA4"/>
+    <subcollection name="EA3" filename="EA3"/>
+    <subcollection name="EA2" filename="EA2"/>
+    <subcollection name="EA1" filename="EA1"/>
+    <subcollection name="EA13" filename="EA13"/>
+    <subcollection name="EA14" filename="EA14"/>
+    <subcollection name="EA11" filename="EA11"/>
+    <subcollection name="EA12" filename="EA12"/>
+    <subcollection name="EA17" filename="EA17"/>
+    <subcollection name="EA18" filename="EA18"/>
+    <subcollection name="EA9" filename="EA9"/>
+    <subcollection name="EA15" filename="EA15"/>
+    <subcollection name="EA8" filename="EA8"/>
+    <subcollection name="EA16" filename="EA16"/>
+    <subcollection name="EA10" filename="EA10"/>
+</collection>

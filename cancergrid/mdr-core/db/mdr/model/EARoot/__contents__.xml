@@ -1,0 +1,13 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/mdr/model/EARoot" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:31+01:00" version="1">
+    <resource type="BinaryResource" name="EA1.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:32+01:00" modified="2008-07-02T11:32:32+01:00" filename="EA1.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA2.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:38+01:00" modified="2008-07-02T11:32:38+01:00" filename="EA2.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA3.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:47+01:00" modified="2008-07-02T11:32:47+01:00" filename="EA3.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA4.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:53+01:00" modified="2008-07-02T11:32:53+01:00" filename="EA4.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA5.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:24+01:00" modified="2008-07-02T11:33:24+01:00" filename="EA5.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="contents.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:31+01:00" modified="2008-07-02T11:32:31+01:00" filename="contents.htm" mimetype="text/html"/>
+    <subcollection name="EA4" filename="EA4"/>
+    <subcollection name="EA3" filename="EA3"/>
+    <subcollection name="EA2" filename="EA2"/>
+    <subcollection name="EA1" filename="EA1"/>
+    <subcollection name="EA5" filename="EA5"/>
+</collection>

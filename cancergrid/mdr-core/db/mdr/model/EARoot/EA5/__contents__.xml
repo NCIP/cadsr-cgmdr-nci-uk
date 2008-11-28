@@ -1,0 +1,14 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/mdr/model/EARoot/EA5" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:54+01:00" version="1">
+    <resource type="BinaryResource" name="EA252.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:23+01:00" modified="2008-07-02T11:33:23+01:00" filename="EA252.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA253.png" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:23+01:00" modified="2008-07-02T11:33:23+01:00" filename="EA253.png" mimetype="image/png"/>
+    <resource type="BinaryResource" name="EA254.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:23+01:00" modified="2008-07-02T11:33:23+01:00" filename="EA254.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA255.png" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:23+01:00" modified="2008-07-02T11:33:23+01:00" filename="EA255.png" mimetype="image/png"/>
+    <resource type="BinaryResource" name="EA256.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:23+01:00" modified="2008-07-02T11:33:23+01:00" filename="EA256.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA257.png" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:23+01:00" modified="2008-07-02T11:33:23+01:00" filename="EA257.png" mimetype="image/png"/>
+    <resource type="BinaryResource" name="EA258.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:23+01:00" modified="2008-07-02T11:33:23+01:00" filename="EA258.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA259.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:23+01:00" modified="2008-07-02T11:33:23+01:00" filename="EA259.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA260.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:23+01:00" modified="2008-07-02T11:33:23+01:00" filename="EA260.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="contents.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:54+01:00" modified="2008-07-02T11:32:54+01:00" filename="contents.htm" mimetype="text/html"/>
+    <subcollection name="EA2" filename="EA2"/>
+    <subcollection name="EA1" filename="EA1"/>
+</collection>

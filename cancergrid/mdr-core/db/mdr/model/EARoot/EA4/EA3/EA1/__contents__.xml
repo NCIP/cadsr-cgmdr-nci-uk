@@ -1,0 +1,11 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/mdr/model/EARoot/EA4/EA3/EA1" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:51+01:00" version="1">
+    <resource type="BinaryResource" name="EA230.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:51+01:00" modified="2008-07-02T11:32:51+01:00" filename="EA230.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA231.png" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:51+01:00" modified="2008-07-02T11:32:51+01:00" filename="EA231.png" mimetype="image/png"/>
+    <resource type="BinaryResource" name="EA232.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:52+01:00" modified="2008-07-02T11:32:52+01:00" filename="EA232.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA233.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:52+01:00" modified="2008-07-02T11:32:52+01:00" filename="EA233.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA234.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:52+01:00" modified="2008-07-02T11:32:52+01:00" filename="EA234.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA235.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:52+01:00" modified="2008-07-02T11:32:52+01:00" filename="EA235.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA236.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:52+01:00" modified="2008-07-02T11:32:52+01:00" filename="EA236.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA237.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:52+01:00" modified="2008-07-02T11:32:52+01:00" filename="EA237.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="contents.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:51+01:00" modified="2008-07-02T11:32:51+01:00" filename="contents.htm" mimetype="text/html"/>
+</collection>

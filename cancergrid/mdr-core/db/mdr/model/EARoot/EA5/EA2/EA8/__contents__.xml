@@ -1,0 +1,10 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/mdr/model/EARoot/EA5/EA2/EA8" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:21+01:00" version="1">
+    <resource type="BinaryResource" name="EA371.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:21+01:00" modified="2008-07-02T11:33:21+01:00" filename="EA371.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA372.png" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:22+01:00" modified="2008-07-02T11:33:22+01:00" filename="EA372.png" mimetype="image/png"/>
+    <resource type="BinaryResource" name="EA373.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:22+01:00" modified="2008-07-02T11:33:22+01:00" filename="EA373.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA374.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:22+01:00" modified="2008-07-02T11:33:22+01:00" filename="EA374.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA374.png" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:22+01:00" modified="2008-07-02T11:33:22+01:00" filename="EA374.png" mimetype="image/png"/>
+    <resource type="BinaryResource" name="EA375.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:22+01:00" modified="2008-07-02T11:33:22+01:00" filename="EA375.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="EA376.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:22+01:00" modified="2008-07-02T11:33:22+01:00" filename="EA376.htm" mimetype="text/html"/>
+    <resource type="BinaryResource" name="contents.htm" owner="admin" group="dba" mode="755" created="2008-07-02T11:33:21+01:00" modified="2008-07-02T11:33:21+01:00" filename="contents.htm" mimetype="text/html"/>
+</collection>
