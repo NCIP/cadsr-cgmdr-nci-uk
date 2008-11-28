@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:cgDatatype xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" datatype_identifier="SMWJLQ091">
+    <cgMDR:datatype_annotation/>
+    <cgMDR:datatype_description>The double datatype is patterned after the IEEE double-precision
+      64-bit floating point type [IEEE 754-1985]. The basic ·value space· of double consists of the
+      values m × 2^e, where m is an integer whose absolute value is less than 2^53, and e is an
+      integer between -1075 and 970, inclusive. In addition to the basic ·value space· described
+      above, the ·value space· of double also contains the following three special values: positive
+      and negative infinity and not-a-number (NaN). The ·order-relation· on double is: x LT y iff y
+      - x is positive for x and y in the value space. Positive infinity is greater than all other
+      non-NaN values. NaN equals itself but is ·incomparable· with (neither greater than nor less
+      than) any other value in the ·value space·.</cgMDR:datatype_description>
+    <cgMDR:datatype_name>xs:double</cgMDR:datatype_name>
+    <cgMDR:datatype_scheme_reference>XMLSchema</cgMDR:datatype_scheme_reference>
+</cgMDR:cgDatatype>

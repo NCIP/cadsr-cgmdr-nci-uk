@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:cgDatatype xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" datatype_identifier="KRMZ1P97F">
+    <cgMDR:datatype_annotation/>
+    <cgMDR:datatype_description>The string datatype represents character strings in XML. The ·value
+      space· of string is the set of finite-length sequences of characters (as defined in [XML 1.0
+      (Second Edition)]) that ·match· the Char production from [XML 1.0 (Second Edition)]. A
+      character is an atomic unit of communication; it is not further specified except to note that
+      every character has a corresponding Universal Character Set code point, which is an integer.</cgMDR:datatype_description>
+    <cgMDR:datatype_name>xs:string</cgMDR:datatype_name>
+    <cgMDR:datatype_scheme_reference>XMLSchema</cgMDR:datatype_scheme_reference>
+</cgMDR:cgDatatype>

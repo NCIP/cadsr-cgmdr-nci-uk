@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:Organization xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" organization_identifier="GB-CANCERGRID.OX-200001-1">
+    <cgMDR:organization_name>Computing Laboratory</cgMDR:organization_name>
+    <cgMDR:organization_mail_address>Oxford University, Oxford</cgMDR:organization_mail_address>
+    <cgMDR:Contact contact_identifier="GB-CANCERGRID.OX-200002-1">
+        <cgMDR:contact_information>steve.harris@comlab.ox.ac.uk</cgMDR:contact_information>
+        <cgMDR:contact_name>Steve Harris</cgMDR:contact_name>
+        <cgMDR:contact_title>Researcher, CancerGrid</cgMDR:contact_title>
+    </cgMDR:Contact>
+    <cgMDR:Contact contact_identifier="GB-CANCERGRID.OX-200003-1">
+        <cgMDR:contact_information>pwtsui@comlab.ox.ac.uk</cgMDR:contact_information>
+        <cgMDR:contact_name>Andrew Tsui</cgMDR:contact_name>
+        <cgMDR:contact_title>Researcher, CancerGrid</cgMDR:contact_title>
+    </cgMDR:Contact>
+    <cgMDR:Contact contact_identifier="GB-CANCERGRID.OX-200004-1">
+        <cgMDR:contact_information>crc@comlab.ox.ac.uk</cgMDR:contact_information>
+        <cgMDR:contact_name>Charles Crichton</cgMDR:contact_name>
+        <cgMDR:contact_title>Researcher, CancerGrid</cgMDR:contact_title>
+    </cgMDR:Contact>
+</cgMDR:Organization>

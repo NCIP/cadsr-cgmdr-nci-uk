@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:edit-defaults xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR">
+    <cgMDR:country_identifier>GB</cgMDR:country_identifier>
+    <cgMDR:language_identifier>eng</cgMDR:language_identifier>
+    <cgMDR:context_identifier>GB-CANCERGRID.OX-000001-1</cgMDR:context_identifier>
+    <cgMDR:Data_Element version="1"/>
+    <cgMDR:Enumerated_Value_Domain version="1"/>
+    <cgMDR:administrative_status>scheduledForReview</cgMDR:administrative_status>
+    <cgMDR:registration_status>Recorded</cgMDR:registration_status>
+    <cgMDR:origin/>
+    <cgMDR:until-date>2020-12-31</cgMDR:until-date>
+    <cgMDR:data_element_concept_object_class>GB-CANCERGRID.OX-000025-1</cgMDR:data_element_concept_object_class>
+    <cgMDR:data_element_concept_property>GB-CANCERGRID.OX-000024-1</cgMDR:data_element_concept_property>
+</cgMDR:edit-defaults>

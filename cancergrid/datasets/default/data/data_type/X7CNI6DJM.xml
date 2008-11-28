@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cgMDR:cgDatatype xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" datatype_identifier="X7CNI6DJM">
+    <cgMDR:datatype_annotation/>
+    <cgMDR:datatype_description>nonNegativeInteger is ·derived· from integer by setting the value of
+      ·minInclusive· to be 0. This results in the standard mathematical concept of the non-negative
+      integers. The ·value space· of nonNegativeInteger is the infinite set {0,1,2,...}. The ·base
+      type· of nonNegativeInteger is integer.</cgMDR:datatype_description>
+    <cgMDR:datatype_name>xs:nonNegativeInteger</cgMDR:datatype_name>
+    <cgMDR:datatype_scheme_reference>XMLSchema</cgMDR:datatype_scheme_reference>
+</cgMDR:cgDatatype>
