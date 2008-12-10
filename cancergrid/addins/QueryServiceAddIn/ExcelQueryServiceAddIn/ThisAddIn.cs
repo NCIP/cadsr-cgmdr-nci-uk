@@ -12,14 +12,76 @@ namespace ExcelQueryServiceAddIn
     {
         private ExcelQueryServiceControl queryServiceControl;
         private Microsoft.Office.Tools.CustomTaskPane myCustomTaskPane;
+        private Office.CommandBarButton XMLUnmapButton;
+        private Office.CommandBarButton CellUnmapButton;
 
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
+            AddUnmapButtonMenuCommand();
         }
 
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)
         {
             RemoveQueryServiceTaskPane();
+        }
+
+        public void AddUnmapButtonMenuCommand() 
+        {
+            Office._CommandBarButtonEvents_ClickEventHandler xButtonHandler =
+                new Office._CommandBarButtonEvents_ClickEventHandler(unmapXMLClick);
+
+            Office._CommandBarButtonEvents_ClickEventHandler cButtonHandler =
+                new Office._CommandBarButtonEvents_ClickEventHandler(unmapHeaderClick);
+
+            XMLUnmapButton = (Office.CommandBarButton)Application.CommandBars["XML Range Popup"].Controls.Add(Office.MsoControlType.msoControlButton, missing, missing, missing, true);
+            XMLUnmapButton.Click += xButtonHandler;
+            XMLUnmapButton.Caption = "Unmap Values";
+            XMLUnmapButton.Visible = true;
+
+            CellUnmapButton = (Office.CommandBarButton)Application.CommandBars["Cell"].Controls.Add(Office.MsoControlType.msoControlButton, missing, missing, missing, true);
+            CellUnmapButton.Click += cButtonHandler;
+            CellUnmapButton.Caption = "Clear Cell";
+            CellUnmapButton.Visible = true;
+        }
+
+        private void unmapXMLClick(Office.CommandBarButton button, ref bool Cancel)
+        {
+            Excel.Range selected = (Excel.Range)this.Application.Selection;           
+            selected.Cells.Clear();
+            selected.Cells.ClearContents();
+            selected.Cells.ClearFormats();
+            selected.Cells.ClearNotes();
+
+            string selectedRangeString = ((Excel.Worksheet)selected.Parent).Name + "!" + selected.get_Address(Type.Missing, Type.Missing, Excel.XlReferenceStyle.xlA1, Type.Missing, Type.Missing);
+            Excel.Worksheet cdeList = (Excel.Worksheet)this.Application.Sheets["cde_list"];
+
+            Excel.Range c = (Excel.Range)cdeList.Cells[2, 1];
+            for (int i = 3; c.Value2 != null; i++)
+            {
+                c = (Excel.Range)cdeList.Cells[i, 1];
+                string text = c.Text.ToString();
+                if (text.Contains(selectedRangeString))
+                    break;
+            }
+
+            cdeList.Unprotect("dummy_password");
+            c.Clear();
+            c.Next.Clear();
+            c.Next.Next.Clear();
+            c.Next.Next.Next.Clear();
+            cdeList.Protect("dummy_password", Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
+
+        }
+
+        private void unmapHeaderClick(Office.CommandBarButton button, ref bool Cancel)
+        {
+            Excel.Range selected = (Excel.Range)this.Application.Selection;
+   
+            selected.Cells.Clear();
+            selected.Cells.ClearContents();
+            selected.Cells.ClearFormats();
+            selected.Cells.ClearNotes();
+
         }
 
         public void AddQueryServiceTaskPane()
