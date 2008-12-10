@@ -24,6 +24,13 @@
         </field>
     </xsl:template>
     
+       <xsl:template match="field[@name='concept']">
+        <field name="{@name}">
+            <xsl:apply-templates select="doc(data(@xlink:href))/xlink:httpQuery/queryResponse/class"/>
+        </field>
+    </xsl:template>
+		
+    
     <!-- Expand the specified node by reading from the given xlink -->
     <xsl:template match="class[@name='gov.nih.nci.cadsr.domain.EnumeratedValueDomain']/field[@name='valueDomainPermissibleValueCollection']">
         <field name="{@name}">
