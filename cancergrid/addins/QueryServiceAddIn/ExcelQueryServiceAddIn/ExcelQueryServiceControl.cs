@@ -453,7 +453,7 @@ namespace ExcelQueryServiceAddIn
                 */
             }
 
-
+            //TODO: Fix the issue that requires this to be commented out.
             //selected.Name = xmlMap.Name;
 
             //Create CDE list is not exist
