@@ -520,18 +520,44 @@ namespace QueryServiceControl
                     XElement x = XElement.Parse(vdNode.OuterXml);
                     if (x.Element(rs + "enumerated") != null)
                     {
-                        var enumeratedValues = from ev in x.Element(rs + "enumerated").Elements(rs + "valid-value")
-                                               select new
-                                               {
-                                                   Code = ev.Element(rs + "code").Value,
-                                                   Meaning = ev.Element(rs + "meaning").Value
-                                               };
-                        values = "<table style=\"width: 100%;border: 1px solid #ddd;border-collapse: collapse;\"><tr><th style=\"background-color: #ddd;color: #000;text-align: left;padding: 5px;\">Code</th><th style=\"background-color: #ddd;color: #000;text-align: left;padding: 5px;\">Meaning</th></tr>";
-                        foreach (var validValue in enumeratedValues)
+
+                        if (x.Element(rs + "enumerated").Element(rs + "valid-value").Element(rs + "evsconcept") != null)
                         {
-                            values += "<tr><td style=\"border: 1px solid #ddd;padding: 5px;vertical-align: top;\">" + validValue.Code + "</td><td style=\"border: 1px solid #ddd;padding: 5px;vertical-align: top;\">" + validValue.Meaning + "</td></tr>";
+                            var enumeratedValues = from ev in x.Element(rs + "enumerated").Elements(rs + "valid-value")
+                                                   select new
+                                                   {
+                                                       Code = ev.Element(rs + "code").Value,
+                                                       Meaning = ev.Element(rs + "meaning").Value,
+                                                       EVSCode = ev.Element(rs + "evsconcept").Value
+                                                   };
+                            values = "<table style=\"width: 100%;border: 1px solid #ddd;border-collapse: collapse;\"><tr><th style=\"background-color: #ddd;color: #000;text-align: left;padding: 5px;\">Code</th><th style=\"background-color: #ddd;color: #000;text-align: left;padding: 5px;\">Meaning</th><th style=\"background-color: #ddd;color: #000;text-align: left;padding: 5px;\">Concept</th></tr>";
+                            foreach (var validValue in enumeratedValues)
+                            {
+                                values += "<tr><td style=\"border: 1px solid #ddd;padding: 5px;vertical-align: top;\">" + validValue.Code + "</td><td style=\"border: 1px solid #ddd;padding: 5px;vertical-align: top;\">" + validValue.Meaning + "</td><td style=\"border: 1px solid #ddd;padding: 5px;vertical-align: top;\">" + validValue.EVSCode + "</td></tr>";
+                            }
+                            values += "</table>";
+
                         }
-                        values += "</table>";
+                        else
+                        {
+                            var enumeratedValues = from ev in x.Element(rs + "enumerated").Elements(rs + "valid-value")
+                                                   select new
+                                                   {
+                                                       Code = ev.Element(rs + "code").Value,
+                                                       Meaning = ev.Element(rs + "meaning").Value,
+                                                   };
+                            values = "<table style=\"width: 100%;border: 1px solid #ddd;border-collapse: collapse;\"><tr><th style=\"background-color: #ddd;color: #000;text-align: left;padding: 5px;\">Code</th><th style=\"background-color: #ddd;color: #000;text-align: left;padding: 5px;\">Meaning</th></tr>";
+                            foreach (var validValue in enumeratedValues)
+                            {
+                                values += "<tr><td style=\"border: 1px solid #ddd;padding: 5px;vertical-align: top;\">" + validValue.Code + "</td><td style=\"border: 1px solid #ddd;padding: 5px;vertical-align: top;\">" + validValue.Meaning + "</td></tr>";
+                            }
+                            values += "</table>";
+
+                        }
+
+
+
+
                     }
                     else if (x.Element(rs + "non-enumerated") != null)
                     {
