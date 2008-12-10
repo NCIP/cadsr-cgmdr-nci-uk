@@ -203,7 +203,18 @@ namespace ExcelQueryServiceAddIn
                 //xs:enumeration
                 selected.Validation.Add(Excel.XlDVType.xlValidateList, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlBetween, attr, attr);
                 selected.Validation.InputTitle = "Select a value from the list";
-                selected.Validation.InputMessage = attrWithDef.Replace(",", "\n");
+                //WORKAROUND: TODO: Fix this one way or another
+                try
+                {
+                    selected.Validation.InputMessage = attrWithDef.Replace(",", "\n");
+                }
+                catch (Exception)
+                {
+                    //If the exception was thrown setting Validation Input Message, set the message in comment)
+                    selected.AddComment(attrWithDef.Replace(",", "\n"));
+                    selected.Comment.Shape.TextFrame.AutoSize = true;
+                }
+                
                 selected.Validation.ErrorMessage = "Please select a value from the enumeration list.";
             }
             else if (selectedNode.Element(rs + "values").Element(rs + "non-enumerated") != null)
@@ -443,7 +454,7 @@ namespace ExcelQueryServiceAddIn
             }
 
 
-            selected.Name = xmlMap.Name;
+            //selected.Name = xmlMap.Name;
 
             //Create CDE list is not exist
             if (!isCDEListExists())
