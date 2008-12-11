@@ -617,6 +617,7 @@ namespace ExcelQueryServiceAddIn
             if (existingIndex > 0)
             {
                 application.Names.Item(existingIndex, Type.Missing, Type.Missing).RefersTo = application.Names.Item(existingIndex, Type.Missing, Type.Missing).RefersTo + "," + getSelectedRangeAddress(selected);
+                
             }
             else
             {
@@ -634,22 +635,39 @@ namespace ExcelQueryServiceAddIn
             Excel.Range c = (Excel.Range)conceptList.Cells[2, 1];
 
 
-            for (int i = 3; c.Value2 != null; i++)
-            {
-                c = (Excel.Range)conceptList.Cells[i, 1];
-            }
-
             if (existingIndex == 0)
             {
+                for (int i = 3; c.Value2 != null; i++)
+                {
+                    c = (Excel.Range)conceptList.Cells[i, 1];
+     
+                }
+
                 c.Value2 = id;
                 //c.Hyperlinks.Add(c, "", "_" + code, Type.Missing, id);
                 c.Next.Value2 = preferredName;
                 c.Next.Next.Value2 = definition.Trim().Replace("&gt;", ">").Replace("&lt;", "<").Replace("&amp;", "&");
                 //c.Next.Next.Next.Value2 = attr.Trim().Replace(",", "\n\n").Replace("&#44;", ", ").Replace("&gt;", ">").Replace("&lt;", "<").Replace("&amp;", "&");
+                
+                //Cells mapped counter
+                c.Next.Next.Next.Next.Value2 = 1;
             }
             else
             {
-                c = c.get_Offset(-1, 0);
+                //Limit the loop to 10000 to prevent infinite search.
+                for (int i = 2; i < 10000; i++)
+                {
+                    c = (Excel.Range)conceptList.Cells[i, 1];
+
+                    //look in cell to see if you need to update it.
+                    if (c.Text.ToString().Contains(code))
+                    {
+                        c.Next.Next.Next.Next.Value2 = 1 + Convert.ToInt16(c.Next.Next.Next.Next.Text);
+                        //We found the correct concept in previous cell.  Break out of the loop.
+                        break;
+                    }
+                }
+
             }
 
             conceptList.Protect(dummyPass, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
@@ -787,7 +805,20 @@ namespace ExcelQueryServiceAddIn
             column.Next.Next.Next.EntireColumn.WrapText = true;
             column.Next.Next.Next.EntireColumn.HorizontalAlignment = Excel.XlHAlign.xlHAlignJustify;
             */
+
+            //Definition
+            column.Next.Next.Next.Next.Value2 = "Mapped Cells";
+            column.Next.Next.Next.Next.Font.Bold = true;
+            column.Next.Next.Next.Next.Font.Background = Excel.XlBackground.xlBackgroundOpaque;
+            column.Next.Next.Next.Next.EntireColumn.ColumnWidth = 60;
+            column.Next.Next.Next.Next.EntireColumn.VerticalAlignment = Excel.XlVAlign.xlVAlignTop;
+            column.Next.Next.Next.Next.EntireColumn.WrapText = true;
+            column.Next.Next.Next.Next.EntireColumn.HorizontalAlignment = Excel.XlHAlign.xlHAlignJustify;
+            
+            
             conceptList.Protect(dummyPass, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
+
+
 
             //((Excel.Worksheet)application.Worksheets.get_Item(origin.Name)).Activate();
             (origin as Microsoft.Office.Interop.Excel._Worksheet).Activate();
