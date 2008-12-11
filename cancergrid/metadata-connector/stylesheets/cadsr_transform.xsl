@@ -33,6 +33,9 @@
 			<definition>
 				<xsl:value-of select="preferredDefinition"/>
 			</definition>
+			<workflow-status>
+				<xsl:value-of select="workflowStatusName"/>
+			</workflow-status>
 			<xsl:apply-templates select="valueDomain"/>
 		</data-element>
 	</xsl:template>
@@ -73,5 +76,5 @@
 		</valid-value>
 	</xsl:template>
 	<!-- Filter out extra nodes -->
-	<xsl:template match="questionCollection|workflowStatusName|workflowStatusDescription|unresolvedIssue|registrationStatus|publicID|origin|modifiedBy|latestVersionIndicator|endDate|deletedIndicator|dateModified|dateCreated|createdBy|changeNote|beginDate|version|prequestionCollection|dataElementDerivationCollection|parentDataElementRelationshipsCollection|dataElementConcept|derivedDataElement|childDataElementRelationshipsCollection|context|administeredComponentClassSchemeItemCollection|designationCollection|referenceDocumentCollection|administeredComponentContactCollection|definitionCollection|validValueCollection|parentValueDomainRelationshipCollection|dataElementCollection|childValueDomainRelationshipCollection|conceptDerivationRule|represention|conceptualDomain"/>
+	<xsl:template match="questionCollection|workflowStatusDescription|unresolvedIssue|registrationStatus|publicID|origin|modifiedBy|latestVersionIndicator|endDate|deletedIndicator|dateModified|dateCreated|createdBy|changeNote|beginDate|version|prequestionCollection|dataElementDerivationCollection|parentDataElementRelationshipsCollection|dataElementConcept|derivedDataElement|childDataElementRelationshipsCollection|context|administeredComponentClassSchemeItemCollection|designationCollection|referenceDocumentCollection|administeredComponentContactCollection|definitionCollection|validValueCollection|parentValueDomainRelationshipCollection|dataElementCollection|childValueDomainRelationshipCollection|conceptDerivationRule|represention|conceptualDomain"/>
 </xsl:stylesheet>
