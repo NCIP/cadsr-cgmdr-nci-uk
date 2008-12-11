@@ -56,7 +56,7 @@ namespace ExcelQueryServiceAddIn
             Excel.Worksheet cdeList = (Excel.Worksheet)this.Application.Sheets["cde_list"];
 
             Excel.Range c = (Excel.Range)cdeList.Cells[2, 1];
-            for (int i = 3; c.Value2 != null; i++)
+            for (int i = 2; i < 10000; i++)
             {
                 c = (Excel.Range)cdeList.Cells[i, 1];
                 string text = c.Text.ToString();
@@ -76,11 +76,54 @@ namespace ExcelQueryServiceAddIn
         private void unmapHeaderClick(Office.CommandBarButton button, ref bool Cancel)
         {
             Excel.Range selected = (Excel.Range)this.Application.Selection;
-   
+            Excel.Worksheet conceptList = (Excel.Worksheet)this.Application.Sheets["concept_list"];
+
+            string[] codes = selected.Text.ToString().Split(';');
             selected.Cells.Clear();
             selected.Cells.ClearContents();
             selected.Cells.ClearFormats();
             selected.Cells.ClearNotes();
+
+            if (conceptList != null)
+            {
+                conceptList.Unprotect("dummy_password");
+                Excel.Range c = (Excel.Range)conceptList.Cells[2, 1];
+                bool loop = true;
+                for (int i = 2; loop; i++)
+                {
+                    c = (Excel.Range)conceptList.Cells[i, 1];
+
+                    //Go through all concepts in the field
+                    //If the concept is already mapped, decrement it's Mapped counter
+                    for (int a = 0; a < codes.Length; a++)
+                    {
+                        string code = codes[a].Split(':')[0];
+                        if (c.Text.ToString().Contains(code))
+                        {
+                            int counter = Convert.ToInt16(c.Next.Next.Next.Next.Text);
+
+                            //If no more mapped, clear the row.
+                            if (counter - 1 == 0)
+                            {
+                                c.Clear();
+                                c.Next.Clear();
+                                c.Next.Next.Clear();
+                                c.Next.Next.Next.Clear();
+                                c.Next.Next.Next.Next.Clear();
+                            }
+                            //Otherwise just decrement counter.
+                            else
+                            {
+                                c.Next.Next.Next.Next.Value2 = counter - 1;
+                            }
+                            loop = false;
+                            break;
+                        }
+                    } 
+                }
+
+                conceptList.Protect("dummy_password", Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
+            }
 
         }
 
