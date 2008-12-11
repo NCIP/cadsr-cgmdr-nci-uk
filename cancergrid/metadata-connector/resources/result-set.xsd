@@ -69,7 +69,7 @@
 		<xs:sequence>
 			<xs:element name="code" type="xs:string"/>
 			<xs:element name="meaning" type="xs:string"/>
-			<xs:element name="evsconcept" type="xs:string"/>
+			<xs:element name="evsconcept" type="xs:string" minOccurs="0"/>
 		</xs:sequence>
 	</xs:complexType>
 	<!-- Concept related elements/types -->
