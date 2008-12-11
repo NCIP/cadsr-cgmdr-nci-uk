@@ -90,6 +90,12 @@ namespace ExcelQueryServiceAddIn
             use(sender, e);
         }
 
+        /// <summary>
+        /// Applying CDE to selected cell/range with validation based on value domain of data element, and XmlMap for exporting XML data.
+        /// 
+        /// TODO: Refactor code
+        /// </summary>
+        /// <param name="selectedNode">Data element to use</param>
         protected void handleCDE(XElement selectedNode)
         {
             string id = selectedNode.Element(rs + "names").Element(rs + "id").Value;
@@ -548,6 +554,13 @@ namespace ExcelQueryServiceAddIn
             }
         }
 
+        /// <summary>
+        /// Handles insertion of concept element into worksheet.
+        /// 
+        /// TODO: Refactor code
+        /// TODO: Is two way hyperlink possible?
+        /// </summary>
+        /// <param name="selectedNode">Concept element to use</param>
         protected void handleConcept(XElement selectedNode)
         {
             string id = selectedNode.Element(rs + "names").Element(rs + "id").Value;
@@ -559,7 +572,7 @@ namespace ExcelQueryServiceAddIn
             }
             else
             {
-                //Handle special caDSR format
+                //Handle special caDSR/EVS format
                 definition = definition.Trim().Replace("&gt;", ">").Replace("&lt;", "<").Replace("<![CDATA[", "").Replace("]]>", "");
                 if (definition.Contains("<def-source>"))
                 {
@@ -581,10 +594,16 @@ namespace ExcelQueryServiceAddIn
 
             //Get selected range
             Excel.Range selected = (Excel.Range)application.Selection;
-            selected.Value2 = label;
+            if (selected.Value2 == null || selected.Value2.ToString().Length == 0)
+            {
+                selected.Value2 = label;
+            }
+            else
+            {
+                selected.Value2 += ";"+label;
+            }
 
-            //Check for existing concept
-
+            //Check for existing concept (May need to remove this to allow duplicates, so that two way link can be established)
             int existingIndex = 0;
             for (int i = 1; i <= application.Names.Count; i++)
             {
@@ -604,13 +623,13 @@ namespace ExcelQueryServiceAddIn
                 selected.Name = "_" + code;
             }
 
-            //Create concept list is not exist
+            //Create concept list if not exists
             if (!isConceptListExists())
             {
                 createConceptList();
             }
 
-            //Add new concept entry to cde_list
+            //Add new concept entry to concept_list
             conceptList.Unprotect(dummyPass);
             Excel.Range c = (Excel.Range)conceptList.Cells[2, 1];
 
@@ -635,7 +654,9 @@ namespace ExcelQueryServiceAddIn
 
             conceptList.Protect(dummyPass, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
 
-            selected.Hyperlinks.Add(selected, "", getSelectedRangeAddress(c), Type.Missing, label);
+            /* Remove hyperlinks for now until a suitable two way link method is found */
+            //selected.Hyperlinks.Add(selected, "", getSelectedRangeAddress(c), Type.Missing, label);
+            
             selected.Font.Bold = true;
             selected.Font.Underline = false;
             selected.Font.ColorIndex = 1;
