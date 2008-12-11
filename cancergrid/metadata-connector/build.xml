@@ -6,6 +6,9 @@
 	<property name="build" value="build"/>
 	<property name="resources" value="resources"/>
 	<property name="src" value="src"/>
+	<property name="tests.src" value="tests/src"/>
+	<property name="tests.reports" value="tests/reports"/>
+	<property name="tests.logs" value="tests/logs"/>
 	<property name="dist" value="dist"/>
 	<property name="lib" value="../../lib"/>
 	
@@ -21,13 +24,6 @@
 		</fileset>
 	</path>
 	
-	<path id="test.classpath">
-		<pathelement path="."/>
-		<pathelement path="settings"/>
-		<pathelement path="${build}/classes"/>
-		<pathelement path="."/>
-	</path>
-	
 	<!-- Generate API document -->
 	<target name="javadoc" depends="compile" description="Generate Javadoc">
 		<delete dir="javadoc"/>
@@ -37,7 +33,7 @@
 			source="1.5" sourcepath="${src}" splitindex="true" use="true" version="true"/>
 	</target>
 
-	<target name="dist-aar" depends="compile" description="Create an Axis2 Archive (aar) build">
+	<target name="dist-aar" depends="clean, compile" description="Create an Axis2 Archive (aar) build">
 		<mkdir dir="${build}/aar"/>
 		<mkdir dir="${build}/aar/lib"/>
 		<mkdir dir="${build}/aar/stylesheets"/>
@@ -83,6 +79,31 @@
 		</javac>
 	</target>
 
+	<target name="compile-test" depends="compile, init-tests">
+		<javac srcdir="${tests.src}" destdir="${build}/tests" source="1.5" target="1.5">
+			<classpath path="${build}/classes"/>
+			<classpath refid="lib.classpath"/>
+		</javac>
+	</target>
+
+    	<target name="test" depends="clean-tests, compile-test">
+		<junit haltonfailure="no" printsummary="yes" showoutput="true">
+			<classpath>
+				<!--pathelement location="config.xml"/-->
+				<pathelement path="${build}/tests"/>
+				<pathelement path="${build}/classes"/>
+			</classpath>
+			<classpath refid="lib.classpath"/>
+			<formatter type="plain" usefile="true" extension=".txt"/>
+			<!--test name="org.cancergrid.ws.query.QueryServiceManagerTest"/-->
+			<batchtest fork="no" todir="${tests.reports}">
+				<fileset dir="${tests.src}">
+					<include name="**/*Test.java"/>
+				</fileset>
+			</batchtest>
+		</junit>
+	</target>
+
 	<!-- Clean up build and dist directory for new build -->
 	<target name="clean">
 		<delete dir="${build}"/>
@@ -94,11 +115,20 @@
 		<delete file="${war.name}"/>
 	</target>
 	
+	<target name="clean-tests" depends="clean">
+		<delete dir="${tests.reports}"/>
+		<delete dir="${tests.logs}"/>
+	</target>
+	
 	<target name="clean-all" depends="clean, clean-dist, clean-wsdl2java-artifacts"/>
+	
+	<target name="init-tests">
+		<mkdir dir="${build}/tests"/>
+		<mkdir dir="${tests.reports}"/>
+	</target>
 
 	<!-- initialise build -->
 	<target name="init">
-		<tstamp/>
 		<mkdir dir="${build}"/>
 		<mkdir dir="${build}/classes"/>
 		<mkdir dir="${dist}"/>
