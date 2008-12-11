@@ -33,7 +33,7 @@
 			source="1.5" sourcepath="${src}" splitindex="true" use="true" version="true"/>
 	</target>
 
-	<target name="dist-aar" depends="clean, compile" description="Create an Axis2 Archive (aar) build">
+	<target name="dist-aar" depends="clean-all, compile" description="Create an Axis2 Archive (aar) build">
 		<mkdir dir="${build}/aar"/>
 		<mkdir dir="${build}/aar/lib"/>
 		<mkdir dir="${build}/aar/stylesheets"/>
