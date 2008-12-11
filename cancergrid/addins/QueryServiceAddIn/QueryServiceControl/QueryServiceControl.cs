@@ -283,6 +283,7 @@ namespace QueryServiceControl
             {
                 string id = node.SelectSingleNode("rs:names/rs:id", nsmanager).InnerXml;
                 string name = node.SelectSingleNode("rs:names/rs:preferred", nsmanager).InnerXml;
+
                 target.Items.Add(new QueryListItem(id, name));
             }
             if (target.Items.Count == pageSize + 1)
@@ -467,9 +468,11 @@ namespace QueryServiceControl
                 string definition = null;
                 string values = null;
                 string props = null;
+                string workflow = null;
                 XmlNode defNode = null;
                 XmlNode propsNode = null;
                 XmlNode vdNode = null;
+                XmlNode wfNode = null;
                 
                 if (sender.Equals(lstClassificationQueryResult))
                 {
@@ -478,6 +481,8 @@ namespace QueryServiceControl
                 }
                 else if (sender.Equals(lstResults))
                 {
+
+                    wfNode = lastResult.DocumentElement.SelectSingleNode("/rs:result-set/rs:data-element[rs:names/rs:id = '" + getSelectedItem(lstResults).ID + "']/rs:workflow-status", nsmanager);
                     vdNode = lastResult.DocumentElement.SelectSingleNode("/rs:result-set/rs:data-element[rs:names/rs:id = '" + getSelectedItem(lstResults).ID + "']/rs:values", nsmanager);
                     propsNode = lastResult.DocumentElement.SelectSingleNode("/rs:result-set/rs:concept[rs:names/rs:id = '" + getSelectedItem(lstResults).ID + "']/rs:properties", nsmanager);
                     defNode = lastResult.DocumentElement.SelectSingleNode("/rs:result-set/*[rs:names/rs:id = '" + getSelectedItem(lstResults).ID + "']/rs:definition", nsmanager);
@@ -505,6 +510,17 @@ namespace QueryServiceControl
                     }
                 }
 
+
+                if (wfNode == null || wfNode.InnerXml.Length == 0)
+                {
+                    workflow = "<div style=\"font-size: 14px; text-aligh: justify;\">(No workflow status supplied)</div>";
+                }
+                else
+                {
+                    workflow = "<div style=\"font-size: 14px; text-aligh: justify;\">Workflow Status: " + wfNode.InnerXml + "</div>";
+                }
+
+
                 if (sender.Equals(lstClassificationQueryResult))
                 {
                     wbClassificationQueryResultDef.DocumentText = definition;
@@ -512,6 +528,7 @@ namespace QueryServiceControl
                 else if (sender.Equals(lstResults))
                 {
                     wbDetailsDef.DocumentText = definition;
+                    wbDetailsOther.DocumentText = workflow;
                 }
 
                 XNamespace rs = "http://cancergrid.org/schema/result-set";
@@ -554,9 +571,6 @@ namespace QueryServiceControl
                             values += "</table>";
 
                         }
-
-
-
 
                     }
                     else if (x.Element(rs + "non-enumerated") != null)
@@ -669,6 +683,11 @@ namespace QueryServiceControl
                 statusMsg.Text = text;
                 statusMsg.Update();
             }
+        }
+
+        private void grpDetails_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 
