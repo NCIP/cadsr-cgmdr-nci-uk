@@ -604,6 +604,7 @@ namespace ExcelQueryServiceAddIn
             }
 
             //Check for existing concept (May need to remove this to allow duplicates, so that two way link can be established)
+            /*
             int existingIndex = 0;
             for (int i = 1; i <= application.Names.Count; i++)
             {
@@ -613,7 +614,7 @@ namespace ExcelQueryServiceAddIn
                     break;
                 }
             }
-
+            
             if (existingIndex > 0)
             {
                 application.Names.Item(existingIndex, Type.Missing, Type.Missing).RefersTo = application.Names.Item(existingIndex, Type.Missing, Type.Missing).RefersTo + "," + getSelectedRangeAddress(selected);
@@ -623,6 +624,7 @@ namespace ExcelQueryServiceAddIn
             {
                 selected.Name = "_" + code;
             }
+            */
 
             //Create concept list if not exists
             if (!isConceptListExists())
@@ -634,8 +636,8 @@ namespace ExcelQueryServiceAddIn
             conceptList.Unprotect(dummyPass);
             Excel.Range c = (Excel.Range)conceptList.Cells[2, 1];
 
-
-            if (existingIndex == 0)
+            Excel.Range found = conceptList.Cells.Find(code, Type.Missing, Excel.XlFindLookIn.xlValues, Excel.XlLookAt.xlPart, Excel.XlSearchOrder.xlByRows, Excel.XlSearchDirection.xlNext, false, Type.Missing, Type.Missing);
+            if (found == null) //if (existingIndex == 0)
             {
                 for (int i = 3; c.Value2 != null; i++)
                 {
@@ -654,6 +656,8 @@ namespace ExcelQueryServiceAddIn
             }
             else
             {
+                found.Next.Next.Next.Next.Value2 = 1 + Convert.ToInt16(found.Next.Next.Next.Next.Value2.ToString());
+                /*
                 //Limit the loop to 10000 to prevent infinite search.
                 for (int i = 2; i < 10000; i++)
                 {
@@ -667,7 +671,7 @@ namespace ExcelQueryServiceAddIn
                         break;
                     }
                 }
-
+                */
             }
 
             conceptList.Protect(dummyPass, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);

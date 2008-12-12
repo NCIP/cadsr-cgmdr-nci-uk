@@ -87,6 +87,27 @@ namespace ExcelQueryServiceAddIn
             if (conceptList != null)
             {
                 conceptList.Unprotect("dummy_password");
+
+                //Use Excel built-in Find feature to search for matched row
+                foreach (String code in codes)
+                {
+                    string c = code.Split(':')[0];
+                    Excel.Range found = conceptList.Cells.Find(c, Type.Missing, Excel.XlFindLookIn.xlValues, Excel.XlLookAt.xlPart, Excel.XlSearchOrder.xlByRows, Excel.XlSearchDirection.xlNext, false, Type.Missing, Type.Missing);
+                    if (found != null)
+                    {
+                        int counter = Convert.ToInt16(found.Next.Next.Next.Next.Value2.ToString()) - 1;
+                        if (counter < 1)
+                        {
+                            found.EntireRow.Delete(Type.Missing); //Remove entire row
+                        }
+                        else
+                        {
+                            found.Next.Next.Next.Next.Value2 = counter;
+                        }
+                    }
+                }
+
+                /*
                 Excel.Range c = (Excel.Range)conceptList.Cells[2, 1];
                 bool loop = true;
                 for (int i = 2; loop; i++)
@@ -95,13 +116,14 @@ namespace ExcelQueryServiceAddIn
 
                     //Go through all concepts in the field
                     //If the concept is already mapped, decrement it's Mapped counter
+                    
                     for (int a = 0; a < codes.Length; a++)
                     {
                         string code = codes[a].Split(':')[0];
                         if (c.Text.ToString().Contains(code))
                         {
                             int counter = Convert.ToInt16(c.Next.Next.Next.Next.Text);
-
+                            
                             //If no more mapped, clear the row.
                             if (counter - 1 == 0)
                             {
@@ -119,9 +141,10 @@ namespace ExcelQueryServiceAddIn
                             loop = false;
                             break;
                         }
-                    } 
+                    }
+                    
                 }
-
+                */
                 conceptList.Protect("dummy_password", Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
             }
 
