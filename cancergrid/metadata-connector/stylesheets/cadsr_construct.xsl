@@ -22,14 +22,7 @@
         <field name="{@name}">
             <xsl:apply-templates select="doc(data(@xlink:href))/xlink:httpQuery/queryResponse/class"/>
         </field>
-    </xsl:template>
-    
-       <xsl:template match="field[@name='concept']">
-        <field name="{@name}">
-            <xsl:apply-templates select="doc(data(@xlink:href))/xlink:httpQuery/queryResponse/class"/>
-        </field>
-    </xsl:template>
-		
+    </xsl:template>		
     
     <!-- Expand the specified node by reading from the given xlink -->
     <xsl:template match="class[@name='gov.nih.nci.cadsr.domain.EnumeratedValueDomain']/field[@name='valueDomainPermissibleValueCollection']">
@@ -38,11 +31,17 @@
         </field>
     </xsl:template>
 
-	<!-- Stop expanding after this one -->
     <xsl:template match="field[@name='valueMeaning']">
+        <field name="{@name}">
+            <xsl:apply-templates select="doc(data(@xlink:href))/xlink:httpQuery/queryResponse/class"/>
+        </field>
+    </xsl:template>
+    
+    <!-- Stop expanding after this one -->
+       <xsl:template match="class[@name='gov.nih.nci.cadsr.domain.ValueMeaning']/field[@name='conceptDerivationRule']">
         <field name="{@name}">
             <xsl:copy-of select="doc(data(@xlink:href))/xlink:httpQuery/queryResponse/class"/>
         </field>
     </xsl:template>
-
+    
 </xsl:stylesheet>
