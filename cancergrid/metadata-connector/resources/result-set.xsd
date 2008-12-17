@@ -17,7 +17,7 @@
 		<xs:sequence>
 			<xs:element ref="names"/>
 			<xs:element name="definition" type="xs:string"/>
-			<xs:element name="workflow-status" type="xs:string"/>
+			<xs:element name="workflow-status" type="xs:string" minOccurs="0"/>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:element name="names" type="names"/>
@@ -69,10 +69,20 @@
 	<xs:complexType name="valid-value">
 		<xs:sequence>
 			<xs:element name="code" type="xs:string"/>
-			<xs:element name="meaning" type="xs:string"/>
+			<xs:element ref="meaning"/>
 			<xs:element name="evsconcept" type="xs:string" minOccurs="0"/>
 		</xs:sequence>
 	</xs:complexType>
+
+	<xs:element name="meaning" type="meaning"/>
+	<xs:complexType name="meaning">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="conceptRef" type="xs:anyURI"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
 	<!-- Concept related elements/types -->
 	<xs:element name="concept" type="concept"/>
 	<xs:complexType name="concept">

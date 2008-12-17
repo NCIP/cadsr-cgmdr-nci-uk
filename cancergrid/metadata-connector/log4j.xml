@@ -31,7 +31,7 @@
     </appender>
     
     <!-- cancergrid query service manager -->
-    <category name="org.cancergrid">
+    <category name="org.cancergrid" additivity="true">
         <priority value="debug"/>
         <appender-ref ref="CGHTML"/>
     </category>
