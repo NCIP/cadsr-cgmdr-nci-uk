@@ -558,9 +558,9 @@ let $conceptual-domain :=
             for $e in $enumerations
             return 
                 element cgMDR:Value_Meaning {
-                    element ISO11179:value_meaning_begin_date {current-date()},
-                    element ISO11179:value_meaning_description {data($e/value-meaning-desc)},
-                    element ISO11179:value_meaning_identifier {data($e/value-meaning-id)}
+                    element cgMDR:value_meaning_begin_date {current-date()},
+                    element cgMDR:value_meaning_description {data($e/value-meaning-desc)},
+                    element cgMDR:value_meaning_identifier {data($e/value-meaning-id)}
                   }
          }
        )
@@ -644,7 +644,7 @@ let $conceptual-domain :=
               element cgMDR:typed_by {$representation-class}, 
               element cgMDR:expressing {$full-identifier-dec},
               element cgMDR:exemplified_by {
-              element ISO11179:data_element_example_item {$example}
+              element cgMDR:data_element_example_item {$example}
         }
       }
       )

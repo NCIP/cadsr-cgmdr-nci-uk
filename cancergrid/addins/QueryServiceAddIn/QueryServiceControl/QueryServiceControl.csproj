@@ -143,10 +143,10 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
-    <WebReferenceUrl Include="http://cg1.comlab.ox.ac.uk:8080/metadata-connector-1.0.2/services/QueryServiceManager%3fwsdl">
+    <WebReferenceUrl Include="http://localhost:8080/exist/services/QueryServiceManager%3fwsdl">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\QueryServiceManager\</RelPath>
-      <UpdateFromURL>http://cg1.comlab.ox.ac.uk:8080/metadata-connector-1.0.2/services/QueryServiceManager%3fwsdl</UpdateFromURL>
+      <UpdateFromURL>http://localhost:8080/exist/services/QueryServiceManager%3fwsdl</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>

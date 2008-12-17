@@ -28,7 +28,7 @@
     <xs:element name="Unit_of_Measure" type="Unit_of_Measure" nillable="false" abstract="false"/>
     <xs:complexType name="Unit_of_Measure" mixed="false" abstract="false">
         <xs:complexContent>
-            <xs:extension base="iso11179:Unit_of_Measure">
+            <xs:extension base="cgMDR:Unit_of_Measure">
                 <xs:sequence minOccurs="1" maxOccurs="1"/>
                 <xs:attribute name="unit_of_measure_identifier" use="required" type="unit_of_measure_identifier"/>
             </xs:extension>
@@ -250,7 +250,7 @@ When an Administered Item is modified, it becomes a new version of the Administe
     </xs:simpleType>
     <xs:attributeGroup name="cgItem_Identifier">
         <xs:annotation>
-            <xs:documentation>Implements ISO11179:Item_Identifier
+            <xs:documentation>Implements cgMDR:Item_Identifier
 
 Abstracted so it could be an attribute of the root element</xs:documentation>
         </xs:annotation>

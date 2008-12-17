@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" xmlns="http://www.w3.org/1999/xhtml" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:iaaaterm="http://iaaa.cps.unizar.es/iaaaterms/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:cgResolver="http://www.cancergrid.org/schema/cgResolver" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:ISO11179="http://www.cancergrid.org/schema/ISO11179" version="2.0">
+<xsl:stylesheet xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/1999/xhtml" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:iaaaterm="http://iaaa.cps.unizar.es/iaaaterms/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:cgResolver="http://www.cancergrid.org/schema/cgResolver" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:ISO11179="http://www.cancergrid.org/schema/ISO11179" version="2.0">
     <xsl:include href="lib-rendering-new.xsl"/>
     <xsl:output method="html" media-type="text/html" indent="yes" doctype-public="-//W3C//DTD XHTML 1,0 Transitional//EN" doctype-system="http://www.w3.org/TR/2002/REC-xhtml1-20020801/DTD/xhtml1-transitional.dtd" omit-xml-declaration="no" exclude-result-prefixes="cgMDR dc iaaaterm xs rdf cgResolver skos dcterms ISO11179"/>
     <xsl:param name="type">data_element</xsl:param>
@@ -935,7 +935,7 @@
             <tr>
                 <td class="left_header_cell">Precision</td>
                 <td>
-                    <xsl:value-of select="//ISO11179:unit_of_measure_precision"/>
+                    <xsl:value-of select="//cgMDR:unit_of_measure_precision"/>
                 </td>
             </tr>
             <tr>
@@ -959,11 +959,11 @@
             </td>
             <xsl:variable name="identifier" select="cgMDR:contained_in"/>
             <td>
-                <xsl:value-of select="//cgMDR:Value_Meaning[ISO11179:value_meaning_identifier=$identifier]/ISO11179:value_meaning_description"/>
+                <xsl:value-of select="//cgMDR:Value_Meaning[cgMDR:value_meaning_identifier=$identifier]/cgMDR:value_meaning_description"/>
             </td>
             <td>
                 <xsl:call-template name="uri-resolver">
-                    <xsl:with-param name="urn" select="//cgMDR:Value_Meaning[ISO11179:value_meaning_identifier=$identifier]/cgMDR:reference_uri"/>
+                    <xsl:with-param name="urn" select="//cgMDR:Value_Meaning[cgMDR:value_meaning_identifier=$identifier]/cgMDR:reference_uri"/>
                 </xsl:call-template>
             </td>
         </tr>
@@ -1458,11 +1458,6 @@
         </table>
         <xsl:apply-templates select="rdf:RDF"/>
     </xsl:template>
-    <xsl:template match="thesaurusdc">
-        <table class="layout">
-            <xsl:apply-templates mode="name-value-pair"/>
-        </table>
-    </xsl:template>
     <xsl:template match="*" mode="name-value-pair">
         <tr>
             <td class="left_header_cell">
@@ -1480,7 +1475,7 @@
             </xsl:apply-templates>
         </table>
     </xsl:template>
-    <xsl:template match="rdf:Description">
+    <xsl:template match="rdf:Description|skos:Concept">
         <tr>
             <td colspan="3" class="left_header_cell">
                 <a name="{substring-after(@rdf:about,'#')}">term: <xsl:value-of select="skos:prefLabel"/>

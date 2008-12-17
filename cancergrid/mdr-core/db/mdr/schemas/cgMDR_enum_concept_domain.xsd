@@ -5,7 +5,7 @@
     <xs:element name="Value_Meaning" type="Value_Meaning" nillable="false" abstract="false"/>
     <xs:complexType name="Value_Meaning" mixed="false" abstract="false">
         <xs:complexContent>
-            <xs:extension base="iso11179:Value_Meaning">
+            <xs:extension base="cgMDR:Value_Meaning">
                 <xs:sequence minOccurs="1" maxOccurs="1">
                     <xs:element name="reference_uri" type="xs:anyURI" minOccurs="0" maxOccurs="1" nillable="false">
                         <xs:annotation>

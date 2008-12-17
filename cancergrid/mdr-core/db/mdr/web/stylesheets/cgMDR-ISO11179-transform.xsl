@@ -69,10 +69,10 @@
     </xsl:template>
     <xsl:template match="cgMDR:registration_authority_identifier">
         <xsl:element name="ISO11179:registration_authority_identifier">
-            <xsl:apply-templates select="ISO11179:international_code_designator"/>
-            <xsl:apply-templates select="ISO11179:organization_identifier"/>
-            <xsl:apply-templates select="ISO11179:organization_part_identifier"/>
-            <xsl:apply-templates select="ISO11179:OPI_Source"/>
+            <xsl:apply-templates select="cgMDR:international_code_designator"/>
+            <xsl:apply-templates select="cgMDR:organization_identifier"/>
+            <xsl:apply-templates select="cgMDR:organization_part_identifier"/>
+            <xsl:apply-templates select="cgMDR:OPI_Source"/>
         </xsl:element>
     </xsl:template>
     <xsl:template match="cgMDR:represented_by">
@@ -80,9 +80,9 @@
     </xsl:template>
     <xsl:template match="cgMDR:registrar_contact">
         <xsl:element name="ISO11179:registrar_contact">
-            <xsl:apply-templates select="ISO11179:contact_name"/>
-            <xsl:apply-templates select="ISO11179:contact_title"/>
-            <xsl:apply-templates select="ISO11179:contact_information"/>
+            <xsl:apply-templates select="cgMDR:contact_name"/>
+            <xsl:apply-templates select="cgMDR:contact_title"/>
+            <xsl:apply-templates select="cgMDR:contact_information"/>
         </xsl:element>
     </xsl:template>
     <xsl:template match="cgMDR:registrar_identifier">
@@ -93,13 +93,13 @@
     </xsl:template>
     <xsl:template match="cgMDR:Organization">
         <xsl:element name="ISO11179:organization_name">
-            <xsl:value-of select="./ISO11179:organization_name"/>
+            <xsl:value-of select="./cgMDR:organization_name"/>
         </xsl:element>
         <xsl:element name="ISO11179:organization_mail_address">
-            <xsl:value-of select="./ISO11179:organization_mail_address"/>
+            <xsl:value-of select="./cgMDR:organization_mail_address"/>
         </xsl:element>
     </xsl:template>
-    <xsl:template match="ISO11179:contact_information">
+    <xsl:template match="cgMDR:contact_information">
         <xsl:element name="ISO11179:contact_information">
             <xsl:apply-templates select="@*|*|text()|comment()"/>
         </xsl:element>
@@ -107,9 +107,9 @@
     
     <!--reorder this element-->
     <xsl:template match="cgMDR:Contact">
-        <xsl:apply-templates select="ISO11179:contact_name"/>
-        <xsl:apply-templates select="ISO11179:contact_title"/>
-        <xsl:apply-templates select="ISO11179:contact_information"/>
+        <xsl:apply-templates select="cgMDR:contact_name"/>
+        <xsl:apply-templates select="cgMDR:contact_title"/>
+        <xsl:apply-templates select="cgMDR:contact_information"/>
     </xsl:template>
     <xsl:template match="cgMDR:email">
         <xsl:value-of select="text()"/>
@@ -134,7 +134,7 @@
             <xsl:apply-templates select="cgMDR:permissible_value_begin_date"/>
             <xsl:apply-templates select="cgMDR:permissible_value_end_date"/>
             <xsl:element name="ISO11179:has">
-                <xsl:apply-templates select="//cgMDR:Value_Meaning[ISO11179:value_meaning_identifier=$contained_in]" mode="value_domain"/>
+                <xsl:apply-templates select="//cgMDR:Value_Meaning[cgMDR:value_meaning_identifier=$contained_in]" mode="value_domain"/>
             </xsl:element>
             <xsl:apply-templates select="cgMDR:value_item"/>
         </xsl:element>
@@ -379,17 +379,17 @@
     <!-- change document order -->
     <xsl:template match="cgMDR:Value_Meaning">
         <xsl:element name="ISO11179:containing">
-            <xsl:apply-templates select="ISO11179:value_meaning_identifier"/>
-            <xsl:apply-templates select="ISO11179:value_meaning_description"/>
-            <xsl:apply-templates select="ISO11179:value_meaning_begin_date"/>
-            <xsl:apply-templates select="ISO11179:value_meaning_end_date"/>
+            <xsl:apply-templates select="cgMDR:value_meaning_identifier"/>
+            <xsl:apply-templates select="cgMDR:value_meaning_description"/>
+            <xsl:apply-templates select="cgMDR:value_meaning_begin_date"/>
+            <xsl:apply-templates select="cgMDR:value_meaning_end_date"/>
         </xsl:element>
     </xsl:template>
     <xsl:template match="cgMDR:Value_Meaning" mode="value_domain">
-        <xsl:apply-templates select="ISO11179:value_meaning_identifier"/>
-        <xsl:apply-templates select="ISO11179:value_meaning_description"/>
-        <xsl:apply-templates select="ISO11179:value_meaning_begin_date"/>
-        <xsl:apply-templates select="ISO11179:value_meaning_end_date"/>
+        <xsl:apply-templates select="cgMDR:value_meaning_identifier"/>
+        <xsl:apply-templates select="cgMDR:value_meaning_description"/>
+        <xsl:apply-templates select="cgMDR:value_meaning_begin_date"/>
+        <xsl:apply-templates select="cgMDR:value_meaning_end_date"/>
     </xsl:template>
     <!-- drop reference uris -->
     <xsl:template match="cgMDR:reference_uri"/>

@@ -33,7 +33,7 @@ declare function value-domain:unit_of_measure($value_domain as element()) as xs:
 {
    let $uom := xs:string($value_domain//cgMDR:value_domain_unit_of_measure)
    return
-      xs:string(lib-util:mdrElement('unit_of_measure', $uom)//ISO11179:unit_of_measure_name/text())
+      xs:string(lib-util:mdrElement('unit_of_measure', $uom)//cgMDR:unit_of_measure_name/text())
 };
 
 declare function value-domain:datatype($value_domain as element()) as xs:string?

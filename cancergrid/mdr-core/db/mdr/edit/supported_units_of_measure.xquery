@@ -48,8 +48,8 @@ declare function local:page-entry($message as xs:string) as node()
            {
            for $uom in lib-util:mdrElements("unit_of_measure")
               let $id := data($uom//@unit_of_measure_identifier)
-              let $name :=data($uom//ISO11179:unit_of_measure_name)
-              let $precision :=data($uom//ISO11179:unit_of_measure_precision)
+              let $name :=data($uom//cgMDR:unit_of_measure_name)
+              let $precision :=data($uom//cgMDR:unit_of_measure_precision)
               order by $name
               return
                  <tr><td>{$id}</td><td>{$name}</td><td>{$precision}</td></tr>
@@ -87,8 +87,8 @@ declare function local:uom-document() as element(cgMDR:Unit_of_Measure)
       element cgMDR:Unit_of_Measure
          {
             attribute unit_of_measure_identifier {$identifier},
-            element ISO11179:unit_of_measure_name {$name},
-            element ISO11179:unit_of_measure_precision {$precision}
+            element cgMDR:unit_of_measure_name {$name},
+            element cgMDR:unit_of_measure_precision {$precision}
          } 
 };
    

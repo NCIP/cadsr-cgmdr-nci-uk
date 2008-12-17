@@ -108,7 +108,15 @@
 		</xs:sequence>
 	</xs:complexType>
 	<!-- Classification scheme related elements/types -->
-	<xs:element name="classification_scheme" type="xs:anyURI"/>
+	<xs:element name="classification_scheme" type="classification_scheme"/>
+	<xs:complexType name="classification_scheme">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="uri" type="xs:anyURI"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
 	<xs:element name="node" type="node"/>
 	<xs:complexType name="node">
 		<xs:sequence>

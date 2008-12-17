@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="QueryServiceControl_QueryServiceManager_QueryServiceManager" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://129.67.151.25:8080/metadata-connector-1.0.2/services/QueryServiceManager</Value>
+      <Value Profile="(Default)">http://129.67.150.57:8080/exist/services/QueryServiceManager</Value>
     </Setting>
   </Settings>
 </SettingsFile>

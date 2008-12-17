@@ -31,13 +31,13 @@ as node()*
    then(
       for $cd in lib-util:mdrElement("conceptual_domain", lib-util:mdrElementId($value-domain))[string(.//cgMDR:registration_status)!='Superseded'][string(.//cgMDR:registration_status)!='Retired']
       return
-         $cd//cgMDR:Value_Meaning[string(./ISO11179:value_meaning_identifier)=string($permissible_value//cgMDR:contained_in)]
+         $cd//cgMDR:Value_Meaning[string(./cgMDR:value_meaning_identifier)=string($permissible_value//cgMDR:contained_in)]
 
    )
    else(
       for $cd in lib-util:mdrElements("conceptual_domain")[data(.//cgMDR:registration_status)!='Superseded']
       return
-         $cd//cgMDR:Value_Meaning[string(./ISO11179:value_meaning_identifier)=string($permissible_value//cgMDR:contained_in)]
+         $cd//cgMDR:Value_Meaning[string(./cgMDR:value_meaning_identifier)=string($permissible_value//cgMDR:contained_in)]
          )
       
 };
@@ -55,12 +55,12 @@ as node()?
      then (
      element a {
         attribute href {$desc//cgMDR:reference_uri},
-        if ($desc//ISO11179:value_meaning_description)
-        then string($desc//ISO11179:value_meaning_description)
+        if ($desc//cgMDR:value_meaning_description)
+        then string($desc//cgMDR:value_meaning_description)
         else string($desc//cgMDR:value_meaning_description)
         }
      )
-     else ($desc//ISO11179:value_meaning_description)
+     else ($desc//cgMDR:value_meaning_description)
 };
 
 declare function value-meaning:containing_document($permissible_value as xs:string?) as xs:string?
@@ -69,7 +69,7 @@ declare function value-meaning:containing_document($permissible_value as xs:stri
    (:returns the first match as there will be many :)
    let $a := (
       for $item in lib-util:mdrElements("conceptual_domain")[.//cgMDR:registration_status != 'Superseded'][.//cgMDR:registration_status != 'Retired']
-      where string($item//ISO11179:value_meaning_identifier) = $permissible_value
+      where string($item//cgMDR:value_meaning_identifier) = $permissible_value
       or string($item//cgMDR:value_meaning_identifier) = $permissible_value
       return lib-util:mdrElementId($item)
       )
@@ -81,9 +81,9 @@ declare function value-meaning:value-meaning($value-meaning-identifier as xs:str
 {
 for $cd in lib-util:mdrElements("conceptual_domain")
    [.//cgMDR:registration_status != 'Superseded']
-   [.//ISO11179:value_meaning_identifier=$value-meaning-identifier]
+   [.//cgMDR:value_meaning_identifier=$value-meaning-identifier]
    return
-      for $vm in $cd//cgMDR:Value_Meaning[ISO11179:value_meaning_identifier=$value-meaning-identifier]
+      for $vm in $cd//cgMDR:Value_Meaning[cgMDR:value_meaning_identifier=$value-meaning-identifier]
       return $vm
 };
 
@@ -93,15 +93,15 @@ if ($conceptual-domain-identifier > "")
 then (
    for $cd in lib-util:mdrElement("conceptual_domain", $conceptual-domain-identifier)
       return
-         for $vm in $cd//cgMDR:Value_Meaning[ISO11179:value_meaning_identifier=$value-meaning-identifier]
+         for $vm in $cd//cgMDR:Value_Meaning[cgMDR:value_meaning_identifier=$value-meaning-identifier]
          return $vm
 )
 else (
    for $cd in lib-util:mdrElements("conceptual_domain")
       [.//cgMDR:registration_status != 'Superseded']
-      [.//ISO11179:value_meaning_identifier=$value-meaning-identifier]
+      [.//cgMDR:value_meaning_identifier=$value-meaning-identifier]
       return
-         for $vm in $cd//cgMDR:Value_Meaning[ISO11179:value_meaning_identifier=$value-meaning-identifier]
+         for $vm in $cd//cgMDR:Value_Meaning[cgMDR:value_meaning_identifier=$value-meaning-identifier]
          return $vm
       )
 };

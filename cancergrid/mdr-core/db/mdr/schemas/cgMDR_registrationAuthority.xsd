@@ -8,7 +8,7 @@
             <xs:element name="organization_name" type="xs:string" minOccurs="1" maxOccurs="1" nillable="false"/>
             <xs:element name="organization_mail_address" type="xs:string" minOccurs="1" maxOccurs="1" nillable="false"/>
             <xs:element name="documentation_language_identifier" type="cgLanguage_Identification" maxOccurs="unbounded" minOccurs="1" nillable="false"/>
-            <xs:element name="registration_authority_identifier" type="iso11179:Registration_Authority_Identifier" minOccurs="1" maxOccurs="1" nillable="false"/>
+            <xs:element name="registration_authority_identifier" type="cgMDR:Registration_Authority_Identifier" minOccurs="1" maxOccurs="1" nillable="false"/>
             <xs:element name="represented_by" type="Registrar" maxOccurs="unbounded" minOccurs="1" nillable="false"/>
         </xs:sequence>
         <xs:attribute name="organization_identifier" use="required" type="xs:string"/>
@@ -16,7 +16,7 @@
     <xs:element name="Registrar" type="Registrar" nillable="false" abstract="false"/>
     <xs:complexType name="Registrar" mixed="false" abstract="false">
         <xs:sequence minOccurs="1" maxOccurs="1">
-            <xs:element name="registrar_contact" type="iso11179:Contact" minOccurs="1" maxOccurs="1" nillable="false"/>
+            <xs:element name="registrar_contact" type="cgMDR:Contact" minOccurs="1" maxOccurs="1" nillable="false"/>
             <xs:element name="registrar_identifier" type="xs:string" minOccurs="1" maxOccurs="1" nillable="false"/>
         </xs:sequence>
     </xs:complexType>

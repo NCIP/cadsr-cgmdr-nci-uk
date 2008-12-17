@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/mdr/xforms" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:19+01:00" version="1">
     <resource type="BinaryResource" name="administered-by.xquery" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:20+01:00" modified="2008-10-07T11:40:02+01:00" filename="administered-by.xquery" mimetype="application/xquery"/>
     <resource type="BinaryResource" name="context-identifier.xquery" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:20+01:00" modified="2008-10-07T11:40:03+01:00" filename="context-identifier.xquery" mimetype="application/xquery"/>

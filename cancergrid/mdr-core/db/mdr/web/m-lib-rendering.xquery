@@ -93,7 +93,7 @@ declare function lib-rendering:conceptual-domain-reduced($displayed-items) as el
                     for $meaning in $administered-item//cgMDR:Value_Meaning
                     order by $meaning//cgMDR:Value_Meaning
                     return
-                          element meaning {xs:string($meaning/ISO11179:value_meaning_description)}
+                          element meaning {xs:string($meaning/cgMDR:value_meaning_description)}
                     
               }
            }
@@ -128,18 +128,18 @@ declare function lib-rendering:value-domain-reduced($displayed-items) as element
                     let $cd := lib-util:mdrElement("conceptual_domain", $administered-item/cgMDR:representing)
                     for $value in $administered-item//cgMDR:containing
                     for $meaning in $cd//cgMDR:Value_Meaning
-                    where $meaning/ISO11179:value_meaning_identifier = $value/cgMDR:contained_in
+                    where $meaning/cgMDR:value_meaning_identifier = $value/cgMDR:contained_in
                     order by $value/cgMDR:value_item
                     return
                        element valid-value{
                           element code {xs:string($value/cgMDR:value_item)},
-                          element meaning {xs:string($meaning/ISO11179:value_meaning_description)}
+                          element meaning {xs:string($meaning/cgMDR:value_meaning_description)}
                        }
                     )
                  else(
                     element data-type {data($data-type//cgMDR:datatype_name)},
-                    element units {if (data($uom//ISO11179:unit_of_measure_name)>"")
-                                   then (data($uom//ISO11179:unit_of_measure_name))
+                    element units {if (data($uom//cgMDR:unit_of_measure_name)>"")
+                                   then (data($uom//cgMDR:unit_of_measure_name))
                                    else ("(not applicable)")}
                     )
               }
@@ -178,18 +178,18 @@ declare function lib-rendering:data-element-reduced($displayed-items) as element
                     let $cd := lib-util:mdrElement("conceptual_domain", $value-domain/cgMDR:representing)
                     for $value in $value-domain//cgMDR:containing
                     for $meaning in $cd//cgMDR:Value_Meaning
-                    where $meaning/ISO11179:value_meaning_identifier = $value/cgMDR:contained_in
+                    where $meaning/cgMDR:value_meaning_identifier = $value/cgMDR:contained_in
                     order by $value/cgMDR:value_item
                     return
                        element valid-value{
                           element code {xs:string($value/cgMDR:value_item)},
-                          element meaning {xs:string($meaning/ISO11179:value_meaning_description)}
+                          element meaning {xs:string($meaning/cgMDR:value_meaning_description)}
                        }
                     )
                  else(
                     element data-type {data($data-type//cgMDR:datatype_name)},
-                    element units {if (data($uom//ISO11179:unit_of_measure_name)>"")
-                                   then (data($uom//ISO11179:unit_of_measure_name))
+                    element units {if (data($uom//cgMDR:unit_of_measure_name)>"")
+                                   then (data($uom//cgMDR:unit_of_measure_name))
                                    else ("(not applicable)")}
                     )
               }
@@ -481,27 +481,27 @@ declare function lib-rendering:related-administered-items($administered-item as 
 declare function lib-rendering:registrar($registrar as node()?) as node()
 {
   <table class="invisible">
-    <tr><td class="invisible">{string($registrar//ISO11179:contact_name/text())}</td></tr>
-    <tr><td class="invisible">{string($registrar//ISO11179:contact_title/text())}</td></tr>
-    <tr><td class="invisible">{string($registrar//ISO11179:contact_information/text())}</td></tr>
+    <tr><td class="invisible">{string($registrar//cgMDR:contact_name/text())}</td></tr>
+    <tr><td class="invisible">{string($registrar//cgMDR:contact_title/text())}</td></tr>
+    <tr><td class="invisible">{string($registrar//cgMDR:contact_information/text())}</td></tr>
   </table>
 };
 
 declare function lib-rendering:submitter($submitter as node()?) as node()
 {
       <table class="invisible">
-      <tr><td class="invisible">{$submitter//ISO11179:contact_name/text()}</td></tr>
-      <tr><td class="invisible">{$submitter//ISO11179:contact_title/text()}</td></tr>
-      <tr><td class="invisible">{$submitter//ISO11179:contact_details/text()}</td></tr>
+      <tr><td class="invisible">{$submitter//cgMDR:contact_name/text()}</td></tr>
+      <tr><td class="invisible">{$submitter//cgMDR:contact_title/text()}</td></tr>
+      <tr><td class="invisible">{$submitter//cgMDR:contact_details/text()}</td></tr>
       </table>
 };
 
 declare function lib-rendering:administrator($administrator as node()?) as node()
 {
       <table class="invisible">
-      <tr><td class="invisible">{$administrator/ISO11179:contact_name/text()}</td></tr>
-      <tr><td class="invisible">{$administrator/ISO11179:contact_title/text()}</td></tr>
-      <tr><td class="invisible">{$administrator/ISO11179:contact_details/text()}</td></tr>
+      <tr><td class="invisible">{$administrator/cgMDR:contact_name/text()}</td></tr>
+      <tr><td class="invisible">{$administrator/cgMDR:contact_title/text()}</td></tr>
+      <tr><td class="invisible">{$administrator/cgMDR:contact_details/text()}</td></tr>
       </table>
 };
 
@@ -542,7 +542,7 @@ return
 declare function lib-rendering:txfrm-webpage($title as xs:string, $content as node()*) as node()*
 {
 let $user:=session:get-attribute("username")
-let $debug:=xs:boolean(request:get-parameter("debug","false"))
+let $debug:=xs:boolean(request:get-parameter("as-xml","false"))
 let $path:= concat("xmldb:exist://" ,lib-util:webPath(), "stylesheets/lib-rendering.xsl")
 return
    if ($debug)

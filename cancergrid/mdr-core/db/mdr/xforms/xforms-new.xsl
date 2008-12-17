@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" xmlns="http://www.w3.org/1999/xhtml" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ISO11179="http://www.cancergrid.org/schema/ISO11179" version="2.0">
+<xsl:stylesheet xmlns="http://www.w3.org/1999/xhtml" xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ISO11179="http://www.cancergrid.org/schema/ISO11179" version="2.0">
     <xsl:output media-type="application/xhtml+xml" method="html" indent="yes" doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"/>
     <xsl:param name="new-identifier" as="xs:string"/>
     <xsl:param name="user">guest</xsl:param>
@@ -124,15 +124,15 @@
     <xsl:template match="@reference_document_identifier">
         <xsl:attribute name="reference_document_identifier" select="$new-identifier"/>
     </xsl:template>
-    <xsl:template match="ISO11179:value_meaning_identifier">
-        <ISO11179:value_meaning_identifier>
+    <xsl:template match="cgMDR:value_meaning_identifier">
+        <cgMDR:value_meaning_identifier>
             <xsl:value-of select="$new-identifier"/>
-        </ISO11179:value_meaning_identifier>
+        </cgMDR:value_meaning_identifier>
     </xsl:template>
-    <xsl:template match="ISO11179:value_meaning_begin_date">
-        <ISO11179:value_meaning_begin_date>
+    <xsl:template match="cgMDR:value_meaning_begin_date">
+        <cgMDR:value_meaning_begin_date>
             <xsl:value-of select="substring-before(string(current-date()),'Z')"/>
-        </ISO11179:value_meaning_begin_date>
+        </cgMDR:value_meaning_begin_date>
     </xsl:template>
     <xsl:template match="xforms:insert[ends-with(@nodeset, 'cgMDR:classified_by')]">
         <xsl:variable name="at" select="@at"/>
@@ -154,10 +154,10 @@
         <xsl:variable name="at" select="@at"/>
         <xforms:action ev:event="DOMActivate">
             <xforms:insert at="{$at}" position="after" nodeset="//cgMDR:Value_Meaning"/>
-            <xforms:setvalue ref="//cgMDR:Value_Meaning[index('repeat6')]/ISO11179:value_meaning_identifier" value="instance('new-id')//id"/>
-            <xforms:setvalue ref="//cgMDR:Value_Meaning[index('repeat6')]/ISO11179:value_meaning_begin_date" value="substring-before(now(),'T')"/>
-            <xforms:setvalue ref="//cgMDR:Value_Meaning[index('repeat6')]/ISO11179:value_meaning_description"/>
-            <xforms:setvalue ref="//cgMDR:Value_Meaning[index('repeat6')]/ISO11179:value_meaning_end_date" value="'2020-01-01'"/>
+            <xforms:setvalue ref="//cgMDR:Value_Meaning[index('repeat6')]/cgMDR:value_meaning_identifier" value="instance('new-id')//id"/>
+            <xforms:setvalue ref="//cgMDR:Value_Meaning[index('repeat6')]/cgMDR:value_meaning_begin_date" value="substring-before(now(),'T')"/>
+            <xforms:setvalue ref="//cgMDR:Value_Meaning[index('repeat6')]/cgMDR:value_meaning_description"/>
+            <xforms:setvalue ref="//cgMDR:Value_Meaning[index('repeat6')]/cgMDR:value_meaning_end_date" value="'2020-01-01'"/>
             <xforms:setvalue ref="//cgMDR:Value_Meaning[index('repeat6')]/cgMDR:reference_uri"/>
             <xforms:send submission="get-new-id"/>
         </xforms:action>

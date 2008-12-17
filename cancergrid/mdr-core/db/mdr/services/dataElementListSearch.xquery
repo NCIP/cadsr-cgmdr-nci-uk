@@ -33,7 +33,7 @@ declare option exist:serialize "method=xml media-type=text/xml";
 
 session:create(),
 let $term := request:get-parameter("term", "")
-let $start as xs:integer := request:get-parameter("start", 0)
-let $num as xs:integer := request:get-parameter("num", 10)
+let $start as xs:integer := xs:integer(request:get-parameter("start", 0))
+let $num as xs:integer := xs:integer(request:get-parameter("num", 10))
 return
     lib-search:dataElementListSearch($term,$start,$num)

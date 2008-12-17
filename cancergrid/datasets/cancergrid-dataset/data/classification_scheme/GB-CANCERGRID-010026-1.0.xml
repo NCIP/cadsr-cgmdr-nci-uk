@@ -31,4 +31,5 @@
         </cgMDR:containing>
     </cgMDR:having>
     <cgMDR:classification_scheme_type_name>SKOS</cgMDR:classification_scheme_type_name>
+    <cgMDR:referenceURI>http://iaaa.unizar.es/thesaurus/neoTango</cgMDR:referenceURI>
 </cgMDR:Classification_Scheme>

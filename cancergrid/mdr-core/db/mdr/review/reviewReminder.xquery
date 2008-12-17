@@ -44,7 +44,7 @@ declare namespace mail="http://exist-db.org/xquery/mail";
    let $commissioning_document_id := lib-util:mdrElementId($commissioning_document)
       for $reviewer in $commissioning_document/cgMDR:reviewer
       for $person in lib-util:mdrElements("organization")//cgMDR:Contact[@contact_identifier = $reviewer]
-      let $email-address := $person/ISO11179:contact_information
+      let $email-address := $person/cgMDR:contact_information
       return
          mail:send-email(
          <mail>

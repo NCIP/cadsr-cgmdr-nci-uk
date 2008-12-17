@@ -34,15 +34,15 @@
     </xsl:template>
     <xsl:template match="der-xs:value">
         <cgMDR:Value_Meaning>
-            <ISO11179:value_meaning_begin_date>
+            <cgMDR:value_meaning_begin_date>
                 <xsl:value-of select="format-date(current-date(),'[Y]-[M01]-[D01]')"/>
-            </ISO11179:value_meaning_begin_date>
-            <ISO11179:value_meaning_description>
+            </cgMDR:value_meaning_begin_date>
+            <cgMDR:value_meaning_description>
                 <xsl:value-of select="der-xs:meaning"/>
-            </ISO11179:value_meaning_description>
-            <ISO11179:value_meaning_identifier>
+            </cgMDR:value_meaning_description>
+            <cgMDR:value_meaning_identifier>
                 <xsl:value-of select="@meaning-identifier"/>
-            </ISO11179:value_meaning_identifier>
+            </cgMDR:value_meaning_identifier>
         </cgMDR:Value_Meaning>
     </xsl:template>
     <xsl:template match="der-xs:new-data-element-reduced[der-xs:values/der-xs:non-enumerated]">

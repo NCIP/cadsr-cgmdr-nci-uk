@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns="http://www.w3.org/1999/xhtml" xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ISO11179="http://www.cancergrid.org/schema/ISO11179" version="2.0">
+<xsl:stylesheet xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" xmlns="http://www.w3.org/1999/xhtml" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ISO11179="http://www.cancergrid.org/schema/ISO11179" version="2.0">
     <xsl:output media-type="application/xhtml+xml" method="html" indent="yes" doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"/>
     <xsl:param name="new-id" as="xs:string"/>
     <xsl:param name="instance-path" as="xs:string"/>
@@ -174,10 +174,10 @@ however there is a namespace issue I haven't tracked down...
         <xsl:variable name="at" select="@at"/>
         <xforms:action ev:event="DOMActivate">
             <xforms:insert at="last()" position="after" nodeset="//cgMDR:Value_Meaning"/>
-            <xforms:setvalue ref="//cgMDR:Value_Meaning[index('repeat6')]/ISO11179:value_meaning_identifier" value="instance('new-id')//id"/>
-            <xforms:setvalue ref="//cgMDR:Value_Meaning[index('repeat6')]/ISO11179:value_meaning_begin_date" value="substring-before(now(),'T')"/>
-            <xforms:setvalue ref="//cgMDR:Value_Meaning[index('repeat6')]/ISO11179:value_meaning_description"/>
-            <xforms:setvalue ref="//cgMDR:Value_Meaning[index('repeat6')]/ISO11179:value_meaning_end_date" value="'2020-01-01'"/>
+            <xforms:setvalue ref="//cgMDR:Value_Meaning[index('repeat6')]/cgMDR:value_meaning_identifier" value="instance('new-id')//id"/>
+            <xforms:setvalue ref="//cgMDR:Value_Meaning[index('repeat6')]/cgMDR:value_meaning_begin_date" value="substring-before(now(),'T')"/>
+            <xforms:setvalue ref="//cgMDR:Value_Meaning[index('repeat6')]/cgMDR:value_meaning_description"/>
+            <xforms:setvalue ref="//cgMDR:Value_Meaning[index('repeat6')]/cgMDR:value_meaning_end_date" value="'2020-01-01'"/>
             <xforms:setvalue ref="//cgMDR:Value_Meaning[index('repeat6')]/cgMDR:reference_uri"/>
             <xforms:send submission="get-new-id"/>
         </xforms:action>
@@ -201,13 +201,13 @@ however there is a namespace issue I haven't tracked down...
         <xforms:select1 ref="./cgMDR:contained_in">
             <xforms:label>Contained in</xforms:label>
             <xforms:itemset nodeset="instance('conceptual_domain')//cgMDR:Value_Meaning">
-                <xforms:label ref="ISO11179:value_meaning_description"/>
-                <xforms:value ref="ISO11179:value_meaning_identifier"/>
+                <xforms:label ref="cgMDR:value_meaning_description"/>
+                <xforms:value ref="cgMDR:value_meaning_identifier"/>
             </xforms:itemset>
         </xforms:select1>
     </xsl:template>
     <xsl:template match="xforms:input[@ref='./cgMDR:data_element_example_item']">
-        <xforms:input ref="./ISO11179:data_element_example_item">
+        <xforms:input ref="./cgMDR:data_element_example_item">
             <xforms:label>Data Element Example Item </xforms:label>
         </xforms:input>
     </xsl:template>

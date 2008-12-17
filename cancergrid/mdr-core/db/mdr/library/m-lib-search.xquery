@@ -223,14 +223,14 @@ declare function local:searchCDE($phrase as xs:string) as element()*
                      return
                      element valid-value{
                      element code {data($value/cgMDR:value_item)},
-                     element meaning {data(value-meaning:value-meaning($value/cgMDR:contained_in)//ISO11179:value_meaning_description)}
+                     element meaning {data(value-meaning:value-meaning($value/cgMDR:contained_in)//cgMDR:value_meaning_description)}
                      }
                      )
                   else(
                      element data-type {data($data-type//cgMDR:datatype_name)},
                      element units {
-                        if (data($uom//ISO11179:unit_of_measure_name)>"")
-                        then (data($uom//ISO11179:unit_of_measure_name))
+                        if (data($uom//cgMDR:unit_of_measure_name)>"")
+                        then (data($uom//cgMDR:unit_of_measure_name))
                         else ("(not applicable)")}
                   )
                }

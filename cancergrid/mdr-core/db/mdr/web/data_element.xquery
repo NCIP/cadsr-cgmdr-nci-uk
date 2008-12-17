@@ -143,9 +143,9 @@ return
                      <table class="section">
                      
                      <tr><td  class="left_header_cell">Examples</td><td>
-                    {if ($administered_item//ISO11179:data_element_example_item) then
+                    {if ($administered_item//cgMDR:data_element_example_item) then
                      (
-                         for $example in $administered_item//ISO11179:data_element_example_item
+                         for $example in $administered_item//cgMDR:data_element_example_item
                          return data($example)
                       )
                       else

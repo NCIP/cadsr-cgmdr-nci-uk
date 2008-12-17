@@ -54,7 +54,6 @@ let $type as xs:string := request:get-parameter("type", "data_element")
 let $title as xs:string := concat(lib-util:sentence-case(lib-util:mdrElementTypeFriendly($type)), " Search")
 
 let $all-items :=
-
    for $item in lib-util:search($type, $phrase)
    let $preferred-name := administered-item:preferred-name($item)
    order by lower-case($preferred-name)

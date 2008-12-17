@@ -223,9 +223,9 @@ declare function lib-der:get-uom() as element(der-xs:unit_of_measures)
     <der-xs:unit_of_measures>
     {
         for $item in lib-util:mdrElements('unit_of_measure')
-        order by $item/ISO11179:unit_of_measure_name
+        order by $item/cgMDR:unit_of_measure_name
         return
-            <der-xs:unit_of_measure id="{$item/@unit_of_measure_identifier}" name="{$item/ISO11179:unit_of_measure_name}"/>
+            <der-xs:unit_of_measure id="{$item/@unit_of_measure_identifier}" name="{$item/cgMDR:unit_of_measure_name}"/>
     }
     </der-xs:unit_of_measures>
 };
@@ -235,9 +235,9 @@ declare function lib-der:get-organization-contacts() as element(der-xs:organizat
     <der-xs:organization-contacts>
     {
         for $item in lib-util:mdrElements('organization')//cgMDR:Contact
-        order by $item/ISO11179:contact_name
+        order by $item/cgMDR:contact_name
         return
-            <der-xs:contact id="{$item/@contact_identifier}" name="{$item/ISO11179:contact_name}" title="{$item/ISO11179:contact_title}"/>
+            <der-xs:contact id="{$item/@contact_identifier}" name="{$item/cgMDR:contact_name}" title="{$item/cgMDR:contact_title}"/>
     }
     </der-xs:organization-contacts>
 };
@@ -247,9 +247,9 @@ declare function lib-der:get-reg-auth() as element(der-xs:reg-auth)
     <der-xs:reg-auth>
     {
         for $item in lib-util:mdrElements('registration_authority')//cgMDR:Registration_Authority
-        order by $item/cgMDR:organization_name, $item/cgMDR:represented_by/cgMDR:registrar_contact/ISO11179:contact_name 
+        order by $item/cgMDR:organization_name, $item/cgMDR:represented_by/cgMDR:registrar_contact/cgMDR:contact_name 
         return
-            <der-xs:contact id="{$item/cgMDR:represented_by/cgMDR:registrar_identifier}" name="{$item/cgMDR:represented_by/cgMDR:registrar_contact/ISO11179:contact_name}" organization="{$item/cgMDR:organization_name}"/>
+            <der-xs:contact id="{$item/cgMDR:represented_by/cgMDR:registrar_identifier}" name="{$item/cgMDR:represented_by/cgMDR:registrar_contact/cgMDR:contact_name}" organization="{$item/cgMDR:organization_name}"/>
     }
     </der-xs:reg-auth>
 };

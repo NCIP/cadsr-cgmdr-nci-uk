@@ -38,7 +38,7 @@
                 <xsl:value-of select="concat(der-xs:reg-auth, '-', der-xs:dec-data-identifier, '-', $defaults/defaults/enumerated_value_domain_version)"/>
             </cgMDR:expressing>
             <cgMDR:exemplified_by>
-                <ISO11179:data_element_example_item/>
+                <cgMDR:data_element_example_item/>
             </cgMDR:exemplified_by>
             <cgMDR:input_to deriving="">
                 <cgMDR:derivation_rule_specification/>

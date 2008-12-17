@@ -104,7 +104,7 @@ for $administered_item in lib-util:mdrElement("data_element",$compound_id)
                xqf:distinct-nodes(
                for $conceptual_domain in lib-util:mdrElements("conceptual_domain")
                for $contained_in in $value_domain//cgMDR:contained_in
-               where $conceptual_domain//ISO11179:value_meaning_identifier = $contained_in
+               where $conceptual_domain//cgMDR:value_meaning_identifier = $contained_in
                
                and $conceptual_domain//cgMDR:registration_status !='Superseded'
                return $conceptual_domain

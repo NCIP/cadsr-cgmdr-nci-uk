@@ -92,11 +92,11 @@
       <xs:element name="result-set" type="result-set" />
       <xs:complexType name="result-set">
         <xs:sequence>
-          <xs:element minOccurs="1" name="status" type="xs:string" />
+          <xs:element name="status" type="xs:string" />
           <xs:choice minOccurs="0">
             <xs:element maxOccurs="unbounded" ref="concept" />
             <xs:element maxOccurs="unbounded" ref="data-element" />
-            <xs:element maxOccurs="1" ref="node" />
+            <xs:element ref="node" />
             <xs:element maxOccurs="unbounded" ref="classification_scheme" />
           </xs:choice>
         </xs:sequence>
@@ -104,16 +104,17 @@
       <xs:element abstract="true" name="common-info" type="common-info" />
       <xs:complexType name="common-info">
         <xs:sequence>
-          <xs:element minOccurs="1" ref="names" />
+          <xs:element ref="names" />
           <xs:element name="definition" type="xs:string" />
+          <xs:element minOccurs="0" name="workflow-status" type="xs:string" />
         </xs:sequence>
       </xs:complexType>
       <xs:element name="names" type="names" />
       <xs:complexType name="names">
         <xs:sequence>
-          <xs:element minOccurs="1" name="id" type="xs:string" />
-          <xs:element minOccurs="1" name="preferred" type="xs:string" />
-          <xs:element minOccurs="1" ref="all-names" />
+          <xs:element name="id" type="xs:string" />
+          <xs:element name="preferred" type="xs:string" />
+          <xs:element ref="all-names" />
         </xs:sequence>
       </xs:complexType>
       <xs:element name="all-names" type="all-names" />
@@ -134,9 +135,9 @@
       </xs:complexType>
       <xs:element name="values" type="values" />
       <xs:complexType name="values">
-        <xs:choice minOccurs="1" maxOccurs="1">
-          <xs:element maxOccurs="1" ref="enumerated" />
-          <xs:element maxOccurs="1" ref="non-enumerated" />
+        <xs:choice>
+          <xs:element ref="enumerated" />
+          <xs:element ref="non-enumerated" />
         </xs:choice>
       </xs:complexType>
       <xs:element name="non-enumerated" type="non-enumerated" />
@@ -156,8 +157,17 @@
       <xs:complexType name="valid-value">
         <xs:sequence>
           <xs:element name="code" type="xs:string" />
-          <xs:element name="meaning" type="xs:string" />
+          <xs:element ref="meaning" />
+          <xs:element minOccurs="0" name="evsconcept" type="xs:string" />
         </xs:sequence>
+      </xs:complexType>
+      <xs:element name="meaning" type="meaning" />
+      <xs:complexType name="meaning">
+        <xs:simpleContent>
+          <xs:extension base="xs:string">
+            <xs:attribute name="conceptRef" type="xs:anyURI" />
+          </xs:extension>
+        </xs:simpleContent>
       </xs:complexType>
       <xs:element name="concept" type="concept" />
       <xs:complexType name="concept">
@@ -182,7 +192,14 @@
           <xs:element name="value" type="xs:string" />
         </xs:sequence>
       </xs:complexType>
-      <xs:element name="classification_scheme" type="xs:anyURI" />
+      <xs:element name="classification_scheme" type="classification_scheme" />
+      <xs:complexType name="classification_scheme">
+        <xs:simpleContent>
+          <xs:extension base="xs:string">
+            <xs:attribute name="uri" type="xs:anyURI" />
+          </xs:extension>
+        </xs:simpleContent>
+      </xs:complexType>
       <xs:element name="node" type="node" />
       <xs:complexType name="node">
         <xs:sequence>
@@ -407,13 +424,13 @@
   </wsdl:binding>
   <wsdl:service name="QueryServiceManager">
     <wsdl:port name="QueryServiceManagerHttpport" binding="query:QueryServiceManagerHttpBinding">
-      <http:address location="http://129.67.151.25:8080/metadata-connector-1.0.2/services/QueryServiceManager" />
+      <http:address location="http://129.67.150.57:8080/exist/services/QueryServiceManager" />
     </wsdl:port>
     <wsdl:port name="QueryServiceManagerSOAP12port_http" binding="query:QueryServiceManagerSOAP12Binding">
-      <soap12:address location="http://129.67.151.25:8080/metadata-connector-1.0.2/services/QueryServiceManager" />
+      <soap12:address location="http://129.67.150.57:8080/exist/services/QueryServiceManager" />
     </wsdl:port>
     <wsdl:port name="QueryServiceManagerSOAP11port_http" binding="query:QueryServiceManagerSOAP11Binding">
-      <soap:address location="http://129.67.151.25:8080/metadata-connector-1.0.2/services/QueryServiceManager" />
+      <soap:address location="http://129.67.150.57:8080/exist/services/QueryServiceManager" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

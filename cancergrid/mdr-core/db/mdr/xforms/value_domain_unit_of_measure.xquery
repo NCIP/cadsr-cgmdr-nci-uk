@@ -15,7 +15,7 @@ import module namespace
    </xforms:item>
    {
    for $item in collection('/db/mdr/data/unit_of_measure')/*
-         let $label := concat($item/ISO11179:unit_of_measure_name, ' (', $item/ISO11179:unit_of_measure_precision, ')')
+         let $label := concat($item/cgMDR:unit_of_measure_name, ' (', $item/cgMDR:unit_of_measure_precision, ')')
          let $value := data($item/@unit_of_measure_identifier)
          return
                <xforms:item>

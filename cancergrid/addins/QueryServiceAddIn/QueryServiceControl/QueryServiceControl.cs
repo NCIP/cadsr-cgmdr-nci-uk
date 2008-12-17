@@ -17,7 +17,7 @@ namespace QueryServiceControl
 
         private QueryServiceManager.QueryServiceManager qsm = null;
         private List<QueryServiceManager.query_service> resources = null;
-        private List<String> classification_schemes = null;
+        private List<QueryServiceManager.classification_scheme> classification_schemes = null;
 
         protected XmlDocument lastResult = null;
         protected XmlDocument lastClassificationQueryResult = null;
@@ -89,7 +89,10 @@ namespace QueryServiceControl
                 if (classification_schemes != null)
                 {
                     cbClassificationSchemes.DataSource = classification_schemes;
+                    cbClassificationSchemes.DisplayMember = "Value";
+                    cbClassificationSchemes.ValueMember = "uri";
                     cbClassificationSchemes.SelectedIndex = 0;
+                    updateClassification_Tree();
                 }
 
                 btnSearch.Enabled = true;
@@ -148,10 +151,10 @@ namespace QueryServiceControl
                 QueryServiceManager.@return r = qsm.query(query);
                 if (r.resultset.Items.Length > 0)
                 {
-                    classification_schemes = new List<String>();
-                    foreach (String s in r.resultset.Items)
+                    classification_schemes = new List<QueryServiceManager.classification_scheme>();
+                    foreach (QueryServiceManager.classification_scheme cs in r.resultset.Items)
                     {
-                        classification_schemes.Add(s);
+                        classification_schemes.Add(cs);
                     }
                 }
             }
@@ -163,11 +166,16 @@ namespace QueryServiceControl
 
         private void cbClassificationSchemes_SelectedIndexChanged(object sender, EventArgs e)
         {
+            updateClassification_Tree();
+        }
+
+        private void updateClassification_Tree()
+        {
             try
             {
                 QueryServiceManager.query query = new QueryServiceManager.query();
                 query.resource = "cgMDR-Classification-Tree";
-                query.term = (string)cbClassificationSchemes.SelectedItem;
+                query.term = (string)cbClassificationSchemes.SelectedValue;
                 QueryServiceManager.@return r = qsm.query(query);
                 if (r.resultset.Items.Length != 1)
                 {

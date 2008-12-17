@@ -4,6 +4,7 @@ declare namespace rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 declare namespace skos="http://www.w3.org/2004/02/skos/core#";
 declare namespace dcterms="http://purl.org/dc/terms/";
 declare namespace dc="http://purl.org/dc/elements/1.1/";
+declare namespace cgMDR = "http://www.cancergrid.org/schema/cgMDR";
 
 import module namespace 
    lib-util="http://www.cancergrid.org/xquery/library/util" 
@@ -27,15 +28,13 @@ return lib-rendering:txfrm-webpage(
    $title, 
          <schemes-in-use>
          {
-         for $scheme in lib-util:mdrElements('classification_scheme')//thesaurusdc
-         let $rdf := lib-util:mdrElements('classification_scheme')//rdf:RDF[rdf:Description/skos:inScheme/@rdf:resource=$scheme/dc:identifier]
-         return
-            <scheme>
-               {
-                  $scheme,
-                  $rdf,
-                  <uri>{concat(lib-util:getServer(),'/exist/rest/',lib-util:getCollectionPath('classification_scheme'),'/', util:document-name($rdf))}</uri>                  
-               }
-            </scheme>
+         for $scheme in lib-util:mdrElements('classification_scheme')[.//cgMDR:administered_item_administration_record]
+         for $graph in lib-util:mdrElements('classification_scheme')[.//@rdf:about]
+         let $scheme-id := lib-util:mdrElementId($scheme)
+         where $graph/skos:ConceptScheme[.//@rdf:resource=$scheme-id]
+         
+         
+         return ($scheme, $graph, <uri>{concat(lib-util:getServer(),'/exist/rest/',lib-util:getCollectionPath('classification_scheme'),'/', util:document-name($scheme))}</uri>)
          }
          </schemes-in-use>)
+         

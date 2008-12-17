@@ -224,7 +224,7 @@ declare function lib-search:dataElement($compound_id as xs:string) as element()
                                  {
                                      data(lib-util:mdrElements("conceptual_domain")
                                          [.//cgMDR:registration_status != 'Superseded']
-                                         /cgMDR:Value_Meaning[ISO11179:value_meaning_identifier=$value/cgMDR:contained_in]/ISO11179:value_meaning_description)
+                                         /cgMDR:Value_Meaning[cgMDR:value_meaning_identifier=$value/cgMDR:contained_in]/cgMDR:value_meaning_description)
                                  }
                                  </meaning>
                              </valid-value>
@@ -236,8 +236,8 @@ declare function lib-search:dataElement($compound_id as xs:string) as element()
                          <data-type>{data($data-type//cgMDR:datatype_name)}</data-type>
                          <units> 
                          {
-                            if (data($uom//ISO11179:unit_of_measure_name)>"")
-                            then (data($uom//ISO11179:unit_of_measure_name))
+                            if (data($uom//cgMDR:unit_of_measure_name)>"")
+                            then (data($uom//cgMDR:unit_of_measure_name))
                             else ("(not applicable)")
                          }
                          </units>
@@ -298,7 +298,7 @@ declare function lib-search:dataElementListSearch($term as xs:string, $start as 
                                      element valid-value
                                      {
                                          element code {data($value/cgMDR:value_item)},
-                                         element meaning {data(value-meaning:value-meaning($value/cgMDR:contained_in)//ISO11179:value_meaning_description)}
+                                         element meaning {data(value-meaning:value-meaning($value/cgMDR:contained_in)//cgMDR:value_meaning_description)}
                                      }
                               }
                           else
@@ -307,8 +307,8 @@ declare function lib-search:dataElementListSearch($term as xs:string, $start as 
                              element data-type {data($data-type//cgMDR:datatype_name)},
                              element units 
                              {
-                                if (data($uom//ISO11179:unit_of_measure_name)>"")
-                                then (data($uom//ISO11179:unit_of_measure_name))
+                                if (data($uom//cgMDR:unit_of_measure_name)>"")
+                                then (data($uom//cgMDR:unit_of_measure_name))
                                 else ("(not applicable)")}
                             }
                        }
@@ -359,7 +359,7 @@ declare function local:searchCDEByClassification($phrase as xs:string, $classifi
                              element valid-value
                              {
                                  element code {data($value/cgMDR:value_item)},
-                                 element meaning {data(value-meaning:value-meaning($value/cgMDR:contained_in)//ISO11179:value_meaning_description)}
+                                 element meaning {data(value-meaning:value-meaning($value/cgMDR:contained_in)//cgMDR:value_meaning_description)}
                              }
                       }
                       
@@ -370,8 +370,8 @@ declare function local:searchCDEByClassification($phrase as xs:string, $classifi
                      element data-type {data($data-type//cgMDR:datatype_name)},
                      element units 
                      {
-                        if (data($uom//ISO11179:unit_of_measure_name)>"")
-                        then (data($uom//ISO11179:unit_of_measure_name))
+                        if (data($uom//cgMDR:unit_of_measure_name)>"")
+                        then (data($uom//cgMDR:unit_of_measure_name))
                         else ("(not applicable)")
                      }
                      }
@@ -436,7 +436,7 @@ declare function lib-search:dataElementListSearchByClassification($term as xs:st
                                      element valid-value
                                      {
                                          element code {data($value/cgMDR:value_item)},
-                                         element meaning {data(value-meaning:value-meaning($value/cgMDR:contained_in)//ISO11179:value_meaning_description)}
+                                         element meaning {data(value-meaning:value-meaning($value/cgMDR:contained_in)//cgMDR:value_meaning_description)}
                                      }
                               }
                           else
@@ -445,8 +445,8 @@ declare function lib-search:dataElementListSearchByClassification($term as xs:st
                              element data-type {data($data-type//cgMDR:datatype_name)},
                              element units 
                              {
-                                if (data($uom//ISO11179:unit_of_measure_name)>"")
-                                then (data($uom//ISO11179:unit_of_measure_name))
+                                if (data($uom//cgMDR:unit_of_measure_name)>"")
+                                then (data($uom//cgMDR:unit_of_measure_name))
                                 else ("(not applicable)")}
                             }
                        }
@@ -472,11 +472,11 @@ declare function lib-search:mdrElementsByClassification($mdr-element-type as xs:
 declare function lib-search:listClassificationSchemes() as node()*
 {
 (:        for $scheme in collection("/db/mdr/data/classification_scheme")/rdf:RDF/rdf:Description[rdf:type/@rdf:resource='http://www.w3.org/2004/02/skos/core#ConceptScheme']/@rdf:about:)
-        for $scheme in collection("/db/mdr/data/classification_scheme")[exists(.//cgMDR:having)]
+        for $scheme in lib-util:mdrElements("classification_scheme")[exists(.//cgMDR:having)]
         return
 (:            <classification_scheme uri="{$scheme//cgMDR:referenceURI/text()}">{$scheme//cgMDR:containing[cgMDR:preferred_designation='true']/cgMDR:name[1]/text()}</classification_scheme>
 :)
-<classification_scheme uri="{$scheme//cgMDR:referenceURI/text()}">{$scheme//cgMDR:referenceURI/text()}</classification_scheme>
+<classification_scheme uri="{$scheme//cgMDR:referenceURI/text()}">{lib-util:mdrElementName($scheme)}</classification_scheme>
 };
 
 (:~

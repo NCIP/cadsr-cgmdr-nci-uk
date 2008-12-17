@@ -339,9 +339,9 @@ let $conceptual-domain :=
             for $value in $doc/values/value
             return
                 element cgMDR:Value_Meaning {
-                    element ISO11179:value_meaning_begin_date {lib-make-admin-item:current-date()},
-                    element ISO11179:value_meaning_description {data($value/meaning)},
-                    element ISO11179:value_meaning_identifier {data($value/meaning-identifier)}
+                    element cgMDR:value_meaning_begin_date {lib-make-admin-item:current-date()},
+                    element cgMDR:value_meaning_description {data($value/meaning)},
+                    element cgMDR:value_meaning_identifier {data($value/meaning-identifier)}
                 },
             element cgMDR:related_to {
                element cgMDR:related_to {},
@@ -450,7 +450,7 @@ let $data-element as element() :=
         element cgMDR:expressing {lib-util:mdrElementId($data-element-concept)},
         
         element cgMDR:exemplified_by {
-           element ISO11179:data_element_example_item {}
+           element cgMDR:data_element_example_item {}
            },
         
         element cgMDR:input_to {

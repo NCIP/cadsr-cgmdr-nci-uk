@@ -17,10 +17,10 @@
         <!--<data-element xmlns="http://cancergrid.org/schema/result-set">-->
         <data-element>
             <names>
-                <id>US-NCICB-CACORE-CADSR-<xsl:value-of select="publicID"/>-<xsl:value-of
-                        select="version"/></id>
+                <id>US-NCICB-CACORE-CADSR-<xsl:value-of select="publicID"/>-<xsl:value-of select="version"/>
+                </id>
                 <preferred>
-                    <xsl:value-of select="longName"/>
+                    <xsl:value-of select="preferredName"/>
                 </preferred>
                 <all-names>
                     <name>
@@ -55,9 +55,7 @@
         <!--<values xmlns="http://cancergrid.org/schema/result-set">-->
         <values>
             <enumerated>
-                <xsl:apply-templates
-                    select="valueDomainPermissibleValueCollection/ValueDomainPermissibleValue/permissibleValue/PermissibleValue"
-                />
+                <xsl:apply-templates select="valueDomainPermissibleValueCollection/ValueDomainPermissibleValue/permissibleValue/PermissibleValue"/>
             </enumerated>
         </values>
     </xsl:template>
@@ -72,9 +70,7 @@
             </meaning>
         </valid-value>
     </xsl:template>
-
+    
     <!-- Filter out extra nodes -->
-    <xsl:template
-        match="questionCollection|workflowStatusName|workflowStatusDescription|unresolvedIssue|registrationStatus|publicID|origin|modifiedBy|latestVersionIndicator|endDate|deletedIndicator|dateModified|dateCreated|createdBy|changeNote|beginDate|preferredName|version|prequestionCollection|dataElementDerivationCollection|parentDataElementRelationshipsCollection|dataElementConcept|derivedDataElement|childDataElementRelationshipsCollection|context|administeredComponentClassSchemeItemCollection|designationCollection|referenceDocumentCollection|administeredComponentContactCollection|definitionCollection|concept|validValueCollection|parentValueDomainRelationshipCollection|dataElementCollection|childValueDomainRelationshipCollection|conceptDerivationRule|represention|conceptualDomain"
-    />
+    <xsl:template match="questionCollection|workflowStatusName|workflowStatusDescription|unresolvedIssue|registrationStatus|publicID|origin|modifiedBy|latestVersionIndicator|endDate|deletedIndicator|dateModified|dateCreated|createdBy|changeNote|beginDate|preferredName|version|prequestionCollection|dataElementDerivationCollection|parentDataElementRelationshipsCollection|dataElementConcept|derivedDataElement|childDataElementRelationshipsCollection|context|administeredComponentClassSchemeItemCollection|designationCollection|referenceDocumentCollection|administeredComponentContactCollection|definitionCollection|concept|validValueCollection|parentValueDomainRelationshipCollection|dataElementCollection|childValueDomainRelationshipCollection|conceptDerivationRule|represention|conceptualDomain"/>
 </xsl:stylesheet>

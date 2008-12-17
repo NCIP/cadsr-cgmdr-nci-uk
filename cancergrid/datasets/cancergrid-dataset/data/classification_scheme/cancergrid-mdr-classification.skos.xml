@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:cgMDR="http://www.cancergrid.org/schema/cgMDR" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#3E3E38BB8">
+        <skos:prefLabel xml:lang="en">Trial Context</skos:prefLabel>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#B9DADEE53"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E10333"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E13154"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D2AA37844"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E12802"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#root">
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#68222698E"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#06D67D8B6"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E8570"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">CancerGrid Classification Scheme</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#1BAC7275D">
+        <skos:prefLabel xml:lang="en">On Study</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#CA8C58088">
+        <skos:prefLabel xml:lang="en">Waiting Times</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E9363">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">RegistrationCRF</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#EC55ADDDD">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Clinical Status Assessment(SK)</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E9011">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">PhysicalCharacteristic</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E15623">
+        <skos:prefLabel xml:lang="en">Institution Demographics</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#2ED5C8689">
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#144B849A3"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#36A5DDB4E"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#79B19EBBD"/>
+        <skos:prefLabel xml:lang="en">General</skos:prefLabel>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#36ECB4576"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#EE65AC736"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#905CAE9C9"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#E59573ABE"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#82A35791B"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#52B4E4B29"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#88ACB970E"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#CA8C58088"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#655143A48"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#AC9C86218"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#0B35A4BB5"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#49028393A"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#B9DD53578"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E10421">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Registration</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E11832">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Trial Investigator</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#7022B677A">
+        <skos:prefLabel xml:lang="en">QualityOfLife</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E13243">
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E13683"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E15359"/>
+        <skos:prefLabel xml:lang="en">Clinical Context</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E19387"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E14301"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E14124"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E13331"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E8922">
+        <skos:prefLabel xml:lang="en">PatientMilestones</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E19563">
+        <skos:prefLabel xml:lang="en">Serious Adverse Event</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E15182">
+        <skos:prefLabel xml:lang="en">RadiotherapyIntervention</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#ECA1227CD">
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E8746"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E8834"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Patient Context</skos:prefLabel>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E8922"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E9011"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#8A0A1C573">
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#B8B524072"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#29D9314E3"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#EC55ADDDD"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#33E957A5D"/>
+        <skos:prefLabel xml:lang="en">Skin Cancer</skos:prefLabel>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#9726E5830"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#22E951AC0"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#ABED0DB3D"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#1E2964A9D">
+        <skos:prefLabel xml:lang="en">Clinician Context</skos:prefLabel>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E15799"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#1BD3DE83D">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Required Male Eligibility</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E15447">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">FirstInterventionOfTypeh</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#B9DD53578">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Imaging</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#70A58D705">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Breast</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#E456A6A12">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Colorectal</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#991CE307B">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Head and Neck</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E13772">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Performance Status</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E17034">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Clinical Chemistry</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E14124">
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E17034"/>
+        <skos:prefLabel xml:lang="en">Clinical Measurements</skos:prefLabel>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E14212"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E17210"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#039EE4B9B">
+        <skos:prefLabel xml:lang="en">Sarcoma</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#0B35A4BB5">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Clinical Trials</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#044D768A7">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E15623"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Institution Context</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E10950">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Trial Identification Numbers</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E13948">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Histopathology</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#655143A48">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Pathology</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#44B16EA2A">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">OffStudy</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#68222698E">
+        <skos:prefLabel xml:lang="en">Tissue Microarray Classification</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:ConceptScheme rdf:about="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification">
+        <cgMDR:administrationRecord rdf:resource="GB-CANCERGRID-000026-1.0"/>
+        <skos:hasTopConcept rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#root"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </skos:ConceptScheme>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#144B849A3">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Death Details</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E19299">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Eligibility</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#ACE6D4CD8">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Lung</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E15094">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Irradiation</skos:prefLabel>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E15182"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#Concomitant">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#06D67D8B6">
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#3"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#2ED5C8689"/>
+        <skos:prefLabel xml:lang="en">Minimum Cancer Dataset</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E13331">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E13419"/>
+        <skos:prefLabel xml:lang="en">Clinical Decisions</skos:prefLabel>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E13507"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#901A8D29C">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Randomised Treatment Allocation</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E8570">
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#3E3E38BB8"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#ECA1227CD"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#1E2964A9D"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E13243"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#044D768A7"/>
+        <skos:prefLabel xml:lang="en">Clinical Trial Classification</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E13507">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Clinical Diagnosis</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E13683">
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E14036"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E13772"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E13860"/>
+        <skos:prefLabel xml:lang="en">Clinical Assessments</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E10333">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#3A4682DAD"/>
+        <skos:prefLabel xml:lang="en">TrialMilestone</skos:prefLabel>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#1BAC7275D"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#901A8D29C"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E10421"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#48D28A9B4">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">TreatmentRadiotherapy</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#22E951AC0">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Surgery And Other Procedures(SK)</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#1AD30C1B7">
+        <skos:prefLabel xml:lang="en">OnStudy</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#79B19EBBD">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Demographics</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#8A8E6482C">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">B-Cell And T-Cell Lymphomas</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E11391">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Trial Names</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#165CEB79C">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">SeriousAdverseEvent</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#88ACB970E">
+        <skos:prefLabel xml:lang="en">Chemotherapy And Other Drugs</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E13860">
+        <skos:prefLabel xml:lang="en">Pathology Assessment</skos:prefLabel>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E13948"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E19052"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#AC9C86218">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Staging</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#33E957A5D">
+        <skos:prefLabel xml:lang="en">Cancer Care Plan(SK)</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#815818876">
+        <skos:prefLabel xml:lang="en">SurgeryCRF</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E14830">
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#796418D71"/>
+        <skos:prefLabel xml:lang="en">Pain Relief</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#26AA1C02B"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E15270">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Surgery</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#52B4E4B29">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Referrals</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#E59573ABE">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Diagnosis</skos:prefLabel>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#8A8E6482C"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#49028393A">
+        <skos:prefLabel xml:lang="en">Clinical Status Assessment</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#CB2592384">
+        <skos:prefLabel xml:lang="en">TreatmentSurgery</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#B98AB2AC4">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Malignant Melanoma</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E14212">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Body Surface Area</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#ABED0DB3D">
+        <skos:prefLabel xml:lang="en">Skin Cancer Pathology(SK)</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E19475">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Clinical Metadata Identifiers</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E19052">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Tumour Grading</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#B8B524072">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Chemotherapy And Other Drugs(SK)</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E10069">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">PeriodicFollowup</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E14565">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">NeoAdjuvant</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#578DC842D">
+        <skos:prefLabel xml:lang="en">Brachytherapy(SK)</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E13419">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Intention To Treat</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E15359">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E19563"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E15447"/>
+        <skos:prefLabel xml:lang="en">Clinical Milestones</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#EE65AC736">
+        <skos:prefLabel xml:lang="en">Surgery And Other Procedures</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#36C86D51B">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Teletherapy</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E19387">
+        <skos:prefLabel xml:lang="en">Clinical Metadata</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E19475"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E14477">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Adjuvant</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E17210">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Drug Dose</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#66785E957">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Teletherapy(SK)</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D3E35DDC9">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Gynaecological</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#3">
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#E456A6A12"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Site Specific Cancer</skos:prefLabel>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D3E35DDC9"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#ACE6D4CD8"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#46971C716"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#4795D62AB"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#8A0A1C573"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#70A58D705"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#039EE4B9B"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#991CE307B"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E14653">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Primary</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#26AA1C02B">
+        <skos:prefLabel xml:lang="en">Opiod</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E14036">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Disease Stage</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D2AA37844">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E10862"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E11832"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Trial Metadata</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#DA85778ED">
+        <skos:prefLabel xml:lang="en">Kaposis Sarcoma</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#29D9314E3">
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#DA85778ED"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#B98AB2AC4"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#DD06E898B"/>
+        <skos:prefLabel xml:lang="en">Diagnosis(SK)</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#25A2C913A">
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E9804"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Treatment</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#48D28A9B4"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#CB2592384"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E12890">
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#1BD3DE83D"/>
+        <skos:prefLabel xml:lang="en">Required Eligibility</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E13066"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#46971C716">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Upper GI</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#36A5DDB4E">
+        <skos:prefLabel xml:lang="en">Waiting Times Details</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#CC3C34C18">
+        <skos:prefLabel xml:lang="en">PathologyCRF</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#36ECB4576">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Cancer Care Plan</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#3A4682DAD">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Off Study</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E15799">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Clinician Demographics</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E13154">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Trial Data Management</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E8834">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Demographic</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E12802">
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E12890"/>
+        <skos:prefLabel xml:lang="en">Trial Eligibility</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E14389">
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E14565"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E14653"/>
+        <skos:prefLabel xml:lang="en">Chemotherapy</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E14477"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#6A9354126">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Brachytherapy</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#82A35791B">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#36C86D51B"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Radiotherapy</skos:prefLabel>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#6A9354126"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#905CAE9C9">
+        <skos:prefLabel xml:lang="en">Palliative Care</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#4795D62AB">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Urological</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#796418D71">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Analgesic</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#B9DADEE53">
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#7022B677A"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Common CRF Contents</skos:prefLabel>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#1AD30C1B7"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E19299"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#165CEB79C"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E10069"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#CC3C34C18"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#44B16EA2A"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E9363"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#815818876"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#25A2C913A"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#DD06E898B">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Basal Cell Carcinoma</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E13066">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:prefLabel xml:lang="en">Required Female Eligibility</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E8746">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Consent</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E14301">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Clinical Interventions</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E14741"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E15270"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E14389"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E15094"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E14741">
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E14830"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Concomitant</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E10862">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E10950"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#D1E11391"/>
+        <skos:prefLabel xml:lang="en">Trial Identifiers</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#D1E9804">
+        <skos:prefLabel xml:lang="en">TreatmentChemotherapy</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.cancergrid.org/ontologies/data-element-classification#9726E5830">
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#578DC842D"/>
+        <skos:narrower rdf:resource="http://www.cancergrid.org/ontologies/data-element-classification#66785E957"/>
+        <skos:inScheme rdf:resource="http://iaaa.unizar.es/thesaurus/cancergrid-mdr-classification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Radiotherapy(SK)</skos:prefLabel>
+    </skos:Concept>
+</rdf:RDF>

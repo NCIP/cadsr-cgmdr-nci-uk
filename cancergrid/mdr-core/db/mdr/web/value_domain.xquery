@@ -106,7 +106,7 @@ return
                                            <td>
                                              {
                                                string-join(
-                                                   for $meaning in value-meaning:value-meaning($permissible_value/cgMDR:contained_in/text())/ISO11179:value_meaning_description
+                                                   for $meaning in value-meaning:value-meaning($permissible_value/cgMDR:contained_in/text())/cgMDR:value_meaning_description
                                                    order by $meaning ascending
                                                    return $meaning, (: The sorting gives deterministic behaviour that is good for regression testing :)
                                                    " | "

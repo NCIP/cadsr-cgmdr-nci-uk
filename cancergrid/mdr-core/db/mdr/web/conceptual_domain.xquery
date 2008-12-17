@@ -96,9 +96,9 @@ for $administered_item in lib-util:mdrElement("conceptual_domain",$compound_id)
                        </tr>
                        {
                        for $value_meaning in $administered_item//cgMDR:Value_Meaning
-                       let $meaning := $value_meaning//ISO11179:value_meaning_description/text()
-                       let $begins := $value_meaning//ISO11179:value_meaning_begin_date/text()
-                       let $ends := $value_meaning//ISO11179:value_meaning_end_date/text()
+                       let $meaning := $value_meaning//cgMDR:value_meaning_description/text()
+                       let $begins := $value_meaning//cgMDR:value_meaning_begin_date/text()
+                       let $ends := $value_meaning//cgMDR:value_meaning_end_date/text()
                        let $urn as xs:string? := xs:string($value_meaning//cgMDR:reference_uri/text())
                        return 
                        <tr>

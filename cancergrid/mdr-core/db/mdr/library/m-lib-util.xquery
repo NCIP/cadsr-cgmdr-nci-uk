@@ -162,9 +162,7 @@ declare function lib-util:getResourceLocation($resource-name as xs:string, $file
 
 declare function lib-util:search($mdr-element-type as xs:string, $phrase as xs:string) as element()* 
 {
-   for $doc in lib-util:mdrElements($mdr-element-type)
-   where not ($doc//cgMDR:registration_status = 'Superseded')
-   and $doc&=concat('*', $phrase, '*') 
+   for $doc in lib-util:mdrElements($mdr-element-type)[.//cgMDR:registration_status/text() != 'Superseded'][.&=concat('*', $phrase, '*')] 
    return $doc      
 };
 
@@ -252,7 +250,7 @@ declare function lib-util:mdrElementName($mdrElement as element()) as xs:string
    then (string($mdrElement/cgMDR:reference_document_title))
    else (
       if (lib-util:mdrElementType($mdrElement) = "unit_of_measure")
-      then (string($mdrElement/ISO11179:unit_of_measure_name))
+      then (string($mdrElement/cgMDR:unit_of_measure_name))
       else (
          if (lib-util:mdrElementType($mdrElement) = "registration_authority")
          then (string($mdrElement/cgMDR:organization_name))

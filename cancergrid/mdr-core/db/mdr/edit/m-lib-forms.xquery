@@ -259,8 +259,8 @@ declare function lib-forms:make-select-value-meaning($select-name as xs:string, 
          attribute name {$select-name},
          lib-forms:blank-filler(),
          for $value-meaning in lib-util:mdrElement('conceptual_domain',$conceptual-domain-id)//cgMDR:Value_Meaning
-            let $name := $value-meaning/ISO11179:value_meaning_description
-            let $id := $value-meaning/ISO11179:value_meaning_identifier
+            let $name := $value-meaning/cgMDR:value_meaning_description
+            let $id := $value-meaning/cgMDR:value_meaning_identifier
             return lib-forms:select-filler($id, $name, $received-value)
             }
 };
@@ -348,7 +348,7 @@ declare function lib-forms:make-select-uom($received-value as xs:string?) as nod
       lib-forms:blank-filler(),
       for $item in lib-util:mdrElements('unit_of_measure')
       let $id:= data($item//@unit_of_measure_identifier)
-      let $name:= data($item//ISO11179:unit_of_measure_name)
+      let $name:= data($item//cgMDR:unit_of_measure_name)
       order by $name
       return lib-forms:select-filler($id, $name, $received-value)
       }
