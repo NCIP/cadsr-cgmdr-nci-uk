@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <shortcuts>
-	<programGroup defaultName="cancergrid metadata registry $APP_VER" location="applications"/>
+	<programGroup defaultName="cancergrid metadata registry $APP_VER rev$SVN_REVISION" location="applications"/>
 	
 	<shortcut 
 		name="cgMDR Startup"
