@@ -2,7 +2,7 @@
     <item id="cgmdr-installer">
         <name>cgMDR Installer</name>
         <description>cgMDR installer built with IzPack (includes everything)</description>
-        <file>installer/cgMDR-setup-1.0.0-rev${env.SVN_REVISION}-build${env.BUILD_NUMBER}.jar</file>
+        <file>cgMDR-setup-1.0.0.jar</file>
     </item>
     <item id="ea-addin">
         <name>EA Addin</name>
