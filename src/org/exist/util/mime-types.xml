@@ -56,9 +56,14 @@
     </mime-type>
     <mime-type name="application/octet-stream" type="binary">
         <description>Generic binary stream</description>
-        <extensions>.jar,.exe,.dll,.o</extensions>
+        <extensions>.jar,.exe,.dll,.o,.sample</extensions>
     </mime-type>
-
+    
+    <mime-type name="application/hta" type="binary">
+        <description>Hypertext Application</description>
+        <extensions>.hta</extensions>
+    </mime-type>
+    
     <!-- TODO : for OpenOffice.org and other Zip files: add a new type="archive",
          that will unzip and store as a collection -->
          

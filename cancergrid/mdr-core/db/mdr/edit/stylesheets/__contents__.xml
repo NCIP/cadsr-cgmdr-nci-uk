@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/mdr/edit/stylesheets" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:27+01:00" version="1">
-    <resource type="XMLResource" name="lb-match-algorithms2html.xslt" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:27+01:00" modified="2008-07-02T11:32:27+01:00" filename="lb-match-algorithms2html.xslt" mimetype="text/xml"/>
-    <resource type="XMLResource" name="lb-resolved-set2html.xslt" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:27+01:00" modified="2008-07-02T11:32:27+01:00" filename="lb-resolved-set2html.xslt" mimetype="text/xml"/>
-</collection>

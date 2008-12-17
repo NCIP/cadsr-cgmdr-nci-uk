@@ -158,16 +158,58 @@
         </war>
     </target>
 
-    <target name="prepare-cgmdr-content-with-dataset">
-        <!-- if="include.dataset"> -->
-
+    <target name="prepare-cgmdr-core">
         <!-- Clear existing content -->
         <delete dir="webapp/WEB-INF/data">
             <include name="*.dbx"/>
             <include name="*.log"/>
         </delete>
+        
+        <xdb:store xmlns:xdb="http://exist-db.org/ant"
+            uri="xmldb:exist:///db/system" initdb="true"
+            user="admin" password="cancergrid"
+            createcollection="true" createsubcollections="true">
+            <fileset dir="cancergrid/mdr-core/db/system"> 
+                <exclude name="**/__contents__.xml"/>
+            </fileset>
+        </xdb:store>
+        <xdb:store xmlns:xdb="http://exist-db.org/ant"
+            uri="xmldb:exist:///db/mdr" initdb="true"
+            user="admin" password="cancergrid"
+            createcollection="true" createsubcollections="true">
+            <fileset dir="cancergrid/mdr-core/db/mdr"> 
+                <exclude name="**/__contents__.xml"/>
+            </fileset>
+        </xdb:store>
+        <xdb:store xmlns:xdb="http://exist-db.org/ant"
+            uri="xmldb:exist:///db/mdr/selenium" initdb="true"
+            user="admin" password="cancergrid"
+            createcollection="true" createsubcollections="true">
+            <fileset dir="selenium"> 
+                <exclude name="**/__contents__.xml"/>
+            </fileset>
+        </xdb:store>
+        <xdb:store xmlns:xdb="http://exist-db.org/ant"
+            uri="xmldb:exist:///db/system/xformsfilter" initdb="true"
+            user="admin" password="cancergrid"
+            createcollection="true" createsubcollections="true">
+            <fileset dir="tools/XFormsFilter/resources/styles"> 
+                <exclude name="**/__contents__.xml"/>
+            </fileset>
+        </xdb:store>
+    </target>
+
+    <target name="prepare-cgmdr-content-with-dataset" depends="prepare-cgmdr-core">
+        <!-- if="include.dataset"> -->
+
+        <!-- Clear existing content -->
+        <!--delete dir="webapp/WEB-INF/data">
+            <include name="*.dbx"/>
+            <include name="*.log"/>
+        </delete-->
 
         <!-- Restore cgMDR content -->
+        <!-- 
         <xdb:restore xmlns:xdb="http://exist-db.org/ant" uri="xmldb:exist:///" initdb="true"
             user="admin" password="cancergrid" dir="cancergrid/mdr-core/db/system"/>
         <xdb:restore xmlns:xdb="http://exist-db.org/ant" uri="xmldb:exist:///" initdb="true"
@@ -178,20 +220,29 @@
             user="admin" password="cancergrid" dir="selenium"/>
         <xdb:restore xmlns:xdb="http://exist-db.org/ant" uri="xmldb:exist:///" initdb="true"
             user="admin" password="cancergrid" dir="tools/XFormsFilter/resources/styles"/>
+        -->
         
+        <xdb:store xmlns:xdb="http://exist-db.org/ant"
+            uri="xmldb:exist:///db/mdr/data" initdb="true"
+            user="admin" password="cancergrid"
+            createcollection="true" createsubcollections="true">
+            <fileset dir="cancergrid/datasets/cancergrid-dataset/data"> 
+                <exclude name="**/__contents__.xml"/>
+            </fileset>
+        </xdb:store>
     </target>
 
-    <target name="prepare-cgmdr-content">
+    <target name="prepare-cgmdr-content" depends="prepare-cgmdr-core">
         <!-- unless="include.dataset"> -->
 
         <!-- Clear existing content -->
-        <delete dir="webapp/WEB-INF/data">
+        <!--delete dir="webapp/WEB-INF/data">
             <include name="*.dbx"/>
             <include name="*.log"/>
-        </delete>
+        </delete-->
 
         <!-- Restore cgMDR content -->
-        <xdb:restore xmlns:xdb="http://exist-db.org/ant" uri="xmldb:exist:///" initdb="true"
+        <!--xdb:restore xmlns:xdb="http://exist-db.org/ant" uri="xmldb:exist:///" initdb="true"
             user="admin" password="cancergrid" dir="cancergrid/mdr-core/db/system"/>
         <xdb:restore xmlns:xdb="http://exist-db.org/ant" uri="xmldb:exist:///" initdb="true"
             user="admin" password="cancergrid" dir="cancergrid/mdr-core/db/mdr"/>
@@ -200,8 +251,16 @@
         <xdb:restore xmlns:xdb="http://exist-db.org/ant" uri="xmldb:exist:///" initdb="true"
             user="admin" password="cancergrid" dir="selenium"/>
         <xdb:restore xmlns:xdb="http://exist-db.org/ant" uri="xmldb:exist:///" initdb="true"
-            user="admin" password="cancergrid" dir="tools/XFormsFilter/resources/styles"/>
+            user="admin" password="cancergrid" dir="tools/XFormsFilter/resources/styles"/-->
         
+        <xdb:store xmlns:xdb="http://exist-db.org/ant"
+            uri="xmldb:exist:///db/mdr/data" initdb="true"
+            user="admin" password="cancergrid"
+            createcollection="true" createsubcollections="true">
+            <fileset dir="cancergrid/datasets/default/data"> 
+                <exclude name="**/__contents__.xml"/>
+            </fileset>
+        </xdb:store>
     </target>
     
     <target name="copy-cgmdr-content">

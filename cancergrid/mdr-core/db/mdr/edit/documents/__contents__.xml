@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/mdr/edit/documents" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:24+01:00" version="1">
-    <resource type="XMLResource" name="defaults.xml" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:24+01:00" modified="2008-10-20T13:46:02+01:00" filename="defaults.xml" mimetype="text/xml"/>
-    <resource type="XMLResource" name="maintenance.xml" owner="admin" group="dba" mode="755" created="2008-07-02T11:32:24+01:00" modified="2008-10-21T09:15:06+01:00" filename="maintenance.xml" mimetype="text/xml"/>
-</collection>

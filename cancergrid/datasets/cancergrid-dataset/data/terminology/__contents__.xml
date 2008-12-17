@@ -1,5 +1,0 @@
-<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/mdr/data/terminology" owner="admin" group="dba" mode="755" created="2008-07-24T10:59:52+01:00" version="1">
-    <resource type="XMLResource" name="meshdata.rdf" owner="admin" group="dba" mode="755" created="2008-07-24T10:59:59+01:00" modified="2008-07-24T10:59:59+01:00" filename="meshdata.rdf" mimetype="text/xml"/>
-    <resource type="XMLResource" name="meshqualifiers.rdf" owner="admin" group="dba" mode="755" created="2008-07-24T11:02:13+01:00" modified="2008-07-24T11:02:13+01:00" filename="meshqualifiers.rdf" mimetype="text/xml"/>
-    <resource type="XMLResource" name="meshstructure.rdf" owner="admin" group="dba" mode="755" created="2008-07-24T11:02:14+01:00" modified="2008-07-24T11:02:14+01:00" filename="meshstructure.rdf" mimetype="text/xml"/>
-</collection>
