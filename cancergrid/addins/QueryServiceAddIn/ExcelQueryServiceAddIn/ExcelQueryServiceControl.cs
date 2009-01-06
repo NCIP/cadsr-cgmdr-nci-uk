@@ -279,9 +279,8 @@ namespace ExcelQueryServiceAddIn
 
                 selected.Validation.Delete();
 
-                if (attr == "xs:nonNegativeInteger" || attr == "xs:positiveInteger")
+                if (attr == "xs:nonNegativeInteger")
                 {
-                    //xs:nonNegativeInteger
                     selected.Validation.Add(Excel.XlDVType.xlValidateWholeNumber, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlGreaterEqual, 0, 0);
                     selected.Validation.InputTitle = "Enter a positive integer";
                     selected.Validation.InputMessage = " ";
@@ -289,7 +288,6 @@ namespace ExcelQueryServiceAddIn
                 }
                 else if (attr == "xs:nonPositiveInteger")
                 {
-                    //xs:integer
                     selected.Validation.Add(Excel.XlDVType.xlValidateWholeNumber, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlLessEqual, 0, 0);
                     selected.Validation.InputTitle = "Enter a negative integer";
                     selected.Validation.InputMessage = " ";
@@ -297,39 +295,97 @@ namespace ExcelQueryServiceAddIn
                 }
                 else if (attr == "xs:positiveInteger")
                 {
-                    //xs:integer
-                    selected.Validation.Add(Excel.XlDVType.xlValidateWholeNumber, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlGreater, 0, 0);
+                    selected.Validation.Add(Excel.XlDVType.xlValidateWholeNumber, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlGreater, 1, 1);
                     selected.Validation.InputTitle = "Enter an integer number greater than 0(zero)";
                     selected.Validation.InputMessage = " ";
                     selected.Validation.ErrorMessage = "Please enter an integer number 0(zero)";
                 }
                 else if (attr == "xs:integer")
                 {
-                    //xs:integer
-                    selected.Validation.Add(Excel.XlDVType.xlValidateWholeNumber, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlBetween, Int32.MinValue, Int32.MaxValue);
+                    selected.Validation.Add(Excel.XlDVType.xlValidateWholeNumber, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlBetween, Decimal.MinValue, Decimal.MaxValue);
+                    selected.Validation.InputTitle = "Enter an integer number";
+                    selected.Validation.InputMessage = " ";
+                    selected.Validation.ErrorMessage = "Please enter an integer number";
+                }
+                else if (attr == "xs:byte")
+                {
+                    selected.Validation.Add(Excel.XlDVType.xlValidateWholeNumber, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlBetween, SByte.MinValue, SByte.MaxValue);
+                    selected.Validation.InputTitle = "Enter a byte number";
+                    selected.Validation.InputMessage = " ";
+                    selected.Validation.ErrorMessage = "Please enter a byte number";
+                }
+                else if (attr == "xs:unsignedByte")
+                {
+                    selected.Validation.Add(Excel.XlDVType.xlValidateWholeNumber, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlBetween, Byte.MinValue, Byte.MaxValue);
+                    selected.Validation.InputTitle = "Enter a byte number";
+                    selected.Validation.InputMessage = " ";
+                    selected.Validation.ErrorMessage = "Please enter a byte number";
+                }
+                else if (attr == "xs:short")
+                {
+                    selected.Validation.Add(Excel.XlDVType.xlValidateWholeNumber, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlBetween, Int16.MinValue, Int16.MaxValue);
+                    selected.Validation.InputTitle = "Enter an integer number";
+                    selected.Validation.InputMessage = " ";
+                    selected.Validation.ErrorMessage = "Please enter an integer number";
+                }
+                else if (attr == "xs:unsignedShort")
+                {
+                    selected.Validation.Add(Excel.XlDVType.xlValidateWholeNumber, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlBetween, UInt16.MinValue, UInt16.MaxValue);
                     selected.Validation.InputTitle = "Enter an integer number";
                     selected.Validation.InputMessage = " ";
                     selected.Validation.ErrorMessage = "Please enter an integer number";
                 }
                 else if (attr == "xs:int")
                 {
-                    //xs:int
                     selected.Validation.Add(Excel.XlDVType.xlValidateWholeNumber, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlBetween, Int32.MinValue, Int32.MaxValue);
                     selected.Validation.InputTitle = "Enter an integer number";
                     selected.Validation.InputMessage = " ";
                     selected.Validation.ErrorMessage = "Please enter an integer number";
                 }
+                else if (attr == "xs:unsignedInt")
+                {
+                    selected.Validation.Add(Excel.XlDVType.xlValidateWholeNumber, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlBetween, UInt32.MinValue, UInt32.MaxValue);
+                    selected.Validation.InputTitle = "Enter a positive integer number";
+                    selected.Validation.InputMessage = " ";
+                    selected.Validation.ErrorMessage = "Please enter a positive integer number";
+                }
                 else if (attr == "xs:long")
                 {
-                    //xs:long
                     selected.Validation.Add(Excel.XlDVType.xlValidateWholeNumber, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlBetween, Int64.MinValue, Int64.MaxValue);
                     selected.Validation.InputTitle = "Enter an integer number";
                     selected.Validation.InputMessage = " ";
                     selected.Validation.ErrorMessage = "Please enter an integer number";
                 }
+                else if (attr == "xs:unsignedLong")
+                {
+                    selected.Validation.Add(Excel.XlDVType.xlValidateWholeNumber, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlBetween, UInt64.MinValue, UInt64.MaxValue);
+                    selected.Validation.InputTitle = "Enter a positive integer number";
+                    selected.Validation.InputMessage = " ";
+                    selected.Validation.ErrorMessage = "Please enter a positive integer number";
+                }
+                else if (attr == "xs:float")
+                {
+                    selected.Validation.Add(Excel.XlDVType.xlValidateDecimal, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlBetween, Single.MinValue, Single.MaxValue);
+                    selected.Validation.InputTitle = "Enter a decimal number";
+                    selected.Validation.InputMessage = " ";
+                    selected.Validation.ErrorMessage = "Please enter a decimal number";
+                }
+                else if (attr == "xs:double")
+                {
+                    selected.Validation.Add(Excel.XlDVType.xlValidateDecimal, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlBetween, Double.MinValue, Double.MaxValue);
+                    selected.Validation.InputTitle = "Enter a decimal number";
+                    selected.Validation.InputMessage = " ";
+                    selected.Validation.ErrorMessage = "Please enter a decimal number";
+                }
+                else if (attr == "xs:decimal")
+                {
+                    selected.Validation.Add(Excel.XlDVType.xlValidateDecimal, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlBetween, Decimal.MinValue, Decimal.MaxValue);
+                    selected.Validation.InputTitle = "Enter a decimal number";
+                    selected.Validation.InputMessage = " ";
+                    selected.Validation.ErrorMessage = "Please enter a decimal number";
+                }
                 else if (attr == "xs:date")
                 {
-                    //xs:date
                     selected.Validation.Add(Excel.XlDVType.xlValidateDate, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlGreaterEqual, "=DATE(1900,1,1)", "=DATE(1900,1,1)");
                     selected.Validation.InputTitle = "Enter a date";
                     selected.Validation.InputMessage = "Date format: =DATE(year,month,day)";
@@ -337,51 +393,10 @@ namespace ExcelQueryServiceAddIn
                 }
                 else if (attr == "xs:boolean")
                 {
-                    //xs:boolean
                     selected.Validation.Add(Excel.XlDVType.xlValidateList, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlBetween, "true,false", "true,false");
                     selected.Validation.InputTitle = "Select True or False";
                     selected.Validation.InputMessage = " ";
                     selected.Validation.ErrorMessage = "Please select a boolean value from the list";
-                }
-                else if (attr == "xs:double")
-                {
-                    //xs:double
-                    selected.Validation.Add(Excel.XlDVType.xlValidateDecimal, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlBetween, Decimal.MinValue, Decimal.MaxValue);
-                    selected.Validation.InputTitle = "Enter a decimal number";
-                    selected.Validation.InputMessage = " ";
-                    selected.Validation.ErrorMessage = "Please select a decimal number";
-                }
-                else if (attr == "xs:float")
-                {
-                    //xs:float
-                    selected.Validation.Add(Excel.XlDVType.xlValidateDecimal, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlBetween, Single.MinValue, Single.MaxValue);
-                    selected.Validation.InputTitle = "Enter a decimal number";
-                    selected.Validation.InputMessage = " ";
-                    selected.Validation.ErrorMessage = "Please select a decimal number";
-                }
-                else if (attr == "xs:unsignedInt")
-                {
-                    //xs:boolean
-                    selected.Validation.Add(Excel.XlDVType.xlValidateWholeNumber, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlBetween, UInt32.MinValue, UInt32.MaxValue);
-                    selected.Validation.InputTitle = "Enter an unsigned integer number";
-                    selected.Validation.InputMessage = " ";
-                    selected.Validation.ErrorMessage = "Please select an unsigned integer number";
-                }
-                else if (attr == "xs:unsignedLong")
-                {
-                    //xs:boolean
-                    selected.Validation.Add(Excel.XlDVType.xlValidateWholeNumber, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlBetween, UInt64.MinValue, UInt64.MaxValue);
-                    selected.Validation.InputTitle = "Enter an unsigned integer number";
-                    selected.Validation.InputMessage = " ";
-                    selected.Validation.ErrorMessage = "Please select an unsigned integer number";
-                }
-                else if (attr == "xs:unsignedShort")
-                {
-                    //xs:boolean
-                    selected.Validation.Add(Excel.XlDVType.xlValidateWholeNumber, Excel.XlDVAlertStyle.xlValidAlertStop, Excel.XlFormatConditionOperator.xlBetween, UInt16.MinValue, UInt16.MaxValue);
-                    selected.Validation.InputTitle = "Enter an unsigned integer number";
-                    selected.Validation.InputMessage = " ";
-                    selected.Validation.ErrorMessage = "Please select an unsigned integer number";
                 }
                 /*
                 else if (attr == "xs:duration")
