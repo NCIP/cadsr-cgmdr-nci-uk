@@ -46,6 +46,8 @@
             this.wbDetailsDef = new System.Windows.Forms.WebBrowser();
             this.tabPagePropsValues = new System.Windows.Forms.TabPage();
             this.wbDetailsPropsValues = new System.Windows.Forms.WebBrowser();
+            this.otherDetails = new System.Windows.Forms.TabPage();
+            this.wbDetailsOther = new System.Windows.Forms.WebBrowser();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabFreeText = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -69,8 +71,6 @@
             this.wbClassificationQueryResultDef = new System.Windows.Forms.WebBrowser();
             this.tabPageCLSDetailsValueDomain = new System.Windows.Forms.TabPage();
             this.wbClassificationQueryResultValueDomain = new System.Windows.Forms.WebBrowser();
-            this.otherDetails = new System.Windows.Forms.TabPage();
-            this.wbDetailsOther = new System.Windows.Forms.WebBrowser();
             this.grpControls.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.grpResults.SuspendLayout();
@@ -79,6 +79,7 @@
             this.tabControlDetails.SuspendLayout();
             this.tabPageDef.SuspendLayout();
             this.tabPagePropsValues.SuspendLayout();
+            this.otherDetails.SuspendLayout();
             this.tabControl.SuspendLayout();
             this.tabFreeText.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -92,7 +93,6 @@
             this.tabControlCLSDetails.SuspendLayout();
             this.tabPageCLSDetailsDef.SuspendLayout();
             this.tabPageCLSDetailsValueDomain.SuspendLayout();
-            this.otherDetails.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtTerm
@@ -204,6 +204,7 @@
             this.tableLayoutPanelResults.SetColumnSpan(this.lstResults, 4);
             this.lstResults.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstResults.FormattingEnabled = true;
+            this.lstResults.HorizontalScrollbar = true;
             this.lstResults.Location = new System.Drawing.Point(3, 3);
             this.lstResults.Name = "lstResults";
             this.lstResults.Size = new System.Drawing.Size(268, 277);
@@ -309,6 +310,26 @@
             this.wbDetailsPropsValues.Name = "wbDetailsPropsValues";
             this.wbDetailsPropsValues.Size = new System.Drawing.Size(260, 283);
             this.wbDetailsPropsValues.TabIndex = 0;
+            // 
+            // otherDetails
+            // 
+            this.otherDetails.Controls.Add(this.wbDetailsOther);
+            this.otherDetails.Location = new System.Drawing.Point(4, 22);
+            this.otherDetails.Name = "otherDetails";
+            this.otherDetails.Padding = new System.Windows.Forms.Padding(3);
+            this.otherDetails.Size = new System.Drawing.Size(266, 289);
+            this.otherDetails.TabIndex = 2;
+            this.otherDetails.Text = "Other";
+            this.otherDetails.UseVisualStyleBackColor = true;
+            // 
+            // wbDetailsOther
+            // 
+            this.wbDetailsOther.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.wbDetailsOther.Location = new System.Drawing.Point(3, 3);
+            this.wbDetailsOther.MinimumSize = new System.Drawing.Size(20, 20);
+            this.wbDetailsOther.Name = "wbDetailsOther";
+            this.wbDetailsOther.Size = new System.Drawing.Size(260, 283);
+            this.wbDetailsOther.TabIndex = 0;
             // 
             // tabControl
             // 
@@ -590,26 +611,6 @@
             this.wbClassificationQueryResultValueDomain.Size = new System.Drawing.Size(260, 204);
             this.wbClassificationQueryResultValueDomain.TabIndex = 0;
             // 
-            // otherDetails
-            // 
-            this.otherDetails.Controls.Add(this.wbDetailsOther);
-            this.otherDetails.Location = new System.Drawing.Point(4, 22);
-            this.otherDetails.Name = "otherDetails";
-            this.otherDetails.Padding = new System.Windows.Forms.Padding(3);
-            this.otherDetails.Size = new System.Drawing.Size(266, 289);
-            this.otherDetails.TabIndex = 2;
-            this.otherDetails.Text = "Other";
-            this.otherDetails.UseVisualStyleBackColor = true;
-            // 
-            // wbDetailsOther
-            // 
-            this.wbDetailsOther.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.wbDetailsOther.Location = new System.Drawing.Point(3, 3);
-            this.wbDetailsOther.MinimumSize = new System.Drawing.Size(20, 20);
-            this.wbDetailsOther.Name = "wbDetailsOther";
-            this.wbDetailsOther.Size = new System.Drawing.Size(260, 283);
-            this.wbDetailsOther.TabIndex = 0;
-            // 
             // QueryServiceControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -629,6 +630,7 @@
             this.tabControlDetails.ResumeLayout(false);
             this.tabPageDef.ResumeLayout(false);
             this.tabPagePropsValues.ResumeLayout(false);
+            this.otherDetails.ResumeLayout(false);
             this.tabControl.ResumeLayout(false);
             this.tabFreeText.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -643,7 +645,6 @@
             this.tabControlCLSDetails.ResumeLayout(false);
             this.tabPageCLSDetailsDef.ResumeLayout(false);
             this.tabPageCLSDetailsValueDomain.ResumeLayout(false);
-            this.otherDetails.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

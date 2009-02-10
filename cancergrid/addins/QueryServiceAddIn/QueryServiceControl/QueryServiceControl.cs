@@ -249,6 +249,14 @@ namespace QueryServiceControl
                 if (nodeList == null || nodeList.Count == 0)
                 {
                     nodeList = lastResult.DocumentElement.SelectNodes("/rs:result-set/rs:concept", nsmanager);
+
+                    if (nodeList == null || nodeList.Count == 0)
+                    {
+                        nodeList = lastResult.DocumentElement.SelectNodes("/rs:result-set/rs:object-class", nsmanager);
+
+                        if (nodeList == null || nodeList.Count == 0)
+                            nodeList = lastResult.DocumentElement.SelectNodes("/rs:result-set/rs:property", nsmanager);
+                    }
                 }
 
                 if (nodeList == null || nodeList.Count == 0)
@@ -291,15 +299,15 @@ namespace QueryServiceControl
             {
                 string id = node.SelectSingleNode("rs:names/rs:id", nsmanager).InnerXml;
                 string name = node.SelectSingleNode("rs:names/rs:preferred", nsmanager).InnerXml;
-
-                target.Items.Add(new QueryListItem(id, name));
+                string workflow = node.SelectSingleNode("rs:workflow-status", nsmanager).InnerXml;
+                target.Items.Add(new QueryListItem(id, name + "  ("+workflow+")"));
             }
             if (target.Items.Count == pageSize + 1)
             {
                 target.Items.RemoveAt(pageSize);
             }
             target.DisplayMember = "NAME";
-            target.ValueMember = "ID";
+            target.ValueMember = "ID";          
         }
 
         protected QueryListItem getSelectedItem(ListBox lb)
@@ -481,6 +489,7 @@ namespace QueryServiceControl
                 XmlNode propsNode = null;
                 XmlNode vdNode = null;
                 XmlNode wfNode = null;
+                XmlNode ccNode = null;
                 
                 if (sender.Equals(lstClassificationQueryResult))
                 {
@@ -489,11 +498,13 @@ namespace QueryServiceControl
                 }
                 else if (sender.Equals(lstResults))
                 {
-
-                    wfNode = lastResult.DocumentElement.SelectSingleNode("/rs:result-set/rs:data-element[rs:names/rs:id = '" + getSelectedItem(lstResults).ID + "']/rs:workflow-status", nsmanager);
+                    wfNode = lastResult.DocumentElement.SelectSingleNode("/rs:result-set/*[rs:names/rs:id = '" + getSelectedItem(lstResults).ID + "']/rs:workflow-status", nsmanager);
                     vdNode = lastResult.DocumentElement.SelectSingleNode("/rs:result-set/rs:data-element[rs:names/rs:id = '" + getSelectedItem(lstResults).ID + "']/rs:values", nsmanager);
                     propsNode = lastResult.DocumentElement.SelectSingleNode("/rs:result-set/rs:concept[rs:names/rs:id = '" + getSelectedItem(lstResults).ID + "']/rs:properties", nsmanager);
                     defNode = lastResult.DocumentElement.SelectSingleNode("/rs:result-set/*[rs:names/rs:id = '" + getSelectedItem(lstResults).ID + "']/rs:definition", nsmanager);
+                    ccNode = lastResult.DocumentElement.SelectSingleNode("/rs:result-set/rs:object-class[rs:names/rs:id = '" + getSelectedItem(lstResults).ID + "']/rs:conceptCollection", nsmanager);
+                    if (ccNode == null || ccNode.InnerXml.Length == 0)
+                        ccNode = lastResult.DocumentElement.SelectSingleNode("/rs:result-set/rs:property[rs:names/rs:id = '" + getSelectedItem(lstResults).ID + "']/rs:conceptCollection", nsmanager);              
                 }
                 else
                 {
@@ -546,19 +557,31 @@ namespace QueryServiceControl
                     if (x.Element(rs + "enumerated") != null)
                     {
 
-                        if (x.Element(rs + "enumerated").Element(rs + "valid-value").Element(rs + "evsconcept") != null)
+                        if (x.Element(rs + "enumerated").Element(rs + "valid-value").Element(rs + "conceptCollection") != null)
                         {
                             var enumeratedValues = from ev in x.Element(rs + "enumerated").Elements(rs + "valid-value")
                                                    select new
                                                    {
                                                        Code = ev.Element(rs + "code").Value,
                                                        Meaning = ev.Element(rs + "meaning").Value,
-                                                       EVSCode = ev.Element(rs + "evsconcept").Value
+                                                       ConceptCollection = (from cc in ev.Element(rs + "conceptCollection").Elements(rs+"evsconcept")
+                                                                            orderby cc.Element(rs+"displayOrder").Value descending
+                                                                            select new {
+                                                                                DisplayOrder = cc.Element(rs+"displayOrder").Value,
+                                                                                ConceptName = cc.Element(rs+"name").Value
+                                                                            })
                                                    };
                             values = "<table style=\"width: 100%;border: 1px solid #ddd;border-collapse: collapse;\"><tr><th style=\"background-color: #ddd;color: #000;text-align: left;padding: 5px;\">Code</th><th style=\"background-color: #ddd;color: #000;text-align: left;padding: 5px;\">Meaning</th><th style=\"background-color: #ddd;color: #000;text-align: left;padding: 5px;\">Concept</th></tr>";
                             foreach (var validValue in enumeratedValues)
                             {
-                                values += "<tr><td style=\"border: 1px solid #ddd;padding: 5px;vertical-align: top;\">" + validValue.Code + "</td><td style=\"border: 1px solid #ddd;padding: 5px;vertical-align: top;\">" + validValue.Meaning + "</td><td style=\"border: 1px solid #ddd;padding: 5px;vertical-align: top;\">" + validValue.EVSCode + "</td></tr>";
+                                //deal with concept collection
+                                string conceptConcat = "";
+                                foreach (var concept in validValue.ConceptCollection){
+                                    conceptConcat += ":"+concept.ConceptName;
+                                }
+                                conceptConcat = conceptConcat.Substring(1);
+
+                                values += "<tr><td style=\"border: 1px solid #ddd;padding: 5px;vertical-align: top;\">" + validValue.Code + "</td><td style=\"border: 1px solid #ddd;padding: 5px;vertical-align: top;\">" + validValue.Meaning + "</td><td style=\"border: 1px solid #ddd;padding: 5px;vertical-align: top;\">" + conceptConcat + "</td></tr>";
                             }
                             values += "</table>";
 
@@ -588,6 +611,7 @@ namespace QueryServiceControl
                         values += "<tr><th style=\"background-color: #ddd;color: #000;text-align: left;padding: 5px;\">units</th><td style=\"border: 1px solid #ddd;padding: 5px;vertical-align: top;\">" + x.Element(rs + "non-enumerated").Element(rs + "units").Value + "</td></tr>";
                         values += "</table>";
                     }
+                    
 
                     if (sender.Equals(lstClassificationQueryResult))
                     {
@@ -597,6 +621,31 @@ namespace QueryServiceControl
                     {
                         wbDetailsPropsValues.DocumentText = values;
                     }                    
+                }
+                else if (ccNode != null)
+                {
+                    XElement x = XElement.Parse(ccNode.OuterXml);
+                    values = "<table style=\"width: 100%;border: 1px solid #ddd;border-collapse: collapse;\"><tr><th style=\"background-color: #ddd;color: #000;text-align: left;padding: 5px;\">Position</th><th style=\"background-color: #ddd;color: #000;text-align: left;padding: 5px;\">Concept</th></tr>";
+                    
+                    var conceptCollection = from cc in x.Elements(rs + "evsconcept")
+                                            orderby cc.Element(rs + "displayOrder").Value descending
+                                            select new
+                                            {
+                                                DisplayOrder = cc.Element(rs + "displayOrder").Value,
+                                                ConceptName = cc.Element(rs + "name").Value,
+                                            };
+
+                    foreach (var concept in conceptCollection)
+                    {
+                        values += "<tr><td style=\"border: 1px solid #ddd;padding: 5px;vertical-align: top;\">";
+                        values += ((Convert.ToInt16((string)concept.DisplayOrder)) == 0) ? "Primary" : "Qualifier";
+                        values += "</td><td style=\"border: 1px solid #ddd;padding: 5px;vertical-align: top;\">";
+                        values += concept.ConceptName + "</td></tr>";
+
+                    }
+
+                    values += "</table>";
+                    wbDetailsPropsValues.DocumentText = values;    
                 }
                 else if (propsNode != null)
                 {
@@ -614,11 +663,11 @@ namespace QueryServiceControl
                         props += "<tr><td style=\"border: 1px solid #ddd;padding: 5px;vertical-align: top;\">" + prop.Name + "</td><td style=\"border: 1px solid #ddd;padding: 5px;vertical-align: top;\">" + prop.Value + "</td></tr>";
                     }
                     props += "</table>";
-                        
+
                     if (sender.Equals(lstResults))
                     {
                         wbDetailsPropsValues.DocumentText = props;
-                    }                    
+                    }
                 }
             }
             catch (Exception ex)
