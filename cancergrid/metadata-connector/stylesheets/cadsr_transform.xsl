@@ -73,11 +73,84 @@
 			<meaning>
 				<xsl:value-of select="valueMeaning/ValueMeaning/shortMeaning"/>
 			</meaning>
-			<evsconcept>
-				<xsl:value-of select="valueMeaning/ValueMeaning/conceptDerivationRule/ConceptDerivationRule/name"/>
-			</evsconcept>
+			<xsl:apply-templates select="valueMeaning/ValueMeaning/conceptDerivationRule/ConceptDerivationRule/componentConceptCollection"/>
 		</valid-value>
 	</xsl:template>
+    	
+	<xsl:template match="ObjectClass">
+		<!--<data-element xmlns="http://cancergrid.org/schema/result-set">-->
+		<object-class>
+			<names>
+				<id>US-NCICB-CACORE-CADSR-<xsl:value-of select="publicID"/>-<xsl:value-of select="version"/>
+				</id>
+				<preferred>
+					<xsl:value-of select="longName"/>
+				</preferred>
+				<all-names>
+					<name>
+						<xsl:value-of select="preferredName"/>
+					</name>
+					<name>
+						<xsl:value-of select="longName"/>
+					</name>
+				</all-names>
+			</names>
+			<definition>
+				<xsl:value-of select="preferredDefinition"/>
+			</definition>
+			<workflow-status>
+				<xsl:value-of select="workflowStatusName"/>
+			</workflow-status>
+			<xsl:apply-templates select="conceptDerivationRule/ConceptDerivationRule/componentConceptCollection"/>
+		</object-class>
+	</xsl:template>
+	
+	<xsl:template match="Property">
+		<!--<data-element xmlns="http://cancergrid.org/schema/result-set">-->
+		<property>
+			<names>
+				<id>US-NCICB-CACORE-CADSR-<xsl:value-of select="publicID"/>-<xsl:value-of select="version"/>
+				</id>
+				<preferred>
+					<xsl:value-of select="longName"/>
+				</preferred>
+				<all-names>
+					<name>
+						<xsl:value-of select="preferredName"/>
+					</name>
+					<name>
+						<xsl:value-of select="longName"/>
+					</name>
+				</all-names>
+			</names>
+			<definition>
+				<xsl:value-of select="preferredDefinition"/>
+			</definition>
+			<workflow-status>
+				<xsl:value-of select="workflowStatusName"/>
+			</workflow-status>
+			<xsl:apply-templates select="conceptDerivationRule/ConceptDerivationRule/componentConceptCollection"/>
+		</property>
+	</xsl:template>
+	
+<xsl:template match="componentConceptCollection">
+	<conceptCollection>
+		<xsl:apply-templates select="ComponentConcept"/>
+	</conceptCollection>
+</xsl:template>	
+	
+	<xsl:template match="ComponentConcept">
+		<evsconcept>
+			<displayOrder>
+				<xsl:value-of select="displayOrder"/>
+			</displayOrder>
+			<name>
+				<xsl:value-of select="concept/Concept/preferredName"/>
+			</name>
+		</evsconcept>
+	</xsl:template>
+	
+	
 	<!-- Filter out extra nodes -->
 	<xsl:template match="questionCollection|workflowStatusDescription|unresolvedIssue|registrationStatus|publicID|concept|origin|modifiedBy|latestVersionIndicator|endDate|deletedIndicator|dateModified|dateCreated|createdBy|changeNote|beginDate|version|prequestionCollection|dataElementDerivationCollection|parentDataElementRelationshipsCollection|dataElementConcept|derivedDataElement|childDataElementRelationshipsCollection|context|administeredComponentClassSchemeItemCollection|designationCollection|referenceDocumentCollection|administeredComponentContactCollection|definitionCollection|validValueCollection|parentValueDomainRelationshipCollection|dataElementCollection|childValueDomainRelationshipCollection|represention|conceptualDomain"/>
 </xsl:stylesheet>

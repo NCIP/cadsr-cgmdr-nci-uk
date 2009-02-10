@@ -37,11 +37,23 @@
         </field>
     </xsl:template>
     
-    <!-- Stop expanding after this one -->
-       <xsl:template match="class[@name='gov.nih.nci.cadsr.domain.ValueMeaning']/field[@name='conceptDerivationRule']">
+     <xsl:template match="class[@name=('gov.nih.nci.cadsr.domain.ValueMeaning', 'gov.nih.nci.cadsr.domain.ObjectClass','gov.nih.nci.cadsr.domain.Property')]/field[@name='conceptDerivationRule']">
+        <field name="{@name}">
+            <xsl:apply-templates select="doc(data(@xlink:href))/xlink:httpQuery/queryResponse/class"/>
+        </field>
+    </xsl:template>
+
+    <xsl:template match="field[@name='componentConceptCollection']">
+        <field name="{@name}">
+            <xsl:apply-templates select="doc(data(@xlink:href))/xlink:httpQuery/queryResponse/class"/>
+        </field>
+    </xsl:template>
+    
+	<!-- Stop expanding after this one     -->
+    <xsl:template match="class[@name='gov.nih.nci.cadsr.domain.ComponentConcept']/field[@name='concept']">
         <field name="{@name}">
             <xsl:copy-of select="doc(data(@xlink:href))/xlink:httpQuery/queryResponse/class"/>
         </field>
-    </xsl:template>
+    </xsl:template>  
     
 </xsl:stylesheet>

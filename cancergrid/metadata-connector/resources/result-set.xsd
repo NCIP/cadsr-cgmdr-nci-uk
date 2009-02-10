@@ -7,6 +7,7 @@
 			<xs:choice minOccurs="0">
 				<xs:element ref="concept" maxOccurs="unbounded"/>
 				<xs:element ref="data-element" maxOccurs="unbounded"/>
+				<xs:element ref="object-class" maxOccurs="unbounded"/>
 				<xs:element ref="node"/>
 				<xs:element ref="classification_scheme" maxOccurs="unbounded"/>
 			</xs:choice>
@@ -73,7 +74,6 @@
 			<xs:element name="evsconcept" type="xs:string" minOccurs="0"/>
 		</xs:sequence>
 	</xs:complexType>
-
 	<xs:element name="meaning" type="meaning"/>
 	<xs:complexType name="meaning">
 		<xs:simpleContent>
@@ -82,7 +82,6 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
-	
 	<!-- Concept related elements/types -->
 	<xs:element name="concept" type="concept"/>
 	<xs:complexType name="concept">
@@ -116,7 +115,6 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
-	
 	<xs:element name="node" type="node"/>
 	<xs:complexType name="node">
 		<xs:sequence>
@@ -125,5 +123,16 @@
 		<xs:attribute name="prefix" type="xs:anyURI"/>
 		<xs:attribute name="id" type="xs:string"/>
 		<xs:attribute name="label" type="xs:string"/>
+	</xs:complexType>
+	<!-- Object Class related elements/types -->
+	<xs:element name="object-class" type="object-class"/>
+	<xs:complexType name="object-class">
+		<xs:complexContent>
+			<xs:extension base="common-info">
+				<xs:sequence>
+					<xs:element ref="values"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 </xs:schema>

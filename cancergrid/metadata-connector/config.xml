@@ -11,6 +11,28 @@
 			<description>NCICB Resource for Common Data Elements</description>
 			<webUrl>http://ncicb.nci.nih.gov/NCICB/infrastructure/cacore_overview/cadsr</webUrl>			
 		</query_service>
+		<query_service name="caDSR-ObjectClass"
+			class="org.cancergrid.ws.query.RestQueryService"
+			serviceUrl="http://cadsrapi.nci.nih.gov/cadsrapi40/GetXML"
+			cache_collection_id="caDSR-ObjectClass" cache="false"
+			cache_provider="HibernateCacheProvider" 
+			category="CDE" connection_type="REST"
+			requestSequence="cadsr_OC_query" digestSequence="cadsr_construct fixtag cadsr_transform add_cg_namespace">
+			<title>NCI Cancer Data Standards Repository (caDSR)</title>
+			<description>NCICB Resource for Common Data Elements</description>
+			<webUrl>http://ncicb.nci.nih.gov/NCICB/infrastructure/cacore_overview/cadsr</webUrl>			
+		</query_service>
+		<query_service name="caDSR-Property"
+			class="org.cancergrid.ws.query.RestQueryService"
+			serviceUrl="http://cadsrapi.nci.nih.gov/cadsrapi40/GetXML"
+			cache_collection_id="caDSR-Property" cache="false"
+			cache_provider="HibernateCacheProvider" 
+			category="CDE" connection_type="REST"
+			requestSequence="cadsr_prop_query" digestSequence="cadsr_construct fixtag cadsr_transform add_cg_namespace">
+			<title>NCI Cancer Data Standards Repository (caDSR)</title>
+			<description>NCICB Resource for Common Data Elements</description>
+			<webUrl>http://ncicb.nci.nih.gov/NCICB/infrastructure/cacore_overview/cadsr</webUrl>			
+		</query_service>
 		<query_service name="EVS-DescLogicConcept"
 			class="org.cancergrid.ws.query.RestQueryService"
 			serviceUrl="http://cabio.nci.nih.gov/cacore32/GetXML"
