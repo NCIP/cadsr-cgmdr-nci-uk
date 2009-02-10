@@ -18,6 +18,8 @@ namespace ExcelQueryServiceAddIn
 
         private Excel.Worksheet cdeList = null;
         private Excel.Worksheet conceptList = null;
+        private Excel.Worksheet ocList = null;
+        private Excel.Worksheet propList = null;
 
         private static readonly string dummyPass = "dummy_password";
 
@@ -60,19 +62,65 @@ namespace ExcelQueryServiceAddIn
 
             XElement rootNode = XElement.Parse(srcNode.OuterXml);
 
-            if ((rootNode.Elements(rs + "data-element") == null) || (rootNode.Elements(rs + "data-element").Count() == 0))
+            string[] elements = new string[4];
+            elements[0] = "data-element";
+            elements[1] = "object-class";
+            elements[2] = "concept";
+            elements[3] = "property";
+
+
+            for (int i = 0; i < elements.Length; i++)
             {
-                if ((rootNode.Elements(rs + "concept") == null) || (rootNode.Elements(rs + "concept").Count() == 0))
+                if ((rootNode.Elements(rs + elements[i]) != null) && (rootNode.Elements(rs + elements[i]).Count() > 0))
                 {
-                    MessageBox.Show("Error getting selected element");
-                }
-                else
-                {
-                    var sn = from ce in rootNode.Elements(rs + "concept")
+                    var sn = from ce in rootNode.Elements(rs + elements[i])
                              where ce.Element(rs + "names").Element(rs + "id").Value == selectedId
                              select ce;
                     XElement selectedNode = sn.ElementAt(0);
-                    handleConcept(selectedNode);
+
+                    switch (elements[i])
+                    {
+                        case "data-element":
+                            handleCDE(selectedNode);
+                            break;
+                        case "object-class":
+                            handleOC(selectedNode);
+                            break;
+                        case "property":
+                            handleProp(selectedNode);
+                            break;
+                        case "concept":
+                            handleConcept(selectedNode);
+                            break;
+                    }
+                }
+            }
+
+            /*
+            if ((rootNode.Elements(rs + "data-element") == null) || (rootNode.Elements(rs + "data-element").Count() == 0))
+            {
+                if ((rootNode.Elements(rs + "object-class") == null) || (rootNode.Elements(rs + "object-class").Count() == 0))
+                {
+                    if ((rootNode.Elements(rs + "concept") == null) || (rootNode.Elements(rs + "concept").Count() == 0))
+                    {
+                        MessageBox.Show("Error getting selected element");
+                    }
+                    else
+                    {
+                        var sn = from ce in rootNode.Elements(rs + "concept")
+                                 where ce.Element(rs + "names").Element(rs + "id").Value == selectedId
+                                 select ce;
+                        XElement selectedNode = sn.ElementAt(0);
+                        handleConcept(selectedNode);
+                    }
+                }
+                else
+                {
+                    var sn = from oc in rootNode.Elements(rs + "object-class")
+                             where oc.Element(rs + "names").Element(rs + "id").Value == selectedId
+                             select oc;
+                    XElement selectedNode = sn.ElementAt(0);
+                    handleOC(selectedNode);
                 }
             }
             else
@@ -83,7 +131,10 @@ namespace ExcelQueryServiceAddIn
                 XElement selectedNode = sn.ElementAt(0);
                 handleCDE(selectedNode);
             }
+             * 
+             * */
         }
+        
 
         protected override void useCLS(object sender, EventArgs e)
         {
@@ -124,6 +175,7 @@ namespace ExcelQueryServiceAddIn
 
             string attr = "";
             string attrWithDef = "";
+            string attrWithDefWithConc = "";
 
             if (selectedNode.Element(rs + "values").Element(rs + "enumerated") != null)
             {
@@ -132,7 +184,15 @@ namespace ExcelQueryServiceAddIn
                                   select new
                                   {
                                       Code = vv.Element(rs + "code").Value,
-                                      Meaning = vv.Element(rs + "meaning").Value
+                                      Meaning = vv.Element(rs + "meaning").Value,
+                                      ConceptCollection = (from cc in vv.Element(rs + "conceptCollection").Elements(rs + "evsconcept")
+                                                           orderby cc.Element(rs + "displayOrder").Value
+                                                           select new
+                                                           {
+                                                               DisplayOrder = cc.Element(rs + "displayOrder").Value,
+                                                               ConceptName = cc.Element(rs + "name").Value
+                                                           })
+
                                   };
 
                 XNamespace xs = "http://www.w3.org/2001/XMLSchema";
@@ -180,14 +240,28 @@ namespace ExcelQueryServiceAddIn
                         );
                     restrictionNode.Add(enumNode);
 
+                    string evscode = "";
+
+                    if (vv.ConceptCollection != null)
+                    {
+                        foreach (var concept in vv.ConceptCollection)
+                            evscode += ":"+concept.ConceptName;
+
+                        evscode = evscode.Substring(1);
+                        evscode = " | " + evscode;
+                    }
+
                     attr += vv.Code + ",";
                     attrWithDef += vv.Code + " : (" + vv.Meaning.Replace(",", "&#44;").Replace("&lt;", "<").Replace("&gt;", ">") + "),";
+                    attrWithDefWithConc += vv.Code + " : ("+ vv.Meaning.Replace(",", "&#44;").Replace("&lt;", "<").Replace("&gt;", ">") + evscode+"),";
 
                 }
 
                 if (attr != null && attr.Contains(","))
                 {
                     attr.Remove(attr.LastIndexOf(','));
+                    attrWithDef.Remove(attrWithDef.LastIndexOf(','));
+                    attrWithDefWithConc.Remove(attrWithDefWithConc.LastIndexOf(','));
                     attr.Trim();
                 }
                 try
@@ -493,16 +567,19 @@ namespace ExcelQueryServiceAddIn
             }
 
             string instanceNum = xmlMap.Name.Substring(xmlMap.Name.LastIndexOf("_Map") + 4);
-            c.Hyperlinks.Add(c, "", xmlMap.Name, Type.Missing, id + ((selected.Count > 1) ? "(List)" : "(Single)") + ((instanceNum != null && instanceNum.Length > 0) ? "(" + instanceNum + ")" : "") + "\n\nRange: " + getSelectedRangeAddress(selected));
+            //c.Hyperlinks.Add(c, "", xmlMap.Name, Type.Missing, id + ((selected.Count > 1) ? "(List)" : "(Single)") + ((instanceNum != null && instanceNum.Length > 0) ? "(" + instanceNum + ")" : "") + "\n\nRange: " + getSelectedRangeAddress(selected));
+            c.Hyperlinks.Add(c, "", xmlMap.Name, Type.Missing, id);
             c.Next.Value2 = preferredName;
             c.Next.Next.Value2 = definition.Trim().Replace("&gt;", ">").Replace("&lt;", "<").Replace("&amp;", "&");
-            c.Next.Next.Next.Value2 = attrWithDef.Trim().Replace(",", "\n\n").Replace("&#44;", ", ").Replace("&gt;", ">").Replace("&lt;", "<").Replace("&amp;", "&");
+            c.Next.Next.Next.Value2 = attrWithDefWithConc.Trim().Replace(",", "\n\n").Replace("&#44;", ", ").Replace("&gt;", ">").Replace("&lt;", "<").Replace("&amp;", "&");
             cdeList.Protect(dummyPass, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
 
             // Create/Format Header
             if (selected.Count > 1)
             {
                 Excel.Range firstCell = (Excel.Range)selected.Cells[1, 1];
+
+
                 firstCell.Validation.Delete();
                 firstCell.Value2 = ((string)firstCell.Value2).Substring(((string)firstCell.Value2).IndexOf(":") + 1).Replace("_", " ");
                 firstCell.Hyperlinks.Add(firstCell, "", getSelectedRangeAddress(c), Type.Missing, firstCell.Value2);
@@ -521,7 +598,7 @@ namespace ExcelQueryServiceAddIn
                         Excel.Range leftCell = selected.get_Offset(0, -1);
                         if (leftCell != null && (leftCell.Value2 == null || ((string)leftCell.Value2).Length == 0))
                         {
-                            leftCell.Value2 = preferredName;
+                            leftCell.Value2 = id + ":" + preferredName;
                             leftCell.Hyperlinks.Add(leftCell, "", getSelectedRangeAddress(c), Type.Missing, leftCell.Value2);
                             leftCell.Font.Bold = true;
                             leftCell.Font.Underline = false;
@@ -532,7 +609,7 @@ namespace ExcelQueryServiceAddIn
                         Excel.Range upCell = selected.get_Offset(-1, 0);
                         if (upCell != null && (upCell.Value2 == null || ((string)upCell.Value2).Length == 0))
                         {
-                            upCell.Value2 = preferredName;
+                            upCell.Value2 = id+":"+preferredName;
                             upCell.Hyperlinks.Add(upCell, "", getSelectedRangeAddress(c), Type.Missing, upCell.Value2);
                             upCell.Font.Bold = true;
                             upCell.Font.Underline = false;
@@ -568,6 +645,172 @@ namespace ExcelQueryServiceAddIn
                 }
             }
         }
+
+        /// <summary>
+        /// Handles insertion of object class element into worksheet.
+        /// 
+        /// TODO: Refactor code
+        /// </summary>
+        /// <param name="selectedNode">Object Class element to use</param>
+        protected void handleOC(XElement selectedNode)
+        {
+            string id = selectedNode.Element(rs + "names").Element(rs + "id").Value;
+            string preferredName = selectedNode.Element(rs + "names").Element(rs + "preferred").Value;
+            string definition = selectedNode.Element(rs + "definition").Value;
+            if (definition == null || definition.Length == 0)
+            {
+                definition = "(No definition supplied)";
+            }
+            else
+            {
+                //Handle special caDSR/EVS format
+                definition = definition.Trim().Replace("&gt;", ">").Replace("&lt;", "<").Replace("<![CDATA[", "").Replace("]]>", "");
+                if (definition.Contains("<def-source>"))
+                {
+                    XElement e = XElement.Parse("<def>" + definition + "</def>");
+                    definition = e.Element("def-definition").Value + "\n(Source: " + e.Element("def-source").Value + ")";
+                }
+            }
+
+            string label = preferredName;
+
+            //Get selected range
+            Excel.Range selected = (Excel.Range)application.Selection;
+            if (selected.Value2 == null || selected.Value2.ToString().Length == 0)
+            {
+                selected.Value2 = label;
+            }
+            else
+            {
+                //Refuse to add?  Do you have to remove first?
+            }
+
+
+            //Create concept list if not exists
+            if (!isOCListExists())
+            {
+                ocList = createOCList();
+            }
+
+            //Add new concept entry to concept_list
+            ocList.Unprotect(dummyPass);
+            Excel.Range c = (Excel.Range)ocList.Cells[2, 1];
+
+            Excel.Range found = ocList.Cells.Find(id, Type.Missing, Excel.XlFindLookIn.xlValues, Excel.XlLookAt.xlPart, Excel.XlSearchOrder.xlByRows, Excel.XlSearchDirection.xlNext, false, Type.Missing, Type.Missing);
+            if (found == null) //if (existingIndex == 0)
+            {
+                for (int i = 3; c.Value2 != null; i++)
+                {
+                    c = (Excel.Range)ocList.Cells[i, 1];
+
+                }
+
+                c.Value2 = id;
+                //c.Hyperlinks.Add(c, "", "_" + code, Type.Missing, id);
+                c.Next.Value2 = preferredName;
+                c.Next.Next.Value2 = definition.Trim().Replace("&gt;", ">").Replace("&lt;", "<").Replace("&amp;", "&");
+                //c.Next.Next.Next.Value2 = attr.Trim().Replace(",", "\n\n").Replace("&#44;", ", ").Replace("&gt;", ">").Replace("&lt;", "<").Replace("&amp;", "&");
+
+                //Cells mapped counter
+                c.Next.Next.Next.Next.Value2 = 1;
+            }
+            else
+            {
+                found.Next.Next.Next.Next.Value2 = 1 + Convert.ToInt16(found.Next.Next.Next.Next.Value2.ToString());
+            }
+
+            ocList.Protect(dummyPass, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
+
+            /* Remove hyperlinks for now until a suitable two way link method is found */
+            //selected.Hyperlinks.Add(selected, "", getSelectedRangeAddress(c), Type.Missing, label);
+
+            selected.Font.Bold = true;
+            selected.Font.Underline = false;
+            selected.Font.ColorIndex = 1;
+            selected.Interior.ThemeColor = Excel.XlThemeColor.xlThemeColorAccent3;
+            selected.Interior.TintAndShade = 0.9;
+
+        }
+
+
+        protected void handleProp(XElement selectedNode)
+        {
+            string id = selectedNode.Element(rs + "names").Element(rs + "id").Value;
+            string preferredName = selectedNode.Element(rs + "names").Element(rs + "preferred").Value;
+            string definition = selectedNode.Element(rs + "definition").Value;
+            if (definition == null || definition.Length == 0)
+            {
+                definition = "(No definition supplied)";
+            }
+            else
+            {
+                //Handle special caDSR/EVS format
+                definition = definition.Trim().Replace("&gt;", ">").Replace("&lt;", "<").Replace("<![CDATA[", "").Replace("]]>", "");
+                if (definition.Contains("<def-source>"))
+                {
+                    XElement e = XElement.Parse("<def>" + definition + "</def>");
+                    definition = e.Element("def-definition").Value + "\n(Source: " + e.Element("def-source").Value + ")";
+                }
+            }
+
+            string label = preferredName;
+
+            //Get selected range
+            Excel.Range selected = (Excel.Range)application.Selection;
+            if (selected.Value2 == null || selected.Value2.ToString().Length == 0)
+            {
+                selected.Value2 = label;
+            }
+            else
+            {
+                //Refuse to add?  Do you have to remove first?
+            }
+
+
+            //Create concept list if not exists
+
+            propList = useList(propList, "prop_list");
+
+            //Add new concept entry to concept_list
+            propList.Unprotect(dummyPass);
+            Excel.Range c = (Excel.Range)propList.Cells[2, 1];
+
+            Excel.Range found = propList.Cells.Find(id, Type.Missing, Excel.XlFindLookIn.xlValues, Excel.XlLookAt.xlPart, Excel.XlSearchOrder.xlByRows, Excel.XlSearchDirection.xlNext, false, Type.Missing, Type.Missing);
+            if (found == null) //if (existingIndex == 0)
+            {
+                for (int i = 3; c.Value2 != null; i++)
+                {
+                    c = (Excel.Range)ocList.Cells[i, 1];
+
+                }
+
+                c.Value2 = id;
+                //c.Hyperlinks.Add(c, "", "_" + code, Type.Missing, id);
+                c.Next.Value2 = preferredName;
+                c.Next.Next.Value2 = definition.Trim().Replace("&gt;", ">").Replace("&lt;", "<").Replace("&amp;", "&");
+                //c.Next.Next.Next.Value2 = attr.Trim().Replace(",", "\n\n").Replace("&#44;", ", ").Replace("&gt;", ">").Replace("&lt;", "<").Replace("&amp;", "&");
+
+                //Cells mapped counter
+                c.Next.Next.Next.Next.Value2 = 1;
+            }
+            else
+            {
+                found.Next.Next.Next.Next.Value2 = 1 + Convert.ToInt16(found.Next.Next.Next.Next.Value2.ToString());
+            }
+
+            propList.Protect(dummyPass, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
+
+            /* Remove hyperlinks for now until a suitable two way link method is found */
+            //selected.Hyperlinks.Add(selected, "", getSelectedRangeAddress(c), Type.Missing, label);
+
+            selected.Font.Bold = true;
+            selected.Font.Underline = false;
+            selected.Font.ColorIndex = 1;
+            selected.Interior.ThemeColor = Excel.XlThemeColor.xlThemeColorAccent3;
+            selected.Interior.TintAndShade = 0.2;
+
+        }
+
 
         /// <summary>
         /// Handles insertion of concept element into worksheet.
@@ -707,6 +950,19 @@ namespace ExcelQueryServiceAddIn
             return ((Excel.Worksheet)r.Parent).Name + "!" + r.get_Address(Type.Missing, Type.Missing, Excel.XlReferenceStyle.xlA1, Type.Missing, Type.Missing);
         }
 
+        private bool isOCListExists()
+        {
+            try
+            {
+                ocList = (Excel.Worksheet)application.Worksheets.get_Item("oc_list");
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
         private bool isCDEListExists()
         {
             try
@@ -780,6 +1036,70 @@ namespace ExcelQueryServiceAddIn
             //((Excel.Worksheet)application.Worksheets.get_Item(origin.Name)).Activate();
             (origin as Microsoft.Office.Interop.Excel._Worksheet).Activate();
         }
+
+
+        private Excel.Worksheet createOCList()
+        {
+            return useList(ocList, "oc_list");
+        }
+
+        private Excel.Worksheet useList(Excel.Worksheet sheet, string name)
+        {
+            try
+            {
+                sheet = (Excel.Worksheet)application.Worksheets.get_Item(name);
+            }
+            catch (Exception)
+            {
+                sheet = createList(sheet, name);
+            }
+
+            return sheet;
+
+        }
+
+        private Excel.Worksheet createList(Excel.Worksheet sheet, string name)
+        {
+            Excel.Worksheet origin = (Excel.Worksheet)application.ActiveSheet;
+            sheet = (Excel.Worksheet)application.ActiveWorkbook.Worksheets.Add(Type.Missing, application.ActiveSheet, Type.Missing, Type.Missing);
+            sheet.Name = name;
+
+            Excel.Range column = ((Excel.Range)sheet.Cells[1, 1]);
+
+            //ID
+            column.Value2 = "ID";
+            column.Font.Bold = true;
+            column.Font.Background = Excel.XlBackground.xlBackgroundOpaque;
+            column.EntireColumn.ColumnWidth = 25;
+            column.EntireColumn.WrapText = true;
+            column.EntireColumn.VerticalAlignment = Excel.XlVAlign.xlVAlignTop;
+
+            //Name
+            column.Next.Value2 = "Name";
+            column.Next.Font.Bold = true;
+            column.Next.Font.Background = Excel.XlBackground.xlBackgroundOpaque;
+            column.Next.EntireColumn.ColumnWidth = 30;
+            column.Next.EntireColumn.WrapText = true;
+            column.Next.EntireColumn.VerticalAlignment = Excel.XlVAlign.xlVAlignTop;
+
+            //Definition
+            column.Next.Next.Value2 = "Definition";
+            column.Next.Next.Font.Bold = true;
+            column.Next.Next.Font.Background = Excel.XlBackground.xlBackgroundOpaque;
+            column.Next.Next.EntireColumn.ColumnWidth = 60;
+            column.Next.Next.EntireColumn.VerticalAlignment = Excel.XlVAlign.xlVAlignTop;
+            column.Next.Next.EntireColumn.WrapText = true;
+            column.Next.Next.EntireColumn.HorizontalAlignment = Excel.XlHAlign.xlHAlignJustify;
+
+            sheet.Protect(dummyPass, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
+
+
+
+            //((Excel.Worksheet)application.Worksheets.get_Item(origin.Name)).Activate();
+            (origin as Microsoft.Office.Interop.Excel._Worksheet).Activate();
+            return sheet;
+        }
+
 
         private void createConceptList()
         {
