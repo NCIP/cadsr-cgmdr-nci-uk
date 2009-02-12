@@ -36,6 +36,9 @@
 			<workflow-status>
 				<xsl:value-of select="workflowStatusName"/>
 			</workflow-status>
+			<registration-status>
+				<xsl:value-of select="registrationStatus"/>
+			</registration-status>
 			<xsl:apply-templates select="valueDomain"/>
 		</data-element>
 	</xsl:template>
@@ -101,6 +104,9 @@
 			<workflow-status>
 				<xsl:value-of select="workflowStatusName"/>
 			</workflow-status>
+			<registration-status>
+				<xsl:value-of select="registrationStatus"/>
+			</registration-status>
 			<xsl:apply-templates select="conceptDerivationRule/ConceptDerivationRule/componentConceptCollection"/>
 		</object-class>
 	</xsl:template>
@@ -129,6 +135,9 @@
 			<workflow-status>
 				<xsl:value-of select="workflowStatusName"/>
 			</workflow-status>
+			<registration-status>
+				<xsl:value-of select="registrationStatus"/>
+			</registration-status>
 			<xsl:apply-templates select="conceptDerivationRule/ConceptDerivationRule/componentConceptCollection"/>
 		</property>
 	</xsl:template>
