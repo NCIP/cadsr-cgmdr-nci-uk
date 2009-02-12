@@ -300,7 +300,9 @@ namespace QueryServiceControl
                 string id = node.SelectSingleNode("rs:names/rs:id", nsmanager).InnerXml;
                 string name = node.SelectSingleNode("rs:names/rs:preferred", nsmanager).InnerXml;
                 string workflow = node.SelectSingleNode("rs:workflow-status", nsmanager).InnerXml;
-                target.Items.Add(new QueryListItem(id, name + "  ("+workflow+")"));
+                string registration = node.SelectSingleNode("rs:registration-status", nsmanager).InnerXml;
+
+                target.Items.Add(new QueryListItem(id, name + "  ("+registration+":"+workflow+")"));
             }
             if (target.Items.Count == pageSize + 1)
             {

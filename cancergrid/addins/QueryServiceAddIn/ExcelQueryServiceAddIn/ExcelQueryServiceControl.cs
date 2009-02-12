@@ -150,6 +150,12 @@ namespace ExcelQueryServiceAddIn
         protected void handleCDE(XElement selectedNode)
         {
             string id = selectedNode.Element(rs + "names").Element(rs + "id").Value;
+
+            //Removing the institution identifying prefix from CADSR elements on client request
+            if (id.Contains("-CADSR-")){
+                string[] idarr = id.Split('-');
+                id = idarr[idarr.Length - 2] + " v." + idarr[idarr.Length - 1];
+            }
             string preferredName = selectedNode.Element(rs + "names").Element(rs + "preferred").Value;
             string preferredNameTag = preferredName.Replace(" ", "_");
             string definition = selectedNode.Element(rs + "definition").Value;
@@ -179,19 +185,22 @@ namespace ExcelQueryServiceAddIn
 
             if (selectedNode.Element(rs + "values").Element(rs + "enumerated") != null)
             {
-
+                
                 var validValues = from vv in selectedNode.Element(rs + "values").Element(rs + "enumerated").Elements(rs + "valid-value")
                                   select new
                                   {
                                       Code = vv.Element(rs + "code").Value,
                                       Meaning = vv.Element(rs + "meaning").Value,
-                                      ConceptCollection = (from cc in vv.Element(rs + "conceptCollection").Elements(rs + "evsconcept")
+                                      ConceptCollection = vv.Elements(rs+"conceptCollection").Any()?
+                                      
+                                      from cc in vv.Element(rs + "conceptCollection").Elements(rs + "evsconcept")
                                                            orderby cc.Element(rs + "displayOrder").Value
                                                            select new
                                                            {
                                                                DisplayOrder = cc.Element(rs + "displayOrder").Value,
                                                                ConceptName = cc.Element(rs + "name").Value
-                                                           })
+                                                           }
+                                      :null
 
                                   };
 
@@ -567,8 +576,14 @@ namespace ExcelQueryServiceAddIn
             }
 
             string instanceNum = xmlMap.Name.Substring(xmlMap.Name.LastIndexOf("_Map") + 4);
+
+            //Since the XML map can be deleted if an exception is thrown, just set address manually.
+            string selectedAddress = selected.get_Address(Type.Missing, Type.Missing, Excel.XlReferenceStyle.xlA1, Type.Missing, Type.Missing);
+            selectedAddress = selected.Worksheet.Name + "!" + selectedAddress;
+                
+
             //c.Hyperlinks.Add(c, "", xmlMap.Name, Type.Missing, id + ((selected.Count > 1) ? "(List)" : "(Single)") + ((instanceNum != null && instanceNum.Length > 0) ? "(" + instanceNum + ")" : "") + "\n\nRange: " + getSelectedRangeAddress(selected));
-            c.Hyperlinks.Add(c, "", xmlMap.Name, Type.Missing, id);
+            c.Hyperlinks.Add(c, "", selectedAddress, Type.Missing, id);
             c.Next.Value2 = preferredName;
             c.Next.Next.Value2 = definition.Trim().Replace("&gt;", ">").Replace("&lt;", "<").Replace("&amp;", "&");
             c.Next.Next.Next.Value2 = attrWithDefWithConc.Trim().Replace(",", "\n\n").Replace("&#44;", ", ").Replace("&gt;", ">").Replace("&lt;", "<").Replace("&amp;", "&");
@@ -655,6 +670,14 @@ namespace ExcelQueryServiceAddIn
         protected void handleOC(XElement selectedNode)
         {
             string id = selectedNode.Element(rs + "names").Element(rs + "id").Value;
+
+            //Removing the institution identifying prefix from CADSR elements on client request
+            if (id.Contains("-CADSR-"))
+            {
+                string[] idarr = id.Split('-');
+                id = idarr[idarr.Length - 2] + " v." + idarr[idarr.Length - 1];
+            }
+
             string preferredName = selectedNode.Element(rs + "names").Element(rs + "preferred").Value;
             string definition = selectedNode.Element(rs + "definition").Value;
             if (definition == null || definition.Length == 0)
@@ -706,7 +729,7 @@ namespace ExcelQueryServiceAddIn
                 }
 
                 c.Value2 = id;
-                //c.Hyperlinks.Add(c, "", "_" + code, Type.Missing, id);
+                //c.Hyperlinks.Add(c, "", id, Type.Missing, id);
                 c.Next.Value2 = preferredName;
                 c.Next.Next.Value2 = definition.Trim().Replace("&gt;", ">").Replace("&lt;", "<").Replace("&amp;", "&");
                 //c.Next.Next.Next.Value2 = attr.Trim().Replace(",", "\n\n").Replace("&#44;", ", ").Replace("&gt;", ">").Replace("&lt;", "<").Replace("&amp;", "&");
@@ -721,8 +744,7 @@ namespace ExcelQueryServiceAddIn
 
             ocList.Protect(dummyPass, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
 
-            /* Remove hyperlinks for now until a suitable two way link method is found */
-            //selected.Hyperlinks.Add(selected, "", getSelectedRangeAddress(c), Type.Missing, label);
+            selected.Hyperlinks.Add(selected, "", getSelectedRangeAddress(c), Type.Missing, label);
 
             selected.Font.Bold = true;
             selected.Font.Underline = false;
@@ -736,6 +758,14 @@ namespace ExcelQueryServiceAddIn
         protected void handleProp(XElement selectedNode)
         {
             string id = selectedNode.Element(rs + "names").Element(rs + "id").Value;
+
+            //Removing the institution identifying prefix from CADSR elements on client request
+            if (id.Contains("-CADSR-"))
+            {
+                string[] idarr = id.Split('-');
+                id = idarr[idarr.Length - 2] + " v." + idarr[idarr.Length - 1];
+            }
+            
             string preferredName = selectedNode.Element(rs + "names").Element(rs + "preferred").Value;
             string definition = selectedNode.Element(rs + "definition").Value;
             if (definition == null || definition.Length == 0)
@@ -785,7 +815,6 @@ namespace ExcelQueryServiceAddIn
                 }
 
                 c.Value2 = id;
-                //c.Hyperlinks.Add(c, "", "_" + code, Type.Missing, id);
                 c.Next.Value2 = preferredName;
                 c.Next.Next.Value2 = definition.Trim().Replace("&gt;", ">").Replace("&lt;", "<").Replace("&amp;", "&");
                 //c.Next.Next.Next.Value2 = attr.Trim().Replace(",", "\n\n").Replace("&#44;", ", ").Replace("&gt;", ">").Replace("&lt;", "<").Replace("&amp;", "&");
@@ -801,7 +830,7 @@ namespace ExcelQueryServiceAddIn
             propList.Protect(dummyPass, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
 
             /* Remove hyperlinks for now until a suitable two way link method is found */
-            //selected.Hyperlinks.Add(selected, "", getSelectedRangeAddress(c), Type.Missing, label);
+            selected.Hyperlinks.Add(selected, "", getSelectedRangeAddress(c), Type.Missing, label);
 
             selected.Font.Bold = true;
             selected.Font.Underline = false;
