@@ -283,11 +283,13 @@ namespace QueryServiceControl
                 //statusMsg.Text = "Query completed.";
                 SetStatus("Query completed");
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                MessageBox.Show(ex.ToString());
                 //statusMsg.ForeColor = Color.Red;
                 //statusMsg.Text = "Query fail";
                 SetErrorStatus("Query fail");
+
             }
             this.Cursor = Cursors.Default;
         }
@@ -299,10 +301,19 @@ namespace QueryServiceControl
             {
                 string id = node.SelectSingleNode("rs:names/rs:id", nsmanager).InnerXml;
                 string name = node.SelectSingleNode("rs:names/rs:preferred", nsmanager).InnerXml;
-                string workflow = node.SelectSingleNode("rs:workflow-status", nsmanager).InnerXml;
-                string registration = node.SelectSingleNode("rs:registration-status", nsmanager).InnerXml;
 
-                target.Items.Add(new QueryListItem(id, name + "  ("+registration+":"+workflow+")"));
+                if (node.SelectSingleNode("rs:workflow-status", nsmanager) != null)
+                {
+                    string workflow = node.SelectSingleNode("rs:workflow-status", nsmanager).InnerXml;
+                    string registration = node.SelectSingleNode("rs:registration-status", nsmanager).InnerXml;
+
+                    target.Items.Add(new QueryListItem(id, name + "  (" + registration + ":" + workflow + ")"));
+                }
+                else
+                {
+                    target.Items.Add(new QueryListItem(id, name));
+                
+                }
             }
             if (target.Items.Count == pageSize + 1)
             {
@@ -561,28 +572,33 @@ namespace QueryServiceControl
 
                         if (x.Element(rs + "enumerated").Element(rs + "valid-value").Element(rs + "conceptCollection") != null)
                         {
-                            var enumeratedValues = from ev in x.Element(rs + "enumerated").Elements(rs + "valid-value")
+                            var enumeratedValues = from ev in x.Element(rs + "enumerated").Elements(rs + "valid-value") 
                                                    select new
                                                    {
                                                        Code = ev.Element(rs + "code").Value,
                                                        Meaning = ev.Element(rs + "meaning").Value,
-                                                       ConceptCollection = (from cc in ev.Element(rs + "conceptCollection").Elements(rs+"evsconcept")
-                                                                            orderby cc.Element(rs+"displayOrder").Value descending
-                                                                            select new {
-                                                                                DisplayOrder = cc.Element(rs+"displayOrder").Value,
-                                                                                ConceptName = cc.Element(rs+"name").Value
-                                                                            })
+                                                       ConceptCollection = ev.Element(rs + "conceptCollection")
                                                    };
                             values = "<table style=\"width: 100%;border: 1px solid #ddd;border-collapse: collapse;\"><tr><th style=\"background-color: #ddd;color: #000;text-align: left;padding: 5px;\">Code</th><th style=\"background-color: #ddd;color: #000;text-align: left;padding: 5px;\">Meaning</th><th style=\"background-color: #ddd;color: #000;text-align: left;padding: 5px;\">Concept</th></tr>";
                             foreach (var validValue in enumeratedValues)
                             {
                                 //deal with concept collection
                                 string conceptConcat = "";
-                                foreach (var concept in validValue.ConceptCollection){
-                                    conceptConcat += ":"+concept.ConceptName;
+                                if (validValue.ConceptCollection != null)
+                                {
+                                    var conColl = from cc in validValue.ConceptCollection.Elements(rs+"evsconcept")
+                                                        orderby cc.Element(rs+"displayOrder").Value descending
+                                                        select new {
+                                                            DisplayOrder = cc.Element(rs+"displayOrder").Value,
+                                                            ConceptName = cc.Element(rs+"name").Value
+                                                        };
+                                    foreach (var concept in conColl)
+                                    {
+                                        conceptConcat += ":" + concept.ConceptName;
+                                    }
+                                    conceptConcat = conceptConcat.Substring(1);
                                 }
-                                conceptConcat = conceptConcat.Substring(1);
-
+                                
                                 values += "<tr><td style=\"border: 1px solid #ddd;padding: 5px;vertical-align: top;\">" + validValue.Code + "</td><td style=\"border: 1px solid #ddd;padding: 5px;vertical-align: top;\">" + validValue.Meaning + "</td><td style=\"border: 1px solid #ddd;padding: 5px;vertical-align: top;\">" + conceptConcat + "</td></tr>";
                             }
                             values += "</table>";
@@ -677,7 +693,7 @@ namespace QueryServiceControl
                 MessageBox.Show(ex.Message);
             }
         }
-
+  
         private void btnForwardCLS_Click(object sender, EventArgs e)
         {
             currentPageCLS++;
