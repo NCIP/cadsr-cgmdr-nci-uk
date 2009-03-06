@@ -23,6 +23,7 @@ package org.cancergrid.ws.util;
 
 import java.io.IOException;
 
+import java.net.URLEncoder;
 import org.apache.commons.httpclient.DefaultHttpMethodRetryHandler;
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.HttpException;
@@ -73,7 +74,6 @@ public class HttpContentReader
 		LOG.debug("getHttpContent(method): " + method);
 		
 		HttpMethod httpMethod = null;
-		LOG.debug(httpUrl);
 		if (httpUrl.contains("&amp;"))
 		{
 			httpUrl = httpUrl.replace("&amp;", "&");
@@ -92,7 +92,7 @@ public class HttpContentReader
 				httpMethod = new GetMethod(httpUrl);
 				if (query != null && query.length() > 0)
 				{
-					httpMethod.setQueryString(query);
+					httpMethod.setQueryString(URLEncoder.encode(query, "UTF-8"));
 				}
 			} else if (method == Method.POST)
 			{
@@ -107,7 +107,7 @@ public class HttpContentReader
 			httpMethod.setFollowRedirects(true);
 		
 			httpMethod.getParams().setParameter(HttpMethodParams.RETRY_HANDLER, new DefaultHttpMethodRetryHandler(3, false));
-		
+
 			Protocol.registerProtocol("https", new Protocol("https", new org.apache.commons.httpclient.contrib.ssl.EasySSLProtocolSocketFactory(), 443));
 			HttpClient client = new HttpClient();
 			int statusCode = client.executeMethod(httpMethod);
@@ -124,7 +124,7 @@ public class HttpContentReader
 		catch (HttpException e)
 		{
 			LOG.error("Fatal protocol violation: " + e.getMessage());
-		}
+    	}
 		catch (IOException e)
 		{
 			LOG.error("Fatal transport error: " + e.getMessage());
