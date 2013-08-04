@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--L
+  Copyright Oracle Inc
+
+  Distributed under the OSI-approved BSD 3-Clause License.
+  See http://ncip.github.com/cadsr-cgmdr-nci-uk/LICENSE.txt for details.
+L-->
+
 <config xmlns="http://cancergrid.org/schema/config">
     <resources>
         <query_service name="caDSR" class="org.cancergrid.ws.query.RestQueryService" serviceUrl="http://cabio.nci.nih.gov/cacore32/GetXML" cache_collection_id="caDSR" cache="false" cache_provider="HibernateCacheProvider" category="CDE" connection_type="REST" requestSequence="cadsr_query" digestSequence="cadsr_construct fixtag cadsr_transform add_cg_namespace">
