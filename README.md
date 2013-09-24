@@ -3,6 +3,8 @@ Welcome to the caDSR cgMDR-NCI-UK Project!
 
 cgMDR has tools enabling semantic annotation from its own metadata repository but also can resolve metadata and terminologies from remote metadata resources such as the caDSR and EVS.
 
+The caDSR cgMDR-NCI-UK is developed in Java and requires Apache Ant for building.
+
 The caDSR cgMDR-NCI-UK is distributed under the BSD 3-Clause License.
 Please see the NOTICE and LICENSE files for details.
 
